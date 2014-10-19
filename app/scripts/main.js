@@ -1,0 +1,35 @@
+'use strict';
+
+$(document).ready(function() {
+    $('#fullpage').fullpage({
+        verticalCentered: true,
+        resize : false,
+		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE'],
+        anchors:['section1', 'section2', 'section3'],
+        scrollingSpeed: 500,
+        easing: 'easeInQuart',
+        menu: '#headerMenu',
+        navigation: true,
+        navigationPosition: 'left',
+        navigationTooltips: ['section1', 'section2', 'section3'],
+        slidesNavigation: true,
+        slidesNavPosition: 'bottom',
+        loopBottom: true,
+        loopTop: false,
+        loopHorizontal: true,
+        autoScrolling: true,
+        scrollOverflow: true,
+        css3: true,
+        paddingTop: '3em',
+        paddingBottom: '10px',
+        normalScrollElements: '#element1, .element2',
+        normalScrollElementTouchThreshold: 5,
+        keyboardScrolling: true,
+        touchSensitivity: 15,
+        continuousVertical: false,
+        animateAnchor: true,
+        sectionSelector: '.section',
+        slideSelector: '.slide',
+        responsive: 768,
+    });
+});
