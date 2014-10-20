@@ -16,12 +16,6 @@ Utilizes the following libraries:
 
 Installation
 ------------
-###Clone the GitHub repository
-Enter the following command at the command line:
-```
-$ git clone git://github.com/GCDigitalFellows/GCImpactSite.git
-```
-
 ###Check for and install required tools
 Make sure your system has [Node.js](http://nodejs.org/download/), [grunt](http://gruntjs.com/), and [bower](http://bower.io/) already installed.
 Entering the command `$ node -v` at the command line should return something like `v0.10.32`. If not, you need to install Node.js by following the link above.
@@ -34,10 +28,27 @@ Entering the command `$ bower -v` at the command line should return something li
 $ npm install -g bower
 ```
 
+###Clone the GitHub repository
+Enter the following command at the command line:
+```
+$ git clone git://github.com/GCDigitalFellows/GCImpactSite.git
+$ cd GCImpactSite
+```
+
+###Initialize the Git Repo Using Bower and NPM
+Enter the following command at the command line:
+```
+$ npm install
+$ bower install
+$ cd test
+$ bower install
+$ cd ..
+```
+This will download all of the required bower and npm dependencies, as well as the dependencies for the mocha test suite (grunt will fail otherwise).
+
 ###Grunt the project
 Once all of the required tools are installed, you can test the site using the following commands:
 ```
-$ cd GCImpactSite
 $ grunt serve
 ```
 A browser window should open a "live view" of the site. To quit grunt at the command line, hit ctrl-c (^c)
