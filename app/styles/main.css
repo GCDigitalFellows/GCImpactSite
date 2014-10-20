@@ -87,3 +87,339 @@ body {
     border-bottom: 0;
   }
 }
+
+/* ------------------- */
+/* Skrollr base styles */
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.skrollable {
+/*
+* First-level skrollables are positioned relative to window
+*/
+position:fixed;
+
+/*
+* Skrollables by default have a z-index of 100 in order to make it easy to position elements in front/back without changing each skrollable
+*/
+z-index:100;
+}
+
+/*
+.skrollable.unrendered {
+display: none !important;
+}
+*/
+
+.skrollable .skrollable {
+/*
+* Second-level skrollables are positioned relative their parent skrollable
+*/
+position:absolute;
+}
+
+.skrollable .skrollable .skrollable {
+/*
+* Third-level (and below) skrollables are positioned static
+*/
+position:static;
+}
+
+/* Import main.css */
+
+html,
+body,
+div,
+span,
+p,
+a,
+del,
+em,
+ol,
+ul,
+li,
+fieldset,
+form,
+label {
+  margin: 0 auto;
+  width: 940px;
+}
+
+#easing {
+  z-index: 101;
+}
+
+/* Frame and Text id's */
+
+#frame0 {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1em;
+  font-family: 'Oswald', Arial, sans-serif;
+  font-weight: 300;
+  color: #000;
+}
+
+#frame0 p {
+  width: 500px;
+  margin: 0 auto;
+}
+
+#foreword {
+  font-size: 2em;
+  font-family: 'Oswald', Arial, sans-serif;
+  font-weight: 300;
+  color: #000;
+}
+
+#frame1 {
+  margin: 5% auto;
+}
+
+.text {
+  padding-top: 10%;
+}
+
+.imgcontain {
+  margin: 5% auto;
+}
+
+
+/* Of the Street Styles */
+
+
+body {
+  font-family: 'PT Serif', Arial, sans-serif;
+  font-weight: 300;
+  color: #000;
+  font-size: 1em;
+}
+
+p {
+  margin: 1em 0;
+  text-align: justify;
+}
+img {
+  border: 2px solid #000;
+}
+
+#titletext {
+  position: absolute;
+  top: 100px;
+  left: 40px;
+  line-height: 0.6em;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', Arial, sans-serif;
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 3.7em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+a {
+  color: #f00;
+  text-shadow: 0px 0px 7px rgba(100, 100, 100, 0.3);
+  text-decoration: none;
+  opacity: 0.7;
+}
+a:hover {
+  opacity: 1;
+}
+
+::selection {
+  background-color: #f00;
+}
+
+#scroll {
+  text-align: center;
+  font-size: 2em;
+  color: #666;
+  padding: 10px 0 0 0;
+}
+
+/* PULL QUOTES */
+
+#quote1 {
+  position: absolute;
+  top: 120px;
+  left: 145px;
+  width: 678px;
+  font-size: 2.7em;
+  text-align: justify;
+  margin: 0 auto;
+  font-family: 'Oswald', Arial, sans-serif;
+  font-weight: 300;
+  color: #000;
+}
+
+#quote2 {
+  left: 500px;
+  width: 400px;
+  top: 440px;
+  color: #fff;
+}
+
+#quote3 {
+  left: 560px;
+  width: 370px;
+  top: 485px;
+  color: #fff;
+  opacity: 1;
+  z-index: 9999;
+  text-shadow: 2px 2px 5px #555;
+  font-size: 2.7em;
+  font-family: 'Oswald', Arial, sans-serif;
+  font-weight: 300;
+  text-align: justify;
+}
+
+#quote4 {
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+  font-family: 'Oswald', Arial, sans-serif;
+  font-size: 2.7em;
+  width: 600px;
+  left: 300px;
+  top: 500px;
+}
+
+#quote5 {
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+  font-family: 'Oswald', Arial, sans-serif;
+  font-size: 2.7em;
+  width: 600px;
+  top: 100px;
+  left: 180px;
+  position: absolute;
+}
+
+
+.right {/* floats images to the right, adds spacing all around */
+  float: right;
+  width: 35%;
+  margin: 1.5em 0em 1em 1.2em;
+}
+
+.firstfew {/* makes the first few words of a paragraph bold */
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.infotext {
+  border-top: 5px solid #000;
+  border-bottom: 5px solid #000;
+  padding: 20px 10px 60px 10px;
+  margin: 100px 0 100px 0px;
+}
+
+.infotext p {
+  font-family: 'Oswald', Arial, sans-serif;
+  font-weight: 100;
+  font-size: 4.7em;
+  line-height: 1em;
+  margin-top: 40px;
+  text-align: left;
+}
+
+.infotext p.one {
+  font-family: 'Oswald', Arial, sans-serif;
+  font-weight: 100;
+  font-size: 2.7em;
+  line-height: 1.4em;
+  height: 100%;
+  margin: 0px 0 0 0;
+}
+
+.infotext p.two {
+  font-family: 'Oswald', Arial, sans-serif;
+  font-weight: 100;
+  font-size: 2.7em;
+  line-height: 1.4em;
+  height: 100%;
+  margin: 0px 0 0 0;
+}
+
+sup {
+  padding: 0 0 0 20px;
+  color: #666;
+}
+
+/* SOURCES STYLES */
+
+#sources h1 {
+  font-size: 4em;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+#sources h2 {
+  font-size: 2em;
+  line-height: 1.2em;
+}
+
+#sources h3 {
+  font-size: 3em;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+#sources h4 {
+  font-size: 1.2em;
+  line-height: 1em;
+}
+
+#footerlink {
+  color: #000;
+  text-decoration: none;
+  font-family: 'Oswald', Arial, sans-serif;
+  font-size: 2em;
+  position: relative;
+  top: -30px;
+  left: 5px;
+}
+
+#footerlink:hover {
+  color: #f00;
+  text-decoration: none;
+}
+
+.arrows {
+  font-size: 2em;
+  position: relative;
+  top: 10px;
+}
+
+#sources sup {
+  font-size: 2em;
+}
+
+/* CLEARFIX */
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}

@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js skrollr">
   <head>
     <meta charset="utf-8">
     <title>gcimpactsite</title>
@@ -10,7 +10,6 @@
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="bower_components/fullpage/jquery.fullPage.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -26,61 +25,115 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-		<div class="navbar navbar-default navbar-fixed-top" role="navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">GC Impact</a>
-				</div>
-				<div class="navbar-collapse collapse">
-					<ul class="nav navbar-nav" id="headerMenu">
-						<li data-menuanchor="section1" class="active"><a href="#section1">Section 1</a></li>
-						<li data-menuanchor="section2"><a href="#section2">Section 2</a></li>
-						<li data-menuanchor="section3"><a href="#section3">Section 3</a></li>
-					</ul>
+
+    <div id="skrollr-body" style="min-width: 1px; position: absolute; z-index: 0; top: 0px; height: 40424px;">
+		<div id="frame0" data-0="opacity:1;z-index:999;" data-100="opacity:0;z-index:0;" class="skrollable " style="opacity: 0; z-index: 0;">
+			<h1>Foreword</h1>
+			<p>Students and alumni from the Graduate Center, CUNY have a huge impact throughout New York City. This site showcases some of those impacts.</p>
+			<p id="scroll"><a href="#frame1">↓ To proceed, please scroll down the page. ↓</a></p>
+		</div>
+		<div id="frame1" data-500="z-index:0;" data-1000="opacity:1;z-index:999;" data-1400="opacity:0;z-index:0;" class="skrollable   ">
+			<div id="title" data-0="opacity:0;" data-500="opacity:1;" class="skrollable " style="opacity: 1;">
+				<img src="images/cuny14_470px_300px.jpg" width="100%" alt="CUNY Graduate Center">
+				<div id="titletext">
+					<h1>The Graduate Center</h1>
+					<h2>City University of New York</h2>
+					<h3>and its impact across New York</h3>
 				</div>
 			</div>
 		</div>
-    <div class="" id="fullpage">
-		<div class="section" data-anchor="section1">Section 1
-		    <div class="slide"> 
-				<div class="container">
-					<div class="col-sm-3">
-						<h3>Some Title</h3>
-						<p>Cool slide content</p>
-					</div>
-					<div class="col-sm-9">
-						<img src="http://i.huffpost.com/gen/1234049/thumbs/o-NEW-YORK-CITY-SKYLINE-facebook.jpg" width="100%">
-						<img src="http://upload.wikimedia.org/wikipedia/commons/3/38/Blick_auf_Manhattan.JPG" width="100%">
-						<img src="http://deansunshine.com/wp-content/uploads/2011/04/deansunshine_landofsunshine_melbourne_streetart_graffiti_NYC1.jpg" width="100%">
-						<img src="http://upload.wikimedia.org/wikipedia/commons/4/4f/Aster_newyorkcity_lrg.jpg" width="100%">
-					</div>
-				</div>
-			</div>
-		    <div class="slide"> Slide 2 </div>
-		    <div class="slide"> Slide 3 </div>
-		    <div class="slide"> Slide 4 </div>
+		<div class="text skrollable   " data-450="top:100%;z-index:999;" data-1000="display:block;" data-4000="top:-100%;display:none;" style="top: -100%; z-index: 999; display: none;">
+			<p><span class="firstfew">Intro text</span> additional info.</p>
 		</div>
-		<div class="section" data-anchor="section2">Some section 2
-		    <div class="slide"> Slide 5 </div>
-		    <div class="slide"> Slide 6 </div>	
-		</div>	
-		<div class="section" data-anchor="section3">Some section 3</div>
-    </div>
+		<div class="imgcontain skrollable " data-3000="top:100%;" data-4250="top:0%;" data-5200="display:block;" data-5800="top:-100%;display:none;" style="top: -100%; display: none;">
+			<img src="images/dissertation_room.jpg" width="100%" alt="diss">
+			<div id="quote1" data-4000="opacity:0;" data-4200="opacity:1;" class="skrollable " style="opacity: 1;">"Cool <span data-4200="color: hsla(0,0%,0%,1);" data-4700="color:hsla(0,0%,100%,1);" class="skrollable " style="color: rgb(255, 255, 255);">quote</span>."</div>
+		</div>
+		<div class="text skrollable " data-4800="top:100%;" data-5000="display:block;" data-15000="top:-800%;display:none;" style="top: -800%; display: none;"><img class="right" src="images/dissertation_room.jpg" alt="GC Dissertation Room">
+			<p><span class="firstfew">GC Doctoral Students</span> write a lot of dissertations.</p>
+		</div>
+		<div data-0="display:none;" data-8800="display:block;" data-9800="top:0%;" data-10400="top:-100%;" class="skrollable  unrendered " style="display: block; top: -100%;">
+			<div class="easing infotext skrollable " data-9000="left:120%;" data-9600="left:0%;" style="left: 0%;">
+				<p>Some cool stat<sup>¹ </sup></p>
+				<p class="one">Sub stat 1</p>
+				<p class="two">Sub stat 2<sup>² </sup></p>
+				<p class="two">Sub stat 3<sup>² </sup></p>
+			</div>
+		</div>
+		<div class="text skrollable " data-9400="top:100%;" data-9600="display:block;" data-11500="top:-100%;display:none;" style="top: -100%; display: none;">
+			<img class="right" src="images/library.jpg" alt="The Graduate Center Library">
+			<p><span class="firstfew">Some other stat</span> with some cool images to follow...</p>
+			<img class="left" src="images/13_CUNY-GC-Commencement-2013-1366_OPENING.jpg" alt="Graduate Center Alumni">
+		</div>
+		<div data-0="display:none;" data-11300="display:block;" data-11800="top:0%;" data-12200="top:-100%;" class="skrollable  unrendered " style="display: block; top: -100%;">
+			<div class="easing infotext skrollable " data-11300="left:-120%;" data-11600="left:0%;" style="left: 0%;">
+				<p>More cool stats:</p>
+				<p class="one">lots of alumni<sup>² </sup></p>
+				<p class="two">do lots of cool stuff<sup>² </sup></p>
+			</div>
+		</div>
+		<div class="text skrollable " data-11400="top:100%;" data-11650="display:block;" data-16900="top:-1000%;display:none;" style="top: -1000%; display: none;">
+			<p><span class="firstfew">something about teaching</span> since we do lots of teaching</p>
+			<img class="right" src="images/crowd_sign-small.jpg" alt="adjunct labor">
+		</div>
+		<div class="imgcontain skrollable " data-13000="top:100%;" data-13550="top:0%;" data-15650="display:block;" data-16300="top:-150%;display:none;" style="top: -150%; display: none;">
+			<img src="images/untitled-121-copy.jpg" width="100%" alt="adjuncts">
+			<div id="quote3" data-14700="opacity:0;" data-15100="opacity:1;" class="skrollable " style="opacity: 1;">"who teaches at cuny? <span data-14850="color: hsla(0,0%,100%,1);" data-15100="color:hsla(0,100%,50%,1);" class="skrollable " style="color: rgb(255, 0, 0);">grad center students</span>."</div>
+		</div>
+		<div class="text skrollable " data-15400="top:100%;" data-15600="display:block;" data-17000="top:-100%;display:none;" style="top: -100%; display: none;">
+			<p><span class="firstfew">that's all,</span> folks</p>	
+		</div>
+		<div data-0="display:none;" data-16600="display:block;" data-18800="top:0%;" data-19200="top:-100%;" class="skrollable  unrendered " style="display: block; top: -100%;">
+			<div class="easing infotext skrollable " data-16800="left:-130%;" data-17400="left:0%;" style="left: 0%;">
+				<p>asdf <span data-18000="color: hsla(0,0%,0%,1);" data-18400="color:hsla(0,100%,50%,1);" class="skrollable " style="color: rgb(255, 0, 0);">ghjkl</span> semicolon.</p>
+			</div>
+		</div>
+		<div class="text skrollable   rendered " data-18300="top:100%;" data-18500="display:block;" data-21000="top:-150%;display:none;" style="top: -111.8%; display: block;">
+			<p><span class="firstfew">anything</span> else.</p>
+		</div>
+		<div data-0="display:none;" data-20600="display:block;" data-21800="top:0%;" data-22500="top:-100%;" class="skrollable rendered " style="display: block; top: 0%;">
+			<div class="easing infotext skrollable  unrendered " data-20700="left:-130%;" data-21100="left:0%;" style="left: -130%;">
+					<p>a few more:</p>
+					<p class="one">stats <span data-21200="color: hsla(0,0%,0%,1);" data-21300="color:hsla(0,100%,50%,1);" class="skrollable  unrendered " style="color: rgb(0, 0, 0);">just</span></p>
+					<p class="two">for <span data-21300="color: hsla(0,0%,0%,1);" data-21500="color:hsla(0,100%,50%,1);" class="skrollable  unrendered " style="color: rgb(0, 0, 0);">fun</span></p>
+					<p class="two">what <span data-21500="color: hsla(0,0%,0%,1);" data-21700="color:hsla(0,100%,50%,1);" class="skrollable  unrendered " style="color: rgb(0, 0, 0);">more is there</span></p>
+			</div>
+		</div>
+		<div class="text skrollable  unrendered " data-21600="top:100%;" data-21800="display:block;" data-23300="top:-150%;display:none;" style="top: 100%; display: block;">
+			<p><span class="firstfew">to say</span>?</p>	
+		</div>
+		<div class="imgcontain skrollable  unrendered " data-22800="top:100%;" data-23350="top:0%;" data-24850="display:block;" data-26000="top:-100%;display:none;" style="top: 100%; display: block;">
+			<img src="images/library.jpg" alt="lib">
+			<div id="quote4" data-24000="opacity:0;" data-24400="opacity:1;" class="skrollable  unrendered " style="opacity: 0;">the library again for fun</div>
+		</div>
+		<div class="text skrollable  unrendered " data-25000="top:100%;" data-25200="display:block;" data-30000="top:-400%;display:none;" style="top: 100%; display: block;">
+			<p><span class="firstfew">just some more</span> random text</p>
+		</div>
+		<div class="imgcontain skrollable  unrendered " data-29000="top:100%;" data-29600="top:0%;" data-31300="display:block;" data-40000="top:-400%;display:none;" style="top: 100%; display: block;">
+			<img src="images/cuny14_470px_300px.jpg" width="960" height="638" alt="womp">
+			<p id="quote5" data-30200="opacity:0;" data-30800="opacity:1" class="skrollable  unrendered " style="opacity: 0;">"a final quote."</p>
+		</div>
+		<div data-31600="top:100%;" data-32000="display:block;" data-35500="top:-100%;display:none;" class="skrollable  unrendered " style="top: 100%; display: block;">
+			<p><span class="firstfew">but seriously</span> that's about it</p>	
+		</div>
+		<div id="sources" data-34500="top:100%;" data-35800="top:0%;display:block;" class="skrollable  unrendered " style="top: 100%; display: block;">
+			<h1>Sources</h1>
+				<h2>where'd we get this</h2>
+				
+					<h1>Notes</h1>
+					<p>&nbsp;</p>
+						<h4>¹ Reference one</h4>
+						<h4>² Reference two</h4>
+						
+			<p><a id="footerlink" href="http://keithmiyake.info"><span class="arrows"></span>keithmiyake.info</a></p>
+		</div>
+</div>
 
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/jquery.slimscroll/jquery.slimscroll.min.js"></script>
-    <script src="bower_components/fullpage/jquery.fullPage.js"></script>
-    <script src="bower_components/require.js/build/require.min.js"></script>
-    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="bower_components/skrollr/src/skrollr.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

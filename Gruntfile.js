@@ -21,7 +21,6 @@ module.exports = function (grunt) {
     app: 'app',
     dist: 'dist'
   };
-  
 
   grunt.loadNpmTasks('grunt-bower-requirejs');
 
@@ -29,6 +28,12 @@ module.exports = function (grunt) {
 
   // Define the configuration for all the tasks
   grunt.initConfig({
+	  
+      bower: {
+        target: {
+          rjsConfig: 'app/config.js'
+        }
+      },
 
     // Project settings
     config: config,
@@ -125,18 +130,12 @@ module.exports = function (grunt) {
       },
       server: '.tmp'
     },
-	
-    bower: {
-      target: {
-        rjsConfig: 'app/config.js'
-      }
-    },
 
     // Make sure code styles are up to par and there are no obvious mistakes
     jshint: {
       options: {
         jshintrc: '.jshintrc',
-        reporter: require('jshint-stylish')
+        reporter: require('jshint-stylish'),
       },
       all: [
         'Gruntfile.js',
