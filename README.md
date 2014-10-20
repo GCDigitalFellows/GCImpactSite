@@ -7,11 +7,10 @@ Built using [yeoman](http://yeoman.io/), [grunt](http://gruntjs.com/), and [bowe
 
 Utilizes the following libraries:
 - [Bootstrap](getbootstrap.com) frontend framework
-- [fullpage.js](https://github.com/alvarotrigo/fullPage.js)
+- [skrollr](https://github.com/Prinzhorn/skrollr)
 - [require.js](http://requirejs.org/)
 - [jquery](http://jquery.com/)
 - [jquery-ui](http://jqueryui.com/)
-- [jquery.slimscroll](http://rocha.la/jQuery-slimScroll)
 - [modernizr](http://modernizr.com/)
 
 Installation
