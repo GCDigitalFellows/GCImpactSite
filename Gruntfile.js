@@ -16,6 +16,9 @@ module.exports = function (grunt) {
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
 
+  // Grunt build control to deploy to git
+  require('load-grunt-tasks')(grunt);
+
   // Configurable paths
   var config = {
     app: 'app',
@@ -353,6 +356,28 @@ module.exports = function (grunt) {
         'imagemin',
         'svgmin'
       ]
+    },
+
+    // Build control to push dist code to github
+    buildcontrol: {
+      options: {
+        dir: 'dist',
+        commit: true,
+        push: true,
+        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+      },
+      pages: {
+        options: {
+          remote: 'git@github.com:GCDigitalFellows/GCImpactSite.git',
+          branch: 'gh-pages'
+        }
+      },
+      local: {
+        options: {
+          remote: '../',
+          branch: 'build'
+        }
+      }
     }
   });
 
