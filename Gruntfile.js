@@ -16,9 +16,6 @@ module.exports = function (grunt) {
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
 
-  // Grunt build control to deploy to git
-  require('load-grunt-tasks')(grunt);
-
   // Configurable paths
   var config = {
     app: 'app',
