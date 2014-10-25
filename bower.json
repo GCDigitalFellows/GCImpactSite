@@ -6,6 +6,7 @@
     "modernizr": "~2.8.2",
     "fullpage": "~2.2.1",
     "require.js": "*",
-    "jquery-ui": "~1.11.2"
+    "jquery-ui": "~1.11.2",
+    "fontawesome": "~4.2.0"
   }
 }
