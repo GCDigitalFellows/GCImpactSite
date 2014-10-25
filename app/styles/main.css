@@ -87,3 +87,12 @@ body {
     border-bottom: 0;
   }
 }
+.bottom-nav {
+  display: block;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  /*float: right;
+  width: 30px; */
+  z-index: 100;
+}
