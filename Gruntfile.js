@@ -128,8 +128,8 @@ module.exports = function (grunt) {
           dot: true,
           src: [
             '.tmp',
-            '<%= config.dist %>/*',
-            '!<%= config.dist %>/.git*'
+            '<%= config.dist %>/*'
+            //'!<%= config.dist %>/.git*'
           ]
         }]
       },
@@ -138,8 +138,8 @@ module.exports = function (grunt) {
           dot: true,
           src: [
             '.tmp',
-            '<%= config.temp %>/*',
-            '!<%= config.temp %>/.git*'
+            '<%= config.temp %>/*'//,
+            //'!<%= config.temp %>/.git*'
           ]
         }]
       },
