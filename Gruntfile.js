@@ -25,10 +25,12 @@ module.exports = function (grunt) {
 
   grunt.loadNpmTasks('grunt-bower-requirejs');
 
+  grunt.loadNpmTasks('grunt-contrib-less');
+
   // Grunt includes to allow inline includes of source files
   grunt.loadNpmTasks('grunt-includes');
 
-  grunt.registerTask('default', ['bower']);
+  grunt.registerTask('default', ['bower','less']);
 
   // Define the configuration for all the tasks
   grunt.initConfig({
@@ -56,6 +58,10 @@ module.exports = function (grunt) {
       gruntfile: {
         files: ['Gruntfile.js']
       },
+      less: {
+        files: ['<%= config.app %>/styles/{,*/}*.less'],
+        tasks: ['newer:less']
+      },
       styles: {
         files: ['<%= config.app %>/styles/{,*/}*.css'],
         tasks: ['newer:copy:styles', 'autoprefixer']
@@ -70,6 +76,17 @@ module.exports = function (grunt) {
           '<%= config.app %>/images/{,*/}*'
         ],
         tasks: ['includes:temp']
+      }
+    },
+
+    less: {
+      temp: {
+        options: {
+          paths: ["css"]
+        },
+        files: {
+          "<%= config.temp %>/styles/main.css": "<%= config.app %>/styles/main.less"
+        }
       }
     },
 
@@ -365,7 +382,7 @@ module.exports = function (grunt) {
           dest: '<%= config.temp %>',
           src: [
             '*.{ico,png,txt}',
-            'images/{,*/}*.{webp,jpg,jpeg,png,gif}',
+            'images/{,*/}*.{webp,jpg,jpeg,png,gif,svg}',
             //'{,*/}*.html', /* handled by includes */
             '!include/',
             //'styles/fonts/{,*/}*.*',
@@ -486,6 +503,7 @@ module.exports = function (grunt) {
     grunt.task.run([
       'clean:server',
       'wiredep',
+      'less',
       'includes:temp',
       'concurrent:server',
       'autoprefixer',
@@ -517,6 +535,7 @@ module.exports = function (grunt) {
   grunt.registerTask('build', [
     'clean:dist',
     'wiredep',
+    'less',
     'useminPrepare',
     'concurrent:dist',
     'autoprefixer',
