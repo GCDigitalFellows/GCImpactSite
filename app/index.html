@@ -1,6 +1,7 @@
 <!doctype html>
 <html class="no-js">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>gcimpactsite</title>
     <meta name="description" content="">
@@ -16,50 +17,82 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/menu_cornerbox.css">
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
 
-  </head>
-  <body>
+</head>
+
+<body>
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+    <div class="wrapper">
 
-    <div class="" id="fullpage">
-        <div class="section" data-anchor="section1">
-            include "section1.html"
+        <div class="menu-wrap">
+            <nav class="menu">
+                <div class="icon-list">
+                    <a href="#section1"><i class="fa fa-fw fa-graduation-cap"></i><span>Section 1</span></a>
+                    <a href="#section2"><i class="fa fa-fw fa-bell-o"></i><span>Section 2</span></a>
+                    <a href="#section3"><i class="fa fa-fw fa-envelope-o"></i><span>Section 3</span></a>
+                    <a href="#section4"><i class="fa fa-fw fa-comment-o"></i><span>Section 4</span></a>
+                    <a href="#section4"><i class="fa fa-fw fa-comment-o"></i><span>Section 5</span></a>
+                    <a href="#section4"><i class="fa fa-fw fa-comment-o"></i><span>Section 6</span></a>
+                    <a href="#section4"><i class="fa fa-fw fa-comment-o"></i><span>Section 7</span></a>
+                    <a href="#section4"><i class="fa fa-fw fa-comment-o"></i><span>Section 8</span></a>
+                    <a href="#section4"><i class="fa fa-fw fa-comment-o"></i><span>Section 9</span></a>
+                    <a href="#section4"><i class="fa fa-fw fa-comment-o"></i><span>Section 10</span></a>
+                    <a href="#section4"><i class="fa fa-fw fa-comment-o"></i><span>Section 11</span></a>
+                </div>
+            </nav>
+            <button class="close-button" id="close-button">Close Menu</button>
         </div>
-        <div class="section" data-anchor="section2">
-            include "section2.html"
+        <div class="menu-button-wrap">
+            <div class="clipshape"></div>
+            <button class="menu-button" id="open-button">Open Menu</button>
         </div>
-        <div class="section" data-anchor="section3">
-            include "section3.html"
-        </div>
-        <div class="section" data-anchor="section4">
-            include "section4.html"
-        </div>
-        <div class="section" data-anchor="section5">
-            include "section5.html"
-        </div>
-        <div class="section" data-anchor="section6">
-            include "section6.html"
-        </div>
-        <div class="section" data-anchor="section7">
-            include "section7.html"
-        </div>
-        <div class="section" data-anchor="section8">
-            include "section8.html"
-        </div>
-        <div class="section" data-anchor="section9">
-            include "section9.html"
-        </div>
-        <div class="section" data-anchor="section10">
-            include "section10.html"
-        </div>
-        <div class="section" data-anchor="section11">
-            include "section11.html"
+
+        <div class="content-wrap">
+            <div class="content">
+
+                <div class="" id="fullpage">
+                    <div class="section" data-anchor="section1">
+                        include "section1.html"
+                    </div>
+                    <div class="section" data-anchor="section2">
+                        include "section2.html"
+                    </div>
+                    <div class="section" data-anchor="section3">
+                        include "section3.html"
+                    </div>
+                    <div class="section" data-anchor="section4">
+                        include "section4.html"
+                    </div>
+                    <div class="section" data-anchor="section5">
+                        include "section5.html"
+                    </div>
+                    <div class="section" data-anchor="section6">
+                        include "section6.html"
+                    </div>
+                    <div class="section" data-anchor="section7">
+                        include "section7.html"
+                    </div>
+                    <div class="section" data-anchor="section8">
+                        include "section8.html"
+                    </div>
+                    <div class="section" data-anchor="section9">
+                        include "section9.html"
+                    </div>
+                    <div class="section" data-anchor="section10">
+                        include "section10.html"
+                    </div>
+                    <div class="section" data-anchor="section11">
+                        include "section11.html"
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -76,31 +109,42 @@
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
+    (function(b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+            function() {
+                (b[l].q = b[l].q || []).push(arguments)
+            });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
     </script>
 
-        <!-- build:js(.) scripts/plugins.js -->
-        <script src="bower_components/bootstrap/js/affix.js"></script>
-        <script src="bower_components/bootstrap/js/alert.js"></script>
-        <script src="bower_components/bootstrap/js/dropdown.js"></script>
-        <script src="bower_components/bootstrap/js/tooltip.js"></script>
-        <script src="bower_components/bootstrap/js/modal.js"></script>
-        <script src="bower_components/bootstrap/js/transition.js"></script>
-        <script src="bower_components/bootstrap/js/button.js"></script>
-        <script src="bower_components/bootstrap/js/popover.js"></script>
-        <script src="bower_components/bootstrap/js/carousel.js"></script>
-        <script src="bower_components/bootstrap/js/scrollspy.js"></script>
-        <script src="bower_components/bootstrap/js/collapse.js"></script>
-        <script src="bower_components/bootstrap/js/tab.js"></script>
-        <!-- endbuild -->
+    <!-- build:js(.) scripts/plugins.js -->
+    <script src="bower_components/bootstrap/js/affix.js"></script>
+    <script src="bower_components/bootstrap/js/alert.js"></script>
+    <script src="bower_components/bootstrap/js/dropdown.js"></script>
+    <script src="bower_components/bootstrap/js/tooltip.js"></script>
+    <script src="bower_components/bootstrap/js/modal.js"></script>
+    <script src="bower_components/bootstrap/js/transition.js"></script>
+    <script src="bower_components/bootstrap/js/button.js"></script>
+    <script src="bower_components/bootstrap/js/popover.js"></script>
+    <script src="bower_components/bootstrap/js/carousel.js"></script>
+    <script src="bower_components/bootstrap/js/scrollspy.js"></script>
+    <script src="bower_components/bootstrap/js/collapse.js"></script>
+    <script src="bower_components/bootstrap/js/tab.js"></script>
+    <!-- endbuild -->
 
-        <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/classie.js"></script>
+    <script src="scripts/cornerbox.js"></script>
+    <!-- endbuild -->
 </body>
+
 </html>

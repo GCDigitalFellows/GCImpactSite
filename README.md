@@ -13,6 +13,7 @@ Utilizes the following libraries:
 - [jquery-ui](http://jqueryui.com/)
 - [jquery.slimscroll](http://rocha.la/jQuery-slimScroll)
 - [modernizr](http://modernizr.com/)
+- [off-canvas menu effects](http://tympanus.net/codrops/2014/09/16/off-canvas-menu-effects/)
 
 Installation
 ------------
