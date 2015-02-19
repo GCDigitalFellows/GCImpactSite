@@ -23,14 +23,10 @@ module.exports = function (grunt) {
     temp: '.tmp'
   };
 
-  grunt.loadNpmTasks('grunt-bower-requirejs');
-
   grunt.loadNpmTasks('grunt-contrib-less');
 
   // Grunt includes to allow inline includes of source files
   grunt.loadNpmTasks('grunt-includes');
-
-  grunt.registerTask('default', ['bower','less']);
 
   // Define the configuration for all the tasks
   grunt.initConfig({
@@ -40,10 +36,6 @@ module.exports = function (grunt) {
 
     // Watches files for changes and runs tasks based on the changed files
     watch: {
-      bower: {
-        files: ['bower.json'],
-        tasks: ['wiredep']
-      },
       js: {
         files: ['<%= config.app %>/scripts/{,*/}*.js'],
         tasks: ['jshint','newer:copy:js'],
@@ -82,10 +74,10 @@ module.exports = function (grunt) {
     less: {
       temp: {
         options: {
-          paths: ["css"]
+          paths: ['css']
         },
         files: {
-          "<%= config.temp %>/styles/main.css": "<%= config.app %>/styles/main.less"
+          '<%= config.temp %>/styles/main.css': '<%= config.app %>/styles/main.less'
         }
       }
     },
@@ -129,12 +121,6 @@ module.exports = function (grunt) {
           base: '<%= config.dist %>',
           livereload: false
         }
-      }
-    },
-
-    bower: {
-      target: {
-        rjsConfig: 'app/config.js'
       }
     },
 
@@ -502,7 +488,6 @@ module.exports = function (grunt) {
 
     grunt.task.run([
       'clean:server',
-      'wiredep',
       'less',
       'includes:temp',
       'concurrent:server',
@@ -534,7 +519,6 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
-    'wiredep',
     'less',
     'useminPrepare',
     'concurrent:dist',
