@@ -1,0 +1,39 @@
+.map-wrap {
+	position: absolute;
+	z-index: 1001;
+	width: 80vw;
+	height: 80vh;
+	top: 10vh;
+	left: 10vw;
+	background: #fdfdf8;
+	color: #373a47;
+	padding: 2em;
+	-webkit-transform: translate3d(0,100vh,0);
+	transform: translate3d(0,100vh,0);
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	box-shadow: 40px 40px 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+.map {
+	width: 100%;
+	height: 100%;
+}
+
+.show-map .map-wrap {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.show-map .content-wrap {
+	-webkit-transform: scale(.9,.9);
+	transform: scale(.9,.9);
+}
+
+.show-map .wrapper::before {
+	opacity: 1;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+	-webkit-transform: translate3d(0,0,0) scale(1,1);
+	transform: translate3d(0,0,0) scale(1,1);
+}
