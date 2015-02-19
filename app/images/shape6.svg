@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 677 241" enable-background="new 0 0 677 241" xml:space="preserve">
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="shape6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="677px" height="240px" viewBox="0 0 676 240" enable-background="new 0 0 676 240" xml:space="preserve">
 <font horiz-adv-x="2048">
 <!-- Copyright 2000 Agfa Monotype Corporation. All Rights Reserved. -->
 <!-- Copyright: Copyright 2015 Adobe System Incorporated. All rights reserved. -->
@@ -38,7 +39,7 @@
 <glyph unicode="y" horiz-adv-x="909" d="M16,1040l194,0l254,-840l0,0l251,840l181,0l-473,-1424l-173,0l115,384l0,0M484,1190l0,0M0,1062l0,0z"/>
 </font>
 
-	<polygon fill="#FFFFFF" points="0.7,0 676.1,0 585.4,160.7 583.4,240 172.7,228 "/>
+	<polygon fill="#FFFFFF" points="0,0 676,0 585.4,160.7 583.4,240 172.7,228 "/>
 <polygon fill="none" points="124,23 595,23 595,57.7 552.2,211 189,211 101,74.2 101,23 "/>
 <text transform="matrix(1 0 0 1 101 43.1318)"><tspan x="0" y="0" fill="#515151" font-family="'Univers-Condensed'" font-size="28">Graduate Center Students teach throughout </tspan><tspan x="1.6" y="33.6" fill="#515151" font-family="'Univers-Condensed'" font-size="28">the CUNY Network. Take a look at this map </tspan><tspan x="23.2" y="67.2" fill="#515151" font-family="'Univers-Condensed'" font-size="28">to see which schools they contribute to </tspan><tspan x="44.8" y="100.8" fill="#515151" font-family="'Univers-Condensed'" font-size="28">the most.</tspan></text>
 </svg>
