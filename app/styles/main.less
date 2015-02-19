@@ -12,103 +12,251 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
 }
+
+/* global clipping shape margins */
+.shape1, .shape2 {
+  shape-margin: 1em;
+}
+
 [data-anchor="section1"] {
     background-image: url('../images/s1.jpg');
-    .textcontainer {
+    /*.shapebox, */
+    #shape1 {
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 56.7vw;
+        //width: 56.7vw;
+        width: 79.7vh;
         height: 42.3vh;
     }
-    .shape1 {
-        height: 31.6%;
-        width: 5.5%;
-        float: left;
-        shape-outside: polygon(0% 0%, 100% 0%, 0% 100%);
-    }
-    .shape2 {
-        height: 100%;
-        width: 94.5%;
-        float: right;
-        shape-outside: polygon(0% 0%, 100% 0%, 100% 100%, 57.5% 14.7%);
-    }
-    .shapebox {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 56.7vw;
-        height: 42.3vh;
-    }
-    .clipshape {
+    // #shape1 {
+    //   z-index: 1;
+    // }
+    // .textcontainer {
+    //   z-index: 2;
+    // }
+    // .shape1 {
+    //     height: 100%;
+    //     width: 5.5%;
+    //     float: left;
+    //     shape-outside: polygon(0% 0%, 100% 0%, 0% 100%);
+    //     shape-outside: polygon(0% 0%, 100% 0%, 0.1% 33.45%, 0% 100%);
+    // }
+    // .shape2 {
+    //     height: 100%;
+    //     width: 94.5%;
+    //     float: right;
+    //     shape-outside: polygon(0% 0%, 100% 0%, 100% 100%, 57.5% 14.7%);
+    // }
+/*    .clipshape {
         background: #ffffff;
         width: 100%;
         height: 100%;
         -webkit-clip-path: polygon(0% 100%, 0% 31.6%, 5.5% 0%, 60.8% 14.7%, 100% 100%);
         clip-path: polygon(0% 100%, 0% 31.6%, 5.5% 0%, 60.8% 14.7%, 100% 100%);
-    }
+    }*/
 }
 [data-anchor="section2"] {
     background-image: url('../images/s2.jpg');
-    .textcontainer {
+    /*.shapebox,*/
+    // .textcontainer,
+    #shape2 {
         position: absolute;
         top: 0;
         left: 0;
-        width: 56.6vw;
+        //width: 56.6vw;
+        width: 79.6vh;
         height: 28.5vh;
     }
-    .shape1 {
-        height: 100%;
-        width: 86.6%;
-        float: left;
-        /*shape-outside: polygon(0% 100%, 0% 45.5%, 8.6% 72.3%, 100% 100%);*/
-        shape-outside: polygon(0% 100%, 0% 0%, 18% 0%, 18% 76%, 100% 100%);
-    }
-    .shape2 {
-        height: 100%;
-        width: 13.4%;
-        float: right;
-        shape-outside: polygon(0% 100%, 100% 0%, 100% 100%);
-    }
-    .shapebox {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 56.6vw;
-        height: 28.5vh;
-    }
-    .clipshape {
+    // #shape2 {
+    //   float: left;
+    // }
+    // .shape1 {
+    //     height: 100%;
+    //     width: 86.6%;
+    //     float: left;
+    //     /*shape-outside: polygon(0% 100%, 0% 45.5%, 8.6% 72.3%, 100% 100%);*/
+    //     shape-outside: polygon(0% 100%, 0% 0%, 18% 0%, 18% 76%, 100% 100%);
+    // }
+    // .shape2 {
+    //     height: 100%;
+    //     width: 13.4%;
+    //     float: right;
+    //     shape-outside: polygon(0% 100%, 100% 0%, 100% 100%);
+    // }
+/*    .clipshape {
         background: #ffffff;
         width: 100%;
         height: 100%;
         -webkit-clip-path: polygon(0% 0%, 100% 0%, 86.6% 100%, 7.5% 72.3%, 0% 45.5%);
         clip-path: polygon(0% 0%, 100% 0%, 86.6% 100%, 7.5% 72.3%, 0% 45.5%);
-    }
+    }*/
 }
 [data-anchor="section3"] {
     background-image: url('../images/s3.jpg');
+    /*.shapebox, */
+    // .textcontainer,
+    #shape3 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        //width: 38.9vw;
+        width: 54.7vh;
+        height: 28vh;
+    }
+    // .shape1 {
+    //     height: 100%;
+    //     width: 100%;
+    //     float: right;
+    //     shape-outside: polygon(0% 0%, 100% 0%, 100% 100%, 100% 62.5%, 98% 12.8%);
+    // }
+    // .clipshape {
+    //     background: #ffffff;
+    //     width: 100%;
+    //     height: 100%;
+    //     -webkit-clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 62.5%, 98% 12.8%);
+    //     clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 62.5%, 98% 12.8%);
+    // }
 }
 [data-anchor="section4"] {
     background-image: url('../images/s4.jpg');
+    // .textcontainer, .shapebox, 
+    #shape4 {
+        position: absolute;
+        top: 53%;
+        left: 49%;
+        //width: 32vw;
+        width: 45vh;
+        height: 37.5vh;
+        // border-radius: 32vw / 27.5vh;
+    }
+    // .shape1 {
+    //     height: 100%;
+    //     width: 50%;
+    //     float: left;
+    //     /*shape-outside: polygon(0% 100%, 0% 45.5%, 8.6% 72.3%, 100% 100%);*/
+    //     shape-outside: polygon(21% 18.3%, 6% 31.3%, 3% 37.8%, 0% 48.45%, 1.2% 58.8%, 5.7% 67.95%, 22.8% 82.8%, 44.75% 92.35%, 73.55% 98.45%, 100% 100%, 0% 100%, 0% 0%, 100% 0%, 64.55% 3.05%, 43.85% 8.8%);
+    // }
+    // .shape2 {
+    //     height: 100%;
+    //     width: 50%;
+    //     float: right;
+    //     shape-outside: polygon( 0% 100%, 32.45% 98.1%, 58.85% 91.2%, 82% 79.75%, 96.4% 66.4%, 100% 48.45%, 95.5% 33.6%, 81.7% 20.25%, 58.25% 8.8%, 29.45% 1.55%, 0% 0%, 100% 0%, 100% 100%);
+    // }
+    // .clipshape {
+    //     background: #ffffff;
+    //     width: 100%;
+    //     height: 100%;
+    //     border-radius: 50%;
+    //     //-webkit-clip-path: ellipse(50%, 50%, 50%, 50% );
+    //     //clip-path: ellipse(50%, 50%, 50%, 50%);
+    // }
 }
 [data-anchor="section5"] {
     background-image: url('../images/s5.jpg');
+    // .textcontainer, .shapebox, 
+    #shape5 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        //width: 56.6vw;
+        width: 79.6vh;
+        height: 28.5vh;
+    }
+    // .shape1 {
+    //     height: 100%;
+    //     width: 31%;
+    //     float: left;
+    //     /*shape-outside: polygon(0% 100%, 0% 45.5%, 8.6% 72.3%, 100% 100%);*/
+    //     shape-outside: polygon(0% 100%, 2.2% 51.1%, 100% 0%, 0% 0%);
+    // }
+    // .shape2 {
+    //     height: 100%;
+    //     width: 69%;
+    //     float: right;
+    //     shape-outside: polygon(0% 0%, 100% 0%, 100% 52.4%, 90.7% 51.4%, 59.7% 14.2%, 41.4% 31.2%);
+    // }
+    // .clipshape {
+    //     background: #ffffff;
+    //     width: 100%;
+    //     height: 100%;
+    //     -webkit-clip-path: polygon(0% 100%, 0.1% 51.1%, 31.3% 0%, 59.8% 31.2%, 72.4% 14.2%, 93.4% 51.4%, 100% 52.4%, 100% 100%);
+    //     clip-path: polygon(0% 100%, 0.1% 51.1%, 31.3% 0%, 59.8% 31.2%, 72.4% 14.2%, 93.4% 51.4%, 100% 52.4%, 100% 100%);
+    // }
 }
 [data-anchor="section6"] {
     background-image: url('../images/s6.jpg');
+    // .textcontainer, .shapebox,
+    #shape6 {
+        position: absolute;
+        top: 0;
+        left: 27.1vw;
+        //width: 40.6vw;
+        width: 57.1vh;
+        height: 23.4vh;
+    }
+    // .shape1 {
+    //     height: 100%;
+    //     width: 100%;
+    //     float: left;
+    //     /*shape-outside: polygon(0% 100%, 0% 45.5%, 8.6% 72.3%, 100% 100%);*/
+    //     shape-outside: polygon(0% 0%, 0% 100%, 100% 100%, 29.1% 95%);
+    // }
+    // .clipshape {
+    //     background: #ffffff;
+    //     width: 100%;
+    //     height: 100%;
+    //     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 29.1% 95%);
+    //     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 29.1% 5%);
+    // }
 }
 [data-anchor="section7"] {
     background-image: url('../images/s7.jpg');
+    #shape7 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 84.6vh;
+        height: 27.6vh;
+    }
 }
 [data-anchor="section8"] {
     background-image: url('../images/s8.jpg');
+    #shape8 {
+        position: absolute;
+        bottom: 12.5vh;
+        left: 0;
+        width: 134vh;
+        height: 12.7vh;
+    }
 }
 [data-anchor="section9"] {
     background-image: url('../images/s9.jpg');
+    #shape9 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 45.1vh;
+        height: 59.1vh;
+    }
 }
 [data-anchor="section10"] {
     background-image: url('../images/s10.jpg');
+    #shape10 {
+        position: absolute;
+        bottom: 55.3vh;
+        left: 76.3vh;
+        width: 40.4vh;
+        height: 40.4vh;
+    }
 }
 [data-anchor="section11"] {
     background-image: url('../images/s11.jpg');
+    #shape11 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 84.8vh;
+        height: 20.6vh;
+    }
 }
