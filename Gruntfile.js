@@ -72,13 +72,31 @@ module.exports = function (grunt) {
     },
 
     less: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: '<%= config.app %>/styles',
+          src: ['*.less'],
+          dest: '<%= config.dist %>/styles/',
+          ext: '.css'
+        }]
+      },
       temp: {
-        options: {
-          paths: ['styles']
-        },
-        files: {
-          '<%= config.temp %>/styles/main.css': '<%= config.app %>/styles/main.less'
+        // options: {
+        //   paths: ['styles']
+        // },
+        // files: {
+        //   '<%= config.temp %>/styles/main.css': '<%= config.app %>/styles/main.less'
+        // }
+        files: [
+        {
+          expand: true,
+          cwd: '<%= config.app %>/styles',
+          src: ['*.less'],
+          dest: '<%= config.temp %>/styles/',
+          ext: '.css'
         }
+      ]
       }
     },
 
