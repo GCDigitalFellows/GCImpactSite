@@ -134,14 +134,14 @@ body,
 .menu-wrap {
 	position: absolute;
 	z-index: 1001;
-	width: 20vw;
+	width: 80vw;
 	height: 100vh;
 	//background: #fdfdf8;
 	background: #ffffff;
 	color: #373a47;
 	padding: 2em;
-	-webkit-transform: translate3d(-20vw,0,0);
-	transform: translate3d(-20vw,0,0);
+	-webkit-transform: translate3d(-80vw,0,0);
+	transform: translate3d(-80vw,0,0);
 	-webkit-transition: all 0.3s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 	transition: all 0.3s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 	// -webkit-transition-timing-function: cubic-bezier(0.000, 0.000, 0.580, 1.000);
@@ -196,8 +196,8 @@ body,
 
 .show-menu .menu-button-wrap,
 .show-menu .content-wrap {
-	-webkit-transform: translate3d(20vw,0,0);
-	transform: translate3d(20vw,0,0);
+	-webkit-transform: translate3d(80vw,0,0);
+	transform: translate3d(80vw,0,0);
 	-webkit-transition: all 0.3s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 	transition: all 0.3s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 	// -webkit-transition-timing-function: cubic-bezier(0.000, 0.000, 0.580, 1.000);
@@ -213,4 +213,50 @@ body,
 	//transform: translate3d(0,0,0);
 	// -webkit-transition-timing-function: cubic-bezier(0.000, 0.000, 0.580, 1.000);
 	// transition-timing-function: cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+
+/* media queries for responsiveness */
+@media only screen and (min-width : 768px) {
+.menu-wrap {
+	width: 60vw;
+	padding: 2em;
+	-webkit-transform: translate3d(-60vw,0,0);
+	transform: translate3d(-60vw,0,0);
+}
+.show-menu .menu-button-wrap,
+.show-menu .content-wrap {
+	-webkit-transform: translate3d(60vw,0,0);
+	transform: translate3d(60vw,0,0);
+}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+.menu-wrap {
+	width: 30vw;
+	padding: 2em;
+	-webkit-transform: translate3d(-30vw,0,0);
+	transform: translate3d(-30vw,0,0);
+}
+.show-menu .menu-button-wrap,
+.show-menu .content-wrap {
+	-webkit-transform: translate3d(30vw,0,0);
+	transform: translate3d(30vw,0,0);
+}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+.menu-wrap {
+	width: 20vw;
+	height: 100vh;
+	padding: 2em;
+	-webkit-transform: translate3d(-20vw,0,0);
+	transform: translate3d(-20vw,0,0);
+}
+.show-menu .menu-button-wrap,
+.show-menu .content-wrap {
+	-webkit-transform: translate3d(20vw,0,0);
+	transform: translate3d(20vw,0,0);
+}
 }
