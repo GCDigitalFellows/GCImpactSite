@@ -74,7 +74,7 @@ module.exports = function (grunt) {
     less: {
       temp: {
         options: {
-          paths: ['css']
+          paths: ['styles']
         },
         files: {
           '<%= config.temp %>/styles/main.css': '<%= config.app %>/styles/main.less'
@@ -205,7 +205,7 @@ module.exports = function (grunt) {
           expand: true,
           cwd: '.tmp/styles/',
           src: '{,*/}*.css',
-          dest: '.tmp/styles/'
+          dest: '<%= config.dist %>/styles/'
         }]
       }
     },
@@ -269,16 +269,16 @@ module.exports = function (grunt) {
       }
     },
 
-    svgmin: {
-      dist: {
-        files: [{
-          expand: true,
-          cwd: '<%= config.app %>/images',
-          src: '{,*/}*.svg',
-          dest: '<%= config.dist %>/images'
-        }]
-      }
-    },
+    // svgmin: {
+    //   dist: {
+    //     files: [{
+    //       expand: true,
+    //       cwd: '<%= config.app %>/images',
+    //       src: '{,*/}*.svg',
+    //       dest: '<%= config.dist %>/images'
+    //     }]
+    //   }
+    // },
 
     htmlmin: {
       dist: {
@@ -338,7 +338,7 @@ module.exports = function (grunt) {
           dest: '<%= config.dist %>',
           src: [
             '*.{ico,png,txt}',
-            'images/{,*/}*.webp',
+            'images/{,*/}*.{webp,svg}',
             '!include/',
             //'{,*/}*.html', /* handled by includes */
             'fonts/{,*/}*.*'
@@ -450,7 +450,7 @@ module.exports = function (grunt) {
         'copy:styles',
         'copy:dist',
         'imagemin',
-        'svgmin'
+        // 'svgmin'
       ]
     },
 
@@ -530,7 +530,7 @@ module.exports = function (grunt) {
     'modernizr',
     'rev',
     'usemin',
-    'htmlmin'
+    //'htmlmin'
   ]);
 
   grunt.registerTask('default', [
