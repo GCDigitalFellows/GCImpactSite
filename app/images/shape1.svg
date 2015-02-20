@@ -7,11 +7,11 @@
 	<![CDATA[
 		@font-face {
 		font-family: "Univers-CondensedBold";
-		src: url('../fonts/Univers 67 Condensed Bold.woff');
+		src: url('fonts/Univers 67 Condensed Bold.woff');
 		}
 		@font-face {
 		font-family: "Univers-Condensed";
-		src: url('../fonts/Univers 57 Condensed.woff');
+		src: url('fonts/Univers 57 Condensed.woff');
 		}
     ]]>
   </style>
