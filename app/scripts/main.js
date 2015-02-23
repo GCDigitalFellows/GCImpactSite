@@ -29,7 +29,7 @@ $(document).ready(function() {
         animateAnchor: true,
         sectionSelector: '.section',
         slideSelector: '.slide',
-        responsive: 768,
+        responsive: 0,
 
         afterLoad: function(anchorLink, index){
 
