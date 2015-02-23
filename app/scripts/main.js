@@ -1,10 +1,6 @@
 'use strict';
 
 $(document).ready(function() {
-    // var currSection = 1, currSlide = 0,
-        // mySectionSelector = '.section',
-        // mySlideSelector = '.slide',
-        // sectionCount = $(mySlideSelector).length - 1;
     $('#fullpage').fullpage({
         verticalCentered: true,
         resize : false,
@@ -16,8 +12,7 @@ $(document).ready(function() {
         navigation: true,
         navigationPosition: 'right',
         navigationTooltips: ['Intro', 'Research', 'Teaching', 'People'],
-        slidesNavigation: true,
-        slidesNavPosition: 'bottom',
+        slidesNavigation: false,
         loopBottom: true,
         loopTop: false,
         loopHorizontal: false,
@@ -36,81 +31,58 @@ $(document).ready(function() {
         slideSelector: '.slide',
         responsive: 768,
 
-        // afterRender: function() {
-        //     currSection = 1;
-        //     currSlide = 0;
-        // },
-
-        //afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
-            // currSection = index;
-            // currSlide = slideIndex;
-            // //console.log('afterloadslide sec: ' + currSection + ' slide: ' + currSlide);
-            // var $currSection = $(mySectionSelector).eq(currSection-1);
-            // var slideCount =  $currSection.find(mySlideSelector).length;
-            // if (index === sectionCount && slideCount - 1 === slideIndex) {
-            //     $('.bottom-nav #bottom-next').addClass('hidden');
-            // } else if (index === 1 && slideIndex === 0) {
-            //     $('.bottom-nav #bottom-prev').addClass('hidden');
-            // }
-        //},
         afterLoad: function(anchorLink, index){
 
+            /* velocity.js animate svgs */
             if (anchorLink === 'section2' || index === 2) {
-                /* velocity.js animate svgs */
-                $('#open-map-button').velocity({scale: 0.8,opacity:0.4},{'loop': 2, duration: 1000});
+                $('[data-anchor="section2"] .open-map-button').velocity({scale: 0.8,opacity:0.4},{'loop': 2, duration: 1000});
+            } else if (anchorLink === 'section6' || index === 6) {
+                $('[data-anchor="section6"] .open-map-button').velocity({scale: 0.8,opacity:0.4},{'loop': 2, duration: 1000});
             }
 
-            // currSection = index;
-            // var $currSection = $(mySectionSelector).eq(currSection-1);
-            // var slideCount =  $currSection.find(mySlideSelector).length;
-            // if (slideCount === 0) {
-            //     currSlide = 0;
-            // } else {
-            //     currSlide = $currSection.find(mySlideSelector + '.active').index();
-            // }
-            // //console.log('afterloadsec sec: ' + currSection + ' slide: ' + currSlide + ' slideCount:' + slideCount);
-            // if (index === sectionCount && slideCount === 0) {
-            //     //console.log('disnext');
-            //     $('.bottom-nav #bottom-next').addClass('hidden');
-            //     $('.bottom-nav #bottom-top').removeClass('hidden');
-            // } else if (index === 1) {
-            //     $('.bottom-nav #bottom-prev').addClass('hidden');
-            // }
         },
-        //onLeave: function() {//index, nextIndex, direction) {
-            // if ($('.bottom-nav #bottom-prev').hasClass('hidden')) {
-            //     $('.bottom-nav #bottom-prev').removeClass('hidden');
-            // } else if ($('.bottom-nav #bottom-next').hasClass('hidden')) {
-            //     $('.bottom-nav #bottom-next').removeClass('hidden');
-            //     $('.bottom-nav #bottom-top').addClass('hidden');
-            // }
-        //}
+
     });
 
-    // $('.bottom-nav button').click(function(){
-    //     //console.log('currslide: ' + currSlide + ' currsection: ' + currSection);
-    //     var $currSection, slideCount;
-    //     if ($(this).attr('id') === 'bottom-top') {
-    //         $.fn.fullpage.moveTo(1,1);
-    //     } else if ($(this).attr('id') === 'bottom-prev') {
-    //         if (currSlide === 0 && currSection > 1) {
-    //             // get the previous section, see if it has more than 1 slide
-    //             $currSection = $(mySectionSelector).eq(currSection-2);
-    //             slideCount =  $currSection.find(mySlideSelector).length;
-    //             //console.log('prev section: ' + (currSection-1) + ' side count: ' + slideCount);
-    //             $.fn.fullpage.moveTo(currSection-1,currSlide - 1);
-    //         } else {
-    //             $.fn.fullpage.moveSlideLeft();
-    //         }
-    //     } else {
-    //         $currSection = $(mySectionSelector).eq(currSection-1);
-    //         slideCount =  $currSection.find(mySlideSelector).length;
-    //         if (currSlide >= 0 && slideCount - 1 > currSlide) {
-    //             $.fn.fullpage.moveTo(currSection,currSlide + 1);
-    //         } else {
-    //             $.fn.fullpage.moveTo(currSection + 1,0);
-    //         }
-    //     }
-    // });
+    /* menu and map handling */
+
+    var isMapOpen = false,
+        isOpen = false;
+
+    function toggleMenu() {
+        $('body').toggleClass('show-menu');
+        isOpen = !isOpen;
+    }
+    function toggleMap() {
+        $('body').toggleClass('show-map');
+        isMapOpen = !isMapOpen;
+    }
+
+    $('#open-button').click(function() {
+        toggleMenu();
+        $(this).blur();
+    });
+
+    $('.map-button').click(function(event) {
+        event.preventDefault();
+        var mapId = $(this).data( 'map' );
+        //console.log(mapId);
+        //$('#map-wrap .map').load('pages/'+mapId);
+        // load the map into the map-wrapper's iframe
+        $('#map-frame').attr('src',mapId);
+        toggleMap();
+    });
+
+
+    // close the menu element if the target is not the menu element or one of its descendants..
+    // document.addEventListener( 'mousedown', function(ev) {
+    $('body').mousedown(function( event ) {
+        var $target = $(event.target);
+        if( isOpen && !$target.is('#open-button') &&  $target.closest('.menu-wrap').length === 0) {//!hasParent( target, menu ) ) {
+            toggleMenu();
+        } else if ( isMapOpen && ($target.is('#close-map-button') || $target.closest('#map-wrap').length === 0)) {//!hasParent( target, $mapWrap ) ) {
+            toggleMap();
+        }
+    });
 
 });
