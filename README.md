@@ -14,7 +14,6 @@ Utilizes the following libraries:
 - [jquery.slimscroll](http://rocha.la/jQuery-slimScroll)
 - [modernizr](http://modernizr.com/)
 - [off-canvas menu effects](http://tympanus.net/codrops/2014/09/16/off-canvas-menu-effects/)
-- [css-shapes-polyfill](https://github.com/adobe-webplatform/css-shapes-polyfill)
 
 Installation
 ------------
