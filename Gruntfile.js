@@ -172,7 +172,7 @@ module.exports = function (grunt) {
       dist: {
         cwd: '<%= config.app %>',
         dest: '<%= config.dist %>',
-        src: [ '*.html', 'pages/*.html' ],
+        src: [ '*.html', 'pages/*.html', 'includes*.html' ],
         options: {
           //flatten: true,
           includePath: '<%= config.app %>/include'
@@ -181,7 +181,7 @@ module.exports = function (grunt) {
       temp: {
         cwd: '<%= config.app %>',
         dest: '<%= config.temp %>',
-        src: [ '*.html', 'pages/*.html' ],
+        src: [ '*.html', 'pages/*.html', 'includes*.html' ],
         options: {
           //flatten: true,
           includePath: '<%= config.app %>/include'
