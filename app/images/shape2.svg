@@ -15,5 +15,5 @@
 
 	<polygon fill="#FFFFFF" points="815.4,0 0.4,0 0.4,133 61.4,211 706.4,292 "/>
 <polyline fill="none" points="251,73 711.9,73 711.9,174 251,174 "/>
-<text transform="matrix(1 0 0 1 250.9551 93.1318)"><tspan x="0" y="0" fill="#515151" font-family="'Univers-Condensed'" font-size="28">Explore the role the Graduate Center </tspan><tspan x="0" y="33.6" fill="#515151" font-family="'Univers-Condensed'" font-size="28">takes in connecting people and </tspan><tspan x="0" y="67.2" fill="#515151" font-family="'Univers-Condensed'" font-size="28">knowledge throughout the world.</tspan></text>
+<text transform="matrix(1 0 0 1 250.9551 93.1318)"><tspan class="svg-body" x="0" y="0" fill="#515151" font-family="'Univers-Condensed'" font-size="28">Explore the role the Graduate Center </tspan><tspan class="svg-body" x="0" y="33.6" fill="#515151" font-family="'Univers-Condensed'" font-size="28">takes in connecting people and </tspan><tspan class="svg-body" x="0" y="67.2" fill="#515151" font-family="'Univers-Condensed'" font-size="28">knowledge throughout the world.</tspan></text>
 </svg>

@@ -15,5 +15,5 @@
 
 	<polygon fill="#FFFFFF" points="0,82 120,19 217,37 260,0 349,19 421,0 463,24 552,16 651,30 705,12 824,116 870,210 0,210 "/>
 <polygon fill="none" points="113.3,78.4 659.3,78.4 711.6,121.5 717.8,179.9 113.3,179.9 "/>
-<text transform="matrix(1 0 0 1 113.2837 98.5645)"><tspan x="0" y="0" fill="#515251" font-family="'Univers-Condensed'" font-size="28">After they finish their degrees, students start </tspan><tspan x="0" y="33.6" fill="#515251" font-family="'Univers-Condensed'" font-size="28">their careers all over the world. The following maps </tspan><tspan x="0" y="67.2" fill="#515251" font-family="'Univers-Condensed'" font-size="28">show where students have taken their education.</tspan></text>
+<text transform="matrix(1 0 0 1 113.2837 98.5645)"><tspan class="svg-body" x="0" y="0" fill="#515251" font-family="'Univers-Condensed'" font-size="28">After they finish their degrees, students start </tspan><tspan class="svg-body" x="0" y="33.6" fill="#515251" font-family="'Univers-Condensed'" font-size="28">their careers all over the world. The following maps </tspan><tspan class="svg-body" x="0" y="67.2" fill="#515251" font-family="'Univers-Condensed'" font-size="28">show where students have taken their education.</tspan></text>
 </svg>
