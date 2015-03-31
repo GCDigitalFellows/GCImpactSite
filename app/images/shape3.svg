@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="shape3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 561 287" enable-background="new 0 0 561 287" xml:space="preserve">
+	 viewBox="0 0 816 292" enable-background="new 0 0 816 292" xml:space="preserve">
 <defs>
   <style type="text/css">
 	<![CDATA[
 		@font-face {
 		  font-family: "Univers-Condensed";
-		  src: url('../fonts/Univers 57 Condensed.woff');
+		  src: url('fonts/Univers 57 Condensed.woff');
 		}
     ]]>
   </style>
 </defs>
 
-	<polygon fill="#FFFFFF" points="0.4,0 550.3,37.1 560.4,178.6 560.4,287 0.4,287 "/>
-<polygon fill="none" points="39.4,75 508.4,75 519.4,169 519.4,245 39.4,245 "/>
-<text transform="matrix(1 0 0 1 39.3857 95.1318)" fill="#515151" font-family="'Univers-Condensed'" font-size="28">Lorem Ipsum</text>
+	<polygon fill="#FFFFFF" points="815.4,0 0.4,0 0.4,133 61.4,211 706.4,292 "/>
+<polyline fill="none" points="251,73 711.9,73 711.9,174 251,174 "/>
+<text transform="matrix(1 0 0 1 250.9551 93.1318)"><tspan class="svg-body" x="0" y="0" fill="#515151" font-family="'Univers-Condensed'" font-size="28">Explore the role the Graduate Center </tspan><tspan class="svg-body" x="0" y="33.6" fill="#515151" font-family="'Univers-Condensed'" font-size="28">takes in connecting people and </tspan><tspan class="svg-body" x="0" y="67.2" fill="#515151" font-family="'Univers-Condensed'" font-size="28">knowledge throughout the world.</tspan></text>
 </svg>
