@@ -21,8 +21,8 @@ $(document).ready(function() {
         css3: true,
         paddingTop: '3em',
         paddingBottom: '10px',
-        normalScrollElements: '#element1, .element2',
-        normalScrollElementTouchThreshold: 15,
+        normalScrollElements: '.container,.card,.card-reveal',
+        normalScrollElementTouchThreshold: 7,
         keyboardScrolling: true,
         touchSensitivity: 15,
         continuousVertical: false,
@@ -57,6 +57,13 @@ $(document).ready(function() {
         isOpen = false,
         modalTarget;
         //mapId;
+
+  $('.button-collapse').sideNav({
+      menuWidth: 300, // Default is 240
+      edge: 'left', // Choose the horizontal origin
+      closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    }
+  );
 
     function toggleMenu() {
         $('body').toggleClass('show-menu');
