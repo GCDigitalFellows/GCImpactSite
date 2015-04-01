@@ -47,7 +47,8 @@ $(document).ready(function() {
     /* menu and map handling */
 
     var isMapOpen = false,
-        isOpen = false;
+        isOpen = false,
+        mapId;
 
     function toggleMenu() {
         $('body').toggleClass('show-menu');
@@ -65,22 +66,27 @@ $(document).ready(function() {
 
     $('.map-button').click(function(event) {
         event.preventDefault();
-        var mapId = $(this).data( 'map' );
-        //console.log(mapId);
-        //$('#map-wrap .map').load('pages/'+mapId);
+        mapId = $(this).data( 'map' );
         // load the map into the map-wrapper's iframe
         $('#map-frame').attr('src',mapId);
         toggleMap();
     });
 
 
-    // close the menu element if the target is not the menu element or one of its descendants..
-    // document.addEventListener( 'mousedown', function(ev) {
+    // close the menu/map element
     $('body').mousedown(function( event ) {
         var $target = $(event.target);
-        if( isOpen && !$target.is('#open-button') &&  $target.closest('.menu-wrap').length === 0) {//!hasParent( target, menu ) ) {
+        if( isOpen && !$target.is('#open-button') && $target.closest('.menu-wrap').length === 0) {//!hasParent( target, menu ) ) {
             toggleMenu();
-        } else if ( isMapOpen && ($target.is('#close-map-button') || $target.closest('#map-wrap').length === 0)) {//!hasParent( target, $mapWrap ) ) {
+        } else if ( isMapOpen && ($target.is('#close-map-button') || $target.closest('#map-wrap').length === 0) ) {
+            toggleMap();
+        }
+    });
+
+    $(document).keydown(function( event ) {
+        if ( isOpen && event.which === 27) {
+            toggleMenu();
+        } else if ( isMapOpen && mapId) {
             toggleMap();
         }
     });
