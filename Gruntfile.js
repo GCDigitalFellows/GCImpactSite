@@ -28,6 +28,10 @@ module.exports = function (grunt) {
   // Grunt includes to allow inline includes of source files
   grunt.loadNpmTasks('grunt-includes');
 
+  // Grunt newer runs tasks only with updated files
+  grunt.loadNpmTasks('grunt-newer');
+
+
   // Define the configuration for all the tasks
   grunt.initConfig({
 
@@ -52,7 +56,7 @@ module.exports = function (grunt) {
       },
       less: {
         files: ['<%= config.app %>/styles/{,*/}*.less'],
-        tasks: ['newer:less']
+        tasks: ['newer:less:temp']
       },
       styles: {
         files: ['<%= config.app %>/styles/{,*/}*.css'],
@@ -64,7 +68,7 @@ module.exports = function (grunt) {
         },
         files: [
           '<%= config.app %>/{,*/}*.html',
-          '.tmp/styles/{,*/}*.css',
+          '<%= config.temp %>/styles/{,*/}*.css',
           '<%= config.app %>/images/{,*/}*'
         ],
         tasks: ['includes:temp']
@@ -82,21 +86,13 @@ module.exports = function (grunt) {
         }]
       },
       temp: {
-        // options: {
-        //   paths: ['styles']
-        // },
-        // files: {
-        //   '<%= config.temp %>/styles/main.css': '<%= config.app %>/styles/main.less'
-        // }
-        files: [
-        {
+        files: [{
           expand: true,
           cwd: '<%= config.app %>/styles',
           src: ['*.less'],
           dest: '<%= config.temp %>/styles/',
           ext: '.css'
-        }
-      ]
+        }]
       }
     },
 
@@ -114,8 +110,8 @@ module.exports = function (grunt) {
           middleware: function(connect) {
             return [
               connect.static('.tmp'),
-              connect().use('/bower_components', connect.static('./bower_components'))//,
-              //connect.static(config.app)
+              connect().use('/bower_components', connect.static('./bower_components')),
+              connect.static(config.app)
             ];
           }
         }
@@ -150,21 +146,27 @@ module.exports = function (grunt) {
           src: [
             '.tmp',
             '<%= config.dist %>/*'
-            //'!<%= config.dist %>/.git*'
           ]
         }]
       },
-      temp: {
+      server: {
         files: [{
           dot: true,
           src: [
             '.tmp',
             '<%= config.temp %>/*'//,
-            //'!<%= config.temp %>/.git*'
           ]
         }]
       },
-      server: '.tmp'
+      test: {
+        files: [{
+          dot: true,
+          src: [
+            'test',
+            '.tmp'
+          ]
+        }]
+      }
     },
 
     // Build the site using grunt-includes
@@ -172,7 +174,7 @@ module.exports = function (grunt) {
       dist: {
         cwd: '<%= config.app %>',
         dest: '<%= config.dist %>',
-        src: [ '*.html', 'pages/*.html', 'includes*.html' ],
+        src: [ '*.html', 'pages/*.html', 'include/*.html' ],
         options: {
           //flatten: true,
           includePath: '<%= config.app %>/include'
@@ -181,6 +183,15 @@ module.exports = function (grunt) {
       temp: {
         cwd: '<%= config.app %>',
         dest: '<%= config.temp %>',
+        src: [ '*.html', 'pages/*.html', 'include/*.html' ],
+        options: {
+          //flatten: true,
+          includePath: '<%= config.app %>/include'
+        }
+      },
+      test: {
+        cwd: '<%= config.app %>',
+        dest: 'test',
         src: [ '*.html', 'pages/*.html', 'includes*.html' ],
         options: {
           //flatten: true,
@@ -233,7 +244,7 @@ module.exports = function (grunt) {
       app: {
         ignorePath: /^\/|\.\.\//,
         src: ['<%= config.app %>/index.html'],
-        exclude: ['bower_components/bootstrap/dist/js/bootstrap.js']
+        //exclude: ['bower_components/bootstrap/dist/js/bootstrap.js']
       }
     },
 
@@ -370,13 +381,13 @@ module.exports = function (grunt) {
           cwd: 'bower_components/fontawesome',
           src: 'fonts/{,*/}*.*',
           dest: '<%= config.dist %>'
-        }, {
+        },/* {
           expand: true,
           dot: true,
           cwd: 'bower_components/bootstrap/dist',
           src: 'fonts/*',
           dest: '<%= config.dist %>'
-        }]
+        }*/]
       },
       temp: {
         files: [{
@@ -389,8 +400,8 @@ module.exports = function (grunt) {
             'images/{,*/}*.{webp,jpg,jpeg,png,gif,svg}',
             //'{,*/}*.html', /* handled by includes */
             '!include/',
-            'fonts/{,*/}*.*',
-            '{,*}*.js'
+            'fonts/{,*/}*.*'
+            //'{,*}*.js'
           ]
         }, {
           src: 'node_modules/apache-server-configs/dist/.htaccess',
@@ -401,26 +412,27 @@ module.exports = function (grunt) {
           cwd: 'bower_components/fontawesome',
           src: 'fonts/{,*/}*.*',
           dest: '<%= config.temp %>'
-        }, {
-          expand: true,
-          dot: true,
-          cwd: 'bower_components/bootstrap/dist',
-          src: 'fonts/{,*/}*.*',
-          dest: '<%= config.temp %>'
-        }]
+        },// {
+         // expand: true,
+         // dot: true,
+         // cwd: 'bower_components/bootstrap/dist',
+         // src: 'fonts/{,*/}*.*',
+         // dest: '<%= config.temp %>'
+        //}
+        ]
       },
       js: {
         expand: true,
         dot: true,
         cwd: '<%= config.app %>/scripts',
-        dest: '.tmp/scripts/',
+        dest: '<%= config.temp %>/scripts/',
         src: '{,*/}*.js'
       },
-      styles: {
+      styles:  {
         expand: true,
         dot: true,
         cwd: '<%= config.app %>/styles',
-        dest: '.tmp/styles/',
+        dest: '<%= config.temp %>/styles/',
         src: '{,*/}*.css'
       }
     },
@@ -457,17 +469,17 @@ module.exports = function (grunt) {
     // Run some tasks in parallel to speed up build process
     concurrent: {
       server: [
-        'copy:styles',
+        'copy:temp',
         'copy:js',
-        'copy:temp'
-      ],
-      test: [
         'copy:styles'
       ],
+      test: [
+        'copy:test'
+      ],
       dist: [
-        'copy:styles',
         'copy:dist',
         'imagemin',
+        'autoprefixer',
         // 'svgmin'
       ]
     },
@@ -506,10 +518,10 @@ module.exports = function (grunt) {
 
     grunt.task.run([
       'clean:server',
-      'less',
+      'less:temp',
       'includes:temp',
       'concurrent:server',
-      'autoprefixer',
+      //'autoprefixer',
       'connect:livereload',
       'watch'
     ]);
@@ -523,7 +535,9 @@ module.exports = function (grunt) {
   grunt.registerTask('test', function (target) {
     if (target !== 'watch') {
       grunt.task.run([
-        'clean:server',
+        'clean:test',
+        'less:test',
+        'includes:test',
         'concurrent:test',
         'autoprefixer'
       ]);
@@ -537,14 +551,13 @@ module.exports = function (grunt) {
 
   grunt.registerTask('build', [
     'clean:dist',
-    'less',
+    'less:dist',
+    'includes:dist',
     'useminPrepare',
     'concurrent:dist',
-    'autoprefixer',
-    'concat',
-    'includes:dist',
-    'cssmin',
-    'uglify',
+    //'concat',
+    //'cssmin',
+    //'uglify',
     'modernizr',
     'rev',
     'usemin',
