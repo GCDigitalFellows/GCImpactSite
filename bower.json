@@ -9,7 +9,7 @@
     "fontawesome": "~4.3.0",
     "velocity": "~1.2.2",
     "lazyloadxt": "git@github.com:ressio/lazy-load-xt.git#master",
-    "Materialize": "git@github.com:Dogfalo/materialize.git#master"
+    "materialize": "~0.96.0"
   },
   "resolutions": {
     "jquery": "2.1.3"
