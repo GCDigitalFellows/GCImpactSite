@@ -75,27 +75,6 @@ module.exports = function (grunt) {
       }
     },
 
-    less: {
-      dist: {
-        files: [{
-          expand: true,
-          cwd: '<%= config.app %>/styles',
-          src: ['*.less'],
-          dest: '<%= config.dist %>/styles/',
-          ext: '.css'
-        }]
-      },
-      temp: {
-        files: [{
-          expand: true,
-          cwd: '<%= config.app %>/styles',
-          src: ['*.less'],
-          dest: '<%= config.temp %>/styles/',
-          ext: '.css'
-        }]
-      }
-    },
-
     // The actual grunt server settings
     connect: {
       options: {
@@ -169,6 +148,36 @@ module.exports = function (grunt) {
       }
     },
 
+    less: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: '<%= config.app %>/styles',
+          src: ['*.less'],
+          dest: '<%= config.dist %>/styles/',
+          ext: '.css'
+        }]
+      },
+      temp: {
+        files: [{
+          expand: true,
+          cwd: '<%= config.app %>/styles',
+          src: ['*.less'],
+          dest: '<%= config.temp %>/styles/',
+          ext: '.css'
+        }]
+      },
+      test: {
+        files: [{
+          expand: true,
+          cwd: '<%= config.app %>/styles',
+          src: ['*.less'],
+          dest: 'test/styles/',
+          ext: '.css'
+        }]
+      }
+    },
+
     // Build the site using grunt-includes
     includes: {
       dist: {
@@ -232,7 +241,7 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: '.tmp/styles/',
+          cwd: '<%= config.dist %>/styles/',
           src: '{,*/}*.css',
           dest: '<%= config.dist %>/styles/'
         }]
@@ -478,8 +487,10 @@ module.exports = function (grunt) {
       ],
       dist: [
         'copy:dist',
+        'copy:js',
+        'copy:styles',
         'imagemin',
-        'autoprefixer',
+        //'autoprefixer',
         // 'svgmin'
       ]
     },
@@ -555,10 +566,11 @@ module.exports = function (grunt) {
     'includes:dist',
     'useminPrepare',
     'concurrent:dist',
-    //'concat',
-    //'cssmin',
-    //'uglify',
-    'modernizr',
+    'autoprefixer',
+    'concat',
+    'cssmin',
+    'uglify',
+    'modernizr:dist',
     'rev',
     'usemin',
     //'htmlmin'
