@@ -8,7 +8,7 @@ $(document).ready(function() {
         anchors:['section1', 'section2', 'section3', 'section4','section5','section6','section7','section8','section9','section10','section11'],
         scrollingSpeed: 700,
         easing: 'easeInQuart',
-        menu: '#headerMenu',
+        menu: '#slide-out',
         navigation: true,
         navigationPosition: 'right',
         navigationTooltips: ['Intro', 'Research', 'Teaching', 'People'],
@@ -65,17 +65,23 @@ $(document).ready(function() {
     }
   );
 
-    function toggleMenu() {
-        $('body').toggleClass('show-menu');
-        isOpen = !isOpen;
-    }
+    // function toggleMenu() {
+    //     // $('body').toggleClass('show-menu');
+    //     if (isOpen) {
+    //         $('.button-collapse').sideNav('show');
+    //     } else {
+    //         $('.button-collapse').sideNav('hide');
+    //     }
+    //     isOpen = !isOpen;
+    // }
     // function toggleMap() {
     //     $('body').toggleClass('show-map');
     //     isModalOpen = !isModalOpen;
     // }
 
-    $('#open-button').click(function() {
-        toggleMenu();
+    $('.button-collapse').click(function() {
+        //toggleMenu();
+        isOpen = !isOpen;
         $(this).blur();
     });
 
@@ -86,7 +92,7 @@ $(document).ready(function() {
     //     $('#map-frame').attr('src',mapId);
     //     toggleMap();
     // });
-    $('.modal-trigger').click( function() {
+    $('.modal-trigger').click( function(event) {
         var mapSrc = $(this).data('map');
         modalTarget = $(this).attr('href');
         var options = {
@@ -95,15 +101,16 @@ $(document).ready(function() {
         $('#map-frame').attr('src',mapSrc);
         $(modalTarget).openModal(options);
         isModalOpen = !isModalOpen;
+        event.preventDefault();
     });
-
 
     // close the menu/map element
     $('body').mousedown(function( event ) {
         var $target = $(event.target);
-        if( isOpen && !$target.is('#open-button') && $target.closest('.menu-wrap').length === 0) {//!hasParent( target, menu ) ) {
-            toggleMenu();
-        } else if ( isModalOpen && ($target.is('#close-map-button') || $target.closest('#map-wrap').length === 0) ) {
+        // if( isOpen && !$target.is('#open-button') && $target.closest('.menu-wrap').length === 0) {//!hasParent( target, menu ) ) {
+        //     toggleMenu();
+        // } else
+        if ( isModalOpen && ($target.is('#close-map-button') || $target.closest('#map-wrap').length === 0) ) {
             $(modalTarget).closeModal();
             isModalOpen = !isModalOpen;
         }
@@ -111,7 +118,8 @@ $(document).ready(function() {
 
     $(document).keydown(function( event ) {
         if ( isOpen && event.which === 27) {
-            toggleMenu();
+            $('.button-collapse').sideNav('hide');
+            isOpen = !isOpen;
         }
         // } else if ( isModalOpen && mapId) {
         //     toggleMap();
