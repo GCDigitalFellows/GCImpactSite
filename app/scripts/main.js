@@ -4,14 +4,14 @@ $(document).ready(function() {
     $('#fullpage').fullpage({
         verticalCentered: true,
         resize : false,
-		//sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE','#fff'],
         anchors:['section1', 'section2', 'section3', 'section4','section5','section6','section7','section8','section9','section10','section11'],
-        scrollingSpeed: 700,
-        easing: 'easeInQuart',
+        scrollingSpeed: 500,
+        easing: 'cubic-bezier(.4,0,.2,1)',//'cubic-bezier(0.190, 1.000, 0.220, 1.000)',//'easeInOutQuart',
+        easingCSS3: 'cubic-bezier(.4,0,.2,1)',//'cubic-bezier(0.190, 1.000, 0.220, 1.000)',//'easeInOutQuart',
         menu: '#slide-out',
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['Intro', 'Research', 'Teaching', 'People'],
+        navigationTooltips: ['The Graduate Center, CUNY','The Graduate Center, CUNY','The Graduate Center, CUNY', 'Research', 'Research', 'Research', 'Teaching', 'Teaching', 'Teaching', 'People', 'People', 'People'],
         slidesNavigation: false,
         loopBottom: true,
         loopTop: false,
@@ -21,10 +21,10 @@ $(document).ready(function() {
         css3: true,
         paddingTop: '3em',
         paddingBottom: '10px',
-        normalScrollElements: '.container,.card,.card-reveal',
+        normalScrollElements: '.container,.card,.card-reveal,.modal-content .row .col',
         normalScrollElementTouchThreshold: 7,
         keyboardScrolling: true,
-        touchSensitivity: 15,
+        touchSensitivity: 5,
         continuousVertical: false,
         animateAnchor: true,
         sectionSelector: '.section',
@@ -56,74 +56,56 @@ $(document).ready(function() {
     var isModalOpen = false,
         isOpen = false,
         modalTarget;
-        //mapId;
 
   $('.button-collapse').sideNav({
       menuWidth: 300, // Default is 240
       edge: 'left', // Choose the horizontal origin
-      closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+      closeOnClick: false // Closes side-nav on <a> clicks, useful for Angular/Meteor
     }
   );
 
-    // function toggleMenu() {
-    //     // $('body').toggleClass('show-menu');
-    //     if (isOpen) {
-    //         $('.button-collapse').sideNav('show');
-    //     } else {
-    //         $('.button-collapse').sideNav('hide');
-    //     }
-    //     isOpen = !isOpen;
-    // }
-    // function toggleMap() {
-    //     $('body').toggleClass('show-map');
-    //     isModalOpen = !isModalOpen;
-    // }
-
     $('.button-collapse').click(function() {
-        //toggleMenu();
+        //toggleMenu(); // already handled by materialize's js
         isOpen = !isOpen;
         $(this).blur();
     });
 
-    // $('.map-button').click(function(event) {
-    //     event.preventDefault();
-    //     mapId = $(this).data( 'map' );
-    //     // load the map into the map-wrapper's iframe
-    //     $('#map-frame').attr('src',mapId);
-    //     toggleMap();
-    // });
     $('.modal-trigger').click( function(event) {
-        var mapSrc = $(this).data('map');
-        modalTarget = $(this).attr('href');
         var options = {
-            dismissible: true, // Modal can be dismissed by clicking outside of the modal
+            dismissible: true
         };
-        $('#map-frame').attr('src',mapSrc);
+        modalTarget = $(this).attr('href') || '#' + $(this).data('target');
+        if ($.hasData(this) && $(this).data('map')){ // get the url for the map to load if it exists
+            var mapSrc = $(this).data('map');
+            $('#map-frame').attr('src',mapSrc);
+        } else {
+            options.dismissible = false;
+        }
         $(modalTarget).openModal(options);
         isModalOpen = !isModalOpen;
         event.preventDefault();
     });
 
     // close the menu/map element
-    $('body').mousedown(function( event ) {
-        var $target = $(event.target);
-        // if( isOpen && !$target.is('#open-button') && $target.closest('.menu-wrap').length === 0) {//!hasParent( target, menu ) ) {
-        //     toggleMenu();
-        // } else
-        if ( isModalOpen && ($target.is('#close-map-button') || $target.closest('#map-wrap').length === 0) ) {
-            $(modalTarget).closeModal();
-            isModalOpen = !isModalOpen;
-        }
-    });
+    // note: using the built-in materialize functions seemed to provide more consistent results
+    // $('body').mousedown(function( event ) {
+        // var $target = $(event.target);
+        // if ( isModalOpen && ($target.is('#close-map-button') || $target.closest('#map-wrap').length === 0) ) {
+        //     $(modalTarget).closeModal();
+        //     isModalOpen = !isModalOpen;
+        // }
+        // event.preventDefault();
+    // });
 
     $(document).keydown(function( event ) {
         if ( isOpen && event.which === 27) {
             $('.button-collapse').sideNav('hide');
             isOpen = !isOpen;
+        } else if ( isModalOpen ) {
+            console.log('target: ' + modalTarget);
+            $(modalTarget).closeModal();
+            isModalOpen = !isModalOpen;
         }
-        // } else if ( isModalOpen && mapId) {
-        //     toggleMap();
-        // }
     });
 
 });
