@@ -1,19 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="shape7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 889 316" enable-background="new 0 0 889 316" xml:space="preserve">
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="718.8px" height="277.9px" viewBox="0 0 718.8 277.9" enable-background="new 0 0 718.8 277.9" xml:space="preserve">
 <defs>
   <style type="text/css">
 	<![CDATA[
 		@font-face {
-		  font-family: "Univers-Condensed";
-		  src: url('../fonts/Univers 57 Condensed.woff');
+		font-family: "Univers-CondensedBold";
+		src: url('../fonts/Univers 67 Condensed Bold.woff');
+		}
+		@font-face {
+		font-family: "Univers-Condensed";
+		src: url('../fonts/Univers 57 Condensed.woff');
 		}
     ]]>
   </style>
 </defs>
-
-	<polygon fill="#FFFFFF" points="0.4,315 5.4,158 280.4,0 532.4,96 642.4,42 832.4,160 888.4,163 888.4,316 "/>
-<polygon fill="none" points="70,177.2 169.4,117.5 477.4,117.5 537,117.5 628.4,117.5 687.3,117.5 795,173.8 795,299.6 70,299.6 "/>
-<text transform="matrix(1 0 0 1 166.0884 137.6416)"><tspan class="svg-body" x="0" y="0" fill="#515151" font-family="'Univers-Condensed'" font-size="28">The single greatest strength of The Graduate </tspan><tspan class="svg-body" x="-56" y="33.6" fill="#515151" font-family="'Univers-Condensed'" font-size="28">Center, CUNY is its people. The Graduate Center&apos;s </tspan><tspan class="svg-body" x="-96.1" y="67.2" fill="#515151" font-family="'Univers-Condensed'" font-size="28">students and faculty bring a whole world of experiences with </tspan><tspan class="svg-body" x="-96.1" y="100.8" fill="#515151" font-family="'Univers-Condensed'" font-size="28">them when they arrive to study and bring their Graduate Center </tspan><tspan class="svg-body" x="-96.1" y="134.4" fill="#515151" font-family="'Univers-Condensed'" font-size="28">education with them to their careers afterwards.</tspan></text>
+<g>
+	<defs>
+		<polygon id="SVGID_1_" points="0,0 143.3,180.3 212.3,262.7 718.8,277.9 719,0 		"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_2_)">
+		<defs>
+			<rect id="SVGID_3_" x="-391" y="-6142.1" width="1440" height="12288"/>
+		</defs>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_"  overflow="visible"/>
+		</clipPath>
+		<rect x="-5" y="-7.1" clip-path="url(#SVGID_4_)" fill="#FFFFFF" width="730" height="290"/>
+	</g>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 222.2048 97.5)" fill="#757575" font-family="'Univers-Condensed'" font-size="24">Students from The Graduate Center teach </text>
+	<text transform="matrix(1 0 0 1 222.2048 131.5)" fill="#757575" font-family="'Univers-Condensed'" font-size="24">approximately 10% of all CUNY undergraduate </text>
+	<text transform="matrix(1 0 0 1 222.2048 165.5)" fill="#757575" font-family="'Univers-Condensed'" font-size="24">courses, helping to create affordable education </text>
+	<text transform="matrix(1 0 0 1 222.2048 199.5)"><tspan x="0" y="0" fill="#757575" font-family="'Univers-Condensed'" font-size="24">opportunities for all New </tspan><tspan x="242.6" y="0" fill="#757575" font-family="'Univers-Condensed'" font-size="24" letter-spacing="-1">Y</tspan><tspan x="253" y="0" fill="#757575" font-family="'Univers-Condensed'" font-size="24">orkers.</tspan></text>
+	<text transform="matrix(1 0 0 1 225.3333 55.5)"><tspan x="0" y="0" fill="#4BAB48" font-family="'UniversLTStd-BoldCn'" font-size="24" letter-spacing="-1">T</tspan><tspan x="10.2" y="0" fill="#4BAB48" font-family="'UniversLTStd-BoldCn'" font-size="24">eaching</tspan></text>
+</g>
 </svg>

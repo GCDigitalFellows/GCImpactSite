@@ -2,14 +2,14 @@
   "name": "gcimpactsite",
   "private": true,
   "dependencies": {
-    "jquery": "~2.1.3",
-    "modernizr": "~2.8.2",
-    "fullpage": "~2.5.7",
-    "jquery-ui": "~1.11.2",
-    "fontawesome": "~4.3.0",
-    "velocity": "~1.2.2",
+    "jquery": "latest",
+    "modernizr": "latest",
+    "fullpage": "latest",
+    "jquery-ui": "latest",
+    "fontawesome": "latest",
+    "velocity": "latest",
     "lazyloadxt": "git@github.com:ressio/lazy-load-xt.git#master",
-    "materialize": "~0.96.0"
+    "materialize": "latest"
   },
   "resolutions": {
     "jquery": "2.1.3"

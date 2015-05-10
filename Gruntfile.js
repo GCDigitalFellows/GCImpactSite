@@ -448,7 +448,7 @@ module.exports = function (grunt) {
     'newer:concat',
     'newer:cssmin',
     'newer:uglify',
-    'modernizr:dist',
+    //'modernizr:dist',
     //'rev',
     'usemin',
     //'htmlmin'

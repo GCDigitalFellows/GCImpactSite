@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="shape1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 816 435" enable-background="new 0 0 816 435" xml:space="preserve">
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="818.2px" height="435.6px" viewBox="0 0 818.2 435.6" enable-background="new 0 0 818.2 435.6" xml:space="preserve">
 <defs>
   <style type="text/css">
 	<![CDATA[
@@ -17,7 +18,27 @@
   </style>
 </defs>
 
-	<polygon fill="#FFFFFF" points="46,0 488,64 816,435 0,435 0,144 "/>
-<polygon fill="none" points="47,152 484,152 531,152 600.3,398 47,398 "/>
-<text transform="matrix(1 0 0 1 47 182.3232)"><tspan class="svg-title" x="0" y="0" fill="#515151" font-family="'Univers-CondensedBold'" font-size="42">The Graduate Center, CUNY:</tspan><tspan class="svg-subtitle" x="0" y="44.4" fill="#515151" font-family="'Univers-Condensed'" font-size="37">Impacting the City, the Country, </tspan><tspan class="svg-subtitle" x="0" y="88.8" fill="#515151" font-family="'Univers-Condensed'" font-size="37">and the World</tspan><tspan class="svg-body" x="0" y="136.8" fill="#515151" font-family="'Univers-Condensed'" font-size="28">Explore the role the Graduate Center, CUNY</tspan><tspan class="svg-body" x="0" y="170.4" fill="#515151" font-family="'Univers-Condensed'" font-size="28">takes in connecting people and knowledge</tspan><tspan class="svg-body" x="0" y="204" fill="#515151" font-family="'Univers-Condensed'" font-size="28">throughout the world.</tspan></text>
+<g>
+	<defs>
+		<polygon id="SVGID_1_" points="327.9,435.6 720.1,435.6 818.2,435.6 488.5,63.8 45.6,0 -88.2,435.6 		"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_2_)">
+		<defs>
+			<rect id="SVGID_3_" x="0.1" y="-589.4" width="1440" height="12288"/>
+		</defs>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_"  overflow="visible"/>
+		</clipPath>
+		<rect x="-93.2" y="-5" clip-path="url(#SVGID_4_)" fill="#FFFFFF" width="916.5" height="445.6"/>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 47.0435 168.9351)" fill="#656565" font-family="'UniversLTStd-BoldCn'" font-size="29">THE GRADUATE CENTER, CUNY:</text>
+<text transform="matrix(1 0 0 1 47.0435 204.9351)" fill="#656565" font-family="'Univers-Condensed'" font-size="29">IMPACTING THE UNIVERSITY, THE CITY, </text>
+<text transform="matrix(1 0 0 1 47.0435 240.9351)" fill="#656565" font-family="'Univers-Condensed'" font-size="29">AND THE WORLD</text>
+<text transform="matrix(1 0 0 1 47.0435 309.9351)" fill="#757575" font-family="'Univers-Condensed'" font-size="24">Explore the role that The Graduate Center </text>
+<text transform="matrix(1 0 0 1 47.0435 343.9351)" fill="#757575" font-family="'Univers-Condensed'" font-size="24">takes in connecting people and knowledge </text>
+<text transform="matrix(1 0 0 1 47.0435 377.9351)" fill="#757575" font-family="'Univers-Condensed'" font-size="24">throughout the world.</text>
 </svg>

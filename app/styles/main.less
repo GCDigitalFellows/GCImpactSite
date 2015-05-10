@@ -1,3 +1,6 @@
+@import "breakpoints.less";
+@import (reference) "mixins.less";
+
 .section {
     background-size: cover;
     background-position: 50% 50%;
@@ -9,26 +12,30 @@
     height: 100%;
 }
 
-#logo-container {
-    height: 92px;
-}
-
 [data-anchor="section1"] {
     #shape1 {
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 79.7vh;
-        height: 42.5vh;
+        .responsive-dim(56.8;42.5);
     }
 }
 [data-anchor="section2"] {
     #shape2 {
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 103.4vh;
-        height: 36.8vh;
+        bottom: 0;
+        left: 10.7vw;
+        .responsive-dim(89.4;31.8);
+        .responsive-min(@md;{
+            .responsive-portrait({
+                bottom: 0;
+                left: 10.7vw;
+            });
+            .responsive-landscape({
+                bottom: 0;
+                left: 10.7vw;
+            });
+        });
     }
 }
 [data-anchor="section3"] {
@@ -36,32 +43,28 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 79.6vh;
-        height: 28.5vh;
+        .responsive-dim(56.6;36.5);
     }
 }
 [data-anchor="section4"] {
     #shape4 {
         position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 54.7vh;
-        height: 28.2vh;
+        top: 0;
+        right: 0;
+        .responsive-dim(26.1;40.7);
     }
 }
-[data-anchor="section40"] {
-    #shape40 {
+[data-anchor="section5"] {
+    #shape5 {
         position: absolute;
-        top: 0;
+        bottom: 0;
         left: 0;
-        width: 79.6vh;
-        height: 28.5vh;
+        .responsive-dim(25.9;40.7);
     }
     .map-button {
         position: absolute;
-        top: 18vh;
-        //left: 58vh;
-        left: 55vh;
+        bottom: 30vh;
+        left: 20vh;
         // width: 5vh;
         // height: 5vh;
     }
@@ -70,57 +73,39 @@
     #shape6 {
         position: absolute;
         bottom: 0;
-        left: 0;
-        width: 54.7vh;
-        height: 28vh;
-    }
-}
-[data-anchor="section70"] {
-    #shape70 {
-        position: absolute;
-        top: 53vh;
-        //left: 49vw;
-        left: 22vw; // modified for ipad
-        width: 45vh;
-        height: 37.5vh;
+        right: 0;
+        .responsive-dim(61.7;30.9);
     }
 }
 [data-anchor="section7"] {
     #shape7 {
         position: absolute;
-        bottom: 0;
-        //right: 0;
-        right: -8.7vh;
-        width: 79.6vh;
-        height: 28.5vh;
+        top: 0;
+        left: 27vw;
+        .responsive-dim(49.9;27.1);
+        .responsive-min(@md;{
+            .responsive-portrait({
+                top: 0;
+                left: 27vw;
+            });
+            .responsive-landscape({
+                top: 0;
+                left: 27vw;
+            });
+        });
     }
 }
 [data-anchor="section8"] {
     #shape8 {
         position: absolute;
-        top: 0;
-        //left: 27.1vh;
-        left: 7vw;
-        //width: 40.6vw;
-        width: 66vh;
-        height: 23.4vh;
+        bottom: 0;
+        left: 0;
+        .responsive-dim(60.1;27.4);
     }
     .map-button {
         position: absolute;
-        top: 14vh;
-        //left: 73vh;
-        left: 44vw;
-        // width: 5vh;
-        // height: 5vh;
-    }
-}
-[data-anchor="section00"] {
-    #shape00 {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 84.6vh;
-        height: 27.6vh;
+        bottom: 16vh;
+        left: 47vh;
     }
 }
 [data-anchor="section9"] {
@@ -128,8 +113,7 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 134vh;
-        height: 12.5vh;
+        .responsive-dim(80.3;19.1);
     }
 }
 [data-anchor="section10"] {
@@ -137,26 +121,20 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        width: 45.1vh;
-        height: 59.1vh;
+        .responsive-dim(32.1;59.2);
     }
 }
 [data-anchor="section11"] {
     #shape11 {
         position: absolute;
-        bottom: 55.3vh;
-        //left: 76.3vh;
-        left: 27.3vw; //modified for ipad
-        width: 40.4vh;
-        height: 40.4vh;
+        bottom: 0;
+        right: 0;
+        .responsive-dim(37;52.1);
     }
     .map-button {
         position: absolute;
-        top: 18vh;
-        //left: 58vh;
-        left: 55vh;
-        // width: 5vh;
-        // height: 5vh;
+        bottom: 25vh;
+        right: 6vh;
     }
 }
 [data-anchor="section12"] {
@@ -164,9 +142,7 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        //left: -7vw;
-        width: 84.8vh;
-        height: 20.5vh;
+        .responsive-dim(66.5;22.9);
     }
 }
 
@@ -202,6 +178,45 @@
 
 .menu-button:hover {
     opacity: 0.6;
+}
+
+.side-nav {
+    background-color: #25589E;
+    text-align: center;
+    .collapsible-body {
+        background-color: transparent;
+    }
+    a {
+        line-height: 50px;
+        height: 50px;
+        span {
+            font-weight: bold;
+        }
+        color: #fff;
+    }
+    li {
+        border-bottom: 2px solid #222;
+        &.active {
+            background-color: rgba(0,0,0,0.5);
+        }
+        &:hover {
+            background-color: rgba(255,255,255,0.3);
+        }
+    }
+    li.logo {
+        margin-top: 0;
+        //margin-bottom: 16px;
+        padding: 16px;
+        border-bottom: 1px solid #ddd;
+        box-shadow: 0 2px 10px;
+        background-color: #fff;
+    }
+    a.brand-logo {
+        height: 140px;
+    }
+    .brand-logo img {
+        height: 140px;
+    }
 }
 
 /* Menu */
@@ -269,39 +284,6 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 993px) {
-    [data-anchor="section3"] {
-        .map-button {
-            left: 55vh;
-        }
-    }
-    [data-anchor="section5"] {
-        #shape5 {
-            left: 49vw;
-        }
-    }
-    [data-anchor="section6"] {
-        #shape6 {
-            right: 0;
-        }
-    }
-    [data-anchor="section7"] {
-        #shape7 {
-            left: 19.3vw;
-        }
-        .map-button {
-            left: 35vw;
-        }
-    }
-    [data-anchor="section11"] {
-        #shape11 {
-            left: 52.3vw;
-        }
-    }
-    [data-anchor="section12"] {
-        #shape12 {
-            left: 0;
-        }
-    }
 
     .menu-wrap {
         width: 30vw;

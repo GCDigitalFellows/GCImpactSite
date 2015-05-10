@@ -1,20 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="shape10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 463 606" enable-background="new 0 0 463 606" xml:space="preserve">
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="462.3px" height="606.5px" viewBox="0 0 462.3 606.5" enable-background="new 0 0 462.3 606.5" xml:space="preserve">
 <defs>
   <style type="text/css">
 	<![CDATA[
 		@font-face {
-		  font-family: "Univers-Condensed";
-		  src: url('../fonts/Univers 57 Condensed.woff');
+		font-family: "Univers-CondensedBold";
+		src: url('../fonts/Univers 67 Condensed Bold.woff');
+		}
+		@font-face {
+		font-family: "Univers-Condensed";
+		src: url('../fonts/Univers 57 Condensed.woff');
 		}
     ]]>
   </style>
 </defs>
-
-	<polygon fill="#FFFFFF" points="0,0 179,22 406,163 413,257 458,299 463,362 425,457 432,530 417,573 418,606 0,606 "/>
-<polygon fill="none" points="48.6,162.4 247.9,161 353.7,161 352.6,260.8 401.6,297.8 401.6,361.8 381.6,422.8 377.6,511.8 
-	365.6,544.8 48.6,544.8 "/>
-<text transform="matrix(1 0 0 1 48.6089 181.1318)"><tspan class="svg-body" x="0" y="0" fill="#515251" font-family="'Univers-Condensed'" font-size="28">The single greatest </tspan><tspan class="svg-body" x="0" y="33.6" fill="#515251" font-family="'Univers-Condensed'" font-size="28">strength of The Graduate </tspan><tspan class="svg-body" x="0" y="67.2" fill="#515251" font-family="'Univers-Condensed'" font-size="28">Center, CUNY is its people. </tspan><tspan class="svg-body" x="0" y="100.8" fill="#515251" font-family="'Univers-Condensed'" font-size="28">The Graduate Center&apos;s </tspan><tspan class="svg-body" x="0" y="134.4" fill="#515251" font-family="'Univers-Condensed'" font-size="28">students and faculty bring a </tspan><tspan class="svg-body" x="0" y="168" fill="#515251" font-family="'Univers-Condensed'" font-size="28">whole world of experiences </tspan><tspan class="svg-body" x="0" y="201.6" fill="#515251" font-family="'Univers-Condensed'" font-size="28">with them when they arrive to </tspan><tspan class="svg-body" x="0" y="235.2" fill="#515251" font-family="'Univers-Condensed'" font-size="28">study and bring their </tspan><tspan class="svg-body" x="0" y="268.8" fill="#515251" font-family="'Univers-Condensed'" font-size="28">Graduate Center education </tspan><tspan class="svg-body" x="0" y="302.4" fill="#515251" font-family="'Univers-Condensed'" font-size="28">with them to their careers </tspan><tspan class="svg-body" x="0" y="336" fill="#515251" font-family="'Univers-Condensed'" font-size="28">afterwards.</tspan></text>
+<g>
+	<defs>
+		<path id="SVGID_1_" d="M406.6,164.2l5.6,93.7l46.4,42.5l3.8,64.4l-37,93.1l6.8,74.8l-15,40l0,34H-51.7L-83,38.6l45.8-42.1
+			l84.4,8.2l131.5,18.8C268.1,57.3,406.6,164.2,406.6,164.2z"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_2_)">
+		<defs>
+			<rect id="SVGID_3_" y="-9633.5" width="1440" height="12288"/>
+		</defs>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_"  overflow="visible"/>
+		</clipPath>
+		<rect x="-88" y="-8.5" clip-path="url(#SVGID_4_)" fill="#FFFFFF" width="555.3" height="620"/>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 52.4141 291.5)" fill="#757575" font-family="'Univers-Condensed'" font-size="24">The Graduate Center attracts </text>
+<text transform="matrix(1 0 0 1 52.4141 325.5)" fill="#757575" font-family="'Univers-Condensed'" font-size="24">world-class students and </text>
+<text transform="matrix(1 0 0 1 52.4141 359.5)" fill="#757575" font-family="'Univers-Condensed'" font-size="24">faculty who engage in </text>
+<text transform="matrix(1 0 0 1 52.4141 393.5)" fill="#757575" font-family="'Univers-Condensed'" font-size="24">innovative publicly oriented </text>
+<text transform="matrix(1 0 0 1 52.4141 427.5)" fill="#757575" font-family="'Univers-Condensed'" font-size="24">scholarship</text>
+<text transform="matrix(1 0 0 1 52.4141 247)" fill="#40423E" font-family="'UniversLTStd-BoldCn'" font-size="24">People</text>
 </svg>

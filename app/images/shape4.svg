@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 18.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 558.6 288" enable-background="new 0 0 558.6 288" xml:space="preserve">
+	 width="375.3px" height="416.7px" viewBox="0 0 375.3 416.7" enable-background="new 0 0 375.3 416.7" xml:space="preserve">
 <defs>
   <style type="text/css">
 	<![CDATA[
@@ -16,7 +17,27 @@
     ]]>
   </style>
 </defs>
-<polygon fill="#FFFFFF" points="0,0 548.1,39 558.6,175.5 558.6,288 0,288 "/>
-<polygon fill="none" points="40,74.3 505.2,74.3 514.4,173.3 514.4,272.3 40,272.3 "/>
-<text transform="matrix(1 0 0 1 40 105.3125)"><tspan x="0" y="0" fill="#515151" font-family="'Univers-CondensedBold'" font-size="43">Research</tspan><tspan x="0" y="33.6" fill="#515151" font-family="'Univers-Condensed'" font-size="28">The Graduate Center, CUNY is revered as </tspan><tspan x="0" y="67.2" fill="#515151" font-family="'Univers-Condensed'" font-size="28">an international hub of interdisciplinary </tspan><tspan x="0" y="100.8" fill="#515151" font-family="'Univers-Condensed'" font-size="28">study, research, and public engagement</tspan></text>
+<g>
+	<defs>
+		<polygon id="SVGID_1_" points="374.6,0 75,0 0,341.7 142.1,416.7 377.6,306 		"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_2_)">
+		<defs>
+			<rect id="SVGID_3_" x="-1064.7" y="-3072.8" width="1440" height="12288"/>
+		</defs>
+		<clipPath id="SVGID_4_">
+			<use xlink:href="#SVGID_3_"  overflow="visible"/>
+		</clipPath>
+		<rect x="-5" y="-5" clip-path="url(#SVGID_4_)" fill="#FFFFFF" width="387.6" height="426.7"/>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 74.979 167.8467)" fill="#757575" font-family="'Univers-Condensed'" font-size="24">The Graduate Center is </text>
+<text transform="matrix(1 0 0 1 74.979 201.8467)" fill="#757575" font-family="'Univers-Condensed'" font-size="24">an international hub of </text>
+<text transform="matrix(1 0 0 1 74.979 235.8467)" fill="#757575" font-family="'Univers-Condensed'" font-size="24">interdisciplinary study, </text>
+<text transform="matrix(1 0 0 1 74.979 269.8467)" fill="#757575" font-family="'Univers-Condensed'" font-size="24">research, and public </text>
+<text transform="matrix(1 0 0 1 74.979 303.8467)" fill="#757575" font-family="'Univers-Condensed'" font-size="24">engagement.</text>
+<text transform="matrix(1 0 0 1 74.979 122.8467)" fill="#558BC3" font-family="'UniversLTStd-BoldCn'" font-size="24">Research</text>
 </svg>
