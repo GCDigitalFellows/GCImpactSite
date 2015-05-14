@@ -15,8 +15,8 @@
 }
 @media (orientation: portrait) {
   [data-anchor="section1"] #shape1 {
-    width: 56.8vw;
-    height: 30.22222222vw;
+    width: 79.875vh;
+    height: 42.5vh;
   }
 }
 @media (orientation: landscape) {
@@ -27,8 +27,8 @@
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
   [data-anchor="section1"] #shape1 {
-    width: 56.8vw;
-    height: 30.22222222vw;
+    width: 79.875vh;
+    height: 42.5vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
@@ -39,8 +39,8 @@
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
   [data-anchor="section1"] #shape1 {
-    width: 56.8vw;
-    height: 30.22222222vw;
+    width: 79.875vh;
+    height: 42.5vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
@@ -51,8 +51,8 @@
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
   [data-anchor="section1"] #shape1 {
-    width: 56.8vw;
-    height: 30.22222222vw;
+    width: 79.875vh;
+    height: 42.5vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
@@ -68,8 +68,8 @@
 }
 @media (orientation: portrait) {
   [data-anchor="section2"] #shape2 {
-    width: 89.4vw;
-    height: 22.61333333vw;
+    width: 125.71875vh;
+    height: 31.8vh;
   }
 }
 @media (orientation: landscape) {
@@ -80,8 +80,8 @@
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
   [data-anchor="section2"] #shape2 {
-    width: 89.4vw;
-    height: 22.61333333vw;
+    width: 125.71875vh;
+    height: 31.8vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
@@ -92,8 +92,8 @@
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
   [data-anchor="section2"] #shape2 {
-    width: 89.4vw;
-    height: 22.61333333vw;
+    width: 125.71875vh;
+    height: 31.8vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
@@ -104,8 +104,8 @@
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
   [data-anchor="section2"] #shape2 {
-    width: 89.4vw;
-    height: 22.61333333vw;
+    width: 125.71875vh;
+    height: 31.8vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
@@ -133,8 +133,8 @@
 }
 @media (orientation: portrait) {
   [data-anchor="section3"] #shape3 {
-    width: 56.6vw;
-    height: 25.95555556vw;
+    width: 79.59375vh;
+    height: 36.5vh;
   }
 }
 @media (orientation: landscape) {
@@ -145,8 +145,8 @@
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
   [data-anchor="section3"] #shape3 {
-    width: 56.6vw;
-    height: 25.95555556vw;
+    width: 79.59375vh;
+    height: 36.5vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
@@ -157,8 +157,8 @@
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
   [data-anchor="section3"] #shape3 {
-    width: 56.6vw;
-    height: 25.95555556vw;
+    width: 79.59375vh;
+    height: 36.5vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
@@ -169,8 +169,8 @@
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
   [data-anchor="section3"] #shape3 {
-    width: 56.6vw;
-    height: 25.95555556vw;
+    width: 79.59375vh;
+    height: 36.5vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
@@ -179,6 +179,9 @@
     height: 36.5vh;
   }
 }
+[data-anchor="section4"] {
+  background-position: top left;
+}
 [data-anchor="section4"] #shape4 {
   position: absolute;
   top: 0;
@@ -186,8 +189,8 @@
 }
 @media (orientation: portrait) {
   [data-anchor="section4"] #shape4 {
-    width: 26.1vw;
-    height: 28.94222222vw;
+    width: 36.703125vh;
+    height: 40.7vh;
   }
 }
 @media (orientation: landscape) {
@@ -198,8 +201,8 @@
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
   [data-anchor="section4"] #shape4 {
-    width: 26.1vw;
-    height: 28.94222222vw;
+    width: 36.703125vh;
+    height: 40.7vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
@@ -210,8 +213,8 @@
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
   [data-anchor="section4"] #shape4 {
-    width: 26.1vw;
-    height: 28.94222222vw;
+    width: 36.703125vh;
+    height: 40.7vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
@@ -222,8 +225,8 @@
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
   [data-anchor="section4"] #shape4 {
-    width: 26.1vw;
-    height: 28.94222222vw;
+    width: 36.703125vh;
+    height: 40.7vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
@@ -239,8 +242,8 @@
 }
 @media (orientation: portrait) {
   [data-anchor="section5"] #shape5 {
-    width: 25.9vw;
-    height: 28.94222222vw;
+    width: 36.421875vh;
+    height: 40.7vh;
   }
 }
 @media (orientation: landscape) {
@@ -251,8 +254,8 @@
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
   [data-anchor="section5"] #shape5 {
-    width: 25.9vw;
-    height: 28.94222222vw;
+    width: 36.421875vh;
+    height: 40.7vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
@@ -263,8 +266,8 @@
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
   [data-anchor="section5"] #shape5 {
-    width: 25.9vw;
-    height: 28.94222222vw;
+    width: 36.421875vh;
+    height: 40.7vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
@@ -275,8 +278,8 @@
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
   [data-anchor="section5"] #shape5 {
-    width: 25.9vw;
-    height: 28.94222222vw;
+    width: 36.421875vh;
+    height: 40.7vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
@@ -287,8 +290,21 @@
 }
 [data-anchor="section5"] .map-button {
   position: absolute;
-  bottom: 30vh;
-  left: 20vh;
+}
+@media (orientation: landscape) {
+  [data-anchor="section5"] .map-button {
+    bottom: 30vh;
+    left: 20vh;
+  }
+}
+@media (orientation: portrait) {
+  [data-anchor="section5"] .map-button {
+    bottom: 17vh;
+    left: 13vh;
+  }
+}
+[data-anchor="section6"] {
+  background-position: top right;
 }
 [data-anchor="section6"] #shape6 {
   position: absolute;
@@ -297,8 +313,8 @@
 }
 @media (orientation: portrait) {
   [data-anchor="section6"] #shape6 {
-    width: 61.7vw;
-    height: 21.97333333vw;
+    width: 86.765625vh;
+    height: 30.9vh;
   }
 }
 @media (orientation: landscape) {
@@ -309,8 +325,8 @@
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
   [data-anchor="section6"] #shape6 {
-    width: 61.7vw;
-    height: 21.97333333vw;
+    width: 86.765625vh;
+    height: 30.9vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
@@ -321,8 +337,8 @@
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
   [data-anchor="section6"] #shape6 {
-    width: 61.7vw;
-    height: 21.97333333vw;
+    width: 86.765625vh;
+    height: 30.9vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
@@ -333,8 +349,8 @@
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
   [data-anchor="section6"] #shape6 {
-    width: 61.7vw;
-    height: 21.97333333vw;
+    width: 86.765625vh;
+    height: 30.9vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
@@ -350,8 +366,8 @@
 }
 @media (orientation: portrait) {
   [data-anchor="section7"] #shape7 {
-    width: 49.9vw;
-    height: 19.27111111vw;
+    width: 70.171875vh;
+    height: 27.1vh;
   }
 }
 @media (orientation: landscape) {
@@ -362,8 +378,8 @@
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
   [data-anchor="section7"] #shape7 {
-    width: 49.9vw;
-    height: 19.27111111vw;
+    width: 70.171875vh;
+    height: 27.1vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
@@ -374,8 +390,8 @@
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
   [data-anchor="section7"] #shape7 {
-    width: 49.9vw;
-    height: 19.27111111vw;
+    width: 70.171875vh;
+    height: 27.1vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
@@ -386,8 +402,8 @@
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
   [data-anchor="section7"] #shape7 {
-    width: 49.9vw;
-    height: 19.27111111vw;
+    width: 70.171875vh;
+    height: 27.1vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
@@ -408,6 +424,9 @@
     left: 27vw;
   }
 }
+[data-anchor="section8"] {
+  background-position: bottom left;
+}
 [data-anchor="section8"] #shape8 {
   position: absolute;
   bottom: 0;
@@ -415,8 +434,8 @@
 }
 @media (orientation: portrait) {
   [data-anchor="section8"] #shape8 {
-    width: 60.1vw;
-    height: 19.48444444vw;
+    width: 84.515625vh;
+    height: 27.4vh;
   }
 }
 @media (orientation: landscape) {
@@ -427,8 +446,8 @@
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
   [data-anchor="section8"] #shape8 {
-    width: 60.1vw;
-    height: 19.48444444vw;
+    width: 84.515625vh;
+    height: 27.4vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
@@ -439,8 +458,8 @@
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
   [data-anchor="section8"] #shape8 {
-    width: 60.1vw;
-    height: 19.48444444vw;
+    width: 84.515625vh;
+    height: 27.4vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
@@ -451,8 +470,8 @@
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
   [data-anchor="section8"] #shape8 {
-    width: 60.1vw;
-    height: 19.48444444vw;
+    width: 84.515625vh;
+    height: 27.4vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
@@ -463,8 +482,18 @@
 }
 [data-anchor="section8"] .map-button {
   position: absolute;
-  bottom: 16vh;
-  left: 47vh;
+}
+@media (orientation: landscape) {
+  [data-anchor="section8"] .map-button {
+    bottom: 16vh;
+    left: 47vh;
+  }
+}
+@media (orientation: portrait) {
+  [data-anchor="section8"] .map-button {
+    bottom: 10vh;
+    right: 26vh;
+  }
 }
 [data-anchor="section9"] #shape9 {
   position: absolute;
@@ -473,8 +502,8 @@
 }
 @media (orientation: portrait) {
   [data-anchor="section9"] #shape9 {
-    width: 80.3vw;
-    height: 13.58222222vw;
+    width: 112.921875vh;
+    height: 19.1vh;
   }
 }
 @media (orientation: landscape) {
@@ -485,8 +514,8 @@
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
   [data-anchor="section9"] #shape9 {
-    width: 80.3vw;
-    height: 13.58222222vw;
+    width: 112.921875vh;
+    height: 19.1vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
@@ -497,8 +526,8 @@
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
   [data-anchor="section9"] #shape9 {
-    width: 80.3vw;
-    height: 13.58222222vw;
+    width: 112.921875vh;
+    height: 19.1vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
@@ -509,8 +538,8 @@
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
   [data-anchor="section9"] #shape9 {
-    width: 80.3vw;
-    height: 13.58222222vw;
+    width: 112.921875vh;
+    height: 19.1vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
@@ -518,6 +547,9 @@
     width: 112.921875vh;
     height: 19.1vh;
   }
+}
+[data-anchor="section10"] {
+  background-position: bottom left;
 }
 [data-anchor="section10"] #shape10 {
   position: absolute;
@@ -526,8 +558,8 @@
 }
 @media (orientation: portrait) {
   [data-anchor="section10"] #shape10 {
-    width: 32.1vw;
-    height: 42.09777778vw;
+    width: 45.140625vh;
+    height: 59.2vh;
   }
 }
 @media (orientation: landscape) {
@@ -538,8 +570,8 @@
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
   [data-anchor="section10"] #shape10 {
-    width: 32.1vw;
-    height: 42.09777778vw;
+    width: 45.140625vh;
+    height: 59.2vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
@@ -550,8 +582,8 @@
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
   [data-anchor="section10"] #shape10 {
-    width: 32.1vw;
-    height: 42.09777778vw;
+    width: 45.140625vh;
+    height: 59.2vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
@@ -562,8 +594,8 @@
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
   [data-anchor="section10"] #shape10 {
-    width: 32.1vw;
-    height: 42.09777778vw;
+    width: 45.140625vh;
+    height: 59.2vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
@@ -572,6 +604,9 @@
     height: 59.2vh;
   }
 }
+[data-anchor="section11"] {
+  background-position: bottom left;
+}
 [data-anchor="section11"] #shape11 {
   position: absolute;
   bottom: 0;
@@ -579,8 +614,8 @@
 }
 @media (orientation: portrait) {
   [data-anchor="section11"] #shape11 {
-    width: 37vw;
-    height: 37.04888889vw;
+    width: 52.03125vh;
+    height: 52.1vh;
   }
 }
 @media (orientation: landscape) {
@@ -591,8 +626,8 @@
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
   [data-anchor="section11"] #shape11 {
-    width: 37vw;
-    height: 37.04888889vw;
+    width: 52.03125vh;
+    height: 52.1vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
@@ -603,8 +638,8 @@
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
   [data-anchor="section11"] #shape11 {
-    width: 37vw;
-    height: 37.04888889vw;
+    width: 52.03125vh;
+    height: 52.1vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
@@ -615,8 +650,8 @@
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
   [data-anchor="section11"] #shape11 {
-    width: 37vw;
-    height: 37.04888889vw;
+    width: 52.03125vh;
+    height: 52.1vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
@@ -627,8 +662,21 @@
 }
 [data-anchor="section11"] .map-button {
   position: absolute;
-  bottom: 25vh;
-  right: 6vh;
+}
+@media (orientation: landscape) {
+  [data-anchor="section11"] .map-button {
+    bottom: 25vh;
+    right: 6vh;
+  }
+}
+@media (orientation: portrait) {
+  [data-anchor="section11"] .map-button {
+    bottom: 14vh;
+    right: 2vh;
+  }
+}
+[data-anchor="section12"] {
+  background-position: bottom left;
 }
 [data-anchor="section12"] #shape12 {
   position: absolute;
@@ -637,8 +685,8 @@
 }
 @media (orientation: portrait) {
   [data-anchor="section12"] #shape12 {
-    width: 66.5vw;
-    height: 16.28444444vw;
+    width: 93.515625vh;
+    height: 22.9vh;
   }
 }
 @media (orientation: landscape) {
@@ -649,8 +697,8 @@
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
   [data-anchor="section12"] #shape12 {
-    width: 66.5vw;
-    height: 16.28444444vw;
+    width: 93.515625vh;
+    height: 22.9vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
@@ -661,8 +709,8 @@
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
   [data-anchor="section12"] #shape12 {
-    width: 66.5vw;
-    height: 16.28444444vw;
+    width: 93.515625vh;
+    height: 22.9vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
@@ -673,8 +721,8 @@
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
   [data-anchor="section12"] #shape12 {
-    width: 66.5vw;
-    height: 16.28444444vw;
+    width: 93.515625vh;
+    height: 22.9vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {

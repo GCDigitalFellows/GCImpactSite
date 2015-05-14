@@ -18,8 +18,10 @@
 
 .orientation-dim(@width;@height) {
     .responsive-portrait({
-        width: unit(@width,vw);
-        height: unit(@height / @ratio,vw);
+        // width: unit(@width,vw);
+        // height: unit(@height / @ratio,vw);
+        width: unit(@width * @ratio,vh);
+        height: unit(@height,vh);
         });
     .responsive-landscape({
         width: unit(@width * @ratio,vh);

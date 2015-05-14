@@ -47,6 +47,7 @@
     }
 }
 [data-anchor="section4"] {
+    background-position: top left;
     #shape4 {
         position: absolute;
         top: 0;
@@ -63,13 +64,18 @@
     }
     .map-button {
         position: absolute;
-        bottom: 30vh;
-        left: 20vh;
-        // width: 5vh;
-        // height: 5vh;
+        .responsive-landscape({
+            bottom: 30vh;
+            left: 20vh;
+            });
+        .responsive-portrait({
+            bottom: 17vh;
+            left: 13vh;
+            });
     }
 }
 [data-anchor="section6"] {
+    background-position: top right;
     #shape6 {
         position: absolute;
         bottom: 0;
@@ -96,6 +102,7 @@
     }
 }
 [data-anchor="section8"] {
+    background-position: bottom left;
     #shape8 {
         position: absolute;
         bottom: 0;
@@ -104,8 +111,14 @@
     }
     .map-button {
         position: absolute;
-        bottom: 16vh;
-        left: 47vh;
+        .responsive-landscape({
+            bottom: 16vh;
+            left: 47vh;
+            });
+        .responsive-portrait({
+            bottom: 10vh;
+            right: 26vh;
+            });
     }
 }
 [data-anchor="section9"] {
@@ -117,6 +130,7 @@
     }
 }
 [data-anchor="section10"] {
+    background-position: bottom left;
     #shape10 {
         position: absolute;
         bottom: 0;
@@ -125,6 +139,7 @@
     }
 }
 [data-anchor="section11"] {
+    background-position: bottom left;
     #shape11 {
         position: absolute;
         bottom: 0;
@@ -133,11 +148,18 @@
     }
     .map-button {
         position: absolute;
-        bottom: 25vh;
-        right: 6vh;
+        .responsive-landscape({
+            bottom: 25vh;
+            right: 6vh;
+            });
+        .responsive-portrait({
+            bottom: 14vh;
+            right: 2vh;
+            });
     }
 }
 [data-anchor="section12"] {
+    background-position: bottom left;
     #shape12 {
         position: absolute;
         bottom: 0;
