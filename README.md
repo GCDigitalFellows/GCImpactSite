@@ -12,6 +12,8 @@ Utilizes the following libraries:
 - [jquery](http://jquery.com/)
 - [jquery-ui](http://jqueryui.com/)
 - [modernizr](http://modernizr.com/)
+- [off-canvas menu effects](http://tympanus.net/codrops/2014/09/16/off-canvas-menu-effects/)
+- [lazy load xt](https://github.com/ressio/lazy-load-xt/)
 
 Installation
 ------------

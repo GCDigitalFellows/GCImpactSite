@@ -1,15 +1,17 @@
 <!doctype html>
 <html class="no-js skrollr">
-  <head>
+
+<head>
     <meta charset="utf-8">
-    <title>gcimpactsite</title>
+    <title>Grad Center Impact</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
     <link rel="shortcut icon" href="/favicon.ico">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="bower_components/materialize/bin/materialize.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -19,151 +21,160 @@
     <script src="bower_components/modernizr/modernizr.js"></script>
     <!-- endbuild -->
 
-  </head>
-  <body>
+</head>
+
+<body>
     <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+    <div id="header">
+        <div class="menu-button-wrap">
+            <img id="shape0" src="images/shape0.svg" alt="">
+            <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="mdi-navigation-menu menu-button"></i></a>
+        </div>
+        <ul id="slide-out" class="side-nav">
+            <li class="logo">
+                <a href="/" class="brand-logo">
+                    <img src="images/gc-logo.png" alt="The Graduate Center, CUNY">
+                </a>
+            </li>
+            <!--
+            <li class="no-padding">
+                <ul class="collapsible collapsible-accordion">
+                    <li>
+                        <a class="collapsible-header">The Graduate Center<i class="mdi-navigation-arrow-drop-down"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#section2">The Hub of Graduate Education</a></li>
+                                <li><a href="#section3">4,200</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </li>-->
+            <li data-menuanchor="section1">
+                <a class="waves-effect waves-dark" href="#section1"><i class="fa fa-fw fa-building"></i><span> The Graduate Center</span></a>
+            </li>
+            <li data-menuanchor="section4">
+                <a class="waves-effect waves-dark" href="#section4"><i class="fa fa-fw fa-graduation-cap"></i><span> Research</span></a>
+            </li>
+            <li data-menuanchor="section7">
+                <a class="waves-effect waves-dark" href="#section7"><i class="fa fa-fw fa-book"></i><span> Teaching</span></a>
+            </li>
+            <li data-menuanchor="section10">
+                <a class="waves-effect waves-dark" href="#section10"><i class="fa fa-fw fa-users"></i><span> People</span></a>
+            </li>
+        </ul>
+    </div>
 
-
-    <div id="skrollr-body" style="min-width: 1px; position: absolute; z-index: 0; top: 0px; height: 40424px;">
-		<div id="frame0" data-0="opacity:1;z-index:999;" data-100="opacity:0;z-index:0;" class="skrollable " style="opacity: 0; z-index: 0;">
-			<h1>Foreword</h1>
-			<p>Students and alumni from the Graduate Center, CUNY have a huge impact throughout New York City. This site showcases some of those impacts.</p>
-			<p id="scroll"><a href="#frame1">↓ To proceed, please scroll down the page. ↓</a></p>
-		</div>
-		<div id="frame1" data-500="z-index:0;" data-1000="opacity:1;z-index:999;" data-1400="opacity:0;z-index:0;" class="skrollable   ">
-			<div id="title" data-0="opacity:0;" data-500="opacity:1;" class="skrollable " style="opacity: 1;">
-				<img src="images/cuny14_470px_300px.jpg" width="100%" alt="CUNY Graduate Center">
-				<div id="titletext">
-					<h1>The Graduate Center</h1>
-					<h2>City University of New York</h2>
-					<h3>and its impact across New York</h3>
-				</div>
-			</div>
-		</div>
-		<div class="text skrollable   " data-450="top:100%;z-index:999;" data-1000="display:block;" data-4000="top:-100%;display:none;" style="top: -100%; z-index: 999; display: none;">
-			<p><span class="firstfew">Intro text</span> additional info.</p>
-		</div>
-		<div class="imgcontain skrollable " data-3000="top:100%;" data-4250="top:0%;" data-5200="display:block;" data-5800="top:-100%;display:none;" style="top: -100%; display: none;">
-			<img src="images/dissertation_room.jpg" width="100%" alt="diss">
-			<div id="quote1" data-4000="opacity:0;" data-4200="opacity:1;" class="skrollable " style="opacity: 1;">"Cool <span data-4200="color: hsla(0,0%,0%,1);" data-4700="color:hsla(0,0%,100%,1);" class="skrollable " style="color: rgb(255, 255, 255);">quote</span>."</div>
-		</div>
-		<div class="text skrollable " data-4800="top:100%;" data-5000="display:block;" data-15000="top:-800%;display:none;" style="top: -800%; display: none;"><img class="right" src="images/dissertation_room.jpg" alt="GC Dissertation Room">
-			<p><span class="firstfew">GC Doctoral Students</span> write a lot of dissertations.</p>
-		</div>
-		<div data-0="display:none;" data-8800="display:block;" data-9800="top:0%;" data-10400="top:-100%;" class="skrollable  unrendered " style="display: block; top: -100%;">
-			<div class="easing infotext skrollable " data-9000="left:120%;" data-9600="left:0%;" style="left: 0%;">
-				<p>Some cool stat<sup>¹ </sup></p>
-				<p class="one">Sub stat 1</p>
-				<p class="two">Sub stat 2<sup>² </sup></p>
-				<p class="two">Sub stat 3<sup>² </sup></p>
-			</div>
-		</div>
-		<div class="text skrollable " data-9400="top:100%;" data-9600="display:block;" data-11500="top:-100%;display:none;" style="top: -100%; display: none;">
-			<img class="right" src="images/library.jpg" alt="The Graduate Center Library">
-			<p><span class="firstfew">Some other stat</span> with some cool images to follow...</p>
-			<img class="left" src="images/13_CUNY-GC-Commencement-2013-1366_OPENING.jpg" alt="Graduate Center Alumni">
-		</div>
-		<div data-0="display:none;" data-11300="display:block;" data-11800="top:0%;" data-12200="top:-100%;" class="skrollable  unrendered " style="display: block; top: -100%;">
-			<div class="easing infotext skrollable " data-11300="left:-120%;" data-11600="left:0%;" style="left: 0%;">
-				<p>More cool stats:</p>
-				<p class="one">lots of alumni<sup>² </sup></p>
-				<p class="two">do lots of cool stuff<sup>² </sup></p>
-			</div>
-		</div>
-		<div class="text skrollable " data-11400="top:100%;" data-11650="display:block;" data-16900="top:-1000%;display:none;" style="top: -1000%; display: none;">
-			<p><span class="firstfew">something about teaching</span> since we do lots of teaching</p>
-			<img class="right" src="images/crowd_sign-small.jpg" alt="adjunct labor">
-		</div>
-		<div class="imgcontain skrollable " data-13000="top:100%;" data-13550="top:0%;" data-15650="display:block;" data-16300="top:-150%;display:none;" style="top: -150%; display: none;">
-			<img src="images/untitled-121-copy.jpg" width="100%" alt="adjuncts">
-			<div id="quote3" data-14700="opacity:0;" data-15100="opacity:1;" class="skrollable " style="opacity: 1;">"who teaches at cuny? <span data-14850="color: hsla(0,0%,100%,1);" data-15100="color:hsla(0,100%,50%,1);" class="skrollable " style="color: rgb(255, 0, 0);">grad center students</span>."</div>
-		</div>
-		<div class="text skrollable " data-15400="top:100%;" data-15600="display:block;" data-17000="top:-100%;display:none;" style="top: -100%; display: none;">
-			<p><span class="firstfew">that's all,</span> folks</p>	
-		</div>
-		<div data-0="display:none;" data-16600="display:block;" data-18800="top:0%;" data-19200="top:-100%;" class="skrollable  unrendered " style="display: block; top: -100%;">
-			<div class="easing infotext skrollable " data-16800="left:-130%;" data-17400="left:0%;" style="left: 0%;">
-				<p>asdf <span data-18000="color: hsla(0,0%,0%,1);" data-18400="color:hsla(0,100%,50%,1);" class="skrollable " style="color: rgb(255, 0, 0);">ghjkl</span> semicolon.</p>
-			</div>
-		</div>
-		<div class="text skrollable   rendered " data-18300="top:100%;" data-18500="display:block;" data-21000="top:-150%;display:none;" style="top: -111.8%; display: block;">
-			<p><span class="firstfew">anything</span> else.</p>
-		</div>
-		<div data-0="display:none;" data-20600="display:block;" data-21800="top:0%;" data-22500="top:-100%;" class="skrollable rendered " style="display: block; top: 0%;">
-			<div class="easing infotext skrollable  unrendered " data-20700="left:-130%;" data-21100="left:0%;" style="left: -130%;">
-					<p>a few more:</p>
-					<p class="one">stats <span data-21200="color: hsla(0,0%,0%,1);" data-21300="color:hsla(0,100%,50%,1);" class="skrollable  unrendered " style="color: rgb(0, 0, 0);">just</span></p>
-					<p class="two">for <span data-21300="color: hsla(0,0%,0%,1);" data-21500="color:hsla(0,100%,50%,1);" class="skrollable  unrendered " style="color: rgb(0, 0, 0);">fun</span></p>
-					<p class="two">what <span data-21500="color: hsla(0,0%,0%,1);" data-21700="color:hsla(0,100%,50%,1);" class="skrollable  unrendered " style="color: rgb(0, 0, 0);">more is there</span></p>
-			</div>
-		</div>
-		<div class="text skrollable  unrendered " data-21600="top:100%;" data-21800="display:block;" data-23300="top:-150%;display:none;" style="top: 100%; display: block;">
-			<p><span class="firstfew">to say</span>?</p>	
-		</div>
-		<div class="imgcontain skrollable  unrendered " data-22800="top:100%;" data-23350="top:0%;" data-24850="display:block;" data-26000="top:-100%;display:none;" style="top: 100%; display: block;">
-			<img src="images/library.jpg" alt="lib">
-			<div id="quote4" data-24000="opacity:0;" data-24400="opacity:1;" class="skrollable  unrendered " style="opacity: 0;">the library again for fun</div>
-		</div>
-		<div class="text skrollable  unrendered " data-25000="top:100%;" data-25200="display:block;" data-30000="top:-400%;display:none;" style="top: 100%; display: block;">
-			<p><span class="firstfew">just some more</span> random text</p>
-		</div>
-		<div class="imgcontain skrollable  unrendered " data-29000="top:100%;" data-29600="top:0%;" data-31300="display:block;" data-40000="top:-400%;display:none;" style="top: 100%; display: block;">
-			<img src="images/cuny14_470px_300px.jpg" width="960" height="638" alt="womp">
-			<p id="quote5" data-30200="opacity:0;" data-30800="opacity:1" class="skrollable  unrendered " style="opacity: 0;">"a final quote."</p>
-		</div>
-		<div data-31600="top:100%;" data-32000="display:block;" data-35500="top:-100%;display:none;" class="skrollable  unrendered " style="top: 100%; display: block;">
-			<p><span class="firstfew">but seriously</span> that's about it</p>	
-		</div>
-		<div id="sources" data-34500="top:100%;" data-35800="top:0%;display:block;" class="skrollable  unrendered " style="top: 100%; display: block;">
-			<h1>Sources</h1>
-				<h2>where'd we get this</h2>
-				
-					<h1>Notes</h1>
-					<p>&nbsp;</p>
-						<h4>¹ Reference one</h4>
-						<h4>² Reference two</h4>
-						
-			<p><a id="footerlink" href="http://keithmiyake.info"><span class="arrows"></span>keithmiyake.info</a></p>
-		</div>
-</div>
-
+    <div id="skrollr-body">
+        <div id="slides-container">
+            <div id="slides"
+                data-0="transform:translate(0%,0%);"
+                data-50p=""
+                data-150p="transform:translate(0%,-50%);"
+                data-200p=""
+                data-300p="transform:translate(0%,-100%);"
+                data-350p=""
+                data-450p="transform:translate(0%,-150%);"
+                data-500p=""
+                data-600p="transform:translate(0%,-200%);"
+                data-650p=""
+                data-750p="transform:translate(0%,-250%);"
+                data-800p=""
+                data-900p="transform:translate(0%,-300%);"
+                data-950p=""
+                data-1050p="transform:translate(0%,-350%);"
+                data-1100p=""
+                data-1200p="transform:translate(0%,-400%);"
+                data-1250p=""
+                data-1350p="transform:translate(0%,-450%);"
+                data-1400p=""
+                data-1500p="transform:translate(0%,-500%);"
+                data-1550p=""
+                data-1650p="transform:translate(0%,-550%);"
+                >
+                <div id="section1" class="slide" data-bg="images/s1.jpg">
+                    include "section1.html"
+                </div>
+                <div id="section2" class="slide" data-bg="images/s2.jpg">
+                    include "section2.html"
+                </div>
+                <div id="section3" class="slide" data-bg="images/s3.jpg">
+                    include "section3.html"
+                </div>
+                <div id="section4" class="slide" data-bg="images/s4.jpg">
+                    include "section4.html"
+                </div>
+                <div id="section5" class="slide" data-bg="images/s5.jpg">
+                    include "section5.html"
+                </div>
+                <div id="section6" class="slide" data-bg="images/s6.jpg">
+                    include "section6.html"
+                </div>
+                <div id="section7" class="slide" data-bg="images/s7.jpg">
+                    include "section7.html"
+                </div>
+                <div id="section8" class="slide" data-bg="images/s8.jpg">
+                    include "section8.html"
+                </div>
+                <div id="section9" class="slide" data-bg="images/s9.jpg">
+                    include "section9.html"
+                </div>
+                <div id="section10" class="slide" data-bg="images/s10.jpg">
+                    include "section10.html"
+                </div>
+                <div id="section11" class="slide" data-bg="images/s11.jpg">
+                    include "section11.html"
+                </div>
+                <div id="section12" class="slide" data-bg="images/s12.jpg">
+                    include "section12.html"
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="skrollr-helper"></div>
+    include "map_overlay.html"
+    include "vignettes.html"
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
     <script src="bower_components/skrollr/src/skrollr.js"></script>
+    <script src="bower_components/velocity/velocity.js"></script>
+    <script src="bower_components/velocity/velocity.ui.js"></script>
+    <script src="bower_components/lazyloadxt/dist/jquery.lazyloadxt.min.js"></script>
+    <script src="bower_components/lazyloadxt/dist/jquery.lazyloadxt.bg.min.js"></script>
+    <script src="bower_components/materialize/bin/materialize.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
+    <!--
+    <script type="text/javascript">
+    (function(b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+            function() {
+                (b[l].q = b[l].q || []).push(arguments)
+            });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
     </script>
+    -->
+    <!-- build:js(.) scripts/plugins.js -->
+    <!-- endbuild -->
 
-        <!-- build:js(.) scripts/plugins.js -->
-        <script src="bower_components/bootstrap/js/affix.js"></script>
-        <script src="bower_components/bootstrap/js/alert.js"></script>
-        <script src="bower_components/bootstrap/js/dropdown.js"></script>
-        <script src="bower_components/bootstrap/js/tooltip.js"></script>
-        <script src="bower_components/bootstrap/js/modal.js"></script>
-        <script src="bower_components/bootstrap/js/transition.js"></script>
-        <script src="bower_components/bootstrap/js/button.js"></script>
-        <script src="bower_components/bootstrap/js/popover.js"></script>
-        <script src="bower_components/bootstrap/js/carousel.js"></script>
-        <script src="bower_components/bootstrap/js/scrollspy.js"></script>
-        <script src="bower_components/bootstrap/js/collapse.js"></script>
-        <script src="bower_components/bootstrap/js/tab.js"></script>
-        <!-- endbuild -->
-
-        <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+    <!-- build:js({app,.tmp}) scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
 </body>
+
 </html>

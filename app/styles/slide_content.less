@@ -1,0 +1,190 @@
+@import "mixins.less";
+@import "breakpoints.less";
+
+#section2 {
+    .transform(translate(0,100%));
+}
+#section3 {
+    .transform(translate(0,200%));
+}
+#section4 {
+    .transform(translate(0,300%));
+}
+#section5 {
+    .transform(translate(0,400%));
+}
+#section6 {
+    .transform(translate(0,500%));
+}
+#section7 {
+    .transform(translate(0,600%));
+}
+#section8 {
+    .transform(translate(0,700%));
+}
+#section9 {
+    .transform(translate(0,800%));
+}
+#section10 {
+    .transform(translate(0,900%));
+}
+#section11 {
+    .transform(translate(0,1000%));
+}
+#section12 {
+    .transform(translate(0,1100%));
+}
+#shape1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    .responsive-dim(56.8;42.5);
+}
+
+#shape2 {
+    position: absolute;
+    bottom: 0;
+    left: 10.7vw;
+    .responsive-dim(89.4;31.8);
+    .responsive-min(@md;{
+        .responsive-portrait({
+            bottom: 0;
+            left: 10.7vw;
+        });
+        .responsive-landscape({
+            bottom: 0;
+            left: 10.7vw;
+        });
+    });
+}
+
+
+#section3 {
+    #shape3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        .responsive-dim(56.6;36.5);
+    }
+}
+#section4 {
+    background-position: top left;
+    #shape4 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        .responsive-dim(26.1;40.7);
+    }
+}
+#section5 {
+    #shape5 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        .responsive-dim(25.9;40.7);
+    }
+    .map-button {
+        position: absolute;
+        .responsive-landscape({
+            bottom: 30vh;
+            left: 20vh;
+            });
+        .responsive-portrait({
+            bottom: 17vh;
+            left: 13vh;
+            });
+    }
+}
+#section6 {
+    background-position: top right;
+    #shape6 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        .responsive-dim(61.7;30.9);
+    }
+}
+#section7 {
+    #shape7 {
+        position: absolute;
+        top: 0;
+        left: 27vw;
+        .responsive-dim(49.9;27.1);
+        .responsive-min(@md;{
+            .responsive-portrait({
+                top: 0;
+                left: 27vw;
+            });
+            .responsive-landscape({
+                top: 0;
+                left: 27vw;
+            });
+        });
+    }
+}
+#section8 {
+    background-position: bottom left;
+    #shape8 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        .responsive-dim(60.1;27.4);
+    }
+    .map-button {
+        position: absolute;
+        .responsive-landscape({
+            bottom: 16vh;
+            left: 47vh;
+            });
+        .responsive-portrait({
+            bottom: 10vh;
+            right: 26vh;
+            });
+    }
+}
+#section9 {
+    #shape9 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        .responsive-dim(80.3;19.1);
+    }
+}
+#section10 {
+    background-position: bottom left;
+    #shape10 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        .responsive-dim(32.1;59.2);
+    }
+}
+#section11 {
+    background-position: bottom left;
+    #shape11 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        .responsive-dim(37;52.1);
+    }
+    .map-button {
+        position: absolute;
+        .responsive-landscape({
+            bottom: 25vh;
+            right: 6vh;
+            });
+        .responsive-portrait({
+            bottom: 14vh;
+            right: 2vh;
+            });
+    }
+}
+#section12 {
+    background-position: bottom left;
+    #shape12 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        .responsive-dim(66.5;22.9);
+    }
+}

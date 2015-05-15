@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1286.8px" height="326px" viewBox="0 0 1286.8 326" enable-background="new 0 0 1286.8 326" xml:space="preserve">
+<defs>
+  <style type="text/css">
+	<![CDATA[
+		@font-face {
+		font-family: "Univers-CondensedBold";
+		src: url('../fonts/Univers 67 Condensed Bold.woff');
+		}
+		@font-face {
+		font-family: "Univers-Condensed";
+		src: url('../fonts/Univers 57 Condensed.woff');
+		}
+    ]]>
+  </style>
+</defs>
+<g>
+	<defs>
+		<polygon id="SVGID_1_" points="0,326 255.2,-0.2 646.8,-0.2 1069.4,326 		"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_2_)">
+		<rect x="-5" y="-5.2" fill="#FFFFFF" width="1079.4" height="336.2"/>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 265.9987 83.1665)" fill="#656565" font-family="'UniversLTStd-BoldCn'" font-size="24">The Graduate Center, CUNY:</text>
+<text transform="matrix(1 0 0 1 265.9987 113.1665)" fill="#656565" font-family="'Univers-Condensed'" font-size="24">The hub of graduate education </text>
+<text transform="matrix(1 0 0 1 265.9987 143.1665)" fill="#656565" font-family="'Univers-Condensed'" font-size="24">for the City University of New York</text>
+<text transform="matrix(1 0 0 1 265.9987 187.1665)" fill="#757575" font-family="'Univers-Condensed'" font-size="24">The Graduate Center is uniquely situated as the hub of </text>
+<text transform="matrix(1 0 0 1 265.9987 221.1665)" fill="#757575" font-family="'Univers-Condensed'" font-size="24">graduate education in the largest urban public school </text>
+<text transform="matrix(1 0 0 1 265.9987 255.1665)" fill="#757575" font-family="'Univers-Condensed'" font-size="24">system in the world: The City University of New York, a </text>
+<text transform="matrix(1 0 0 1 265.9987 289.1665)" fill="#757575" font-family="'Univers-Condensed'" font-size="24">network of 24 campuses serving over 201,000 students.</text>
+</svg>

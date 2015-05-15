@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="888.7px" height="316.6px" viewBox="0 0 888.7 316.6" enable-background="new 0 0 888.7 316.6" xml:space="preserve">
+<defs>
+  <style type="text/css">
+	<![CDATA[
+		@font-face {
+		  font-family: "Univers-Condensed";
+		  src: url('../fonts/Univers 57 Condensed.woff');
+		}
+	]]>
+  </style>
+</defs>
+<g>
+	<defs>
+		<polygon id="SVGID_1_" points="888.7,316.6 888.7,159.6 832.4,159.6 644.1,43.4 532.9,97.2 280.2,0 6.2,159.6 0,316.6 		"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<g clip-path="url(#SVGID_2_)">
+		<rect x="-5" y="-5" fill="#FFFFFF" width="898.7" height="326.6"/>
+	</g>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 134 199.5088)" fill="#757575" font-family="'Univers-Condensed'" font-size="24">Since 1964, the Graduate Center has awarded 12,641 degrees. </text>
+	<text transform="matrix(1 0 0 1 134 233.5088)" fill="#757575" font-family="'Univers-Condensed'" font-size="24">At 300 pages each, stacked vertically, the dissertations would </text>
+	<text transform="matrix(1 0 0 1 134 267.5088)" fill="#757575" font-family="'Univers-Condensed'" font-size="24">reach the top of the Empire State Building.</text>
+	<text transform="matrix(1 0 0 1 134 155)" fill="#3575B7" font-family="'UniversLTStd-BoldCn'" font-size="24">Research</text>
+</g>
+</svg>
