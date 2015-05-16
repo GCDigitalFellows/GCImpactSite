@@ -823,6 +823,14 @@ body {
     height: 22.9vh;
   }
 }
+@font-face {
+  font-family: "UniversLTStd-BoldCn";
+  src: url('../fonts/Univers 67 Condensed Bold.woff') format('woff'), url('../fonts/Univers 67 Condensed Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Univers-Condensed";
+  src: url('../fonts/Univers 57 Condensed.woff') format('woff'), url('../fonts/Univers 57 Condensed.ttf') format('truetype');
+}
 .open-map-button {
   width: 100%;
   height: 100%;

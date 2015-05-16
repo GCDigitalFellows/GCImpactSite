@@ -7,7 +7,7 @@
   <style type="text/css">
 	<![CDATA[
 		@font-face {
-		font-family: "Univers-CondensedBold";
+		font-family: "UniversLTStd-BoldCn";
 		src: url('../fonts/Univers 67 Condensed Bold.woff');
 		}
 		@font-face {
