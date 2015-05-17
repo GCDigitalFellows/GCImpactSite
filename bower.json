@@ -7,8 +7,9 @@
     "jquery-ui": "latest",
     "fontawesome": "latest",
     "skrollr": "latest",
+    "skrollr-menu": "latest",
     "velocity": "latest",
     "lazyloadxt": "git@github.com:ressio/lazy-load-xt.git#master",
-    "materialize": "latest"
+    "materialize": "git@github.com:Dogfalo/materialize.git#master"
   }
 }

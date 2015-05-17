@@ -17,773 +17,791 @@
   -ms-transform: translate(0, 300%);
   -o-transform: translate(0, 300%);
 }
-#section5 {
-  -webkit-transform: translate(0, 400%);
-  -moz-transform: translate(0, 400%);
-  -ms-transform: translate(0, 400%);
-  -o-transform: translate(0, 400%);
+#slide2 {
+  -webkit-transform: translate(0, 100%);
+  -moz-transform: translate(0, 100%);
+  -ms-transform: translate(0, 100%);
+  -o-transform: translate(0, 100%);
 }
-#section6 {
-  -webkit-transform: translate(0, 500%);
-  -moz-transform: translate(0, 500%);
-  -ms-transform: translate(0, 500%);
-  -o-transform: translate(0, 500%);
+#slide3 {
+  -webkit-transform: translate(0, 200%);
+  -moz-transform: translate(0, 200%);
+  -ms-transform: translate(0, 200%);
+  -o-transform: translate(0, 200%);
 }
-#section7 {
-  -webkit-transform: translate(0, 600%);
-  -moz-transform: translate(0, 600%);
-  -ms-transform: translate(0, 600%);
-  -o-transform: translate(0, 600%);
+#slide4 {
+  -webkit-transform: translate(0, 0%);
+  -moz-transform: translate(0, 0%);
+  -ms-transform: translate(0, 0%);
+  -o-transform: translate(0, 0%);
 }
-#section8 {
-  -webkit-transform: translate(0, 700%);
-  -moz-transform: translate(0, 700%);
-  -ms-transform: translate(0, 700%);
-  -o-transform: translate(0, 700%);
+#slide5 {
+  -webkit-transform: translate(0, 100%);
+  -moz-transform: translate(0, 100%);
+  -ms-transform: translate(0, 100%);
+  -o-transform: translate(0, 100%);
 }
-#section9 {
-  -webkit-transform: translate(0, 800%);
-  -moz-transform: translate(0, 800%);
-  -ms-transform: translate(0, 800%);
-  -o-transform: translate(0, 800%);
+#slide6 {
+  -webkit-transform: translate(0, 200%);
+  -moz-transform: translate(0, 200%);
+  -ms-transform: translate(0, 200%);
+  -o-transform: translate(0, 200%);
 }
-#section10 {
-  -webkit-transform: translate(0, 900%);
-  -moz-transform: translate(0, 900%);
-  -ms-transform: translate(0, 900%);
-  -o-transform: translate(0, 900%);
+#slide7 {
+  -webkit-transform: translate(0, 0%);
+  -moz-transform: translate(0, 0%);
+  -ms-transform: translate(0, 0%);
+  -o-transform: translate(0, 0%);
 }
-#section11 {
-  -webkit-transform: translate(0, 1000%);
-  -moz-transform: translate(0, 1000%);
-  -ms-transform: translate(0, 1000%);
-  -o-transform: translate(0, 1000%);
+#slide8 {
+  -webkit-transform: translate(0, 100%);
+  -moz-transform: translate(0, 100%);
+  -ms-transform: translate(0, 100%);
+  -o-transform: translate(0, 100%);
 }
-#section12 {
-  -webkit-transform: translate(0, 1100%);
-  -moz-transform: translate(0, 1100%);
-  -ms-transform: translate(0, 1100%);
-  -o-transform: translate(0, 1100%);
+#slide9 {
+  -webkit-transform: translate(0, 200%);
+  -moz-transform: translate(0, 200%);
+  -ms-transform: translate(0, 200%);
+  -o-transform: translate(0, 200%);
 }
-#shape1 {
+#slide10 {
+  -webkit-transform: translate(0, 0%);
+  -moz-transform: translate(0, 0%);
+  -ms-transform: translate(0, 0%);
+  -o-transform: translate(0, 0%);
+}
+#slide11 {
+  -webkit-transform: translate(0, 100%);
+  -moz-transform: translate(0, 100%);
+  -ms-transform: translate(0, 100%);
+  -o-transform: translate(0, 100%);
+}
+#slide12 {
+  -webkit-transform: translate(0, 200%);
+  -moz-transform: translate(0, 200%);
+  -ms-transform: translate(0, 200%);
+  -o-transform: translate(0, 200%);
+}
+#slide1 #shape1 {
   position: absolute;
   bottom: 0;
   left: 0;
 }
 @media (orientation: portrait) {
-  #shape1 {
+  #slide1 #shape1 {
     width: 79.875vh;
     height: 42.5vh;
   }
 }
 @media (orientation: landscape) {
-  #shape1 {
+  #slide1 #shape1 {
     width: 79.875vh;
     height: 42.5vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
-  #shape1 {
+  #slide1 #shape1 {
     width: 79.875vh;
     height: 42.5vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
-  #shape1 {
+  #slide1 #shape1 {
     width: 79.875vh;
     height: 42.5vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
-  #shape1 {
+  #slide1 #shape1 {
     width: 79.875vh;
     height: 42.5vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
-  #shape1 {
+  #slide1 #shape1 {
     width: 79.875vh;
     height: 42.5vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
-  #shape1 {
+  #slide1 #shape1 {
     width: 79.875vh;
     height: 42.5vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
-  #shape1 {
+  #slide1 #shape1 {
     width: 79.875vh;
     height: 42.5vh;
   }
 }
-#shape2 {
+#slide2 #shape2 {
   position: absolute;
   bottom: 0;
   left: 10.7vw;
 }
 @media (orientation: portrait) {
-  #shape2 {
+  #slide2 #shape2 {
     width: 125.71875vh;
     height: 31.8vh;
   }
 }
 @media (orientation: landscape) {
-  #shape2 {
+  #slide2 #shape2 {
     width: 125.71875vh;
     height: 31.8vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
-  #shape2 {
+  #slide2 #shape2 {
     width: 125.71875vh;
     height: 31.8vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
-  #shape2 {
+  #slide2 #shape2 {
     width: 125.71875vh;
     height: 31.8vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
-  #shape2 {
+  #slide2 #shape2 {
     width: 125.71875vh;
     height: 31.8vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
-  #shape2 {
+  #slide2 #shape2 {
     width: 125.71875vh;
     height: 31.8vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
-  #shape2 {
+  #slide2 #shape2 {
     width: 125.71875vh;
     height: 31.8vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
-  #shape2 {
+  #slide2 #shape2 {
     width: 125.71875vh;
     height: 31.8vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
-  #shape2 {
+  #slide2 #shape2 {
     bottom: 0;
     left: 10.7vw;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
-  #shape2 {
+  #slide2 #shape2 {
     bottom: 0;
     left: 10.7vw;
   }
 }
-#section3 #shape3 {
+#slide3 #shape3 {
   position: absolute;
   top: 0;
   left: 0;
 }
 @media (orientation: portrait) {
-  #section3 #shape3 {
+  #slide3 #shape3 {
     width: 79.59375vh;
     height: 36.5vh;
   }
 }
 @media (orientation: landscape) {
-  #section3 #shape3 {
+  #slide3 #shape3 {
     width: 79.59375vh;
     height: 36.5vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
-  #section3 #shape3 {
+  #slide3 #shape3 {
     width: 79.59375vh;
     height: 36.5vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
-  #section3 #shape3 {
+  #slide3 #shape3 {
     width: 79.59375vh;
     height: 36.5vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
-  #section3 #shape3 {
+  #slide3 #shape3 {
     width: 79.59375vh;
     height: 36.5vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
-  #section3 #shape3 {
+  #slide3 #shape3 {
     width: 79.59375vh;
     height: 36.5vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
-  #section3 #shape3 {
+  #slide3 #shape3 {
     width: 79.59375vh;
     height: 36.5vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
-  #section3 #shape3 {
+  #slide3 #shape3 {
     width: 79.59375vh;
     height: 36.5vh;
   }
 }
-#section4 {
+#slide4 {
   background-position: top left;
 }
-#section4 #shape4 {
+#slide4 #shape4 {
   position: absolute;
   top: 0;
   right: 0;
 }
 @media (orientation: portrait) {
-  #section4 #shape4 {
+  #slide4 #shape4 {
     width: 36.703125vh;
     height: 40.7vh;
   }
 }
 @media (orientation: landscape) {
-  #section4 #shape4 {
+  #slide4 #shape4 {
     width: 36.703125vh;
     height: 40.7vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
-  #section4 #shape4 {
+  #slide4 #shape4 {
     width: 36.703125vh;
     height: 40.7vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
-  #section4 #shape4 {
+  #slide4 #shape4 {
     width: 36.703125vh;
     height: 40.7vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
-  #section4 #shape4 {
+  #slide4 #shape4 {
     width: 36.703125vh;
     height: 40.7vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
-  #section4 #shape4 {
+  #slide4 #shape4 {
     width: 36.703125vh;
     height: 40.7vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
-  #section4 #shape4 {
+  #slide4 #shape4 {
     width: 36.703125vh;
     height: 40.7vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
-  #section4 #shape4 {
+  #slide4 #shape4 {
     width: 36.703125vh;
     height: 40.7vh;
   }
 }
-#section5 #shape5 {
+#slide5 #shape5 {
   position: absolute;
   bottom: 0;
   left: 0;
 }
 @media (orientation: portrait) {
-  #section5 #shape5 {
+  #slide5 #shape5 {
     width: 36.421875vh;
     height: 40.7vh;
   }
 }
 @media (orientation: landscape) {
-  #section5 #shape5 {
+  #slide5 #shape5 {
     width: 36.421875vh;
     height: 40.7vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
-  #section5 #shape5 {
+  #slide5 #shape5 {
     width: 36.421875vh;
     height: 40.7vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
-  #section5 #shape5 {
+  #slide5 #shape5 {
     width: 36.421875vh;
     height: 40.7vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
-  #section5 #shape5 {
+  #slide5 #shape5 {
     width: 36.421875vh;
     height: 40.7vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
-  #section5 #shape5 {
+  #slide5 #shape5 {
     width: 36.421875vh;
     height: 40.7vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
-  #section5 #shape5 {
+  #slide5 #shape5 {
     width: 36.421875vh;
     height: 40.7vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
-  #section5 #shape5 {
+  #slide5 #shape5 {
     width: 36.421875vh;
     height: 40.7vh;
   }
 }
-#section5 .map-button {
+#slide5 .map-button {
   position: absolute;
 }
 @media (orientation: landscape) {
-  #section5 .map-button {
+  #slide5 .map-button {
     bottom: 30vh;
     left: 20vh;
   }
 }
 @media (orientation: portrait) {
-  #section5 .map-button {
+  #slide5 .map-button {
     bottom: 17vh;
     left: 13vh;
   }
 }
-#section6 {
+#slide6 {
   background-position: top right;
 }
-#section6 #shape6 {
+#slide6 #shape6 {
   position: absolute;
   bottom: 0;
   right: 0;
 }
 @media (orientation: portrait) {
-  #section6 #shape6 {
+  #slide6 #shape6 {
     width: 86.765625vh;
     height: 30.9vh;
   }
 }
 @media (orientation: landscape) {
-  #section6 #shape6 {
+  #slide6 #shape6 {
     width: 86.765625vh;
     height: 30.9vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
-  #section6 #shape6 {
+  #slide6 #shape6 {
     width: 86.765625vh;
     height: 30.9vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
-  #section6 #shape6 {
+  #slide6 #shape6 {
     width: 86.765625vh;
     height: 30.9vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
-  #section6 #shape6 {
+  #slide6 #shape6 {
     width: 86.765625vh;
     height: 30.9vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
-  #section6 #shape6 {
+  #slide6 #shape6 {
     width: 86.765625vh;
     height: 30.9vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
-  #section6 #shape6 {
+  #slide6 #shape6 {
     width: 86.765625vh;
     height: 30.9vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
-  #section6 #shape6 {
+  #slide6 #shape6 {
     width: 86.765625vh;
     height: 30.9vh;
   }
 }
-#section7 #shape7 {
+#slide7 #shape7 {
   position: absolute;
   top: 0;
   left: 27vw;
 }
 @media (orientation: portrait) {
-  #section7 #shape7 {
+  #slide7 #shape7 {
     width: 70.171875vh;
     height: 27.1vh;
   }
 }
 @media (orientation: landscape) {
-  #section7 #shape7 {
+  #slide7 #shape7 {
     width: 70.171875vh;
     height: 27.1vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
-  #section7 #shape7 {
+  #slide7 #shape7 {
     width: 70.171875vh;
     height: 27.1vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
-  #section7 #shape7 {
+  #slide7 #shape7 {
     width: 70.171875vh;
     height: 27.1vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
-  #section7 #shape7 {
+  #slide7 #shape7 {
     width: 70.171875vh;
     height: 27.1vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
-  #section7 #shape7 {
+  #slide7 #shape7 {
     width: 70.171875vh;
     height: 27.1vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
-  #section7 #shape7 {
+  #slide7 #shape7 {
     width: 70.171875vh;
     height: 27.1vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
-  #section7 #shape7 {
+  #slide7 #shape7 {
     width: 70.171875vh;
     height: 27.1vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
-  #section7 #shape7 {
+  #slide7 #shape7 {
     top: 0;
     left: 27vw;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
-  #section7 #shape7 {
+  #slide7 #shape7 {
     top: 0;
     left: 27vw;
   }
 }
-#section8 {
+#slide8 {
   background-position: bottom left;
 }
-#section8 #shape8 {
+#slide8 #shape8 {
   position: absolute;
   bottom: 0;
   left: 0;
 }
 @media (orientation: portrait) {
-  #section8 #shape8 {
+  #slide8 #shape8 {
     width: 84.515625vh;
     height: 27.4vh;
   }
 }
 @media (orientation: landscape) {
-  #section8 #shape8 {
+  #slide8 #shape8 {
     width: 84.515625vh;
     height: 27.4vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
-  #section8 #shape8 {
+  #slide8 #shape8 {
     width: 84.515625vh;
     height: 27.4vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
-  #section8 #shape8 {
+  #slide8 #shape8 {
     width: 84.515625vh;
     height: 27.4vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
-  #section8 #shape8 {
+  #slide8 #shape8 {
     width: 84.515625vh;
     height: 27.4vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
-  #section8 #shape8 {
+  #slide8 #shape8 {
     width: 84.515625vh;
     height: 27.4vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
-  #section8 #shape8 {
+  #slide8 #shape8 {
     width: 84.515625vh;
     height: 27.4vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
-  #section8 #shape8 {
+  #slide8 #shape8 {
     width: 84.515625vh;
     height: 27.4vh;
   }
 }
-#section8 .map-button {
+#slide8 .map-button {
   position: absolute;
 }
 @media (orientation: landscape) {
-  #section8 .map-button {
+  #slide8 .map-button {
     bottom: 16vh;
     left: 47vh;
   }
 }
 @media (orientation: portrait) {
-  #section8 .map-button {
+  #slide8 .map-button {
     bottom: 10vh;
     right: 26vh;
   }
 }
-#section9 #shape9 {
+#slide9 #shape9 {
   position: absolute;
   bottom: 0;
   left: 0;
 }
 @media (orientation: portrait) {
-  #section9 #shape9 {
+  #slide9 #shape9 {
     width: 112.921875vh;
     height: 19.1vh;
   }
 }
 @media (orientation: landscape) {
-  #section9 #shape9 {
+  #slide9 #shape9 {
     width: 112.921875vh;
     height: 19.1vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
-  #section9 #shape9 {
+  #slide9 #shape9 {
     width: 112.921875vh;
     height: 19.1vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
-  #section9 #shape9 {
+  #slide9 #shape9 {
     width: 112.921875vh;
     height: 19.1vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
-  #section9 #shape9 {
+  #slide9 #shape9 {
     width: 112.921875vh;
     height: 19.1vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
-  #section9 #shape9 {
+  #slide9 #shape9 {
     width: 112.921875vh;
     height: 19.1vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
-  #section9 #shape9 {
+  #slide9 #shape9 {
     width: 112.921875vh;
     height: 19.1vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
-  #section9 #shape9 {
+  #slide9 #shape9 {
     width: 112.921875vh;
     height: 19.1vh;
   }
 }
-#section10 {
+#slide10 {
   background-position: bottom left;
 }
-#section10 #shape10 {
+#slide10 #shape10 {
   position: absolute;
   bottom: 0;
   left: 0;
 }
 @media (orientation: portrait) {
-  #section10 #shape10 {
+  #slide10 #shape10 {
     width: 45.140625vh;
     height: 59.2vh;
   }
 }
 @media (orientation: landscape) {
-  #section10 #shape10 {
+  #slide10 #shape10 {
     width: 45.140625vh;
     height: 59.2vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
-  #section10 #shape10 {
+  #slide10 #shape10 {
     width: 45.140625vh;
     height: 59.2vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
-  #section10 #shape10 {
+  #slide10 #shape10 {
     width: 45.140625vh;
     height: 59.2vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
-  #section10 #shape10 {
+  #slide10 #shape10 {
     width: 45.140625vh;
     height: 59.2vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
-  #section10 #shape10 {
+  #slide10 #shape10 {
     width: 45.140625vh;
     height: 59.2vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
-  #section10 #shape10 {
+  #slide10 #shape10 {
     width: 45.140625vh;
     height: 59.2vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
-  #section10 #shape10 {
+  #slide10 #shape10 {
     width: 45.140625vh;
     height: 59.2vh;
   }
 }
-#section11 {
+#slide11 {
   background-position: bottom left;
 }
-#section11 #shape11 {
+#slide11 #shape11 {
   position: absolute;
   bottom: 0;
   right: 0;
 }
 @media (orientation: portrait) {
-  #section11 #shape11 {
+  #slide11 #shape11 {
     width: 52.03125vh;
     height: 52.1vh;
   }
 }
 @media (orientation: landscape) {
-  #section11 #shape11 {
+  #slide11 #shape11 {
     width: 52.03125vh;
     height: 52.1vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
-  #section11 #shape11 {
+  #slide11 #shape11 {
     width: 52.03125vh;
     height: 52.1vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
-  #section11 #shape11 {
+  #slide11 #shape11 {
     width: 52.03125vh;
     height: 52.1vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
-  #section11 #shape11 {
+  #slide11 #shape11 {
     width: 52.03125vh;
     height: 52.1vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
-  #section11 #shape11 {
+  #slide11 #shape11 {
     width: 52.03125vh;
     height: 52.1vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
-  #section11 #shape11 {
+  #slide11 #shape11 {
     width: 52.03125vh;
     height: 52.1vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
-  #section11 #shape11 {
+  #slide11 #shape11 {
     width: 52.03125vh;
     height: 52.1vh;
   }
 }
-#section11 .map-button {
+#slide11 .map-button {
   position: absolute;
 }
 @media (orientation: landscape) {
-  #section11 .map-button {
+  #slide11 .map-button {
     bottom: 25vh;
     right: 6vh;
   }
 }
 @media (orientation: portrait) {
-  #section11 .map-button {
+  #slide11 .map-button {
     bottom: 14vh;
     right: 2vh;
   }
 }
-#section12 {
+#slide12 {
   background-position: bottom left;
 }
-#section12 #shape12 {
+#slide12 #shape12 {
   position: absolute;
   bottom: 0;
   left: 0;
 }
 @media (orientation: portrait) {
-  #section12 #shape12 {
+  #slide12 #shape12 {
     width: 93.515625vh;
     height: 22.9vh;
   }
 }
 @media (orientation: landscape) {
-  #section12 #shape12 {
+  #slide12 #shape12 {
     width: 93.515625vh;
     height: 22.9vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
-  #section12 #shape12 {
+  #slide12 #shape12 {
     width: 93.515625vh;
     height: 22.9vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
-  #section12 #shape12 {
+  #slide12 #shape12 {
     width: 93.515625vh;
     height: 22.9vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
-  #section12 #shape12 {
+  #slide12 #shape12 {
     width: 93.515625vh;
     height: 22.9vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
-  #section12 #shape12 {
+  #slide12 #shape12 {
     width: 93.515625vh;
     height: 22.9vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
-  #section12 #shape12 {
+  #slide12 #shape12 {
     width: 93.515625vh;
     height: 22.9vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
-  #section12 #shape12 {
+  #slide12 #shape12 {
     width: 93.515625vh;
     height: 22.9vh;
   }

@@ -58,7 +58,7 @@ module.exports = function (grunt) {
       },
       less: {
         files: ['<%= config.app %>/styles/{,*/}*.less'],
-        tasks: ['newer:less','newer:copy:styles']
+        tasks: ['less','newer:copy:styles']
       },
       //styles: {
       //  files: ['<%= config.app %>/styles/{,*/}*.css'],
