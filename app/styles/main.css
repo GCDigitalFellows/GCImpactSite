@@ -177,12 +177,12 @@ html, body {
     #slide1 #shape1 {
       width: 62.45117vh;
       height: 26.81641vh; } }
-@media only screen and (min-width: 600px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (orientation: portrait) {
   /* line 50, _slide_content.scss */
   #slide1 #shape1 {
     width: 62.45117vh;
     height: 26.81641vh; } }
-@media only screen and (min-width: 600px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (orientation: landscape) {
   /* line 50, _slide_content.scss */
   #slide1 #shape1 {
     width: 62.45117vh;
@@ -225,12 +225,12 @@ html, body {
     #slide2 #shape2 {
       width: 63.54492vh;
       height: 21.77734vh; } }
-@media only screen and (min-width: 600px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (orientation: portrait) {
   /* line 59, _slide_content.scss */
   #slide2 #shape2 {
     width: 63.54492vh;
     height: 21.77734vh; } }
-@media only screen and (min-width: 600px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (orientation: landscape) {
   /* line 59, _slide_content.scss */
   #slide2 #shape2 {
     width: 63.54492vh;
@@ -258,12 +258,12 @@ html, body {
     width: 63.54492vh;
     height: 21.77734vh; } }
 
-@media only screen and (min-width: 600px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (orientation: portrait) {
   /* line 59, _slide_content.scss */
   #slide2 #shape2 {
     bottom: 0;
     left: 10.7vw; } }
-@media only screen and (min-width: 600px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (orientation: landscape) {
   /* line 59, _slide_content.scss */
   #slide2 #shape2 {
     bottom: 0;
@@ -284,12 +284,12 @@ html, body {
     #slide3 #shape3 {
       width: 59.55078vh;
       height: 27.24609vh; } }
-@media only screen and (min-width: 600px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (orientation: portrait) {
   /* line 78, _slide_content.scss */
   #slide3 #shape3 {
     width: 59.55078vh;
     height: 27.24609vh; } }
-@media only screen and (min-width: 600px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (orientation: landscape) {
   /* line 78, _slide_content.scss */
   #slide3 #shape3 {
     width: 59.55078vh;
@@ -335,12 +335,12 @@ html, body {
       #slide4 #shape4 {
         width: 36.875vh;
         height: 33.36914vh; } }
-@media only screen and (min-width: 600px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (orientation: portrait) {
   /* line 88, _slide_content.scss */
   #slide4 #shape4 {
     width: 36.875vh;
     height: 33.36914vh; } }
-@media only screen and (min-width: 600px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (orientation: landscape) {
   /* line 88, _slide_content.scss */
   #slide4 #shape4 {
     width: 36.875vh;
@@ -383,12 +383,12 @@ html, body {
     #slide5 #shape5 {
       width: 38.64258vh;
       height: 38.47656vh; } }
-@media only screen and (min-width: 600px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (orientation: portrait) {
   /* line 97, _slide_content.scss */
   #slide5 #shape5 {
     width: 38.64258vh;
     height: 38.47656vh; } }
-@media only screen and (min-width: 600px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (orientation: landscape) {
   /* line 97, _slide_content.scss */
   #slide5 #shape5 {
     width: 38.64258vh;
@@ -448,12 +448,12 @@ html, body {
       #slide6 #shape6 {
         width: 61.00586vh;
         height: 27.35352vh; } }
-@media only screen and (min-width: 600px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (orientation: portrait) {
   /* line 118, _slide_content.scss */
   #slide6 #shape6 {
     width: 61.00586vh;
     height: 27.35352vh; } }
-@media only screen and (min-width: 600px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (orientation: landscape) {
   /* line 118, _slide_content.scss */
   #slide6 #shape6 {
     width: 61.00586vh;
@@ -496,12 +496,12 @@ html, body {
     #slide7 #shape7 {
       width: 70.3125vh;
       height: 25.0293vh; } }
-@media only screen and (min-width: 600px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (orientation: portrait) {
   /* line 127, _slide_content.scss */
   #slide7 #shape7 {
     width: 70.3125vh;
     height: 25.0293vh; } }
-@media only screen and (min-width: 600px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (orientation: landscape) {
   /* line 127, _slide_content.scss */
   #slide7 #shape7 {
     width: 70.3125vh;
@@ -529,12 +529,12 @@ html, body {
     width: 70.3125vh;
     height: 25.0293vh; } }
 
-@media only screen and (min-width: 600px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (orientation: portrait) {
   /* line 127, _slide_content.scss */
   #slide7 #shape7 {
     bottom: 0;
     left: 27vw; } }
-@media only screen and (min-width: 600px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (orientation: landscape) {
   /* line 127, _slide_content.scss */
   #slide7 #shape7 {
     bottom: 0;
@@ -558,12 +558,12 @@ html, body {
       #slide8 #shape8 {
         width: 41.79687vh;
         height: 30.88867vh; } }
-@media only screen and (min-width: 600px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (orientation: portrait) {
   /* line 147, _slide_content.scss */
   #slide8 #shape8 {
     width: 41.79687vh;
     height: 30.88867vh; } }
-@media only screen and (min-width: 600px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (orientation: landscape) {
   /* line 147, _slide_content.scss */
   #slide8 #shape8 {
     width: 41.79687vh;
@@ -620,12 +620,12 @@ html, body {
     #slide9 #shape9 {
       width: 74.99023vh;
       height: 25.92773vh; } }
-@media only screen and (min-width: 600px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (orientation: portrait) {
   /* line 167, _slide_content.scss */
   #slide9 #shape9 {
     width: 74.99023vh;
     height: 25.92773vh; } }
-@media only screen and (min-width: 600px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (orientation: landscape) {
   /* line 167, _slide_content.scss */
   #slide9 #shape9 {
     width: 74.99023vh;
@@ -671,12 +671,12 @@ html, body {
       #slide10 #shape10 {
         width: 41.31836vh;
         height: 29.78516vh; } }
-@media only screen and (min-width: 600px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (orientation: portrait) {
   /* line 177, _slide_content.scss */
   #slide10 #shape10 {
     width: 41.31836vh;
     height: 29.78516vh; } }
-@media only screen and (min-width: 600px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (orientation: landscape) {
   /* line 177, _slide_content.scss */
   #slide10 #shape10 {
     width: 41.31836vh;
@@ -722,12 +722,12 @@ html, body {
       #slide11 #shape11 {
         width: 52.12891vh;
         height: 52.12891vh; } }
-@media only screen and (min-width: 600px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (orientation: portrait) {
   /* line 187, _slide_content.scss */
   #slide11 #shape11 {
     width: 52.12891vh;
     height: 52.12891vh; } }
-@media only screen and (min-width: 600px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (orientation: landscape) {
   /* line 187, _slide_content.scss */
   #slide11 #shape11 {
     width: 52.12891vh;
@@ -787,12 +787,12 @@ html, body {
       #slide12 #shape12 {
         width: 57.42187vh;
         height: 16.57227vh; } }
-@media only screen and (min-width: 600px) and (orientation: portrait) {
+@media only screen and (min-width: 768px) and (orientation: portrait) {
   /* line 208, _slide_content.scss */
   #slide12 #shape12 {
     width: 57.42187vh;
     height: 16.57227vh; } }
-@media only screen and (min-width: 600px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (orientation: landscape) {
   /* line 208, _slide_content.scss */
   #slide12 #shape12 {
     width: 57.42187vh;
@@ -820,14 +820,14 @@ html, body {
     width: 57.42187vh;
     height: 16.57227vh; } }
 
-/* line 7, _hamburger_button.scss */
+/* line 9, _hamburger_button.scss */
 .hamburger-button {
   display: block;
   overflow: hidden;
   position: relative;
-  width: 100px;
-  height: 100px;
-  margin: 0;
+  width: 38px;
+  height: 32px;
+  margin: 5px;
   padding: 0;
   font-size: 0;
   text-indent: -99999px;
@@ -836,27 +836,27 @@ html, body {
   border: none;
   border-radius: none;
   cursor: pointer;
-  background-color: #fff;
+  background-color: transparent;
   -webkit-transition: background 0.3s;
   -moz-transition: background 0.3s;
   transition: background 0.3s;
   /* button activated */ }
-  /* line 25, _hamburger_button.scss */
+  /* line 27, _hamburger_button.scss */
   .hamburger-button:focus {
     outline: none; }
-  /* line 29, _hamburger_button.scss */
+  /* line 31, _hamburger_button.scss */
   .hamburger-button span {
     display: block;
     position: absolute;
-    top: 48px;
-    left: 0;
-    right: 0;
+    top: 14px;
+    left: 5px;
+    right: 5px;
     height: 4px;
     background: #222;
     -webkit-transition: -webkit-transform 0.3s;
     -moz-transition: -moz-transform 0.3s;
     transition: transform 0.3s; }
-    /* line 40, _hamburger_button.scss */
+    /* line 42, _hamburger_button.scss */
     .hamburger-button span::before, .hamburger-button span::after {
       position: absolute;
       display: block;
@@ -865,9 +865,9 @@ html, body {
       height: 4px;
       background: #222;
       content: ""; }
-    /* line 51, _hamburger_button.scss */
+    /* line 53, _hamburger_button.scss */
     .hamburger-button span::before {
-      top: -48px;
+      top: -9px;
       -webkit-transform-origin: top right;
       -moz-transform-origin: top right;
       -ms-transform-origin: top right;
@@ -876,9 +876,9 @@ html, body {
       -webkit-transition: -webkit-transform 0.3s, width 0.3s, top 0.3s;
       -moz-transition: -moz-transform 0.3s, width 0.3s, top 0.3s;
       transition: transform 0.3s, width 0.3s, top 0.3s; }
-    /* line 56, _hamburger_button.scss */
+    /* line 58, _hamburger_button.scss */
     .hamburger-button span::after {
-      bottom: -48px;
+      bottom: -9px;
       -webkit-transform-origin: bottom right;
       -moz-transform-origin: bottom right;
       -ms-transform-origin: bottom right;
@@ -887,32 +887,33 @@ html, body {
       -webkit-transition: -webkit-transform 0.3s, width 0.3s, bottom 0.3s;
       -moz-transition: -moz-transform 0.3s, width 0.3s, bottom 0.3s;
       transition: transform 0.3s, width 0.3s, bottom 0.3s; }
-  /* line 65, _hamburger_button.scss */
+  /* line 67, _hamburger_button.scss */
   .hamburger-button.active span {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
-    transform: rotate(180deg); }
-    /* line 68, _hamburger_button.scss */
+    transform: rotate(180deg);
+    left: 4px; }
+    /* line 72, _hamburger_button.scss */
     .hamburger-button.active span::before, .hamburger-button.active span::after {
-      width: 50%; }
-    /* line 73, _hamburger_button.scss */
+      width: 66.66667%; }
+    /* line 77, _hamburger_button.scss */
     .hamburger-button.active span::before {
       top: 0;
-      -webkit-transform: translateX(42px) translateY(3px) rotate(45deg);
-      -moz-transform: translateX(42px) translateY(3px) rotate(45deg);
-      -ms-transform: translateX(42px) translateY(3px) rotate(45deg);
-      -o-transform: translateX(42px) translateY(3px) rotate(45deg);
-      transform: translateX(42px) translateY(3px) rotate(45deg); }
-    /* line 77, _hamburger_button.scss */
+      -webkit-transform: translateX(11.33333px) translateY(2px) rotate(45deg);
+      -moz-transform: translateX(11.33333px) translateY(2px) rotate(45deg);
+      -ms-transform: translateX(11.33333px) translateY(2px) rotate(45deg);
+      -o-transform: translateX(11.33333px) translateY(2px) rotate(45deg);
+      transform: translateX(11.33333px) translateY(2px) rotate(45deg); }
+    /* line 81, _hamburger_button.scss */
     .hamburger-button.active span::after {
       bottom: 0;
-      -webkit-transform: translateX(42px) translateY(3px) rotate(-45deg);
-      -moz-transform: translateX(42px) translateY(3px) rotate(-45deg);
-      -ms-transform: translateX(42px) translateY(3px) rotate(-45deg);
-      -o-transform: translateX(42px) translateY(3px) rotate(-45deg);
-      transform: translateX(42px) translateY(3px) rotate(-45deg); }
+      -webkit-transform: translateX(11.33333px) translateY(-2px) rotate(-45deg);
+      -moz-transform: translateX(11.33333px) translateY(-2px) rotate(-45deg);
+      -ms-transform: translateX(11.33333px) translateY(-2px) rotate(-45deg);
+      -o-transform: translateX(11.33333px) translateY(-2px) rotate(-45deg);
+      transform: translateX(11.33333px) translateY(-2px) rotate(-45deg); }
 
 /* active state, i.e. menu open */
 @font-face {
@@ -934,8 +935,8 @@ html, body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 4.5vw;
-  height: 5.5vw;
+  width: 68px;
+  height: 74px;
   padding: 0;
   background: transparent; }
 
@@ -999,83 +1000,90 @@ html, body {
 
 /* line 109, main.scss */
 .navbar-fixed {
-  height: 74px; }
-  /* line 111, main.scss */
+  height: 48px; }
+  /* line 112, main.scss */
+  .navbar-fixed #shape-logo {
+    position: fixed;
+    height: 120px;
+    top: 0;
+    right: 0;
+    z-index: 999; }
+  /* line 120, main.scss */
   .navbar-fixed a.brand-logo {
-    background: #fff;
+    background: transparent;
     padding: 5px 5px;
     position: fixed;
     top: 0;
     right: 0;
     z-index: 1000; }
-    /* line 118, main.scss */
+    /* line 127, main.scss */
     .navbar-fixed a.brand-logo img {
       height: 84px; }
-  /* line 122, main.scss */
+  /* line 131, main.scss */
   .navbar-fixed nav {
-    background: #fff;
-    width: calc(~"100% - 56px");
-    height: 74px; }
-  /* line 128, main.scss */
+    background: rgba(255, 255, 255, 0.8);
+    width: calc(~"100% - 85px");
+    height: 48px; }
+  /* line 137, main.scss */
   .navbar-fixed .nav-wrapper {
-    height: 74px; }
-    /* line 130, main.scss */
+    height: 48px; }
+    /* line 139, main.scss */
     .navbar-fixed .nav-wrapper ul {
       width: 100%;
-      height: 74px;
-      line-height: 74px;
+      height: 48px;
+      line-height: 48px;
       margin-top: -1px; }
-      /* line 135, main.scss */
+      /* line 144, main.scss */
       .navbar-fixed .nav-wrapper ul li {
         display: inline;
         width: 25%; }
-        /* line 138, main.scss */
+        /* line 147, main.scss */
         .navbar-fixed .nav-wrapper ul li a {
           width: 100%;
           font-family: "Univers-CondensedBold";
           text-align: center; }
-      /* line 145, main.scss */
+      /* line 154, main.scss */
       .navbar-fixed .nav-wrapper ul li:nth-child(1) a {
         color: #005bbb; }
-      /* line 148, main.scss */
+      /* line 157, main.scss */
       .navbar-fixed .nav-wrapper ul li:nth-child(1) a.active {
         background: #005bbb;
         color: #fff; }
-      /* line 154, main.scss */
+      /* line 163, main.scss */
       .navbar-fixed .nav-wrapper ul li:nth-child(2) a {
         color: #009b3a; }
-      /* line 157, main.scss */
+      /* line 166, main.scss */
       .navbar-fixed .nav-wrapper ul li:nth-child(2) a.active {
         background: #009b3a;
         color: #fff; }
-      /* line 163, main.scss */
+      /* line 172, main.scss */
       .navbar-fixed .nav-wrapper ul li:nth-child(3) a {
         color: #ffa100; }
-      /* line 166, main.scss */
+      /* line 175, main.scss */
       .navbar-fixed .nav-wrapper ul li:nth-child(3) a.active {
         background: #ffa100;
         color: #fff; }
-      /* line 172, main.scss */
+      /* line 181, main.scss */
       .navbar-fixed .nav-wrapper ul li:nth-child(4) a {
         color: #8f23b3; }
-      /* line 175, main.scss */
+      /* line 184, main.scss */
       .navbar-fixed .nav-wrapper ul li:nth-child(4) a.active {
         background: #8f23b3;
         color: #fff; }
 
 /* MAPS/MODALS */
-/* line 188, main.scss */
+/* line 197, main.scss */
 .map {
   width: 100%;
   height: 100%; }
 
-/* line 193, main.scss */
+/* line 202, main.scss */
 .modal, .modal.modal-fixed-footer {
   max-height: 80%;
   height: 80%;
   width: 75%; }
 
-/* line 199, main.scss */
+/* line 208, main.scss */
 .modal.modal-fixed-footer .modal-content {
   bottom: 0;
   top: 0;
@@ -1085,19 +1093,19 @@ html, body {
 /* media queries for responsiveness */
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 993px) {
-  /* line 214, main.scss */
+  /* line 223, main.scss */
   .menu-wrap {
     width: 30vw;
     padding: 2em; } }
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1268px) {
-  /* line 222, main.scss */
+  /* line 231, main.scss */
   .menu-wrap {
     width: 20vw;
     height: 100vh;
     padding: 2em; }
 
-  /* line 228, main.scss */
+  /* line 237, main.scss */
   .row .col.x3 {
     width: 25%;
     margin-left: 0; } }

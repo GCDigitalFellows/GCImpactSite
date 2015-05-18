@@ -26,7 +26,7 @@ $color2: rgb(0,155,58);
 $color3: rgb(255,161,0);
 $color4: rgb(143,35,179);
 
-$headerHeight: 74px;
+$headerHeight: 48px;
 
 .open-map-button {
   width: 100%;
@@ -41,8 +41,8 @@ $headerHeight: 74px;
   position: fixed;
   top: 0;
   left: 0;
-  width: 4.5vw;
-  height: 5.5vw;
+  width: 68px;
+  height: 74px;
   padding: 0;
   background: transparent;
 }
@@ -129,8 +129,8 @@ $headerHeight: 74px;
     }
   }
   nav {
-    background: #fff;
-    width: calc(~"100% - 56px");
+    background: rgba(255,255,255,0.8);
+    width: calc(~"100% - 85px");
     height: $headerHeight;
 
   }
