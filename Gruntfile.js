@@ -445,10 +445,11 @@ module.exports = function (grunt) {
   grunt.registerTask('build', 'build your app and output to dist folder',
     function(target) {
       if (target === 'temp') {
-        config.out = config.dist;
-      } else {
         config.out = config.temp;
+      } else {
+        config.out = config.dist;
       }
+      grunt.log.warn('Using config.out=' + config.out);
       return grunt.task.run([
         'clean',
         'less',

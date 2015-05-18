@@ -368,18 +368,18 @@
 }
 @media (orientation: landscape) {
   #slide5 .map-button {
-    bottom: 30vh;
-    left: 20vh;
+    bottom: 5vh;
+    left: 22vh;
   }
 }
 @media (orientation: portrait) {
   #slide5 .map-button {
-    bottom: 17vh;
-    left: 13vh;
+    bottom: 5vh;
+    left: 22vh;
   }
 }
 #slide6 {
-  background-position: top right;
+  background-position: center right;
 }
 #slide6 #shape6 {
   position: absolute;
@@ -500,7 +500,7 @@
   }
 }
 #slide8 {
-  background-position: bottom left;
+  background-position: center left;
 }
 #slide8 #shape8 {
   position: absolute;
@@ -560,14 +560,14 @@
 }
 @media (orientation: landscape) {
   #slide8 .map-button {
-    bottom: 16vh;
-    left: 47vh;
+    bottom: 3vh;
+    left: 30vh;
   }
 }
 @media (orientation: portrait) {
   #slide8 .map-button {
-    bottom: 10vh;
-    right: 26vh;
+    bottom: 3vh;
+    right: 30vh;
   }
 }
 #slide9 #shape9 {
@@ -624,7 +624,7 @@
   }
 }
 #slide10 {
-  background-position: bottom left;
+  background-position: bottom center;
 }
 #slide10 #shape10 {
   position: absolute;
@@ -680,7 +680,7 @@
   }
 }
 #slide11 {
-  background-position: bottom left;
+  background-position: top center;
 }
 #slide11 #shape11 {
   position: absolute;
@@ -740,14 +740,14 @@
 }
 @media (orientation: landscape) {
   #slide11 .map-button {
-    bottom: 25vh;
+    bottom: 5vh;
     right: 6vh;
   }
 }
 @media (orientation: portrait) {
   #slide11 .map-button {
-    bottom: 14vh;
-    right: 2vh;
+    bottom: 5vh;
+    right: 6vh;
   }
 }
 #slide12 {
