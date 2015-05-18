@@ -1,0 +1,93 @@
+$hamburger-height: 100px;
+$hamburger-width: 100px;
+$hamburger-barHeight: 4px;
+$hamburger-color: #222;
+$hamburger-background: #fff;
+
+.hamburger-button {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: $hamburger-width;
+  height: $hamburger-height;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-indent: -99999px;
+  appearance: none;
+  box-shadow: none;
+  border: none;
+  border-radius: none;
+  cursor: pointer;
+  background-color: $hamburger-background;
+  @include transition(background 0.3s);
+
+  &:focus {
+    outline: none;
+  }
+
+  span {
+    display: block;
+    position: absolute;
+    top: $hamburger-height / 2 - $hamburger-barHeight / 2;
+    left: 0;
+    right: 0;
+    height: $hamburger-barHeight;
+    background: $hamburger-color;
+
+    @include transition(transform 0.3s);
+
+    &::before,
+    &::after {
+      position: absolute;
+      display: block;
+      left: 0;
+      width: 100%;
+      height: $hamburger-barHeight;
+      background: $hamburger-color;
+      content: "";
+    }
+
+    &::before {
+      top: -$hamburger-height / 2 + $hamburger-barHeight / 2;
+      @include transform-origin(top right);
+      @include transition(transform 0.3s, width 0.3s, top 0.3s);
+    }
+    &::after {
+      bottom: -$hamburger-height / 2 + $hamburger-barHeight / 2;
+      @include transform-origin(bottom right);
+      @include transition(transform 0.3s, width 0.3s, bottom 0.3s);
+    }
+  }
+
+  /* button activated */
+  &.active {
+    span {
+      @include transform(rotate(180deg));
+
+      &::before,
+      &::after {
+        width: 50%;
+      }
+
+      &::before {
+        top: 0;
+        @include transform(translateX(42px) translateY(3px) rotate(45deg));
+      }
+      &::after {
+        bottom: 0;
+        @include transform(translateX(42px) translateY(3px) rotate(-45deg));
+      }
+    }
+  }
+}
+
+// .hamburger-button__htla {
+//   background-color: #32dc64;
+// }
+
+
+/* active state, i.e. menu open */
+// .hamburger-button__htla.active {
+//   background-color: #18903c;
+// }
