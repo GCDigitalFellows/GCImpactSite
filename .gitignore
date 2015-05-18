@@ -4,3 +4,4 @@ dist
 test
 bower_components
 src
+.sass-cache

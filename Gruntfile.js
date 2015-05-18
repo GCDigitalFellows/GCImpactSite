@@ -56,9 +56,9 @@ module.exports = function (grunt) {
       gruntfile: {
         files: ['Gruntfile.js']
       },
-      less: {
-        files: ['<%= config.app %>/styles/{,*/}*.less'],
-        tasks: ['less','newer:copy:styles']
+      sass: {
+        files: ['<%= config.app %>/styles/{,*/}*.scss'],
+        tasks: ['sass','newer:copy:styles']
       },
       //styles: {
       //  files: ['<%= config.app %>/styles/{,*/}*.css'],
@@ -135,15 +135,15 @@ module.exports = function (grunt) {
     },
 
 
-    less: {
+    sass: {
+      options: {
+        lineNumbers: true,
+        loadPath: 'bower_components/'
+      },
       all: {
-        files: [{
-        expand: true,
-        cwd: '<%= config.app %>/styles',
-        src: ['*.less'],
-        dest: '<%= config.app %>/styles/',
-        ext: '.css'
-      }]
+        files: {
+          '<%= config.app %>/styles/main.css': '<%= config.app %>/styles/main.scss'
+        }
       }
     },
 
@@ -406,7 +406,7 @@ module.exports = function (grunt) {
     grunt.log.warn('out dir: ' + config.out);
     grunt.task.run([
       //'clean:server',
-      'newer:less',
+      'newer:sass',
       'newer:jshint',
       'includes',
       'copy:all',
@@ -429,7 +429,7 @@ module.exports = function (grunt) {
       grunt.task.run([
         'clean',
         'newer:jshint',
-        'less',
+        'sass',
         'includes',
         'copy',
         'autoprefixer'
@@ -452,7 +452,7 @@ module.exports = function (grunt) {
       grunt.log.warn('Using config.out=' + config.out);
       return grunt.task.run([
         'clean',
-        'less',
+        'sass',
         'includes',
         'useminPrepare',
         'copy:all',

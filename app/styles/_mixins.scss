@@ -1,0 +1,43 @@
+@mixin responsive-min($minWidth){
+    @media only screen and (min-width: $minWidth) {
+        @content;
+    }
+}
+
+@mixin responsive-portrait{
+    @media (orientation: portrait) {
+        @content;
+    }
+}
+
+@mixin responsive-landscape{
+    @media (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin orientation-dim($width, $height) {
+    @include responsive-portrait {
+        // width: unit($width,vw);
+        // height: unit($height / $ratio,vw);
+        width: #{$width * $ratio}vh;
+        height: #{$height}vh;
+    }
+    @include responsive-landscape {
+        width: #{$width * $ratio}vh;
+        height: #{$height}vh;
+    }
+}
+
+@mixin responsive-dim($width, $height) {
+    @include orientation-dim($width,$height);
+    @include responsive-min($md) {
+        @include orientation-dim($width, $height);
+    }
+    @include responsive-min($lg) {
+        @include orientation-dim($width,$height);
+    }
+    @include responsive-min($xl) {
+        @include orientation-dim($width,$height);
+    }
+}

@@ -1,51 +1,49 @@
-@import "mixins.less";
-@import "breakpoints.less";
-
 #section1 {
-
 }
 #section2 {
-    .transform(translate(0,100%));
+    @include transform(translate(0,100%));
 }
 #section3 {
-    .transform(translate(0,200%));
+    @include transform(translate(0,200%));
 }
 #section4 {
-    .transform(translate(0,300%));
+    @include transform(translate(0,300%));
 }
 
+#slide1 {
+}
 #slide2 {
-    .transform(translate(0,100%));
+    @include transform(translate(0,100%));
 }
 #slide3 {
-    .transform(translate(0,200%));
+    @include transform(translate(0,200%));
 }
 #slide4 {
-    .transform(translate(0,0%));
+    @include transform(translate(0,0%));
 }
 #slide5 {
-    .transform(translate(0,100%));
+    @include transform(translate(0,100%));
 }
 #slide6 {
-    .transform(translate(0,200%));
+    @include transform(translate(0,200%));
 }
 #slide7 {
-    .transform(translate(0,0%));
+    @include transform(translate(0,0%));
 }
 #slide8 {
-    .transform(translate(0,100%));
+    @include transform(translate(0,100%));
 }
 #slide9 {
-    .transform(translate(0,200%));
+    @include transform(translate(0,200%));
 }
 #slide10 {
-    .transform(translate(0,0%));
+    @include transform(translate(0,0%));
 }
 #slide11 {
-    .transform(translate(0,100%));
+    @include transform(translate(0,100%));
 }
 #slide12 {
-    .transform(translate(0,200%));
+    @include transform(translate(0,200%));
 }
 
 #slide1 {
@@ -53,7 +51,7 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        .responsive-dim(44.409722222;26.81640625);
+        @include responsive-dim(44.409722222,26.81640625);
     }
 }
 
@@ -62,17 +60,17 @@
         position: absolute;
         bottom: 0;
         left: 20.3vw;
-        .responsive-dim(45.1875;21.77734375);
-        .responsive-min(@md;{
-            .responsive-portrait({
+        @include responsive-dim(45.1875,21.77734375);
+        @include responsive-min($md) {
+            @include responsive-portrait {
                 bottom: 0;
                 left: 10.7vw;
-            });
-            .responsive-landscape({
+            }
+            @include responsive-landscape {
                 bottom: 0;
                 left: 10.7vw;
-            });
-        });
+            }
+     }
     }
 }
 
@@ -81,7 +79,7 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        .responsive-dim(42.347222222;27.24609375);
+        @include responsive-dim(42.347222222,27.24609375);
     }
 }
 
@@ -91,7 +89,7 @@
         position: absolute;
         bottom: 0;
         right: 0;
-        .responsive-dim(26.222222222;33.369140625);
+        @include responsive-dim(26.222222222,33.369140625);
     }
 }
 
@@ -100,18 +98,18 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        .responsive-dim(27.479166667;38.4765625);
+        @include responsive-dim(27.479166667,38.4765625);
     }
     .map-button {
         position: absolute;
-        .responsive-landscape({
+        @include responsive-landscape {
             bottom: 5vh;
             left: 22vh;
-            });
-        .responsive-portrait({
+         }
+        @include responsive-portrait {
             bottom: 5vh;
             left: 22vh;
-            });
+         }
     }
 }
 
@@ -121,7 +119,7 @@
         position: absolute;
         bottom: 0;
         right: 0;
-        .responsive-dim(43.381944444;27.353515625);
+        @include responsive-dim(43.381944444,27.353515625);
     }
 }
 
@@ -130,17 +128,17 @@
         position: absolute;
         bottom: 0;
         left: 27.2vw;
-        .responsive-dim(50;25.029296875);
-        .responsive-min(@md;{
-            .responsive-portrait({
+        @include responsive-dim(50,25.029296875);
+        @include responsive-min($md) {
+            @include responsive-portrait {
                 bottom: 0;
                 left: 27vw;
-            });
-            .responsive-landscape({
+         }
+            @include responsive-landscape {
                 bottom: 0;
                 left: 27vw;
-            });
-        });
+         }
+     }
     }
 }
 
@@ -150,18 +148,18 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        .responsive-dim(29.722222222;30.888671875);
+        @include responsive-dim(29.722222222,30.888671875);
     }
     .map-button {
         position: absolute;
-        .responsive-landscape({
+        @include responsive-landscape {
             bottom: 3vh;
             left: 30vh;
-            });
-        .responsive-portrait({
+         }
+        @include responsive-portrait {
             bottom: 3vh;
             right: 30vh;
-            });
+         }
     }
 }
 
@@ -170,7 +168,7 @@
         position: absolute;
         bottom: 0;
         left: 23.3vw;
-        .responsive-dim(53.326388889;25.927734375);
+        @include responsive-dim(53.326388889,25.927734375);
     }
 }
 
@@ -180,7 +178,7 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        .responsive-dim(29.381944444;29.78515625);
+        @include responsive-dim(29.381944444,29.78515625);
     }
 }
 
@@ -190,18 +188,18 @@
         position: absolute;
         bottom: 0;
         right: 0;
-        .responsive-dim(37.069444444;52.12890625);
+        @include responsive-dim(37.069444444,52.12890625);
     }
     .map-button {
         position: absolute;
-        .responsive-landscape({
+        @include responsive-landscape {
             bottom: 5vh;
             right: 6vh;
-            });
-        .responsive-portrait({
+         }
+        @include responsive-portrait {
             bottom: 5vh;
             right: 6vh;
-            });
+         }
     }
 }
 
@@ -211,6 +209,6 @@
         position: absolute;
         bottom: 0;
         left: 29.4vw;
-        .responsive-dim(40.833333333;16.572265625);
+        @include responsive-dim(40.833333333,16.572265625);
     }
 }

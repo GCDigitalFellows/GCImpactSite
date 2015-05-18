@@ -1,8 +1,13 @@
-@import "breakpoints.less";
-@import "mixins.less";
+@import "bourbon/app/assets/stylesheets/bourbon";
 
-@import "slides.less";
-@import "slide_content.less";
+@import "breakpoints";
+@import "mixins";
+
+@import "slides";
+@import "slide_content";
+
+@import "hamburger_button";
+
 
 @font-face {
   font-family: "Univers-CondensedBold";
@@ -15,13 +20,13 @@
   url('../fonts/Univers 57 Condensed.ttf') format('truetype');
 }
 
-@gcblue: rgb(29,58,131);
-@color1: rgb(0,91,187);
-@color2: rgb(0,155,58);
-@color3: rgb(255,161,0);
-@color4: rgb(143,35,179);
+$gcblue: rgb(29,58,131);
+$color1: rgb(0,91,187);
+$color2: rgb(0,155,58);
+$color3: rgb(255,161,0);
+$color4: rgb(143,35,179);
 
-@headerHeight: 74px;
+$headerHeight: 74px;
 
 .open-map-button {
   width: 100%;
@@ -102,7 +107,7 @@
 }
 
 .navbar-fixed {
-  height: @headerHeight;
+  height: $headerHeight;
   a.brand-logo {
     background: #fff;
     padding: 5px 5px;
@@ -117,15 +122,15 @@
   nav {
     background: #fff;
     width: calc(~"100% - 56px");
-    height: @headerHeight;
+    height: $headerHeight;
 
   }
   .nav-wrapper {
-    height: @headerHeight;
+    height: $headerHeight;
     ul {
       width: 100%;
-      height: @headerHeight;
-      line-height: @headerHeight;
+      height: $headerHeight;
+      line-height: $headerHeight;
       margin-top: -1px;
       li {
         display: inline;
@@ -138,37 +143,37 @@
       }
       li:nth-child(1) {
         a {
-          color: @color1;
+          color: $color1;
         }
         a.active {
-          background: @color1;
+          background: $color1;
           color: #fff;
         }
       }
       li:nth-child(2) {
         a {
-          color: @color2;
+          color: $color2;
         }
         a.active {
-          background: @color2;
+          background: $color2;
           color: #fff;
         }
       }
       li:nth-child(3) {
         a {
-          color: @color3;
+          color: $color3;
         }
         a.active {
-          background: @color3;
+          background: $color3;
           color: #fff;
         }
       }
       li:nth-child(4) {
         a {
-          color: @color4;
+          color: $color4;
         }
         a.active {
-          background: @color4;
+          background: $color4;
           color: #fff;
         }
       }

@@ -9,10 +9,12 @@ html,body {
 
 #slides-container {
     position: fixed;
-    top: 64px;
     left: 0;
+    top: 0;
+    //top: $headerHeight;
+    //height: calc(~"100% - ${headerHeight}");
+    height: 100%;
     width: 100%;
-    height: calc(~"100% - 64px");
     overflow: hidden;
 }
 
@@ -27,7 +29,7 @@ html,body {
     top:0;
     left:0;
     width:100%;
-    height:calc(100%/3);
+    height:calc(100% / 3);
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
