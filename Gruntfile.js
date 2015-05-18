@@ -133,6 +133,8 @@ module.exports = function (grunt) {
         }]
       },
     },
+
+
     less: {
       all: {
         files: [{
@@ -440,26 +442,34 @@ module.exports = function (grunt) {
     ]);
   });
 
-  grunt.registerTask('build', [
-    'clean',
-    'less',
-    'includes',
-    'useminPrepare',
-    'copy:all',
-    'copy:js',
-    'copy:styles',
-    'imagemin',
-    //'autoprefixer',
-    // 'svgmin'
-    'autoprefixer',
-    'newer:concat',
-    'newer:cssmin',
-    'newer:uglify',
-    //'modernizr:dist',
-    //'rev',
-    'usemin',
-    //'htmlmin'
-  ]);
+  grunt.registerTask('build', 'build your app and output to dist folder',
+    function(target) {
+      if (target === 'temp') {
+        config.out = config.dist;
+      } else {
+        config.out = config.temp;
+      }
+      return grunt.task.run([
+        'clean',
+        'less',
+        'includes',
+        'useminPrepare',
+        'copy:all',
+        'copy:js',
+        'copy:styles',
+        'imagemin',
+        // 'svgmin'
+        'autoprefixer',
+        'newer:concat',
+        'newer:cssmin',
+        'newer:uglify',
+        'modernizr:dist',
+        //'rev',
+        'usemin',
+        //'htmlmin'
+      ]);
+    }
+  );
 
   grunt.registerTask('default', [
     'newer:jshint',
