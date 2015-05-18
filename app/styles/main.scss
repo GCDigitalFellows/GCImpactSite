@@ -108,8 +108,17 @@ $headerHeight: 74px;
 
 .navbar-fixed {
   height: $headerHeight;
+
+  #shape-logo {
+    position: fixed;
+    height: 120px;
+    top: 0;
+    right: 0;
+    z-index: 999;
+  }
+
   a.brand-logo {
-    background: #fff;
+    background: transparent;
     padding: 5px 5px;
     position: fixed;
     top: 0;
