@@ -1,16 +1,18 @@
-$hamburger-height: 100px;
-$hamburger-width: 100px;
+$hamburger-height: 22px;
+$hamburger-width: 28px;
 $hamburger-barHeight: 4px;
 $hamburger-color: #222;
-$hamburger-background: #fff;
+$hamburger-background: transparent;
+$hamburger-margin: 5px;
+$hamburger-padding: 5px; // pseudo padding, uses absolute positioning to simulate padding
 
 .hamburger-button {
   display: block;
   overflow: hidden;
   position: relative;
-  width: $hamburger-width;
-  height: $hamburger-height;
-  margin: 0;
+  width: $hamburger-width + 2 * $hamburger-padding;
+  height: $hamburger-height + 2 * $hamburger-padding;
+  margin: $hamburger-margin;
   padding: 0;
   font-size: 0;
   text-indent: -99999px;
@@ -29,9 +31,9 @@ $hamburger-background: #fff;
   span {
     display: block;
     position: absolute;
-    top: $hamburger-height / 2 - $hamburger-barHeight / 2;
-    left: 0;
-    right: 0;
+    top: $hamburger-height / 2 - $hamburger-barHeight / 2 + $hamburger-padding;
+    left: $hamburger-padding;
+    right: $hamburger-padding;
     height: $hamburger-barHeight;
     background: $hamburger-color;
 
@@ -65,18 +67,20 @@ $hamburger-background: #fff;
     span {
       @include transform(rotate(180deg));
 
+      left: $hamburger-barHeight;
+
       &::before,
       &::after {
-        width: 50%;
+        width: 100% * 2 / 3;
       }
 
       &::before {
         top: 0;
-        @include transform(translateX(42px) translateY(3px) rotate(45deg));
+        @include transform(translateX($hamburger-width / 3 + $hamburger-barHeight / 2) translateY($hamburger-barHeight / 2) rotate(45deg));
       }
       &::after {
         bottom: 0;
-        @include transform(translateX(42px) translateY(3px) rotate(-45deg));
+        @include transform(translateX($hamburger-width / 3 + $hamburger-barHeight / 2) translateY(- $hamburger-barHeight / 2) rotate(-45deg));
       }
     }
   }
