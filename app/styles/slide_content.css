@@ -90,103 +90,103 @@
 }
 @media (orientation: portrait) {
   #slide1 #shape1 {
-    width: 79.875vh;
-    height: 42.5vh;
+    width: 62.45117187vh;
+    height: 26.81640625vh;
   }
 }
 @media (orientation: landscape) {
   #slide1 #shape1 {
-    width: 79.875vh;
-    height: 42.5vh;
+    width: 62.45117187vh;
+    height: 26.81640625vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
   #slide1 #shape1 {
-    width: 79.875vh;
-    height: 42.5vh;
+    width: 62.45117187vh;
+    height: 26.81640625vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
   #slide1 #shape1 {
-    width: 79.875vh;
-    height: 42.5vh;
+    width: 62.45117187vh;
+    height: 26.81640625vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
   #slide1 #shape1 {
-    width: 79.875vh;
-    height: 42.5vh;
+    width: 62.45117187vh;
+    height: 26.81640625vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
   #slide1 #shape1 {
-    width: 79.875vh;
-    height: 42.5vh;
+    width: 62.45117187vh;
+    height: 26.81640625vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
   #slide1 #shape1 {
-    width: 79.875vh;
-    height: 42.5vh;
+    width: 62.45117187vh;
+    height: 26.81640625vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
   #slide1 #shape1 {
-    width: 79.875vh;
-    height: 42.5vh;
+    width: 62.45117187vh;
+    height: 26.81640625vh;
   }
 }
 #slide2 #shape2 {
   position: absolute;
   bottom: 0;
-  left: 10.7vw;
+  left: 20.3vw;
 }
 @media (orientation: portrait) {
   #slide2 #shape2 {
-    width: 125.71875vh;
-    height: 31.8vh;
+    width: 63.54492188vh;
+    height: 21.77734375vh;
   }
 }
 @media (orientation: landscape) {
   #slide2 #shape2 {
-    width: 125.71875vh;
-    height: 31.8vh;
+    width: 63.54492188vh;
+    height: 21.77734375vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
   #slide2 #shape2 {
-    width: 125.71875vh;
-    height: 31.8vh;
+    width: 63.54492188vh;
+    height: 21.77734375vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
   #slide2 #shape2 {
-    width: 125.71875vh;
-    height: 31.8vh;
+    width: 63.54492188vh;
+    height: 21.77734375vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
   #slide2 #shape2 {
-    width: 125.71875vh;
-    height: 31.8vh;
+    width: 63.54492188vh;
+    height: 21.77734375vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
   #slide2 #shape2 {
-    width: 125.71875vh;
-    height: 31.8vh;
+    width: 63.54492188vh;
+    height: 21.77734375vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
   #slide2 #shape2 {
-    width: 125.71875vh;
-    height: 31.8vh;
+    width: 63.54492188vh;
+    height: 21.77734375vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
   #slide2 #shape2 {
-    width: 125.71875vh;
-    height: 31.8vh;
+    width: 63.54492188vh;
+    height: 21.77734375vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
@@ -203,55 +203,55 @@
 }
 #slide3 #shape3 {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
 }
 @media (orientation: portrait) {
   #slide3 #shape3 {
-    width: 79.59375vh;
-    height: 36.5vh;
+    width: 59.55078125vh;
+    height: 27.24609375vh;
   }
 }
 @media (orientation: landscape) {
   #slide3 #shape3 {
-    width: 79.59375vh;
-    height: 36.5vh;
+    width: 59.55078125vh;
+    height: 27.24609375vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
   #slide3 #shape3 {
-    width: 79.59375vh;
-    height: 36.5vh;
+    width: 59.55078125vh;
+    height: 27.24609375vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
   #slide3 #shape3 {
-    width: 79.59375vh;
-    height: 36.5vh;
+    width: 59.55078125vh;
+    height: 27.24609375vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
   #slide3 #shape3 {
-    width: 79.59375vh;
-    height: 36.5vh;
+    width: 59.55078125vh;
+    height: 27.24609375vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
   #slide3 #shape3 {
-    width: 79.59375vh;
-    height: 36.5vh;
+    width: 59.55078125vh;
+    height: 27.24609375vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
   #slide3 #shape3 {
-    width: 79.59375vh;
-    height: 36.5vh;
+    width: 59.55078125vh;
+    height: 27.24609375vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
   #slide3 #shape3 {
-    width: 79.59375vh;
-    height: 36.5vh;
+    width: 59.55078125vh;
+    height: 27.24609375vh;
   }
 }
 #slide4 {
@@ -259,55 +259,55 @@
 }
 #slide4 #shape4 {
   position: absolute;
-  top: 0;
+  bottom: 0;
   right: 0;
 }
 @media (orientation: portrait) {
   #slide4 #shape4 {
-    width: 36.703125vh;
-    height: 40.7vh;
+    width: 36.875vh;
+    height: 33.36914063vh;
   }
 }
 @media (orientation: landscape) {
   #slide4 #shape4 {
-    width: 36.703125vh;
-    height: 40.7vh;
+    width: 36.875vh;
+    height: 33.36914063vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
   #slide4 #shape4 {
-    width: 36.703125vh;
-    height: 40.7vh;
+    width: 36.875vh;
+    height: 33.36914063vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
   #slide4 #shape4 {
-    width: 36.703125vh;
-    height: 40.7vh;
+    width: 36.875vh;
+    height: 33.36914063vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
   #slide4 #shape4 {
-    width: 36.703125vh;
-    height: 40.7vh;
+    width: 36.875vh;
+    height: 33.36914063vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
   #slide4 #shape4 {
-    width: 36.703125vh;
-    height: 40.7vh;
+    width: 36.875vh;
+    height: 33.36914063vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
   #slide4 #shape4 {
-    width: 36.703125vh;
-    height: 40.7vh;
+    width: 36.875vh;
+    height: 33.36914063vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
   #slide4 #shape4 {
-    width: 36.703125vh;
-    height: 40.7vh;
+    width: 36.875vh;
+    height: 33.36914063vh;
   }
 }
 #slide5 #shape5 {
@@ -317,50 +317,50 @@
 }
 @media (orientation: portrait) {
   #slide5 #shape5 {
-    width: 36.421875vh;
-    height: 40.7vh;
+    width: 38.64257813vh;
+    height: 38.4765625vh;
   }
 }
 @media (orientation: landscape) {
   #slide5 #shape5 {
-    width: 36.421875vh;
-    height: 40.7vh;
+    width: 38.64257813vh;
+    height: 38.4765625vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
   #slide5 #shape5 {
-    width: 36.421875vh;
-    height: 40.7vh;
+    width: 38.64257813vh;
+    height: 38.4765625vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
   #slide5 #shape5 {
-    width: 36.421875vh;
-    height: 40.7vh;
+    width: 38.64257813vh;
+    height: 38.4765625vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
   #slide5 #shape5 {
-    width: 36.421875vh;
-    height: 40.7vh;
+    width: 38.64257813vh;
+    height: 38.4765625vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
   #slide5 #shape5 {
-    width: 36.421875vh;
-    height: 40.7vh;
+    width: 38.64257813vh;
+    height: 38.4765625vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
   #slide5 #shape5 {
-    width: 36.421875vh;
-    height: 40.7vh;
+    width: 38.64257813vh;
+    height: 38.4765625vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
   #slide5 #shape5 {
-    width: 36.421875vh;
-    height: 40.7vh;
+    width: 38.64257813vh;
+    height: 38.4765625vh;
   }
 }
 #slide5 .map-button {
@@ -388,114 +388,114 @@
 }
 @media (orientation: portrait) {
   #slide6 #shape6 {
-    width: 86.765625vh;
-    height: 30.9vh;
+    width: 61.00585937vh;
+    height: 27.35351563vh;
   }
 }
 @media (orientation: landscape) {
   #slide6 #shape6 {
-    width: 86.765625vh;
-    height: 30.9vh;
+    width: 61.00585937vh;
+    height: 27.35351563vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
   #slide6 #shape6 {
-    width: 86.765625vh;
-    height: 30.9vh;
+    width: 61.00585937vh;
+    height: 27.35351563vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
   #slide6 #shape6 {
-    width: 86.765625vh;
-    height: 30.9vh;
+    width: 61.00585937vh;
+    height: 27.35351563vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
   #slide6 #shape6 {
-    width: 86.765625vh;
-    height: 30.9vh;
+    width: 61.00585937vh;
+    height: 27.35351563vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
   #slide6 #shape6 {
-    width: 86.765625vh;
-    height: 30.9vh;
+    width: 61.00585937vh;
+    height: 27.35351563vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
   #slide6 #shape6 {
-    width: 86.765625vh;
-    height: 30.9vh;
+    width: 61.00585937vh;
+    height: 27.35351563vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
   #slide6 #shape6 {
-    width: 86.765625vh;
-    height: 30.9vh;
+    width: 61.00585937vh;
+    height: 27.35351563vh;
   }
 }
 #slide7 #shape7 {
   position: absolute;
-  top: 0;
-  left: 27vw;
+  bottom: 0;
+  left: 27.2vw;
 }
 @media (orientation: portrait) {
   #slide7 #shape7 {
-    width: 70.171875vh;
-    height: 27.1vh;
+    width: 70.3125vh;
+    height: 25.02929688vh;
   }
 }
 @media (orientation: landscape) {
   #slide7 #shape7 {
-    width: 70.171875vh;
-    height: 27.1vh;
+    width: 70.3125vh;
+    height: 25.02929688vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
   #slide7 #shape7 {
-    width: 70.171875vh;
-    height: 27.1vh;
+    width: 70.3125vh;
+    height: 25.02929688vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
   #slide7 #shape7 {
-    width: 70.171875vh;
-    height: 27.1vh;
+    width: 70.3125vh;
+    height: 25.02929688vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
   #slide7 #shape7 {
-    width: 70.171875vh;
-    height: 27.1vh;
+    width: 70.3125vh;
+    height: 25.02929688vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
   #slide7 #shape7 {
-    width: 70.171875vh;
-    height: 27.1vh;
+    width: 70.3125vh;
+    height: 25.02929688vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
   #slide7 #shape7 {
-    width: 70.171875vh;
-    height: 27.1vh;
+    width: 70.3125vh;
+    height: 25.02929688vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
   #slide7 #shape7 {
-    width: 70.171875vh;
-    height: 27.1vh;
+    width: 70.3125vh;
+    height: 25.02929688vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
   #slide7 #shape7 {
-    top: 0;
+    bottom: 0;
     left: 27vw;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
   #slide7 #shape7 {
-    top: 0;
+    bottom: 0;
     left: 27vw;
   }
 }
@@ -509,50 +509,50 @@
 }
 @media (orientation: portrait) {
   #slide8 #shape8 {
-    width: 84.515625vh;
-    height: 27.4vh;
+    width: 41.796875vh;
+    height: 30.88867188vh;
   }
 }
 @media (orientation: landscape) {
   #slide8 #shape8 {
-    width: 84.515625vh;
-    height: 27.4vh;
+    width: 41.796875vh;
+    height: 30.88867188vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
   #slide8 #shape8 {
-    width: 84.515625vh;
-    height: 27.4vh;
+    width: 41.796875vh;
+    height: 30.88867188vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
   #slide8 #shape8 {
-    width: 84.515625vh;
-    height: 27.4vh;
+    width: 41.796875vh;
+    height: 30.88867188vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
   #slide8 #shape8 {
-    width: 84.515625vh;
-    height: 27.4vh;
+    width: 41.796875vh;
+    height: 30.88867188vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
   #slide8 #shape8 {
-    width: 84.515625vh;
-    height: 27.4vh;
+    width: 41.796875vh;
+    height: 30.88867188vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
   #slide8 #shape8 {
-    width: 84.515625vh;
-    height: 27.4vh;
+    width: 41.796875vh;
+    height: 30.88867188vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
   #slide8 #shape8 {
-    width: 84.515625vh;
-    height: 27.4vh;
+    width: 41.796875vh;
+    height: 30.88867188vh;
   }
 }
 #slide8 .map-button {
@@ -573,54 +573,54 @@
 #slide9 #shape9 {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 23.3vw;
 }
 @media (orientation: portrait) {
   #slide9 #shape9 {
-    width: 112.921875vh;
-    height: 19.1vh;
+    width: 74.99023438vh;
+    height: 25.92773438vh;
   }
 }
 @media (orientation: landscape) {
   #slide9 #shape9 {
-    width: 112.921875vh;
-    height: 19.1vh;
+    width: 74.99023438vh;
+    height: 25.92773438vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
   #slide9 #shape9 {
-    width: 112.921875vh;
-    height: 19.1vh;
+    width: 74.99023438vh;
+    height: 25.92773438vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
   #slide9 #shape9 {
-    width: 112.921875vh;
-    height: 19.1vh;
+    width: 74.99023438vh;
+    height: 25.92773438vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
   #slide9 #shape9 {
-    width: 112.921875vh;
-    height: 19.1vh;
+    width: 74.99023438vh;
+    height: 25.92773438vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
   #slide9 #shape9 {
-    width: 112.921875vh;
-    height: 19.1vh;
+    width: 74.99023438vh;
+    height: 25.92773438vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
   #slide9 #shape9 {
-    width: 112.921875vh;
-    height: 19.1vh;
+    width: 74.99023438vh;
+    height: 25.92773438vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
   #slide9 #shape9 {
-    width: 112.921875vh;
-    height: 19.1vh;
+    width: 74.99023438vh;
+    height: 25.92773438vh;
   }
 }
 #slide10 {
@@ -633,50 +633,50 @@
 }
 @media (orientation: portrait) {
   #slide10 #shape10 {
-    width: 45.140625vh;
-    height: 59.2vh;
+    width: 41.31835937vh;
+    height: 29.78515625vh;
   }
 }
 @media (orientation: landscape) {
   #slide10 #shape10 {
-    width: 45.140625vh;
-    height: 59.2vh;
+    width: 41.31835937vh;
+    height: 29.78515625vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
   #slide10 #shape10 {
-    width: 45.140625vh;
-    height: 59.2vh;
+    width: 41.31835937vh;
+    height: 29.78515625vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
   #slide10 #shape10 {
-    width: 45.140625vh;
-    height: 59.2vh;
+    width: 41.31835937vh;
+    height: 29.78515625vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
   #slide10 #shape10 {
-    width: 45.140625vh;
-    height: 59.2vh;
+    width: 41.31835937vh;
+    height: 29.78515625vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
   #slide10 #shape10 {
-    width: 45.140625vh;
-    height: 59.2vh;
+    width: 41.31835937vh;
+    height: 29.78515625vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
   #slide10 #shape10 {
-    width: 45.140625vh;
-    height: 59.2vh;
+    width: 41.31835937vh;
+    height: 29.78515625vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
   #slide10 #shape10 {
-    width: 45.140625vh;
-    height: 59.2vh;
+    width: 41.31835937vh;
+    height: 29.78515625vh;
   }
 }
 #slide11 {
@@ -689,50 +689,50 @@
 }
 @media (orientation: portrait) {
   #slide11 #shape11 {
-    width: 52.03125vh;
-    height: 52.1vh;
+    width: 52.12890625vh;
+    height: 52.12890625vh;
   }
 }
 @media (orientation: landscape) {
   #slide11 #shape11 {
-    width: 52.03125vh;
-    height: 52.1vh;
+    width: 52.12890625vh;
+    height: 52.12890625vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
   #slide11 #shape11 {
-    width: 52.03125vh;
-    height: 52.1vh;
+    width: 52.12890625vh;
+    height: 52.12890625vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
   #slide11 #shape11 {
-    width: 52.03125vh;
-    height: 52.1vh;
+    width: 52.12890625vh;
+    height: 52.12890625vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
   #slide11 #shape11 {
-    width: 52.03125vh;
-    height: 52.1vh;
+    width: 52.12890625vh;
+    height: 52.12890625vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
   #slide11 #shape11 {
-    width: 52.03125vh;
-    height: 52.1vh;
+    width: 52.12890625vh;
+    height: 52.12890625vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
   #slide11 #shape11 {
-    width: 52.03125vh;
-    height: 52.1vh;
+    width: 52.12890625vh;
+    height: 52.12890625vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
   #slide11 #shape11 {
-    width: 52.03125vh;
-    height: 52.1vh;
+    width: 52.12890625vh;
+    height: 52.12890625vh;
   }
 }
 #slide11 .map-button {
@@ -756,53 +756,53 @@
 #slide12 #shape12 {
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: 29.4vw;
 }
 @media (orientation: portrait) {
   #slide12 #shape12 {
-    width: 93.515625vh;
-    height: 22.9vh;
+    width: 57.421875vh;
+    height: 16.57226563vh;
   }
 }
 @media (orientation: landscape) {
   #slide12 #shape12 {
-    width: 93.515625vh;
-    height: 22.9vh;
+    width: 57.421875vh;
+    height: 16.57226563vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: portrait) {
   #slide12 #shape12 {
-    width: 93.515625vh;
-    height: 22.9vh;
+    width: 57.421875vh;
+    height: 16.57226563vh;
   }
 }
 @media only screen and (min-width: 600px) and (orientation: landscape) {
   #slide12 #shape12 {
-    width: 93.515625vh;
-    height: 22.9vh;
+    width: 57.421875vh;
+    height: 16.57226563vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: portrait) {
   #slide12 #shape12 {
-    width: 93.515625vh;
-    height: 22.9vh;
+    width: 57.421875vh;
+    height: 16.57226563vh;
   }
 }
 @media only screen and (min-width: 992px) and (orientation: landscape) {
   #slide12 #shape12 {
-    width: 93.515625vh;
-    height: 22.9vh;
+    width: 57.421875vh;
+    height: 16.57226563vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: portrait) {
   #slide12 #shape12 {
-    width: 93.515625vh;
-    height: 22.9vh;
+    width: 57.421875vh;
+    height: 16.57226563vh;
   }
 }
 @media only screen and (min-width: 1268px) and (orientation: landscape) {
   #slide12 #shape12 {
-    width: 93.515625vh;
-    height: 22.9vh;
+    width: 57.421875vh;
+    height: 16.57226563vh;
   }
 }

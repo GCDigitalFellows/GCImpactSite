@@ -1,44 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="818.2px" height="435.6px" viewBox="0 0 818.2 435.6" enable-background="new 0 0 818.2 435.6" xml:space="preserve">
+	 viewBox="0 0 639.5 274.6" enable-background="new 0 0 639.5 274.6" xml:space="preserve">
 <defs>
-  <style type="text/css">
-	<![CDATA[
-		@font-face {
-		font-family: "UniversLTStd-BoldCn";
-		src: url('../fonts/Univers 67 Condensed Bold.woff');
-		}
-		@font-face {
-		font-family: "Univers-Condensed";
-		src: url('../fonts/Univers 57 Condensed.woff');
-		}
+    <style type="text/css">
+    <![CDATA[
+        @font-face {
+          font-family: "Univers-CondensedBold";
+          src: url('../fonts/Univers 67 Condensed Bold.woff') format('woff'),
+          url('../fonts/Univers 67 Condensed Bold.ttf') format('truetype');
+        }
+        @font-face {
+          font-family: "Univers-Condensed";
+          src: url('../fonts/Univers 57 Condensed.woff') format('woff'),
+          url('../fonts/Univers 57 Condensed.ttf') format('truetype');
+        }
     ]]>
-  </style>
+    </style>
 </defs>
-
 <g>
 	<defs>
-		<polygon id="SVGID_1_" points="327.9,435.6 720.1,435.6 818.2,435.6 488.5,63.8 45.6,0 -88.2,435.6 		"/>
+		<polygon id="SVGID_1_" points="276.6,274.6 468.5,274.6 639.5,274.6 544,4.8 0.1,0 0,274.4 		"/>
 	</defs>
 	<clipPath id="SVGID_2_">
 		<use xlink:href="#SVGID_1_"  overflow="visible"/>
 	</clipPath>
-	<g clip-path="url(#SVGID_2_)">
-		<defs>
-			<rect id="SVGID_3_" x="0.1" y="-589.4" width="1440" height="12288"/>
-		</defs>
-		<clipPath id="SVGID_4_">
-			<use xlink:href="#SVGID_3_"  overflow="visible"/>
-		</clipPath>
-		<rect x="-93.2" y="-5" clip-path="url(#SVGID_4_)" fill="#FFFFFF" width="916.5" height="445.6"/>
-	</g>
+	<rect x="-93" y="-5" clip-path="url(#SVGID_2_)" fill="#FFFFFF" width="737.5" height="284.6"/>
 </g>
-<text transform="matrix(1 0 0 1 47.0435 168.9351)" fill="#656565" font-family="'UniversLTStd-BoldCn'" font-size="29">THE GRADUATE CENTER, CUNY:</text>
-<text transform="matrix(1 0 0 1 47.0435 204.9351)" fill="#656565" font-family="'Univers-Condensed'" font-size="29">IMPACTING THE UNIVERSITY, THE CITY, </text>
-<text transform="matrix(1 0 0 1 47.0435 240.9351)" fill="#656565" font-family="'Univers-Condensed'" font-size="29">AND THE WORLD</text>
-<text transform="matrix(1 0 0 1 47.0435 309.9351)" fill="#757575" font-family="'Univers-Condensed'" font-size="24">Explore the role that The Graduate Center </text>
-<text transform="matrix(1 0 0 1 47.0435 343.9351)" fill="#757575" font-family="'Univers-Condensed'" font-size="24">takes in connecting people and knowledge </text>
-<text transform="matrix(1 0 0 1 47.0435 377.9351)" fill="#757575" font-family="'Univers-Condensed'" font-size="24">throughout the world.</text>
+<text transform="matrix(1 0 0 1 51.3333 105)" fill="#747474" font-family="'Univers-CondensedBold'" font-size="24">Impacting the University, the City, and the World. </text>
+<text transform="matrix(1 0 0 1 51.3333 139)" fill="#747474" font-family="'Univers-Condensed'" font-size="24">Explore the role that The Graduate Center, CUNY </text>
+<text transform="matrix(1 0 0 1 51.3333 173)" fill="#747474" font-family="'Univers-Condensed'" font-size="24">takes in connecting people and knowledge </text>
+<text transform="matrix(1 0 0 1 51.3333 207)" fill="#747474" font-family="'Univers-Condensed'" font-size="24">throughout the world.</text>
 </svg>
