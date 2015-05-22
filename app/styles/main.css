@@ -13,66 +13,44 @@ html, body {
   position: fixed;
   left: 0;
   top: 0;
-  height: 100%;
+  height: 200%;
   width: 100%;
   overflow: hidden; }
 
 /* line 21, _slides.scss */
 #slides {
   width: 100%;
-  height: 300%;
-  position: relative; }
+  height: 50%;
+  position: relative;
+  top: 0;
+  left: 0; }
 
-/* line 27, _slides.scss */
+/* line 29, _slides.scss */
+#slides .section {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300vh;
+  padding-top: 0;
+  padding-bottom: 0; }
+
+/* line 51, _slides.scss */
 .slide {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(100% / 3);
+  height: 100vh;
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat; }
 
-/* line 38, _slides.scss */
-#slides .section {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding-top: 0;
-  padding-bottom: 0; }
-
-/* line 48, _slides.scss */
+/* line 62, _slides.scss */
 #skrollr-helper {
   position: absolute;
   left: 0;
   top: 0; }
-
-/* line 3, _slide_content.scss */
-#section2 {
-  -webkit-transform: translate(0, 100%);
-  -moz-transform: translate(0, 100%);
-  -ms-transform: translate(0, 100%);
-  -o-transform: translate(0, 100%);
-  transform: translate(0, 100%); }
-
-/* line 6, _slide_content.scss */
-#section3 {
-  -webkit-transform: translate(0, 200%);
-  -moz-transform: translate(0, 200%);
-  -ms-transform: translate(0, 200%);
-  -o-transform: translate(0, 200%);
-  transform: translate(0, 200%); }
-
-/* line 9, _slide_content.scss */
-#section4 {
-  -webkit-transform: translate(0, 300%);
-  -moz-transform: translate(0, 300%);
-  -ms-transform: translate(0, 300%);
-  -o-transform: translate(0, 300%);
-  transform: translate(0, 300%); }
 
 /* line 15, _slide_content.scss */
 #slide2 {
@@ -1006,15 +984,16 @@ html, body {
 
 /* line 115, main.scss */
 .navbar-fixed {
-  height: 48px; }
-  /* line 118, main.scss */
+  height: 48px;
+  width: calc(~"100% - 62px"); }
+  /* line 119, main.scss */
   .navbar-fixed #shape-logo {
     position: fixed;
     height: 128px;
     top: 0;
     right: 0;
     z-index: 999; }
-  /* line 126, main.scss */
+  /* line 127, main.scss */
   .navbar-fixed a.brand-logo {
     background: transparent;
     padding: 5px 5px;
@@ -1022,74 +1001,74 @@ html, body {
     top: 0;
     right: 0;
     z-index: 1000; }
-    /* line 133, main.scss */
+    /* line 134, main.scss */
     .navbar-fixed a.brand-logo img {
       height: 84px; }
-  /* line 137, main.scss */
+  /* line 138, main.scss */
   .navbar-fixed nav {
     background: rgba(255, 255, 255, 0.8);
     width: calc(~"100% - 85px");
     height: 48px; }
-  /* line 143, main.scss */
+  /* line 144, main.scss */
   .navbar-fixed .nav-wrapper {
     height: 48px; }
-    /* line 145, main.scss */
+    /* line 146, main.scss */
     .navbar-fixed .nav-wrapper ul {
       width: 100%;
       height: 48px;
       line-height: 48px;
       margin-top: -1px; }
-      /* line 150, main.scss */
+      /* line 151, main.scss */
       .navbar-fixed .nav-wrapper ul li {
         display: inline;
         width: 25%; }
-        /* line 153, main.scss */
+        /* line 154, main.scss */
         .navbar-fixed .nav-wrapper ul li a {
           width: 100%;
           font-family: "Univers-CondensedBold";
           text-align: center; }
-      /* line 160, main.scss */
+      /* line 161, main.scss */
       .navbar-fixed .nav-wrapper ul li:nth-child(1) a {
         color: #005bbb; }
-      /* line 163, main.scss */
+      /* line 164, main.scss */
       .navbar-fixed .nav-wrapper ul li:nth-child(1) a.active {
         background: #005bbb;
         color: #fff; }
-      /* line 169, main.scss */
+      /* line 170, main.scss */
       .navbar-fixed .nav-wrapper ul li:nth-child(2) a {
         color: #009b3a; }
-      /* line 172, main.scss */
+      /* line 173, main.scss */
       .navbar-fixed .nav-wrapper ul li:nth-child(2) a.active {
         background: #009b3a;
         color: #fff; }
-      /* line 178, main.scss */
+      /* line 179, main.scss */
       .navbar-fixed .nav-wrapper ul li:nth-child(3) a {
         color: #ffa100; }
-      /* line 181, main.scss */
+      /* line 182, main.scss */
       .navbar-fixed .nav-wrapper ul li:nth-child(3) a.active {
         background: #ffa100;
         color: #fff; }
-      /* line 187, main.scss */
+      /* line 188, main.scss */
       .navbar-fixed .nav-wrapper ul li:nth-child(4) a {
         color: #8f23b3; }
-      /* line 190, main.scss */
+      /* line 191, main.scss */
       .navbar-fixed .nav-wrapper ul li:nth-child(4) a.active {
         background: #8f23b3;
         color: #fff; }
 
 /* MAPS/MODALS */
-/* line 203, main.scss */
+/* line 204, main.scss */
 .map {
   width: 100%;
   height: 100%; }
 
-/* line 208, main.scss */
+/* line 209, main.scss */
 .modal, .modal.modal-fixed-footer {
   max-height: 80%;
   height: 80%;
   width: 75%; }
 
-/* line 214, main.scss */
+/* line 215, main.scss */
 .modal.modal-fixed-footer .modal-content {
   bottom: 0;
   top: 0;
@@ -1099,19 +1078,19 @@ html, body {
 /* media queries for responsiveness */
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 993px) {
-  /* line 229, main.scss */
+  /* line 230, main.scss */
   .menu-wrap {
     width: 30vw;
     padding: 2em; } }
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1268px) {
-  /* line 237, main.scss */
+  /* line 238, main.scss */
   .menu-wrap {
     width: 20vw;
     height: 100vh;
     padding: 2em; }
 
-  /* line 243, main.scss */
+  /* line 244, main.scss */
   .row .col.x3 {
     width: 25%;
     margin-left: 0; } }
