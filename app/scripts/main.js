@@ -5,13 +5,13 @@ $(document).ready(function() {
   $('.scrollspy').scrollSpy();
   var s = skrollr.init({
     easing: 'sqrt',
-    scale: 2
+    scale: 1
   });
 
   skrollr.menu.init(s, {
     animate: true,
     easing: 'sqrt',
-    scale: 2,
+    scale: 1,
 
     //How long the animation should take in ms.
     duration: 500,//function(currentTop, targetTop) {
@@ -42,7 +42,7 @@ $(document).ready(function() {
     //},
 
     //Add hash link (e.g. `#foo`) to URL or not.
-    updateUrl: true //defaults to `true`.
+    updateUrl: false //defaults to `true`.
   });
 
 /* menu and map handling */
@@ -75,16 +75,16 @@ $('.modal-trigger').click( function(event) {
     dismissible: true
   };
   modalTarget = $(this).attr('href') || '#' + $(this).data('target');
-        if ($.hasData(this) && $(this).data('map')){ // get the url for the map to load if it exists
-          var mapSrc = $(this).data('map');
-          $('#map-frame').attr('src',mapSrc);
-        } else {
-          options.dismissible = false;
-        }
-        $(modalTarget).openModal(options);
-        isModalOpen = !isModalOpen;
-        event.preventDefault();
-      });
+  if ($.hasData(this) && $(this).data('map')){ // get the url for the map to load if it exists
+    var mapSrc = $(this).data('map');
+    $('#map-frame').attr('src',mapSrc);
+  } else {
+    options.dismissible = false;
+  }
+  $(modalTarget).openModal(options);
+  isModalOpen = !isModalOpen;
+  event.preventDefault();
+});
 
     // close the menu/map element
     // note: using the built-in materialize functions seemed to provide more consistent results

@@ -67,6 +67,12 @@ $headerHeight: 48px;
   opacity: 0.6;
 }
 
+.menu-button-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 .side-nav {
   background-color: #25589E;
   text-align: center;
@@ -108,10 +114,11 @@ $headerHeight: 48px;
 
 .navbar-fixed {
   height: $headerHeight;
+  width: calc(~"100% - 62px");
 
   #shape-logo {
     position: fixed;
-    height: 120px;
+    height: 128px;
     top: 0;
     right: 0;
     z-index: 999;
