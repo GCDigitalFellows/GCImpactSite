@@ -249,16 +249,16 @@ module.exports = function (grunt) {
       }
     },
 
-    // svgmin: {
-    //   dist: {
-    //     files: [{
-    //       expand: true,
-    //       cwd: '<%= config.app %>/images',
-    //       src: '{,*/}*.svg',
-    //       dest: '<%= config.out %>/images'
-    //     }]
-    //   }
-    // },
+    svgmin: {
+      dist: {
+        files: [{
+          expand: true,
+          cwd: '<%= config.app %>/images',
+          src: '{,*/}*.svg',
+          dest: '<%= config.out %>/images'
+        }]
+      }
+    },
 
     htmlmin: {
       dist: {
@@ -465,15 +465,15 @@ module.exports = function (grunt) {
       }
       grunt.log.warn('Using config.out=' + config.out);
       return grunt.task.run([
-        'clean',
-        'sass',
+        //'clean',
+        'newer:sass',
         'includes',
         'useminPrepare',
         'copy:all',
         'copy:js',
         'copy:styles',
-        'imagemin',
-        // 'svgmin'
+        'newer:imagemin',
+        //'newer:svgmin',
         'autoprefixer',
         'newer:concat',
         'newer:cssmin',
