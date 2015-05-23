@@ -1,0 +1,28 @@
+{
+	"folders":
+	[
+  {
+    "follow_symlinks": true,
+    "path": "."
+  }
+  ],
+  "SublimeLinter":
+  {
+    "linters":
+    {
+      "htmltidy": {
+        "args": [],
+        "excludes": [],
+        "ignore_match": [
+          "trimming empty",
+          "No PHP code"
+        ]
+      },
+      "phpcs": {
+        "ignore_match": [
+          "No PHP code"
+        ]
+      }
+    }
+  }
+}

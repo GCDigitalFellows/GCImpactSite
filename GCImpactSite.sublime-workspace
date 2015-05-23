@@ -1,0 +1,1244 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"trans",
+				"transparent"
+			],
+			[
+				"font-f",
+				"font-face"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"clas",
+				"classList"
+			],
+			[
+				"head",
+				"headshot-container"
+			],
+			[
+				"hea",
+				"header-title"
+			],
+			[
+				"scroll",
+				"scrollTop"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"backg",
+				"background-color"
+			],
+			[
+				"headshot",
+				"headshot-sm"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"info",
+				"info"
+			],
+			[
+				"color",
+				"color_scheme"
+			],
+			[
+				"close",
+				"closeMapbtn"
+			],
+			[
+				"openM",
+				"openMapbtns"
+			],
+			[
+				"menu",
+				"menu-button-wrap"
+			],
+			[
+				"toggle",
+				"toggleMenu"
+			],
+			[
+				"over",
+				"overflow-x"
+			],
+			[
+				"div",
+				"div	<div>"
+			],
+			[
+				"the",
+				"thehref"
+			],
+			[
+				"featured",
+				"featured_video_embed"
+			],
+			[
+				"feature",
+				"featured_video_url"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"circle-icon",
+				"circle-icon-link"
+			],
+			[
+				"titl",
+				"title_position"
+			],
+			[
+				"wrapper",
+				"wrapper_classes"
+			],
+			[
+				"men",
+				"menu_search_btn"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"search",
+				"search_hidden"
+			],
+			[
+				"people",
+				"people_categories"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"way",
+				"waypoints"
+			],
+			[
+				"prev",
+				"prevElement"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"font-family-",
+				"font-family-sans-serif"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/include/vignettes.html",
+			"settings":
+			{
+				"buffer_size": 16356,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/index.html",
+			"settings":
+			{
+				"buffer_size": 9331,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/kmiyake/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 2423,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/_slides.scss",
+			"settings":
+			{
+				"buffer_size": 749,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/main.css",
+			"settings":
+			{
+				"buffer_size": 3875,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/main.scss",
+			"settings":
+			{
+				"buffer_size": 4114,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 12080,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "rein",
+		"selected_items":
+		[
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"indent",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"tabs",
+				"Tidy Tabs"
+			],
+			[
+				"num",
+				"Insert Nums"
+			],
+			[
+				"tab",
+				"Tidy Tabs"
+			],
+			[
+				"java",
+				"CodeFormatter: Format as Javascript Syntax"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"haml",
+				"HTML2Haml: Convert selection"
+			],
+			[
+				"prett",
+				"HTMLPrettify"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"scss",
+				"Set Syntax: SCSS"
+			],
+			[
+				"lint",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript (Rails)"
+			],
+			[
+				"coffee",
+				"Coffee: Display JavaScript"
+			],
+			[
+				"syntax ham",
+				"Set Syntax: Ruby Haml"
+			],
+			[
+				"spaces",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"preview",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"package",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"theme",
+				"QuickThemes: next"
+			],
+			[
+				"color",
+				"ColorSchemeSelector: Next Color Scheme"
+			],
+			[
+				"package control remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"upda",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"pretti",
+				"HTMLPrettify"
+			],
+			[
+				"prettify",
+				"HTMLPrettify: Set Prettify Preferences"
+			],
+			[
+				"toggle tabs",
+				"View: Toggle Tabs"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"diff",
+				"FileDiffs: Menu"
+			],
+			[
+				"markd",
+				"Markdown Preview: Export HTML in Sublime Text"
+			],
+			[
+				"sublinter",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"sublimelinter",
+				"Preferences: SublimeLinter Settings – User"
+			],
+			[
+				"linter",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"fa-env",
+				"Snippet: fa-envelope"
+			],
+			[
+				"minify",
+				"Minify::User File Settings"
+			],
+			[
+				"mini",
+				"Minify::User File Settings"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"pretty",
+				"HTMLPrettify"
+			],
+			[
+				"markdown",
+				"Markdown Preview: Python Markdown: Preview in Browser"
+			],
+			[
+				"mar",
+				"Markmon launch"
+			],
+			[
+				"markm",
+				"Markmon launch"
+			],
+			[
+				"mark",
+				"Markmon launch"
+			],
+			[
+				"css",
+				"Csslisible : Run"
+			],
+			[
+				"trai",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"tra",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"trail",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"wrap",
+				"HTML: Wrap Selection With Tag"
+			],
+			[
+				"form",
+				"Format Code"
+			],
+			[
+				"format",
+				"Format Code"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"high",
+				"Highlight Whitespaces: Toggle"
+			],
+			[
+				"space",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 601.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Volumes/emu/Developer/GCImpactSite",
+		"/Volumes/emu/Developer/GCImpactSite/app",
+		"/Volumes/emu/Developer/GCImpactSite/app/include",
+		"/Volumes/emu/Developer/GCImpactSite/app/styles"
+	],
+	"file_history":
+	[
+		"/Volumes/emu/Developer/GCImpactSite/app/styles/_hamburger_button.scss",
+		"/Volumes/emu/Developer/GCImpactSite/app/styles/_slide_content.scss",
+		"/Volumes/emu/Developer/GCImpactSite/app/styles/_variables.scss",
+		"/Volumes/emu/Developer/GCImpactSite/app/styles/_mixins.scss",
+		"/Volumes/emu/Developer/GCImpactSite/app/styles/_breakpoints.scss",
+		"/Volumes/emu/Developer/GCImpactSite/.git/COMMIT_EDITMSG",
+		"/Volumes/emu/Developer/dotfiles/.git/COMMIT_EDITMSG",
+		"/Volumes/emu/Developer/dotfiles/home/.gitconfig",
+		"/Volumes/emu/Copy/9_Sync/SublimeText/User/Package Control.sublime-settings",
+		"/Volumes/emu/Copy/9_Sync/SublimeText/User/SublimeLinter/Monokai Extended Bright (SL).tmTheme",
+		"/Volumes/emu/Copy/9_Sync/SublimeText/User/Side Bar Folders/Main.sublime-menu",
+		"/Users/kmiyake/Library/Application Support/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/Volumes/emu/Copy/0_Digital_Fellows/GCImpactSite/round 5/svgs/shape12.svg",
+		"/Volumes/emu/Developer/GCImpactSite/bower.json",
+		"/Volumes/emu/Developer/GCImpactSite/app/images/shape6.svg",
+		"/Volumes/emu/Developer/GCImpactSite/app/images/shape10.svg",
+		"/Volumes/emu/Developer/GCImpactSite/app/images/shape11.svg",
+		"/Volumes/emu/Developer/GCImpactSite/app/images/shape12.svg",
+		"/Volumes/emu/Developer/GCImpactSite/app/images/shape2.svg",
+		"/Volumes/emu/Developer/GCImpactSite/app/images/shape3.svg",
+		"/Volumes/emu/Developer/GCImpactSite/app/images/shape4.svg",
+		"/Volumes/emu/Developer/GCImpactSite/app/images/shape5.svg",
+		"/Volumes/emu/Developer/GCImpactSite/app/images/shape7.svg",
+		"/Volumes/emu/Developer/GCImpactSite/app/images/shape8.svg",
+		"/Volumes/emu/Developer/GCImpactSite/app/images/shape9.svg",
+		"/Volumes/emu/Developer/GCImpactSite/app/images/shape1.svg",
+		"/Volumes/emu/Developer/GCImpactSite/package.json",
+		"/usr/local/etc/php/5.6/php.ini",
+		"/Volumes/emu/Developer/documentcloud/lib/tasks/db.rake",
+		"/Volumes/emu/Developer/documentcloud/public/javascripts/admin/admin.js",
+		"/Volumes/emu/Developer/documentcloud/lib/tasks/remote.rake",
+		"/Volumes/emu/Developer/documentcloud/secrets/secrets.yml",
+		"/Volumes/emu/Developer/documentcloud/test/fixtures/lifecycle_mailer/login_instructions.text.erb",
+		"/Volumes/emu/Developer/documentcloud/.git/COMMIT_EDITMSG",
+		"/Volumes/emu/Developer/documentcloud/.git/MERGE_MSG",
+		"/Volumes/emu/Developer/documentcloud/config/server/files/nginx/passenger.conf",
+		"/Volumes/emu/Developer/documentcloud/Gemfile",
+		"/Volumes/emu/Developer/documentcloud/Gemfile.lock",
+		"/Volumes/emu/Developer/documentcloud/.ruby-version",
+		"/Volumes/emu/Developer/documentcloud/secrets/.git/COMMIT_EDITMSG",
+		"/Volumes/emu/Developer/documentcloud/config/server/scripts/setup_common_dependencies.sh",
+		"/Volumes/emu/Developer/documentcloud/public/javascripts/vendor/visualsearch-0.4.1.js",
+		"/Volumes/emu/Developer/documentcloud/lib/tasks/cron.rake",
+		"/Volumes/emu/Developer/documentcloud/config/server/scripts/setup_app.sh",
+		"/Volumes/emu/Developer/documentcloud/app/controllers/workspace_controller.rb",
+		"/Volumes/emu/Developer/documentcloud/config/sunspot.yml",
+		"/Volumes/emu/Developer/documentcloud/lib/dc/validators.rb",
+		"/Volumes/emu/Developer/documentcloud/config/database_analytics.yml",
+		"/Volumes/emu/Developer/documentcloud/config/chrome/manifest.json",
+		"/Volumes/emu/Developer/documentcloud/app/views/jst/workspace/document/embed_code.jst",
+		"/Volumes/emu/Developer/documentcloud/app/views/jst/workspace/search/embed_code.jst",
+		"/Volumes/emu/Developer/documentcloud/app/views/jst/workspace/workspace/note_embed_code.jst",
+		"/Volumes/emu/Developer/documentcloud/config/document_cloud.yml",
+		"/Volumes/emu/Developer/documentcloud-backup/.git/MERGE_MSG",
+		"/Volumes/emu/Developer/documentcloud/app/assets/javascripts/application.js",
+		"/Volumes/emu/Developer/documentcloud/config/server/scripts/setup_webserver.sh",
+		"/Volumes/emu/Developer/documentcloud/config/environments/production.rb",
+		"/Volumes/emu/Developer/documentcloud/test/fixtures/accounts.yml",
+		"/Volumes/emu/Developer/documentcloud/config/assets.yml",
+		"/Volumes/emu/Developer/documentcloud/lib/tasks/app.rake",
+		"/Volumes/emu/Developer/documentcloud/config/server/scripts/setup_database.sh",
+		"/Volumes/emu/Developer/documentcloud/config/cloud_crowd/production/config.yml",
+		"/Volumes/emu/Developer/documentcloud/config/cloud_crowd/express/config.yml",
+		"/Volumes/emu/Developer/documentcloud/config/cloud_crowd/reindex/config.yml",
+		"/Volumes/emu/Developer/documentcloud/config/cloud_crowd/staging/config.yml",
+		"/Volumes/emu/Developer/documentcloud/config/cloud_crowd/api/config.yml",
+		"/Volumes/emu/Developer/documentcloud/config/server/scripts/create-ami-commands.sh",
+		"/Volumes/emu/Developer/documentcloud/config/server/scripts/config_from_scratch.sh",
+		"/Users/kmiyake/.ssh/known_hosts",
+		"/Volumes/emu/Developer/documentcloud/db/migrate/1_initial_migration.rb",
+		"/Volumes/emu/Developer/mid2/source/_head_typography.html.haml",
+		"/Volumes/emu/Developer/mid2/source/views/index.html.haml",
+		"/Volumes/emu/Developer/mid2/source/assets/javascripts/application.js",
+		"/Volumes/emu/Developer/mid2/source/layouts/application.html.haml",
+		"/Volumes/emu/Developer/mid2/source/_side_panel.html.haml",
+		"/Volumes/emu/Developer/mid2/source/assets/stylesheets/_side_panel.css.scss",
+		"/Volumes/emu/Developer/mid2/.gitignore",
+		"/Volumes/emu/Developer/mid2/.git/COMMIT_EDITMSG",
+		"/Volumes/emu/Developer/mid2/source/assets/javascripts/_side_panel.js",
+		"/Volumes/emu/Developer/mid2/source/assets/javascripts/_header.js",
+		"/Volumes/emu/Developer/mid2/source/assets/stylesheets/application.scss",
+		"/Volumes/emu/Developer/mid2/source/_header.html.haml",
+		"/Volumes/emu/Developer/mid2/source/assets/stylesheets/_header.css.scss",
+		"/Volumes/emu/Developer/mid2/source/assets/stylesheets/_images.css.scss",
+		"/Volumes/emu/Developer/mid2/source/assets/stylesheets/_global.css.scss",
+		"/Users/kmiyake/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Volumes/emu/Developer/mid2/source/assets/stylesheets/_images-bak.css.scss",
+		"/Volumes/emu/Developer/mid2/source/_header-bak.html.haml",
+		"/Volumes/emu/Developer/mid2/source/assets/stylesheets/_nav.css.scss",
+		"/Volumes/emu/Developer/mid2/config.rb",
+		"/Volumes/emu/Developer/skinnybones/_layouts/home.html",
+		"/Volumes/emu/Developer/skinnybones/index.md",
+		"/Volumes/emu/Developer/skinnybones/_includes/scroll-cue.html",
+		"/Volumes/emu/Developer/skinnybones/_config.yml",
+		"/Volumes/emu/Developer/skinnybones/_includes/navigation-sliding.html",
+		"/Volumes/emu/Developer/skinnybones/_layouts/article.html",
+		"/Volumes/emu/Developer/skinnybones/_layouts/media.html",
+		"/Volumes/emu/Developer/mid2/source/assets/stylesheets/base/_grid-settings.scss",
+		"/Volumes/emu/Developer/mid2/Gemfile",
+		"/Volumes/emu/Developer/mid2/Rakefile",
+		"/Volumes/emu/Developer/mid2/source/assets/stylesheets/_grid.css.scss",
+		"/Volumes/emu/Developer/mid2/source/assets/javascripts/application.js.coffee",
+		"/Volumes/emu/Developer/mid2/source/_nav.html.haml",
+		"/Users/kmiyake/.zshrc",
+		"/Users/kmiyake/.zshenv",
+		"/Volumes/emu/Developer/mid2/source/assets/stylesheets/_footer.css.scss",
+		"/Volumes/emu/Developer/mid2/source/layouts/blogpost.haml",
+		"/Volumes/emu/Developer/mid2/source/assets/stylesheets/_typography.css.scss",
+		"/Volumes/emu/Developer/mid2/source/_footer.html.haml",
+		"/Users/kmiyake/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/kmiyake/Library/Application Support/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/Users/kmiyake/Developer/dotfiles/home/.zshenv",
+		"/Users/kmiyake/Developer/dotfiles/home/.zshrc",
+		"/Volumes/emu/Developer/mid2/source/assets/stylesheets/base/_base.scss",
+		"/Volumes/emu/Developer/mid2/source/views/calendar.html.haml",
+		"/Volumes/emu/Developer/mid2/source/views/tag.html.haml",
+		"/Volumes/emu/Developer/mid2/source/posts/2015-04-13-test.html.markdown",
+		"/Volumes/emu/Developer/documentcloud/app/controllers/admin_controller.rb",
+		"/Volumes/emu/Developer/documentcloud/INSTALL",
+		"/Volumes/emu/Developer/documentcloud/lib/tasks/deploy.rake",
+		"/Volumes/emu/Developer/documentcloud/app/views/help/eng/api.markdown",
+		"/Volumes/emu/Developer/documentcloud/config/server/scripts/restore-database.sh",
+		"/Volumes/emu/Developer/documentcloud/app/views/help/eng/publishing.markdown",
+		"/Volumes/emu/Developer/documentcloud/app/views/help/spa/api.markdown",
+		"/Volumes/emu/Developer/documentcloud/app/views/help/spa/publishing.markdown",
+		"/Volumes/emu/Developer/documentcloud/lib/dc/store/aws_s3_store.rb",
+		"/Volumes/emu/Developer/documentcloud/public/javascripts/model/documents.js",
+		"/Volumes/emu/Developer/documentcloud/app/views/featured/index.html.erb"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/Volumes/emu/Developer/GCImpactSite/app/",
+			"/Volumes/emu/Developer/GCImpactSite/app/images",
+			"/Volumes/emu/Developer/documentcloud/",
+			"/Volumes/emu/Developer/mid2/",
+			"/Volumes/emu/Developer/skinnybones/",
+			"/Volumes/emu/Developer/mid2/",
+			"/Volumes/emu/Developer/documentcloud/",
+			"/Volumes/emu/Developer/documentcloud/app,-*.erb,-*.js",
+			"/Volumes/emu/Developer/documentcloud/app,-*.erb",
+			"/Volumes/emu/Developer/documentcloud/app",
+			"/Volumes/emu/Developer/documentcloud",
+			"<open folders>,<open files>",
+			"<open folders>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"0.3",
+			"$hamburger-barHeight",
+			"position: absolute;",
+			"position: absolute;\\n",
+			"#shape([0-9]+)",
+			"id=\\\"shape([1-9][0-9]*)\\\" ",
+			"id=\\\"slide[0-9]+\\\" ",
+			"([0-9]+),([0-9]+)",
+			"#slide([0-9]+)",
+			"responsive-min",
+			"$xl",
+			"x3",
+			"headerHeight",
+			"\"",
+			"<span class=\"card-button\"><i class=\"mdi-navigation-close",
+			" <i class=\"mdi-navigation-close right\"></i></span>",
+			"card-title card-button activator grey-text text-darken-4",
+			" <i class=\"mdi-navigation-close right\"></i></span>",
+			" <i class=\"mdi-navigation-more-vert right\"></i></span>",
+			"watch",
+			" style=\"top: 0;left:0; width: 100%;\"",
+			"([A-Za-z ]+) - ([A-Za-z ]+) <i class=\"mdi-navigation-close right\"></i></span>\\n",
+			"67%",
+			"33%",
+			"slide",
+			"section([0-9]+)",
+			"menuanchor",
+			"class=\"slide\"",
+			"Univers-CondensedBold",
+			"document.new",
+			"create",
+			"upload",
+			"/etc/init.d/postgresql-8.4 start",
+			"CloudCrowd",
+			"search_servers",
+			"central_server",
+			"job_end_point",
+			"staging",
+			"app01",
+			"dc01",
+			"@documentcloud",
+			"@document",
+			"db:backup",
+			"getaddrinfo",
+			"backup_database",
+			"dc.controllers",
+			"documentcloud.org",
+			"s3.keithmiyake.me",
+			"s3.documentcloud.gc.cuny.edu",
+			"s3.keithmiyake.me",
+			"uiAutocomplete",
+			"renderMenu",
+			"uiAutocomplete",
+			"application.js",
+			"node",
+			"jquery",
+			"npm",
+			"jquery",
+			"@documentcloud.org",
+			"com/s3.keithmiyake.me",
+			"s3.keithmiyake.me",
+			"document_cloud.yml",
+			".sql",
+			"schema_migrations",
+			"load_schema",
+			"2",
+			"schema_migrations",
+			".sql",
+			"schema_migrations",
+			"crowd",
+			"dcloud_crowd",
+			"dcloud_crowd_production",
+			"hstore",
+			"js-menu-screen",
+			"js-menu",
+			"sliding-panel-close",
+			"js-menu-trigger",
+			"$('.header-copy').",
+			"$('.header-title')",
+			"$('.header-inner')",
+			"$('.headshot-container')",
+			"scrollPos",
+			"$(window).scrollTop()",
+			"$(window).height()",
+			"scroll",
+			"max-width",
+			"trans",
+			"%;'}",
+			"hero",
+			"display",
+			"button",
+			"box-",
+			"button",
+			"scroll-cue",
+			"subl",
+			"path",
+			"include",
+			"phar",
+			"bitters",
+			"link",
+			"dcloud_crowd_production",
+			"/mnt",
+			"structure.sql",
+			"schema_migrations",
+			"backup_database",
+			"doccloud-bucket",
+			"sunspot",
+			"solr",
+			"ip-172-31-63-98.ec2.internal",
+			"s3",
+			"bucket",
+			"s3",
+			"s3.documentcloud.org",
+			"documentcloud.org",
+			"ADMINISTRATOR",
+			"smtp",
+			"mail",
+			"//",
+			"opt/nginx/logs",
+			"RUBYOPT",
+			"crowd_folder",
+			"pdfiu",
+			"autopre",
+			"slash",
+			"forward",
+			"forw",
+			"/",
+			"super+s"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			".3",
+			"$hamburger-bar-height",
+			"",
+			".shape",
+			".shape:nth-of-type($1)",
+			"class=\"funkyshape\"",
+			"",
+			"$1, $2",
+			"($1), ($2)",
+			".slide:nth-of-type($1)",
+			"header-height",
+			"'",
+			"<span class=\"card-title card-button\"><i class=\"mdi-navigation-close",
+			"</span>\n            <span class=\"card-button\"><i class=\"mdi-navigation-close right\"></i></span>",
+			"card-button activator",
+			"</span>\n            <span class=\"card-title card-button activator grey-text text-darken-4\"><i class=\"mdi-navigation-close right\"></i></span>",
+			"</span>\n            <span class=\"card-title card-button activator grey-text text-darken-4\"><i class=\"mdi-navigation-more-vert right\"></i></span>",
+			"",
+			"$1 <i class=\"mdi-navigation-close right\"></i></span>\\n<p><em>$2</em></p>\\n",
+			"$1 <i class=\"mdi-navigation-close right\"></i></span>\\n<p><em>$2</em></p>",
+			"66.6666666667%",
+			"33.33333333333%",
+			"section",
+			"slide$1",
+			"class=\"slide scrollspy\"",
+			"UniversLTStd-BoldCn",
+			"s3.keithmiyake.me",
+			"com/s3.documentcloud.gc.cuny.edu",
+			"$headerCopy.",
+			"$headerTitle",
+			"$headerInner",
+			"$headerPic",
+			"$scrollPos",
+			"scrollPos",
+			"windowHeight",
+			"header",
+			"s3.keithmiyake.me",
+			"/",
+			"/var/run",
+			"\n<",
+			"section$1.html",
+			"] *",
+			"dev.keithmiyake.me",
+			" -O",
+			" -O http",
+			" -O",
+			" -O http",
+			"pdf -O http",
+			" http:",
+			"wget http:",
+			"cubic-bezier(0.000, 0.000, 0.580, 1.000)",
+			"cubic-bezier(0.445, 0.05, 0.55, 0.95)",
+			"'",
+			"\"",
+			"'",
+			",NULL,",
+			"NULL",
+			",\"\",",
+			"",
+			"'",
+			"\"",
+			" ",
+			" ($2)$3",
+			" ($2)",
+			" ($2$3)",
+			"$1($2$3)",
+			"($1)",
+			"$1($2)",
+			"($1)",
+			"**",
+			"Hunter College<",
+			"(<em>Hunter College</em>)",
+			"<h3 class=\"list-group-item-heading",
+			"\"list-group-item toggle-timeline\"",
+			"+=",
+			"shuffle",
+			"\"",
+			"'",
+			"@",
+			"\"",
+			"'",
+			"@",
+			"</span>",
+			"<span",
+			"",
+			"parallax-wheniwasbad",
+			"wheniwasbad",
+			"wiwb",
+			"projects",
+			"project",
+			"'../../images/social_icons",
+			"$",
+			"'gcwordpresstheme'",
+			"Redux_TEXT_DOMAIN",
+			"library/images/",
+			"opt-header-scroll",
+			"gctheme-reduxframework",
+			">portfolio_page<",
+			"<span class=\"h3 text-blue-light\">$1</span>",
+			".jpg\" alt=\"$2\" />$1\">$2</span>",
+			"<span class=\"h3 left-block$1</span><",
+			"$id",
+			"jQuery",
+			"h5,.h5",
+			"h4,.h4",
+			"h3,.h3",
+			"h2,.h2",
+			"h1,.h1",
+			"color",
+			") - <em>",
+			"</strong> (",
+			"</em>\n\n<strong>"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/include/vignettes.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16356,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								800,
+								856
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "html",
+							"apply_syntax_touched": true,
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3103.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9331,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1343,
+								1343
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "html",
+							"apply_syntax_touched": true,
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/kmiyake/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2423,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								340,
+								340
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": false,
+							"WordCountSyntax": "json",
+							"apply_syntax_touched": true,
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/styles/_slides.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 749,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								620,
+								620
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "scss",
+							"apply_syntax_touched": true,
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/styles/main.css",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 3875,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": false,
+							"WordCountSyntax": "css",
+							"apply_syntax_touched": true,
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/styles/main.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4114,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								69,
+								69
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "scss",
+							"apply_syntax_touched": true,
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 80.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Gruntfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12080,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3890,
+								3890
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "gruntfile js",
+							"apply_syntax_touched": true,
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/Seti_UI/Langs/Gruntfile JS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1652.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "GCImpactSite.sublime-project",
+	"replace":
+	{
+		"height": 72.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 328.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

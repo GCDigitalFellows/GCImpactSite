@@ -44,7 +44,7 @@ module.exports = function (grunt) {
     watch: {
       js: {
         files: ['<%= config.app %>/scripts/{,*/}*.js'],
-        tasks: ['newer:jshint','newer:copy:js'],
+        tasks: ['newer:copy:js'],
         options: {
           livereload: true
         }
@@ -58,20 +58,24 @@ module.exports = function (grunt) {
       },
       sass: {
         files: ['<%= config.app %>/styles/{,*/}*.scss'],
-        tasks: ['sass','newer:copy:styles']
+        tasks: ['sass','newer:copy:styles'],
+        options: {
+          livereload: true
+        }
       },
-      //styles: {
-      //  files: ['<%= config.app %>/styles/{,*/}*.css'],
-      //  tasks: ['newer:copy:styles']//, 'autoprefixer']
-      //},
+      images: {
+        files: ['<%= config.app %>/images/{,*/}*'],
+        tasks: ['newer:copy:images'],
+        options: {
+          livereload: true
+        }
+      },
       livereload: {
         options: {
           livereload: '<%= connect.options.livereload %>'
         },
         files: [
           '<%= config.app %>/{,*/}*.html',
-          '<%= config.out %>/styles/{,*/}*.css',
-          '<%= config.app %>/images/{,*/}*'
         ],
         tasks: ['includes:all']
       }
@@ -282,7 +286,7 @@ module.exports = function (grunt) {
     includes: {
       all: {
         cwd: '<%= config.app %>',
-        dest: '<%= config.out %>', // so that they don't get copied to dist dir
+        dest: '<%= config.out %>',
         src: [ '*.html', 'pages/*.html' ],
         options: {
           //flatten: true,
@@ -301,7 +305,6 @@ module.exports = function (grunt) {
           dest: '<%= config.out %>',
           src: [
             '*.{ico,png,txt}',
-            'images/{,*/}*.{webp,jpg,jpeg,png,gif,svg}',
             //'{,*/}*.html', /* handled by includes */
             '!include/',
             'fonts/{,*/}*.*'
@@ -323,6 +326,13 @@ module.exports = function (grunt) {
           src: 'font/{,*/}*.*',
           dest: '<%= config.out %>'
         }]
+      },
+      images: {
+        expand: true,
+        dot: true,
+        cwd:  '<%= config.app %>/images',
+        dest: '<%= config.out %>/images/',
+        src:  '{,*/}*.{webp,jpg,jpeg,png,gif,svg}'
       },
       js: {
         expand: true,
@@ -412,6 +422,7 @@ module.exports = function (grunt) {
       'copy:all',
       'copy:js',
       'copy:styles',
+      'copy:images',
       //'autoprefixer',
       'connect:livereload',
       'watch'
@@ -431,7 +442,10 @@ module.exports = function (grunt) {
         'newer:jshint',
         'sass',
         'includes',
-        'copy',
+        'copy:all',
+        'copy:js',
+        'copy:styles',
+        'copy:images',
         'autoprefixer'
       ]);
     }
