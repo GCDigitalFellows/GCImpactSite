@@ -1,214 +1,191 @@
-// #section1 {
-// }
-// #section2 {
-//     @include transform(translate(0,100%));
-// }
-// #section3 {
-//     @include transform(translate(0,200%));
-// }
-// #section4 {
-//     @include transform(translate(0,300%));
-// }
-
-#slide1 {
-}
-#slide2 {
-    @include transform(translate(0,100%));
-}
-#slide3 {
-    @include transform(translate(0,200%));
-}
-#slide4 {
-    @include transform(translate(0,0%));
-}
-#slide5 {
-    @include transform(translate(0,100%));
-}
-#slide6 {
-    @include transform(translate(0,200%));
-}
-#slide7 {
-    @include transform(translate(0,0%));
-}
-#slide8 {
-    @include transform(translate(0,100%));
-}
-#slide9 {
-    @include transform(translate(0,200%));
-}
-#slide10 {
-    @include transform(translate(0,0%));
-}
-#slide11 {
-    @include transform(translate(0,100%));
-}
-#slide12 {
-    @include transform(translate(0,200%));
+.slide {
+  .funkyshape,
+  .map-button {
+    position: absolute;
+  }
 }
 
-#slide1 {
-    #shape1 {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        @include responsive-dim(44.409722222,26.81640625);
+.section .slide:nth-of-type(2) {
+  top: 100vh;
+}
+
+.section .slide:nth-of-type(3) {
+  top: 200vh;
+}
+
+.section:nth-of-type(1) {
+  .slide:nth-of-type(1) {
+    .funkyshape {
+      @include responsive-dim(44.409722222, 26.81640625);
+      bottom: 0;
+      left: 0;
     }
-}
+  }
 
-#slide2 {
-    #shape2 {
-        position: absolute;
-        bottom: 0;
-        left: 20.3vw;
-        @include responsive-dim(45.1875,21.77734375);
-        @include responsive-min($md) {
-            @include responsive-portrait {
-                bottom: 0;
-                left: 10.7vw;
-            }
-            @include responsive-landscape {
-                bottom: 0;
-                left: 10.7vw;
-            }
-     }
+  .slide:nth-of-type(2) {
+    .funkyshape {
+      @include responsive-dim(45.1875, 21.77734375);
+      bottom: 0;
+      left: 20.3vw;
+
+      @media #{$medium-and-up} {
+        @include responsive-portrait {
+          bottom: 0;
+          left: 10.7vw;
+        }
+
+        @include responsive-landscape {
+          bottom: 0;
+          left: 10.7vw;
+        }
+      }
     }
-}
+  }
 
-#slide3 {
-    #shape3 {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        @include responsive-dim(42.347222222,27.24609375);
+  .slide:nth-of-type(3) {
+    .funkyshape {
+      @include responsive-dim(42.347222222, 27.24609375);
+      bottom: 0;
+      left: 0;
     }
+  }
 }
 
-#slide4 {
+.section:nth-of-type(2) {
+  .slide:nth-of-type(1) {
     background-position: top left;
-    #shape4 {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        @include responsive-dim(26.222222222,33.369140625);
-    }
-}
 
-#slide5 {
-    #shape5 {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        @include responsive-dim(27.479166667,38.4765625);
+    .funkyshape {
+      @include responsive-dim(26.222222222, 33.369140625);
+      bottom: 0;
+      right: 0;
     }
+  }
+
+  .slide:nth-of-type(2) {
+    .funkyshape {
+      @include responsive-dim(27.479166667, 38.4765625);
+      bottom: 0;
+      left: 0;
+    }
+
     .map-button {
-        position: absolute;
-        @include responsive-landscape {
-            bottom: 5vh;
-            left: 22vh;
-         }
-        @include responsive-portrait {
-            bottom: 5vh;
-            left: 22vh;
-         }
-    }
-}
+      @include responsive-landscape {
+        bottom: 5vh;
+        left: 22vh;
+      }
 
-#slide6 {
+      @include responsive-portrait {
+        bottom: 5vh;
+        left: 22vh;
+      }
+    }
+  }
+
+  .slide:nth-of-type(3) {
     background-position: center right;
-    #shape6 {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        @include responsive-dim(43.381944444,27.353515625);
+
+    .funkyshape {
+      @include responsive-dim(43.381944444, 27.353515625);
+      bottom: 0;
+      right: 0;
     }
+  }
 }
 
-#slide7 {
-    #shape7 {
-        position: absolute;
-        bottom: 0;
-        left: 27.2vw;
-        @include responsive-dim(50,25.029296875);
-        @include responsive-min($md) {
-            @include responsive-portrait {
-                bottom: 0;
-                left: 27vw;
-         }
-            @include responsive-landscape {
-                bottom: 0;
-                left: 27vw;
-         }
-     }
-    }
-}
+.section:nth-of-type(3) {
+  .slide:nth-of-type(1) {
+    .funkyshape {
+      @include responsive-dim(50, 25.029296875);
+      bottom: 0;
+      left: 27.2vw;
 
-#slide8 {
+      @media #{$large-and-up} {
+        @include responsive-portrait {
+          bottom: 0;
+          left: 27vw;
+        }
+
+        @include responsive-landscape {
+          bottom: 0;
+          left: 27vw;
+        }
+      }
+    }
+  }
+
+  .slide:nth-of-type(2) {
     background-position: center left;
-    #shape8 {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        @include responsive-dim(29.722222222,30.888671875);
+
+    .funkyshape {
+      @include responsive-dim(29.722222222, 30.888671875);
+      bottom: 0;
+      left: 0;
     }
+
     .map-button {
-        position: absolute;
-        @include responsive-landscape {
-            bottom: 3vh;
-            left: 30vh;
-         }
-        @include responsive-portrait {
-            bottom: 3vh;
-            right: 30vh;
-         }
+
+      @include responsive-landscape {
+        bottom: 3vh;
+        left: 30vh;
+      }
+
+      @include responsive-portrait {
+        bottom: 3vh;
+        right: 30vh;
+      }
     }
+  }
+
+  .slide:nth-of-type(3) {
+    .funkyshape {
+      @include responsive-dim(53.326388889, 25.927734375);
+      bottom: 0;
+      left: 23.3vw;
+    }
+  }
 }
 
-#slide9 {
-    #shape9 {
-        position: absolute;
-        bottom: 0;
-        left: 23.3vw;
-        @include responsive-dim(53.326388889,25.927734375);
-    }
-}
-
-#slide10 {
+.section:nth-of-type(4) {
+  .slide:nth-of-type(1) {
     background-position: bottom center;
-    #shape10 {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        @include responsive-dim(29.381944444,29.78515625);
-    }
-}
 
-#slide11 {
+    .funkyshape {
+      @include responsive-dim(29.381944444, 29.78515625);
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  .slide:nth-of-type(2) {
     background-position: top center;
-    #shape11 {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        @include responsive-dim(37.069444444,52.12890625);
-    }
-    .map-button {
-        position: absolute;
-        @include responsive-landscape {
-            bottom: 5vh;
-            right: 6vh;
-         }
-        @include responsive-portrait {
-            bottom: 5vh;
-            right: 6vh;
-         }
-    }
-}
 
-#slide12 {
-    background-position: bottom left;
-    #shape12 {
-        position: absolute;
-        bottom: 0;
-        left: 29.4vw;
-        @include responsive-dim(40.833333333,16.572265625);
+    .funkyshape {
+      @include responsive-dim(37.069444444, 52.12890625);
+      bottom: 0;
+      right: 0;
     }
+
+    .map-button {
+      @include responsive-landscape {
+        bottom: 5vh;
+        right: 6vh;
+      }
+
+      @include responsive-portrait {
+        bottom: 5vh;
+        right: 6vh;
+      }
+    }
+  }
+
+  .slide:nth-of-type(3) {
+    background-position: bottom left;
+
+    .funkyshape {
+      @include responsive-dim(40.833333333, 16.572265625);
+      bottom: 0;
+      left: 29.4vw;
+    }
+  }
 }

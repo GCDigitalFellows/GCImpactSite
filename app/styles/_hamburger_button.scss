@@ -1,97 +1,89 @@
 $hamburger-height: 22px;
 $hamburger-width: 28px;
-$hamburger-barHeight: 4px;
+$hamburger-bar-height: 4px;
 $hamburger-color: #222;
 $hamburger-background: transparent;
 $hamburger-margin: 5px;
 $hamburger-padding: 5px; // pseudo padding, uses absolute positioning to simulate padding
 
 .hamburger-button {
+  appearance: none;
+  background-color: $hamburger-background;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  cursor: pointer;
   display: block;
-  overflow: hidden;
-  position: relative;
-  width: $hamburger-width + 2 * $hamburger-padding;
+  font-size: 0;
   height: $hamburger-height + 2 * $hamburger-padding;
   margin: $hamburger-margin;
+  overflow: hidden;
   padding: 0;
-  font-size: 0;
+  position: relative;
   text-indent: -99999px;
-  appearance: none;
-  box-shadow: none;
-  border: none;
-  border-radius: none;
-  cursor: pointer;
-  background-color: $hamburger-background;
-  @include transition(background 0.3s);
+  transition: .3s;
+  transition-property: background;
+  width: $hamburger-width + 2 * $hamburger-padding;
 
   &:focus {
     outline: none;
   }
 
   span {
-    display: block;
-    position: absolute;
-    top: $hamburger-height / 2 - $hamburger-barHeight / 2 + $hamburger-padding;
-    left: $hamburger-padding;
-    right: $hamburger-padding;
-    height: $hamburger-barHeight;
     background: $hamburger-color;
-
-    @include transition(transform 0.3s);
+    display: block;
+    height: $hamburger-bar-height;
+    left: $hamburger-padding;
+    position: absolute;
+    right: $hamburger-padding;
+    top: $hamburger-height / 2 - $hamburger-bar-height / 2 + $hamburger-padding;
+    transition: .3s;
+    transition-property: transform;
 
     &::before,
     &::after {
-      position: absolute;
-      display: block;
-      left: 0;
-      width: 100%;
-      height: $hamburger-barHeight;
       background: $hamburger-color;
-      content: "";
+      content: '';
+      display: block;
+      height: $hamburger-bar-height;
+      left: 0;
+      position: absolute;
+      width: 100%;
     }
 
     &::before {
-      top: -$hamburger-height / 2 + $hamburger-barHeight / 2;
-      @include transform-origin(top right);
-      @include transition(transform 0.3s, width 0.3s, top 0.3s);
+      top: -$hamburger-height / 2 + $hamburger-bar-height / 2;
+      transform-origin: top right;
+      transition: .3s, .3s, .3s;
+      transition-property: transform, width, top;
     }
+
     &::after {
-      bottom: -$hamburger-height / 2 + $hamburger-barHeight / 2;
-      @include transform-origin(bottom right);
-      @include transition(transform 0.3s, width 0.3s, bottom 0.3s);
+      bottom: -$hamburger-height / 2 + $hamburger-bar-height / 2;
+      transform-origin: bottom right;
+      transition: .3s, .3s, .3s;
+      transition-property: transform, width, bottom;
     }
   }
 
-  /* button activated */
-  &.active {
-    span {
-      @include transform(rotate(180deg));
+  // button activated
+  &.active span {
+    left: $hamburger-bar-height;
+    transform: rotate(180deg);
 
-      left: $hamburger-barHeight;
+    &::before,
+    &::after {
+      width: 100% * 2 / 3;
+    }
 
-      &::before,
-      &::after {
-        width: 100% * 2 / 3;
-      }
+    &::before {
+      top: 0;
+      transform: translateX($hamburger-width / 3 + $hamburger-bar-height / 2) translateY($hamburger-bar-height / 2) rotate(45deg);
+    }
 
-      &::before {
-        top: 0;
-        @include transform(translateX($hamburger-width / 3 + $hamburger-barHeight / 2) translateY($hamburger-barHeight / 2) rotate(45deg));
-      }
-      &::after {
-        bottom: 0;
-        @include transform(translateX($hamburger-width / 3 + $hamburger-barHeight / 2) translateY(- $hamburger-barHeight / 2) rotate(-45deg));
-      }
+    &::after {
+      bottom: 0;
+      transform: translateX($hamburger-width / 3 + $hamburger-bar-height / 2) translateY(- $hamburger-bar-height / 2) rotate(-45deg);
     }
   }
 }
-
-// .hamburger-button__htla {
-//   background-color: #32dc64;
-// }
-
-
-/* active state, i.e. menu open */
-// .hamburger-button__htla.active {
-//   background-color: #18903c;
-// }
