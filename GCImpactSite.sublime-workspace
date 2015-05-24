@@ -171,31 +171,7 @@
 			"file": "app/index.html",
 			"settings":
 			{
-				"buffer_size": 9331,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/kmiyake/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
-			"settings":
-			{
-				"buffer_size": 2423,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/styles/_slides.scss",
-			"settings":
-			{
-				"buffer_size": 749,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/styles/main.css",
-			"settings":
-			{
-				"buffer_size": 3875,
+				"buffer_size": 9184,
 				"line_ending": "Unix"
 			}
 		},
@@ -203,15 +179,31 @@
 			"file": "app/styles/main.scss",
 			"settings":
 			{
-				"buffer_size": 4114,
+				"buffer_size": 4196,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Gruntfile.js",
+			"file": "app/styles/_slides.scss",
 			"settings":
 			{
-				"buffer_size": 12080,
+				"buffer_size": 718,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/scripts/main.js",
+			"settings":
+			{
+				"buffer_size": 1768,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/_hamburger_button.scss",
+			"settings":
+			{
+				"buffer_size": 2216,
 				"line_ending": "Unix"
 			}
 		}
@@ -224,16 +216,48 @@
 	"command_palette":
 	{
 		"height": 400.0,
-		"last_filter": "rein",
+		"last_filter": "syntax j",
 		"selected_items":
 		[
+			[
+				"syntax j",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syntax",
+				"Set Syntax: Gruntfile JS"
+			],
+			[
+				"linter",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"jshint",
+				"JSHint: Set Linting Preferences"
+			],
+			[
+				"sublimelinter",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"lint",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
 			[
 				"rein",
 				"Indentation: Reindent Lines"
 			],
 			[
-				"install",
-				"Package Control: Install Package"
+				"proj",
+				"Project: Refresh Folders"
 			],
 			[
 				"indent",
@@ -276,10 +300,6 @@
 				"Set Syntax: SCSS"
 			],
 			[
-				"lint",
-				"SublimeLinter: Show All Errors"
-			],
-			[
 				"javasc",
 				"Set Syntax: JavaScript (Rails)"
 			],
@@ -302,10 +322,6 @@
 			[
 				"package",
 				"Package Control: Upgrade Package"
-			],
-			[
-				"remove",
-				"Package Control: Remove Package"
 			],
 			[
 				"theme",
@@ -350,14 +366,6 @@
 			[
 				"sublinter",
 				"SublimeLinter: Lint This View"
-			],
-			[
-				"sublimelinter",
-				"Preferences: SublimeLinter Settings – User"
-			],
-			[
-				"linter",
-				"SublimeLinter: Show All Errors"
 			],
 			[
 				"html",
@@ -476,16 +484,35 @@
 		"/Volumes/emu/Developer/GCImpactSite",
 		"/Volumes/emu/Developer/GCImpactSite/app",
 		"/Volumes/emu/Developer/GCImpactSite/app/include",
+		"/Volumes/emu/Developer/GCImpactSite/app/scripts",
 		"/Volumes/emu/Developer/GCImpactSite/app/styles"
 	],
 	"file_history":
 	[
-		"/Volumes/emu/Developer/GCImpactSite/app/styles/_hamburger_button.scss",
+		"/Volumes/emu/Developer/GCImpactSite/.git/COMMIT_EDITMSG",
+		"/Volumes/emu/Developer/GCImpactSite/Gruntfile.js",
+		"/Volumes/emu/Developer/GCImpactSite/dist/images/shape12.svg",
+		"/Volumes/emu/Developer/brew-cask-cleanup.rb",
+		"/Volumes/emu/Developer/GCImpactSite/app/scripts/main.js",
+		"/Users/kmiyake/Library/Application Support/Sublime Text 3/Packages/JSHint Gutter/.jshintrc",
+		"/Volumes/emu/Developer/GCImpactSite/app/styles/_app_variables.scss",
+		"/Volumes/emu/Developer/GCImpactSite/app/styles/main.css.map",
+		"/Volumes/emu/Developer/GCImpactSite/app/styles/main.css",
+		"/Volumes/emu/Developer/GCImpactSite/app/images/shape0.svg",
+		"/Volumes/emu/Developer/GCImpactSite/app/styles/_slides.scss",
+		"/Volumes/emu/Developer/GCImpactSite/app/styles/main.scss",
 		"/Volumes/emu/Developer/GCImpactSite/app/styles/_slide_content.scss",
+		"/Volumes/emu/Developer/materialize/.git/COMMIT_EDITMSG",
+		"/Volumes/emu/Developer/GCImpactSite/app/include/map_overlay.html",
+		"/Users/kmiyake/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Volumes/emu/Developer/GCImpactSite/GCImpactSite.sublime-project",
+		"/Volumes/emu/Developer/GCImpactSite/app/styles/_hamburger_button.scss",
+		"/Users/kmiyake/Library/Application Support/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/Users/kmiyake/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Volumes/emu/Developer/GCImpactSite/GCImpactSite.sublime-workspace",
 		"/Volumes/emu/Developer/GCImpactSite/app/styles/_variables.scss",
 		"/Volumes/emu/Developer/GCImpactSite/app/styles/_mixins.scss",
 		"/Volumes/emu/Developer/GCImpactSite/app/styles/_breakpoints.scss",
-		"/Volumes/emu/Developer/GCImpactSite/.git/COMMIT_EDITMSG",
 		"/Volumes/emu/Developer/dotfiles/.git/COMMIT_EDITMSG",
 		"/Volumes/emu/Developer/dotfiles/home/.gitconfig",
 		"/Volumes/emu/Copy/9_Sync/SublimeText/User/Package Control.sublime-settings",
@@ -565,7 +592,6 @@
 		"/Volumes/emu/Developer/mid2/source/assets/stylesheets/_header.css.scss",
 		"/Volumes/emu/Developer/mid2/source/assets/stylesheets/_images.css.scss",
 		"/Volumes/emu/Developer/mid2/source/assets/stylesheets/_global.css.scss",
-		"/Users/kmiyake/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
 		"/Volumes/emu/Developer/mid2/source/assets/stylesheets/_images-bak.css.scss",
 		"/Volumes/emu/Developer/mid2/source/_header-bak.html.haml",
 		"/Volumes/emu/Developer/mid2/source/assets/stylesheets/_nav.css.scss",
@@ -589,25 +615,8 @@
 		"/Volumes/emu/Developer/mid2/source/layouts/blogpost.haml",
 		"/Volumes/emu/Developer/mid2/source/assets/stylesheets/_typography.css.scss",
 		"/Volumes/emu/Developer/mid2/source/_footer.html.haml",
-		"/Users/kmiyake/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
-		"/Users/kmiyake/Library/Application Support/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
 		"/Users/kmiyake/Developer/dotfiles/home/.zshenv",
-		"/Users/kmiyake/Developer/dotfiles/home/.zshrc",
-		"/Volumes/emu/Developer/mid2/source/assets/stylesheets/base/_base.scss",
-		"/Volumes/emu/Developer/mid2/source/views/calendar.html.haml",
-		"/Volumes/emu/Developer/mid2/source/views/tag.html.haml",
-		"/Volumes/emu/Developer/mid2/source/posts/2015-04-13-test.html.markdown",
-		"/Volumes/emu/Developer/documentcloud/app/controllers/admin_controller.rb",
-		"/Volumes/emu/Developer/documentcloud/INSTALL",
-		"/Volumes/emu/Developer/documentcloud/lib/tasks/deploy.rake",
-		"/Volumes/emu/Developer/documentcloud/app/views/help/eng/api.markdown",
-		"/Volumes/emu/Developer/documentcloud/config/server/scripts/restore-database.sh",
-		"/Volumes/emu/Developer/documentcloud/app/views/help/eng/publishing.markdown",
-		"/Volumes/emu/Developer/documentcloud/app/views/help/spa/api.markdown",
-		"/Volumes/emu/Developer/documentcloud/app/views/help/spa/publishing.markdown",
-		"/Volumes/emu/Developer/documentcloud/lib/dc/store/aws_s3_store.rb",
-		"/Volumes/emu/Developer/documentcloud/public/javascripts/model/documents.js",
-		"/Volumes/emu/Developer/documentcloud/app/views/featured/index.html.erb"
+		"/Users/kmiyake/Developer/dotfiles/home/.zshrc"
 	],
 	"find":
 	{
@@ -639,6 +648,21 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"skrollr",
+			"svgmin",
+			"images",
+			"index",
+			"#header",
+			"images",
+			"copy",
+			"concurrent",
+			"includes",
+			"funkyshape",
+			"garbage",
+			"#section",
+			".shape",
+			"@include ",
+			"#map-frame",
 			"0.3",
 			"$hamburger-barHeight",
 			"position: absolute;",
@@ -751,22 +775,7 @@
 			"s3",
 			"bucket",
 			"s3",
-			"s3.documentcloud.org",
-			"documentcloud.org",
-			"ADMINISTRATOR",
-			"smtp",
-			"mail",
-			"//",
-			"opt/nginx/logs",
-			"RUBYOPT",
-			"crowd_folder",
-			"pdfiu",
-			"autopre",
-			"slash",
-			"forward",
-			"forw",
-			"/",
-			"super+s"
+			"s3.documentcloud.org"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -774,6 +783,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			".funkyshape",
+			"",
 			".3",
 			"$hamburger-bar-height",
 			"",
@@ -896,7 +907,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -918,19 +929,21 @@
 						],
 						"settings":
 						{
-							"WordCountShouldRun": true,
 							"WordCountSyntax": "html",
 							"apply_syntax_touched": true,
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
 							"side_bar_folders_auto_load_folder": 1,
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3103.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -939,15 +952,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9331,
+						"buffer_size": 9184,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1343,
-								1343
+								7459,
+								7459
 							]
 						],
 						"settings":
@@ -964,61 +977,64 @@
 							"trim_trailing_white_space_on_save": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/Users/kmiyake/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2423,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								340,
-								340
-							]
-						],
-						"settings":
-						{
-							"WordCountShouldRun": false,
-							"WordCountSyntax": "json",
-							"apply_syntax_touched": true,
-							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1.0,
+						"translation.y": 1643.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "app/styles/_slides.scss",
+					"buffer": 2,
+					"file": "app/styles/main.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 749,
+						"buffer_size": 4196,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								620,
-								620
+								1889,
+								1890
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "scss",
+							"apply_syntax_touched": true,
+							"editorconfig": true,
+							"ensure_newline_at_eof_on_save": true,
+							"side_bar_folders_auto_load_folder": 1,
+							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"trim_trailing_white_space_on_save": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1203.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/styles/_slides.scss",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 718,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								597,
+								604
 							]
 						],
 						"settings":
@@ -1038,35 +1054,35 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "app/styles/main.css",
-					"semi_transient": true,
+					"file": "app/scripts/main.js",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3875,
+						"buffer_size": 1768,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								839,
+								839
 							]
 						],
 						"settings":
 						{
 							"WordCountShouldRun": false,
-							"WordCountSyntax": "css",
+							"WordCountSyntax": "javascript",
 							"apply_syntax_touched": true,
 							"editorconfig": true,
 							"ensure_newline_at_eof_on_save": true,
 							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true,
 							"trim_trailing_white_space_on_save": true
@@ -1080,24 +1096,23 @@
 				},
 				{
 					"buffer": 5,
-					"file": "app/styles/main.scss",
+					"file": "app/styles/_hamburger_button.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4114,
+						"buffer_size": 2216,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								69,
-								69
+								1699,
+								1699
 							]
 						],
 						"settings":
 						{
-							"WordCountShouldRun": true,
 							"WordCountSyntax": "scss",
 							"apply_syntax_touched": true,
 							"editorconfig": true,
@@ -1109,47 +1124,10 @@
 							"trim_trailing_white_space_on_save": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 80.0,
+						"translation.y": 268.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "Gruntfile.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 12080,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3890,
-								3890
-							]
-						],
-						"settings":
-						{
-							"WordCountShouldRun": true,
-							"WordCountSyntax": "gruntfile js",
-							"apply_syntax_touched": true,
-							"editorconfig": true,
-							"ensure_newline_at_eof_on_save": true,
-							"side_bar_folders_auto_load_folder": 1,
-							"syntax": "Packages/Seti_UI/Langs/Gruntfile JS.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"trim_trailing_white_space_on_save": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1652.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
+					"stack_index": 4,
 					"type": "text"
 				}
 			]
