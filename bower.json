@@ -8,6 +8,7 @@
     "fontawesome": "latest",
     "skrollr": "latest",
     "skrollr-menu": "latest",
+    "skrollr-stylesheets": "latest",
     "velocity": "latest",
     "lazyloadxt": "git@github.com:ressio/lazy-load-xt.git#master",
     "materialize": "git@github.com:kaymmm/materialize.git#master"

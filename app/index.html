@@ -21,6 +21,9 @@
   <script src="bower_components/modernizr/modernizr.js"></script>
   <!-- endbuild -->
 
+  <link rel="stylesheet" href="styles/skrollr-desktop.css" media="only screen and (min-width: 993px)" data-skrollr-stylesheet>
+  <link rel="stylesheet" href="styles/skrollr-mobile.css" media="only screen and (max-width: 992px)" data-skrollr-stylesheet>
+
 </head>
 
 <body>
@@ -93,8 +96,8 @@
 
   <div id="skrollr-body"></div>
   <div class="slides-container">
-    <div class="slides"
-      data-0="transform:translate(0%,0%);"
+    <div class="slides">
+<!--       data-0="transform:translate(0%,0%);"
       data-50p=""
       data-100p="transform:translate(0%,-100%);"
       data-150p=""
@@ -117,7 +120,7 @@
       data-1000p="transform:translate(0%,-1000%);"
       data-1050p=""
       data-1100p="transform:translate(0%,-1100%);"
-    >
+    > -->
       <div id="section1" class="section scrollspy">
         <div class="slide" data-bg="images/s1.jpg">
           <object class="funkyshape"data="images/shape1.svg" type="image/svg+xml"></object>
@@ -180,6 +183,7 @@
   <script src="bower_components/skrollr-menu/src/skrollr.menu.js"></script>
   <script src="bower_components/velocity/velocity.js"></script>
   <script src="bower_components/velocity/velocity.ui.js"></script>
+  <script src="bower_components/skrollr-stylesheets/dist/skrollr.stylesheets.min.js"></script>
   <script src="bower_components/lazyloadxt/dist/jquery.lazyloadxt.min.js"></script>
   <script src="bower_components/lazyloadxt/dist/jquery.lazyloadxt.bg.min.js"></script>
   <script src="bower_components/lazyloadxt/dist/jquery.lazyloadxt.autoload.min.js"></script>
