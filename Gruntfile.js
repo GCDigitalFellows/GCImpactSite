@@ -76,6 +76,7 @@ module.exports = function (grunt) {
         },
         files: [
           '<%= config.app %>/{,*/}*.html',
+          '<%= config.app %>/styles/{,*/}*.css'
         ],
         tasks: ['includes:all']
       }
@@ -183,7 +184,7 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: '<%= config.out %>/styles/',
+          cwd: '<%= config.app %>/styles/',
           src: '{,*/}*.css',
           dest: '<%= config.out %>/styles/'
         }]
@@ -471,7 +472,7 @@ module.exports = function (grunt) {
         'useminPrepare',
         'copy:all',
         'copy:js',
-        'copy:styles',
+        //'copy:styles', // handled by autoprefixer
         'newer:imagemin',
         //'newer:svgmin',
         'autoprefixer',
