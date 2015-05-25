@@ -1,16 +1,18 @@
 {
-  "name": "gcimpactsite",
+  "name": "GCImpactSite",
   "private": true,
+  "homepage": "http://gcdigitalfellows.github.io/GCImpactSite",
+  "authors": [
+    "Keith Miyake http://keithmiyake.info",
+    "Michelle Johnson"
+  ],
+  "description": "Static site showcasing key highlights of the impact the Graduate Center, CUNY has on the city, region, and world.",
   "dependencies": {
+    "fullpage.js": "git@github.com:alvarotrigo/fullPage.js.git#master",
+    "hamburger-menu-button": "git@github.com:kaymmm/hamburger-menu-button.git#master",
     "jquery": "latest",
-    "modernizr": "latest",
-    "jquery-ui": "latest",
-    "fontawesome": "latest",
-    "skrollr": "latest",
-    "skrollr-menu": "latest",
-    "skrollr-stylesheets": "latest",
-    "velocity": "latest",
     "lazyloadxt": "git@github.com:ressio/lazy-load-xt.git#master",
-    "materialize": "git@github.com:kaymmm/materialize.git#master"
+    "materialize": "git@github.com:kaymmm/materialize.git#master",
+    "modernizr": "latest"
   }
 }
