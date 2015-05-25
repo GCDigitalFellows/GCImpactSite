@@ -10299,306 +10299,500 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   /* line 122, /Volumes/emu/Developer/GCImpactSite/bower_components/materialize/sass/components/date_picker/_default.time.scss */
   .picker--time .picker__box {
     margin-bottom: 5em; } }
+/**
+ * fullPage 2.6.0
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ * Contribution by Jhony0311
+ */
+/* line 9, /Volumes/emu/Developer/GCImpactSite/bower_components/fullpage.js/jquery.fullPage.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /*Avoid flicker on slides transitions for mobile phones #336 */
+  -webkit-tap-highlight-color: transparent; }
+
+/* line 17, /Volumes/emu/Developer/GCImpactSite/bower_components/fullpage.js/jquery.fullPage.scss */
+#superContainer {
+  height: 100%;
+  position: relative;
+  /* Touch detection for Windows 8 */
+  -ms-touch-action: none;
+  /* IE 11 on Windows Phone 8.1*/
+  touch-action: none; }
+
+/* line 27, /Volumes/emu/Developer/GCImpactSite/bower_components/fullpage.js/jquery.fullPage.scss */
+.fp-section {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  /* Safari<=5 Android<=3 */
+  -moz-box-sizing: border-box;
+  /* <=28 */
+  box-sizing: border-box; }
+
+/* line 33, /Volumes/emu/Developer/GCImpactSite/bower_components/fullpage.js/jquery.fullPage.scss */
+.fp-slide {
+  float: left; }
+
+/* line 36, /Volumes/emu/Developer/GCImpactSite/bower_components/fullpage.js/jquery.fullPage.scss */
+.fp-slide, .fp-slidesContainer {
+  height: 100%;
+  display: block; }
+
+/* line 40, /Volumes/emu/Developer/GCImpactSite/bower_components/fullpage.js/jquery.fullPage.scss */
+.fp-slides {
+  z-index: 1;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all 0.3s ease-out;
+  /* Safari<=6 Android<=4.3 */
+  transition: all 0.3s ease-out; }
+
+/* line 48, /Volumes/emu/Developer/GCImpactSite/bower_components/fullpage.js/jquery.fullPage.scss */
+.fp-section.fp-table, .fp-slide.fp-table {
+  display: table;
+  table-layout: fixed;
+  width: 100%; }
+
+/* line 53, /Volumes/emu/Developer/GCImpactSite/bower_components/fullpage.js/jquery.fullPage.scss */
+.fp-tableCell {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%; }
+
+/* line 59, /Volumes/emu/Developer/GCImpactSite/bower_components/fullpage.js/jquery.fullPage.scss */
+.fp-slidesContainer {
+  float: left;
+  position: relative; }
+
+/* line 63, /Volumes/emu/Developer/GCImpactSite/bower_components/fullpage.js/jquery.fullPage.scss */
+.fp-controlArrow {
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  margin-top: -38px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+  /* line 76, /Volumes/emu/Developer/GCImpactSite/bower_components/fullpage.js/jquery.fullPage.scss */
+  .fp-controlArrow.fp-prev {
+    left: 15px;
+    width: 0;
+    border-width: 38.5px 34px 38.5px 0;
+    border-color: transparent #fff transparent transparent; }
+  /* line 83, /Volumes/emu/Developer/GCImpactSite/bower_components/fullpage.js/jquery.fullPage.scss */
+  .fp-controlArrow.fp-next {
+    right: 15px;
+    border-width: 38.5px 0 38.5px 34px;
+    border-color: transparent transparent transparent #fff; }
+
+/* line 89, /Volumes/emu/Developer/GCImpactSite/bower_components/fullpage.js/jquery.fullPage.scss */
+.fp-scrollable {
+  overflow: scroll; }
+
+/* line 92, /Volumes/emu/Developer/GCImpactSite/bower_components/fullpage.js/jquery.fullPage.scss */
+.fp-notransition {
+  -webkit-transition: none !important;
+  transition: none !important; }
+
+/* line 96, /Volumes/emu/Developer/GCImpactSite/bower_components/fullpage.js/jquery.fullPage.scss */
+.fp-slidesNav {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  opacity: 1; }
+  /* line 102, /Volumes/emu/Developer/GCImpactSite/bower_components/fullpage.js/jquery.fullPage.scss */
+  .fp-slidesNav.bottom {
+    bottom: 17px; }
+  /* line 106, /Volumes/emu/Developer/GCImpactSite/bower_components/fullpage.js/jquery.fullPage.scss */
+  .fp-slidesNav.top {
+    top: 17px; }
+
+/* line 111, /Volumes/emu/Developer/GCImpactSite/bower_components/fullpage.js/jquery.fullPage.scss */
+#fp-nav ul,
+.fp-slidesNav ul {
+  margin: 0;
+  padding: 0; }
+  /* line 116, /Volumes/emu/Developer/GCImpactSite/bower_components/fullpage.js/jquery.fullPage.scss */
+  #fp-nav ul li,
+  .fp-slidesNav ul li {
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 7px;
+    position: relative; }
+    /* line 123, /Volumes/emu/Developer/GCImpactSite/bower_components/fullpage.js/jquery.fullPage.scss */
+    #fp-nav ul li a,
+    .fp-slidesNav ul li a {
+      display: block;
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      text-decoration: none; }
+      /* line 132, /Volumes/emu/Developer/GCImpactSite/bower_components/fullpage.js/jquery.fullPage.scss */
+      #fp-nav ul li a.active span,
+      .fp-slidesNav ul li a.active span {
+        height: 12px;
+        width: 12px;
+        margin: -6px 0 0 -6px;
+        border-radius: 100%; }
+        /* line 138, /Volumes/emu/Developer/GCImpactSite/bower_components/fullpage.js/jquery.fullPage.scss */
+        #fp-nav ul li:hover #fp-nav ul li a.active span, #fp-slidesNav ul li:hover #fp-nav ul li a.active span, #fp-nav ul li:hover
+        .fp-slidesNav ul li a.active span, #fp-slidesNav ul li:hover
+        .fp-slidesNav ul li a.active span {
+          height: 12px;
+          width: 12px;
+          margin: -6px 0 0 -6px;
+          border-radius: 100%; }
+      /* line 147, /Volumes/emu/Developer/GCImpactSite/bower_components/fullpage.js/jquery.fullPage.scss */
+      #fp-nav ul li a span,
+      .fp-slidesNav ul li a span {
+        border-radius: 50%;
+        position: absolute;
+        z-index: 1;
+        height: 4px;
+        width: 4px;
+        border: 0;
+        background: #333;
+        left: 50%;
+        top: 50%;
+        margin: -2px 0 0 -2px;
+        -webkit-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
+        -o-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out; }
+    /* line 168, /Volumes/emu/Developer/GCImpactSite/bower_components/fullpage.js/jquery.fullPage.scss */
+    #fp-nav ul li:hover a span,
+    .fp-slidesNav ul li:hover a span {
+      width: 10px;
+      height: 10px;
+      margin: -5px 0px 0px -5px; }
+
+/* line 178, /Volumes/emu/Developer/GCImpactSite/bower_components/fullpage.js/jquery.fullPage.scss */
+#fp-nav {
+  position: fixed;
+  z-index: 100;
+  margin-top: -32px;
+  top: 50%;
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0); }
+  /* line 185, /Volumes/emu/Developer/GCImpactSite/bower_components/fullpage.js/jquery.fullPage.scss */
+  #fp-nav.right {
+    right: 17px; }
+  /* line 188, /Volumes/emu/Developer/GCImpactSite/bower_components/fullpage.js/jquery.fullPage.scss */
+  #fp-nav.left {
+    left: 17px; }
+  /* line 193, /Volumes/emu/Developer/GCImpactSite/bower_components/fullpage.js/jquery.fullPage.scss */
+  #fp-nav ul li .fp-tooltip {
+    position: absolute;
+    top: -2px;
+    color: #fff;
+    font-size: 14px;
+    font-family: arial, helvetica, sans-serif;
+    white-space: nowrap;
+    max-width: 220px;
+    overflow: hidden;
+    display: block;
+    opacity: 0;
+    width: 0; }
+    /* line 206, /Volumes/emu/Developer/GCImpactSite/bower_components/fullpage.js/jquery.fullPage.scss */
+    #fp-nav ul li .fp-tooltip.right {
+      right: 20px; }
+  /* line 215, /Volumes/emu/Developer/GCImpactSite/bower_components/fullpage.js/jquery.fullPage.scss */
+  #fp-nav ul li:hover .fp-tooltip {
+    -webkit-transition: opacity 0.2s ease-in;
+    transition: opacity 0.2s ease-in;
+    width: auto;
+    opacity: 1; }
+  /* line 224, /Volumes/emu/Developer/GCImpactSite/bower_components/fullpage.js/jquery.fullPage.scss */
+  #fp-nav.fp-show-active a.active + .fp-tooltip {
+    -webkit-transition: opacity 0.2s ease-in;
+    transition: opacity 0.2s ease-in;
+    width: auto;
+    opacity: 1; }
+
+/* line 231, /Volumes/emu/Developer/GCImpactSite/bower_components/fullpage.js/jquery.fullPage.scss */
+.fp-slidesNav ul li {
+  display: inline-block; }
+
 /* line 1, _slides.scss */
 html,
 body {
   height: 100%;
   width: 100%; }
 
-/* line 7, _slides.scss */
-.slides-container {
-  height: 200%;
-  left: 0;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%; }
-
-/* line 16, _slides.scss */
-.slides {
-  height: 50%;
-  left: 0;
-  position: relative;
-  top: 0;
-  width: 100%; }
-  /* line 23, _slides.scss */
-  .slides .section {
-    height: 300vh;
-    left: 0;
-    padding-bottom: 0;
-    padding-top: 0;
-    position: relative;
-    top: 0;
-    width: 100%; }
-  /* line 34, _slides.scss */
-  .slides .slide {
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%; }
+/* line 8, _slides.scss */
+.section {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 /* line 2, _slide_content.scss */
-.slide .funkyshape,
-.slide .map-button {
+.section .funkyshape,
+.section .map-button {
   position: absolute; }
 
-/* line 8, _slide_content.scss */
-.section .slide:nth-of-type(2) {
-  top: 100vh; }
-
-/* line 12, _slide_content.scss */
-.section .slide:nth-of-type(3) {
-  top: 200vh; }
-
-/* line 18, _slide_content.scss */
-.section:nth-of-type(1) .slide:nth-of-type(1) .funkyshape {
+/* line 9, _slide_content.scss */
+.section:nth-of-type(1) .funkyshape {
   bottom: 0;
   left: 0; }
   @media (orientation: portrait) {
-    /* line 18, _slide_content.scss */
-    .section:nth-of-type(1) .slide:nth-of-type(1) .funkyshape {
+    /* line 9, _slide_content.scss */
+    .section:nth-of-type(1) .funkyshape {
       height: 26.81641vh;
       width: 62.45117vh; } }
   @media (orientation: landscape) {
-    /* line 18, _slide_content.scss */
-    .section:nth-of-type(1) .slide:nth-of-type(1) .funkyshape {
+    /* line 9, _slide_content.scss */
+    .section:nth-of-type(1) .funkyshape {
       height: 26.81641vh;
       width: 62.45117vh; } }
-/* line 26, _slide_content.scss */
-.section:nth-of-type(1) .slide:nth-of-type(2) .funkyshape {
+
+/* line 17, _slide_content.scss */
+.section:nth-of-type(2) .funkyshape {
   bottom: 0;
   left: 20.3vw; }
   @media (orientation: portrait) {
-    /* line 26, _slide_content.scss */
-    .section:nth-of-type(1) .slide:nth-of-type(2) .funkyshape {
+    /* line 17, _slide_content.scss */
+    .section:nth-of-type(2) .funkyshape {
       height: 21.77734vh;
       width: 63.54492vh; } }
   @media (orientation: landscape) {
-    /* line 26, _slide_content.scss */
-    .section:nth-of-type(1) .slide:nth-of-type(2) .funkyshape {
+    /* line 17, _slide_content.scss */
+    .section:nth-of-type(2) .funkyshape {
       height: 21.77734vh;
       width: 63.54492vh; } }
 @media only screen and (min-width: 601px) and (orientation: portrait) {
-  /* line 26, _slide_content.scss */
-  .section:nth-of-type(1) .slide:nth-of-type(2) .funkyshape {
+  /* line 17, _slide_content.scss */
+  .section:nth-of-type(2) .funkyshape {
     bottom: 0;
     left: 10.7vw; } }
 @media only screen and (min-width: 601px) and (orientation: landscape) {
-  /* line 26, _slide_content.scss */
-  .section:nth-of-type(1) .slide:nth-of-type(2) .funkyshape {
+  /* line 17, _slide_content.scss */
+  .section:nth-of-type(2) .funkyshape {
     bottom: 0;
     left: 10.7vw; } }
 
-/* line 46, _slide_content.scss */
-.section:nth-of-type(1) .slide:nth-of-type(3) .funkyshape {
+/* line 37, _slide_content.scss */
+.section:nth-of-type(3) .funkyshape {
   bottom: 0;
   left: 0; }
   @media (orientation: portrait) {
-    /* line 46, _slide_content.scss */
-    .section:nth-of-type(1) .slide:nth-of-type(3) .funkyshape {
+    /* line 37, _slide_content.scss */
+    .section:nth-of-type(3) .funkyshape {
       height: 27.24609vh;
       width: 59.55078vh; } }
   @media (orientation: landscape) {
-    /* line 46, _slide_content.scss */
-    .section:nth-of-type(1) .slide:nth-of-type(3) .funkyshape {
+    /* line 37, _slide_content.scss */
+    .section:nth-of-type(3) .funkyshape {
       height: 27.24609vh;
       width: 59.55078vh; } }
 
-/* line 55, _slide_content.scss */
-.section:nth-of-type(2) .slide:nth-of-type(1) {
+/* line 44, _slide_content.scss */
+.section:nth-of-type(4) {
   background-position: top left; }
-  /* line 58, _slide_content.scss */
-  .section:nth-of-type(2) .slide:nth-of-type(1) .funkyshape {
+  /* line 47, _slide_content.scss */
+  .section:nth-of-type(4) .funkyshape {
     bottom: 0;
     right: 0; }
     @media (orientation: portrait) {
-      /* line 58, _slide_content.scss */
-      .section:nth-of-type(2) .slide:nth-of-type(1) .funkyshape {
+      /* line 47, _slide_content.scss */
+      .section:nth-of-type(4) .funkyshape {
         height: 33.36914vh;
         width: 36.875vh; } }
     @media (orientation: landscape) {
-      /* line 58, _slide_content.scss */
-      .section:nth-of-type(2) .slide:nth-of-type(1) .funkyshape {
+      /* line 47, _slide_content.scss */
+      .section:nth-of-type(4) .funkyshape {
         height: 33.36914vh;
         width: 36.875vh; } }
-/* line 66, _slide_content.scss */
-.section:nth-of-type(2) .slide:nth-of-type(2) .funkyshape {
+
+/* line 55, _slide_content.scss */
+.section:nth-of-type(5) .funkyshape {
   bottom: 0;
   left: 0; }
   @media (orientation: portrait) {
-    /* line 66, _slide_content.scss */
-    .section:nth-of-type(2) .slide:nth-of-type(2) .funkyshape {
+    /* line 55, _slide_content.scss */
+    .section:nth-of-type(5) .funkyshape {
       height: 38.47656vh;
       width: 38.64258vh; } }
   @media (orientation: landscape) {
-    /* line 66, _slide_content.scss */
-    .section:nth-of-type(2) .slide:nth-of-type(2) .funkyshape {
+    /* line 55, _slide_content.scss */
+    .section:nth-of-type(5) .funkyshape {
       height: 38.47656vh;
       width: 38.64258vh; } }
 @media (orientation: landscape) {
-  /* line 72, _slide_content.scss */
-  .section:nth-of-type(2) .slide:nth-of-type(2) .map-button {
+  /* line 61, _slide_content.scss */
+  .section:nth-of-type(5) .map-button {
     bottom: 5vh;
     left: 22vh; } }
 @media (orientation: portrait) {
-  /* line 72, _slide_content.scss */
-  .section:nth-of-type(2) .slide:nth-of-type(2) .map-button {
+  /* line 61, _slide_content.scss */
+  .section:nth-of-type(5) .map-button {
     bottom: 5vh;
     left: 22vh; } }
-/* line 85, _slide_content.scss */
-.section:nth-of-type(2) .slide:nth-of-type(3) {
+
+/* line 74, _slide_content.scss */
+.section:nth-of-type(6) {
   background-position: center right; }
-  /* line 88, _slide_content.scss */
-  .section:nth-of-type(2) .slide:nth-of-type(3) .funkyshape {
+  /* line 77, _slide_content.scss */
+  .section:nth-of-type(6) .funkyshape {
     bottom: 0;
     right: 0; }
     @media (orientation: portrait) {
-      /* line 88, _slide_content.scss */
-      .section:nth-of-type(2) .slide:nth-of-type(3) .funkyshape {
+      /* line 77, _slide_content.scss */
+      .section:nth-of-type(6) .funkyshape {
         height: 27.35352vh;
         width: 61.00586vh; } }
     @media (orientation: landscape) {
-      /* line 88, _slide_content.scss */
-      .section:nth-of-type(2) .slide:nth-of-type(3) .funkyshape {
+      /* line 77, _slide_content.scss */
+      .section:nth-of-type(6) .funkyshape {
         height: 27.35352vh;
         width: 61.00586vh; } }
 
-/* line 98, _slide_content.scss */
-.section:nth-of-type(3) .slide:nth-of-type(1) .funkyshape {
+/* line 85, _slide_content.scss */
+.section:nth-of-type(7) .funkyshape {
   bottom: 0;
   left: 27.2vw; }
   @media (orientation: portrait) {
-    /* line 98, _slide_content.scss */
-    .section:nth-of-type(3) .slide:nth-of-type(1) .funkyshape {
+    /* line 85, _slide_content.scss */
+    .section:nth-of-type(7) .funkyshape {
       height: 25.0293vh;
       width: 70.3125vh; } }
   @media (orientation: landscape) {
-    /* line 98, _slide_content.scss */
-    .section:nth-of-type(3) .slide:nth-of-type(1) .funkyshape {
+    /* line 85, _slide_content.scss */
+    .section:nth-of-type(7) .funkyshape {
       height: 25.0293vh;
       width: 70.3125vh; } }
 @media only screen and (min-width: 993px) and (orientation: portrait) {
-  /* line 98, _slide_content.scss */
-  .section:nth-of-type(3) .slide:nth-of-type(1) .funkyshape {
+  /* line 85, _slide_content.scss */
+  .section:nth-of-type(7) .funkyshape {
     bottom: 0;
     left: 27vw; } }
 @media only screen and (min-width: 993px) and (orientation: landscape) {
-  /* line 98, _slide_content.scss */
-  .section:nth-of-type(3) .slide:nth-of-type(1) .funkyshape {
+  /* line 85, _slide_content.scss */
+  .section:nth-of-type(7) .funkyshape {
     bottom: 0;
     left: 27vw; } }
 
-/* line 117, _slide_content.scss */
-.section:nth-of-type(3) .slide:nth-of-type(2) {
+/* line 104, _slide_content.scss */
+.section:nth-of-type(8) {
   background-position: center left; }
-  /* line 120, _slide_content.scss */
-  .section:nth-of-type(3) .slide:nth-of-type(2) .funkyshape {
+  /* line 107, _slide_content.scss */
+  .section:nth-of-type(8) .funkyshape {
     bottom: 0;
     left: 0; }
     @media (orientation: portrait) {
-      /* line 120, _slide_content.scss */
-      .section:nth-of-type(3) .slide:nth-of-type(2) .funkyshape {
+      /* line 107, _slide_content.scss */
+      .section:nth-of-type(8) .funkyshape {
         height: 30.88867vh;
         width: 41.79687vh; } }
     @media (orientation: landscape) {
-      /* line 120, _slide_content.scss */
-      .section:nth-of-type(3) .slide:nth-of-type(2) .funkyshape {
+      /* line 107, _slide_content.scss */
+      .section:nth-of-type(8) .funkyshape {
         height: 30.88867vh;
         width: 41.79687vh; } }
   @media (orientation: landscape) {
-    /* line 126, _slide_content.scss */
-    .section:nth-of-type(3) .slide:nth-of-type(2) .map-button {
+    /* line 113, _slide_content.scss */
+    .section:nth-of-type(8) .map-button {
       bottom: 3vh;
       left: 30vh; } }
   @media (orientation: portrait) {
-    /* line 126, _slide_content.scss */
-    .section:nth-of-type(3) .slide:nth-of-type(2) .map-button {
+    /* line 113, _slide_content.scss */
+    .section:nth-of-type(8) .map-button {
       bottom: 3vh;
       right: 30vh; } }
-/* line 141, _slide_content.scss */
-.section:nth-of-type(3) .slide:nth-of-type(3) .funkyshape {
+
+/* line 128, _slide_content.scss */
+.section:nth-of-type(9) .funkyshape {
   bottom: 0;
   left: 23.3vw; }
   @media (orientation: portrait) {
-    /* line 141, _slide_content.scss */
-    .section:nth-of-type(3) .slide:nth-of-type(3) .funkyshape {
+    /* line 128, _slide_content.scss */
+    .section:nth-of-type(9) .funkyshape {
       height: 25.92773vh;
       width: 74.99023vh; } }
   @media (orientation: landscape) {
-    /* line 141, _slide_content.scss */
-    .section:nth-of-type(3) .slide:nth-of-type(3) .funkyshape {
+    /* line 128, _slide_content.scss */
+    .section:nth-of-type(9) .funkyshape {
       height: 25.92773vh;
       width: 74.99023vh; } }
 
-/* line 150, _slide_content.scss */
-.section:nth-of-type(4) .slide:nth-of-type(1) {
+/* line 135, _slide_content.scss */
+.section:nth-of-type(10) {
   background-position: bottom center; }
-  /* line 153, _slide_content.scss */
-  .section:nth-of-type(4) .slide:nth-of-type(1) .funkyshape {
+  /* line 138, _slide_content.scss */
+  .section:nth-of-type(10) .funkyshape {
     bottom: 0;
     left: 0; }
     @media (orientation: portrait) {
-      /* line 153, _slide_content.scss */
-      .section:nth-of-type(4) .slide:nth-of-type(1) .funkyshape {
+      /* line 138, _slide_content.scss */
+      .section:nth-of-type(10) .funkyshape {
         height: 29.78516vh;
         width: 41.31836vh; } }
     @media (orientation: landscape) {
-      /* line 153, _slide_content.scss */
-      .section:nth-of-type(4) .slide:nth-of-type(1) .funkyshape {
+      /* line 138, _slide_content.scss */
+      .section:nth-of-type(10) .funkyshape {
         height: 29.78516vh;
         width: 41.31836vh; } }
-/* line 160, _slide_content.scss */
-.section:nth-of-type(4) .slide:nth-of-type(2) {
+
+/* line 145, _slide_content.scss */
+.section:nth-of-type(11) {
   background-position: top center; }
-  /* line 163, _slide_content.scss */
-  .section:nth-of-type(4) .slide:nth-of-type(2) .funkyshape {
+  /* line 148, _slide_content.scss */
+  .section:nth-of-type(11) .funkyshape {
     bottom: 0;
     right: 0; }
     @media (orientation: portrait) {
-      /* line 163, _slide_content.scss */
-      .section:nth-of-type(4) .slide:nth-of-type(2) .funkyshape {
+      /* line 148, _slide_content.scss */
+      .section:nth-of-type(11) .funkyshape {
         height: 52.12891vh;
         width: 52.12891vh; } }
     @media (orientation: landscape) {
-      /* line 163, _slide_content.scss */
-      .section:nth-of-type(4) .slide:nth-of-type(2) .funkyshape {
+      /* line 148, _slide_content.scss */
+      .section:nth-of-type(11) .funkyshape {
         height: 52.12891vh;
         width: 52.12891vh; } }
   @media (orientation: landscape) {
-    /* line 169, _slide_content.scss */
-    .section:nth-of-type(4) .slide:nth-of-type(2) .map-button {
+    /* line 154, _slide_content.scss */
+    .section:nth-of-type(11) .map-button {
       bottom: 5vh;
       right: 6vh; } }
   @media (orientation: portrait) {
-    /* line 169, _slide_content.scss */
-    .section:nth-of-type(4) .slide:nth-of-type(2) .map-button {
+    /* line 154, _slide_content.scss */
+    .section:nth-of-type(11) .map-button {
       bottom: 5vh;
       right: 6vh; } }
-/* line 182, _slide_content.scss */
-.section:nth-of-type(4) .slide:nth-of-type(3) {
+
+/* line 167, _slide_content.scss */
+.section:nth-of-type(12) {
   background-position: bottom left; }
-  /* line 185, _slide_content.scss */
-  .section:nth-of-type(4) .slide:nth-of-type(3) .funkyshape {
+  /* line 170, _slide_content.scss */
+  .section:nth-of-type(12) .funkyshape {
     bottom: 0;
     left: 29.4vw; }
     @media (orientation: portrait) {
-      /* line 185, _slide_content.scss */
-      .section:nth-of-type(4) .slide:nth-of-type(3) .funkyshape {
+      /* line 170, _slide_content.scss */
+      .section:nth-of-type(12) .funkyshape {
         height: 16.57227vh;
         width: 57.42187vh; } }
     @media (orientation: landscape) {
-      /* line 185, _slide_content.scss */
-      .section:nth-of-type(4) .slide:nth-of-type(3) .funkyshape {
+      /* line 170, _slide_content.scss */
+      .section:nth-of-type(12) .funkyshape {
         height: 16.57227vh;
         width: 57.42187vh; } }
 
-/* line 9, _hamburger_button.scss */
+/* line 2, /Volumes/emu/Developer/GCImpactSite/bower_components/hamburger-menu-button/src/assets/scss/_hamburger_menu_button.scss */
 .hamburger-button {
-  appearance: none;
   background-color: transparent;
   border: 0;
   border-radius: 0;
@@ -10612,24 +10806,24 @@ body {
   padding: 0;
   position: relative;
   text-indent: -99999px;
-  transition: .3s;
+  transition: 0.3s;
   transition-property: background;
-  width: 38px; }
-  /* line 28, _hamburger_button.scss */
+  width: 40px; }
+  /* line 19, /Volumes/emu/Developer/GCImpactSite/bower_components/hamburger-menu-button/src/assets/scss/_hamburger_menu_button.scss */
   .hamburger-button:focus {
     outline: none; }
-  /* line 32, _hamburger_button.scss */
+  /* line 22, /Volumes/emu/Developer/GCImpactSite/bower_components/hamburger-menu-button/src/assets/scss/_hamburger_menu_button.scss */
   .hamburger-button span {
     background: #222;
     display: block;
     height: 4px;
     left: 5px;
+    margin: 0;
     position: absolute;
     right: 5px;
     top: 14px;
-    transition: .3s;
-    transition-property: transform; }
-    /* line 43, _hamburger_button.scss */
+    transition: 0.3s, 0.3s; }
+    /* line 32, /Volumes/emu/Developer/GCImpactSite/bower_components/hamburger-menu-button/src/assets/scss/_hamburger_menu_button.scss */
     .hamburger-button span::before, .hamburger-button span::after {
       background: #222;
       content: '';
@@ -10638,33 +10832,90 @@ body {
       left: 0;
       position: absolute;
       width: 100%; }
-    /* line 54, _hamburger_button.scss */
+    /* line 42, /Volumes/emu/Developer/GCImpactSite/bower_components/hamburger-menu-button/src/assets/scss/_hamburger_menu_button.scss */
     .hamburger-button span::before {
       top: -9px;
-      transform-origin: top right;
-      transition: .3s, .3s, .3s;
+      transition: 0.3s, 0.3s, 0.3s;
       transition-property: transform, width, top; }
-    /* line 61, _hamburger_button.scss */
+    /* line 47, /Volumes/emu/Developer/GCImpactSite/bower_components/hamburger-menu-button/src/assets/scss/_hamburger_menu_button.scss */
     .hamburger-button span::after {
       bottom: -9px;
-      transform-origin: bottom right;
-      transition: .3s, .3s, .3s;
+      transition: 0.3s, 0.3s, 0.3s;
       transition-property: transform, width, bottom; }
-  /* line 70, _hamburger_button.scss */
-  .hamburger-button.active span {
-    left: 4px;
-    transform: rotate(180deg); }
-    /* line 74, _hamburger_button.scss */
-    .hamburger-button.active span::before, .hamburger-button.active span::after {
-      width: 66.66667%; }
-    /* line 79, _hamburger_button.scss */
-    .hamburger-button.active span::before {
-      top: 0;
-      transform: translateX(11.33333px) translateY(2px) rotate(45deg); }
-    /* line 84, _hamburger_button.scss */
-    .hamburger-button.active span::after {
-      bottom: 0;
-      transform: translateX(11.33333px) translateY(-2px) rotate(-45deg); }
+
+/* line 62, /Volumes/emu/Developer/GCImpactSite/bower_components/hamburger-menu-button/src/assets/scss/_hamburger_menu_button.scss */
+.hamburger-animated-la span {
+  transition-property: transform, width, left; }
+  /* line 64, /Volumes/emu/Developer/GCImpactSite/bower_components/hamburger-menu-button/src/assets/scss/_hamburger_menu_button.scss */
+  .hamburger-animated-la span::before {
+    transform-origin: bottom right; }
+  /* line 67, /Volumes/emu/Developer/GCImpactSite/bower_components/hamburger-menu-button/src/assets/scss/_hamburger_menu_button.scss */
+  .hamburger-animated-la span::after {
+    transform-origin: top right; }
+/* line 72, /Volumes/emu/Developer/GCImpactSite/bower_components/hamburger-menu-button/src/assets/scss/_hamburger_menu_button.scss */
+.hamburger-animated-la.active span {
+  left: 7px;
+  transform: rotate(180deg); }
+  /* line 75, /Volumes/emu/Developer/GCImpactSite/bower_components/hamburger-menu-button/src/assets/scss/_hamburger_menu_button.scss */
+  .hamburger-animated-la.active span::before, .hamburger-animated-la.active span::after {
+    width: 15.554px; }
+  /* line 81, /Volumes/emu/Developer/GCImpactSite/bower_components/hamburger-menu-button/src/assets/scss/_hamburger_menu_button.scss */
+  .hamburger-animated-la.active span::before {
+    top: 0;
+    transform: translateX(14.446px) translateY(0.828px) rotate(45deg); }
+  /* line 87, /Volumes/emu/Developer/GCImpactSite/bower_components/hamburger-menu-button/src/assets/scss/_hamburger_menu_button.scss */
+  .hamburger-animated-la.active span::after {
+    bottom: 0;
+    transform: translateX(14.446px) translateY(-0.828px) rotate(-45deg); }
+
+/* line 96, /Volumes/emu/Developer/GCImpactSite/bower_components/hamburger-menu-button/src/assets/scss/_hamburger_menu_button.scss */
+.hamburger-animated-ra span {
+  transition-property: transform, width, right; }
+  /* line 98, /Volumes/emu/Developer/GCImpactSite/bower_components/hamburger-menu-button/src/assets/scss/_hamburger_menu_button.scss */
+  .hamburger-animated-ra span::before {
+    transform-origin: bottom left; }
+  /* line 101, /Volumes/emu/Developer/GCImpactSite/bower_components/hamburger-menu-button/src/assets/scss/_hamburger_menu_button.scss */
+  .hamburger-animated-ra span::after {
+    transform-origin: top left; }
+/* line 106, /Volumes/emu/Developer/GCImpactSite/bower_components/hamburger-menu-button/src/assets/scss/_hamburger_menu_button.scss */
+.hamburger-animated-ra.active span {
+  right: 7px;
+  transform: rotate(-180deg); }
+  /* line 109, /Volumes/emu/Developer/GCImpactSite/bower_components/hamburger-menu-button/src/assets/scss/_hamburger_menu_button.scss */
+  .hamburger-animated-ra.active span::before, .hamburger-animated-ra.active span::after {
+    width: 15.554px; }
+  /* line 113, /Volumes/emu/Developer/GCImpactSite/bower_components/hamburger-menu-button/src/assets/scss/_hamburger_menu_button.scss */
+  .hamburger-animated-ra.active span::before {
+    top: 0;
+    transform: translateX(0) translateY(0.828px) rotate(-45deg); }
+  /* line 117, /Volumes/emu/Developer/GCImpactSite/bower_components/hamburger-menu-button/src/assets/scss/_hamburger_menu_button.scss */
+  .hamburger-animated-ra.active span::after {
+    bottom: 0;
+    transform: translateX(0) translateY(-0.828px) rotate(45deg); }
+
+/* line 126, /Volumes/emu/Developer/GCImpactSite/bower_components/hamburger-menu-button/src/assets/scss/_hamburger_menu_button.scss */
+.hamburger-animated-x span {
+  transition-property: transform, background; }
+  /* line 128, /Volumes/emu/Developer/GCImpactSite/bower_components/hamburger-menu-button/src/assets/scss/_hamburger_menu_button.scss */
+  .hamburger-animated-x span::before {
+    transform-origin: center center; }
+  /* line 131, /Volumes/emu/Developer/GCImpactSite/bower_components/hamburger-menu-button/src/assets/scss/_hamburger_menu_button.scss */
+  .hamburger-animated-x span::after {
+    transform-origin: center center; }
+/* line 136, /Volumes/emu/Developer/GCImpactSite/bower_components/hamburger-menu-button/src/assets/scss/_hamburger_menu_button.scss */
+.hamburger-animated-x.active span {
+  background: transparent; }
+  /* line 139, /Volumes/emu/Developer/GCImpactSite/bower_components/hamburger-menu-button/src/assets/scss/_hamburger_menu_button.scss */
+  .hamburger-animated-x.active span::before, .hamburger-animated-x.active span::after {
+    width: 31.108px; }
+  /* line 143, /Volumes/emu/Developer/GCImpactSite/bower_components/hamburger-menu-button/src/assets/scss/_hamburger_menu_button.scss */
+  .hamburger-animated-x.active span::before {
+    top: 0;
+    transform: translateX(-0.554px) rotate(135deg); }
+  /* line 147, /Volumes/emu/Developer/GCImpactSite/bower_components/hamburger-menu-button/src/assets/scss/_hamburger_menu_button.scss */
+  .hamburger-animated-x.active span::after {
+    bottom: 0;
+    transform: translateX(-0.554px) rotate(-135deg); }
 
 @font-face {
   font-family: 'Univers-CondensedBold';
@@ -10672,16 +10923,16 @@ body {
 @font-face {
   font-family: 'Univers-Condensed';
   src: uri("../fonts/Univers 57 Condensed.woff") format("woff"), uri("../fonts/Univers 57 Condensed.ttf") format("truetype"); }
-/* line 23, main.scss */
+/* line 25, main.scss */
 .main {
   height: 100%; }
 
-/* line 27, main.scss */
+/* line 29, main.scss */
 .open-map-button {
   height: 100%;
   width: 100%; }
 
-/* line 35, main.scss */
+/* line 37, main.scss */
 .menu-button-wrap {
   background: transparent;
   height: 74px;
@@ -10692,7 +10943,7 @@ body {
   width: 68px;
   z-index: 9999; }
 
-/* line 46, main.scss */
+/* line 48, main.scss */
 .menu-button {
   background: linear-gradient(#373a47 20%, transparent 20%, transparent 40%, #373a47 40%, #373a47 60%, transparent 60%, transparent 80%, #373a47 80%);
   border: 0;
@@ -10707,74 +10958,39 @@ body {
   top: 0;
   width: 40%; }
 
-/* line 61, main.scss */
+/* line 63, main.scss */
 .menu-button:hover {
   opacity: .6; }
 
-/* line 65, main.scss */
+/* line 67, main.scss */
 .menu-button-container {
   left: 0;
   position: fixed;
   top: 0; }
 
-/* line 71, main.scss */
-.side-nav {
-  background-color: #25589e;
-  text-align: center; }
-  /* line 75, main.scss */
-  .side-nav .collapsible-body {
-    background-color: transparent; }
-  /* line 79, main.scss */
-  .side-nav a {
-    color: #fff;
-    height: 50px;
-    line-height: 50px; }
-    /* line 84, main.scss */
-    .side-nav a span {
-      font-weight: bold; }
-  /* line 89, main.scss */
-  .side-nav li {
-    border-bottom: 2px solid #222; }
-    /* line 92, main.scss */
-    .side-nav li.active {
-      background-color: rgba(0, 0, 0, 0.5); }
-    /* line 96, main.scss */
-    .side-nav li:hover {
-      background-color: rgba(255, 255, 255, 0.3); }
-  /* line 101, main.scss */
-  .side-nav .brand-logo {
-    height: 140px;
-    padding: 0;
-    position: relative; }
-    /* line 106, main.scss */
-    .side-nav .brand-logo img {
-      height: 140px; }
-  /* line 111, main.scss */
-  .side-nav .logo {
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-    box-shadow: 0 2px 10px;
-    margin-top: 0;
-    padding: 16px; }
-
-/* line 120, main.scss */
+/* line 73, main.scss */
 .navbar-fixed {
   height: 48px;
+  position: fixed;
   width: calc(~'100% - 62px'); }
-  /* line 124, main.scss */
-  .navbar-fixed .shape-logo {
-    height: 128px;
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 999; }
-  /* line 132, main.scss */
+  /* line 78, main.scss */
   .navbar-fixed nav {
-    background: rgba(255, 255, 255, 0.8);
-    height: 48px;
-    width: calc(~'100% - 85px'); }
+    background: transparent;
+    height: 48px; }
+  @media only screen and (max-width: 992px) {
+    /* line 84, main.scss */
+    .navbar-fixed nav {
+      box-shadow: none; } }
 
-/* line 139, main.scss */
+/* line 90, main.scss */
+.shape-logo {
+  height: 128px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999; }
+
+/* line 98, main.scss */
 .brand-logo {
   background: transparent;
   padding: 5px;
@@ -10782,67 +10998,109 @@ body {
   right: 0;
   top: 0;
   z-index: 1000; }
-  /* line 147, main.scss */
+  /* line 106, main.scss */
   .brand-logo img {
     height: 84px; }
 
-/* line 152, main.scss */
+/* line 111, main.scss */
 .nav-wrapper {
   height: 48px; }
-  /* line 155, main.scss */
-  .nav-wrapper ul {
-    height: 48px;
-    line-height: 48px;
-    width: 100%; }
-  /* line 161, main.scss */
-  .nav-wrapper li {
+
+/* line 115, main.scss */
+.nav-fixed {
+  background: rgba(255, 255, 255, 0.8);
+  height: 48px;
+  line-height: 48px;
+  width: calc(~'100% - 85px'); }
+  /* line 121, main.scss */
+  .nav-fixed li {
     display: inline;
     width: 25%; }
-  /* line 166, main.scss */
-  .nav-wrapper a {
-    font-family: 'Univers-CondensedBold';
-    text-align: center;
-    width: 100%; }
-    /* line 171, main.scss */
-    .nav-wrapper a.active {
+    /* line 125, main.scss */
+    .nav-fixed li a {
+      font-family: 'Univers-CondensedBold';
+      text-align: center;
+      width: 100%; }
+    /* line 131, main.scss */
+    .nav-fixed li.active a {
       color: #fff; }
-  /* line 177, main.scss */
-  .nav-wrapper li:nth-child(1) a:not(.active) {
-    color: #005bbb; }
-  /* line 181, main.scss */
-  .nav-wrapper li:nth-child(1) .active {
-    background: #005bbb; }
-  /* line 187, main.scss */
-  .nav-wrapper li:nth-child(2) a:not(.active) {
-    color: #009b3a; }
-  /* line 191, main.scss */
-  .nav-wrapper li:nth-child(2) .active {
-    background: #009b3a; }
-  /* line 197, main.scss */
-  .nav-wrapper li:nth-child(3) a:not(.active) {
-    color: #ffa100; }
-  /* line 201, main.scss */
-  .nav-wrapper li:nth-child(3) .active {
-    background: #ffa100; }
-  /* line 207, main.scss */
-  .nav-wrapper li:nth-child(4) a:not(.active) {
-    color: #8f23b3; }
-  /* line 211, main.scss */
-  .nav-wrapper li:nth-child(4) .active {
-    background: #8f23b3; }
+    /* line 136, main.scss */
+    .nav-fixed li:nth-child(1):not(.active) a {
+      color: #005bbb; }
+    /* line 140, main.scss */
+    .nav-fixed li:nth-child(1).active {
+      background: #005bbb; }
+    /* line 146, main.scss */
+    .nav-fixed li:nth-child(2):not(.active) a {
+      color: #009b3a; }
+    /* line 150, main.scss */
+    .nav-fixed li:nth-child(2).active {
+      background: #009b3a; }
+    /* line 156, main.scss */
+    .nav-fixed li:nth-child(3):not(.active) a {
+      color: #ffa100; }
+    /* line 160, main.scss */
+    .nav-fixed li:nth-child(3).active {
+      background: #ffa100; }
+    /* line 166, main.scss */
+    .nav-fixed li:nth-child(4):not(.active) a {
+      color: #8f23b3; }
+    /* line 170, main.scss */
+    .nav-fixed li:nth-child(4).active {
+      background: #8f23b3; }
 
-/* line 220, main.scss */
+/* line 177, main.scss */
+.side-nav {
+  background-color: #25589e;
+  text-align: center; }
+  /* line 181, main.scss */
+  .side-nav .collapsible-body {
+    background-color: transparent; }
+  /* line 185, main.scss */
+  .side-nav a {
+    color: #fff;
+    font-family: 'Univers-CondensedBold';
+    height: 50px;
+    line-height: 50px; }
+    /* line 191, main.scss */
+    .side-nav a span {
+      font-weight: bold; }
+  /* line 196, main.scss */
+  .side-nav li {
+    border-bottom: 2px solid #222; }
+    /* line 199, main.scss */
+    .side-nav li.active {
+      background-color: rgba(0, 0, 0, 0.5); }
+    /* line 203, main.scss */
+    .side-nav li:hover {
+      background-color: rgba(255, 255, 255, 0.3); }
+  /* line 208, main.scss */
+  .side-nav .brand-logo {
+    height: 140px;
+    padding: 0;
+    position: relative; }
+    /* line 213, main.scss */
+    .side-nav .brand-logo img {
+      height: 140px; }
+  /* line 218, main.scss */
+  .side-nav .logo {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    margin-top: 0;
+    padding: 16px; }
+
+/* line 229, main.scss */
 .map {
   height: 100%;
   width: 100%; }
 
-/* line 225, main.scss */
+/* line 234, main.scss */
 .modal,
 .modal.modal-fixed-footer {
   height: 80%;
   max-height: 80%;
   width: 75%; }
-  /* line 231, main.scss */
+  /* line 240, main.scss */
   .modal .modal-content,
   .modal.modal-fixed-footer .modal-content {
     bottom: 0;
@@ -10850,10 +11108,10 @@ body {
     right: 0;
     top: 0; }
 
-/* line 240, main.scss */
+/* line 249, main.scss */
 .card .card-content {
   position: relative; }
-/* line 244, main.scss */
+/* line 253, main.scss */
 .card .card-content .card-button,
 .card .card-reveal .card-title.card-button {
   color: #212121;
@@ -10865,27 +11123,27 @@ body {
   position: absolute;
   right: 10px;
   top: 0; }
-/* line 257, main.scss */
+/* line 266, main.scss */
 .card .card-reveal .card-title,
 .card .card-content .card-title {
   line-height: 36px; }
-/* line 262, main.scss */
+/* line 271, main.scss */
 .card .card-reveal .card-title {
   padding-top: 10px; }
 
 @media only screen and (min-width: 601px) {
-  /* line 269, main.scss */
+  /* line 278, main.scss */
   .menu-wrap {
     padding: 2em;
     width: 30vw; } }
 @media only screen and (min-width: 993px) {
-  /* line 276, main.scss */
+  /* line 285, main.scss */
   .menu-wrap {
     height: 100vh;
     padding: 2em;
     width: 20vw; }
 
-  /* line 282, main.scss */
+  /* line 291, main.scss */
   .row .col.x3 {
     margin-left: 0;
     width: 25%; } }

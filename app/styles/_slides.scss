@@ -4,41 +4,9 @@ body {
   width: 100%;
 }
 
-.slides-container {
-  height: 200%;
-  left: 0;
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
 
-.slides {
-  height: 50%;
-  left: 0;
-  position: relative;
-  top: 0;
-  width: 100%;
-
-  .section {
-    height: 300vh;
-    left: 0;
-    padding-bottom: 0;
-    padding-top: 0;
-    position: relative;
-    top: 0;
-    width: 100%;
-
-  }
-
-  .slide {
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-  }
+.section {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

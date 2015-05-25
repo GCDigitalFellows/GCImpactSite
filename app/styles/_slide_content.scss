@@ -1,191 +1,175 @@
-.slide {
+.section {
   .funkyshape,
   .map-button {
     position: absolute;
   }
 }
 
-.section .slide:nth-of-type(2) {
-  top: 100vh;
-}
-
-.section .slide:nth-of-type(3) {
-  top: 200vh;
-}
-
 .section:nth-of-type(1) {
-  .slide:nth-of-type(1) {
-    .funkyshape {
-      @include responsive-dim(44.409722222, 26.81640625);
-      bottom: 0;
-      left: 0;
-    }
-  }
-
-  .slide:nth-of-type(2) {
-    .funkyshape {
-      @include responsive-dim(45.1875, 21.77734375);
-      bottom: 0;
-      left: 20.3vw;
-
-      @media #{$medium-and-up} {
-        @include responsive-portrait {
-          bottom: 0;
-          left: 10.7vw;
-        }
-
-        @include responsive-landscape {
-          bottom: 0;
-          left: 10.7vw;
-        }
-      }
-    }
-  }
-
-  .slide:nth-of-type(3) {
-    .funkyshape {
-      @include responsive-dim(42.347222222, 27.24609375);
-      bottom: 0;
-      left: 0;
-    }
+  .funkyshape {
+    @include responsive-dim(44.409722222, 26.81640625);
+    bottom: 0;
+    left: 0;
   }
 }
 
 .section:nth-of-type(2) {
-  .slide:nth-of-type(1) {
-    background-position: top left;
+  .funkyshape {
+    @include responsive-dim(45.1875, 21.77734375);
+    bottom: 0;
+    left: 20.3vw;
 
-    .funkyshape {
-      @include responsive-dim(26.222222222, 33.369140625);
-      bottom: 0;
-      right: 0;
-    }
-  }
-
-  .slide:nth-of-type(2) {
-    .funkyshape {
-      @include responsive-dim(27.479166667, 38.4765625);
-      bottom: 0;
-      left: 0;
-    }
-
-    .map-button {
-      @include responsive-landscape {
-        bottom: 5vh;
-        left: 22vh;
-      }
-
+    @media #{$medium-and-up} {
       @include responsive-portrait {
-        bottom: 5vh;
-        left: 22vh;
+        bottom: 0;
+        left: 10.7vw;
       }
-    }
-  }
 
-  .slide:nth-of-type(3) {
-    background-position: center right;
-
-    .funkyshape {
-      @include responsive-dim(43.381944444, 27.353515625);
-      bottom: 0;
-      right: 0;
+      @include responsive-landscape {
+        bottom: 0;
+        left: 10.7vw;
+      }
     }
   }
 }
 
 .section:nth-of-type(3) {
-  .slide:nth-of-type(1) {
-    .funkyshape {
-      @include responsive-dim(50, 25.029296875);
-      bottom: 0;
-      left: 27.2vw;
-
-      @media #{$large-and-up} {
-        @include responsive-portrait {
-          bottom: 0;
-          left: 27vw;
-        }
-
-        @include responsive-landscape {
-          bottom: 0;
-          left: 27vw;
-        }
-      }
-    }
-  }
-
-  .slide:nth-of-type(2) {
-    background-position: center left;
-
-    .funkyshape {
-      @include responsive-dim(29.722222222, 30.888671875);
-      bottom: 0;
-      left: 0;
-    }
-
-    .map-button {
-
-      @include responsive-landscape {
-        bottom: 3vh;
-        left: 30vh;
-      }
-
-      @include responsive-portrait {
-        bottom: 3vh;
-        right: 30vh;
-      }
-    }
-  }
-
-  .slide:nth-of-type(3) {
-    .funkyshape {
-      @include responsive-dim(53.326388889, 25.927734375);
-      bottom: 0;
-      left: 23.3vw;
-    }
+  .funkyshape {
+    @include responsive-dim(42.347222222, 27.24609375);
+    bottom: 0;
+    left: 0;
   }
 }
 
 .section:nth-of-type(4) {
-  .slide:nth-of-type(1) {
-    background-position: bottom center;
+  background-position: top left;
 
-    .funkyshape {
-      @include responsive-dim(29.381944444, 29.78515625);
-      bottom: 0;
-      left: 0;
-    }
+  .funkyshape {
+    @include responsive-dim(26.222222222, 33.369140625);
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.section:nth-of-type(5) {
+  .funkyshape {
+    @include responsive-dim(27.479166667, 38.4765625);
+    bottom: 0;
+    left: 0;
   }
 
-  .slide:nth-of-type(2) {
-    background-position: top center;
-
-    .funkyshape {
-      @include responsive-dim(37.069444444, 52.12890625);
-      bottom: 0;
-      right: 0;
+  .map-button {
+    @include responsive-landscape {
+      bottom: 5vh;
+      left: 22vh;
     }
 
-    .map-button {
-      @include responsive-landscape {
-        bottom: 5vh;
-        right: 6vh;
-      }
+    @include responsive-portrait {
+      bottom: 5vh;
+      left: 22vh;
+    }
+  }
+}
 
+.section:nth-of-type(6) {
+  background-position: center right;
+
+  .funkyshape {
+    @include responsive-dim(43.381944444, 27.353515625);
+    bottom: 0;
+    right: 0;
+  }
+}
+
+.section:nth-of-type(7) {
+  .funkyshape {
+    @include responsive-dim(50, 25.029296875);
+    bottom: 0;
+    left: 27.2vw;
+
+    @media #{$large-and-up} {
       @include responsive-portrait {
-        bottom: 5vh;
-        right: 6vh;
+        bottom: 0;
+        left: 27vw;
+      }
+
+      @include responsive-landscape {
+        bottom: 0;
+        left: 27vw;
       }
     }
   }
+}
 
-  .slide:nth-of-type(3) {
-    background-position: bottom left;
+.section:nth-of-type(8) {
+  background-position: center left;
 
-    .funkyshape {
-      @include responsive-dim(40.833333333, 16.572265625);
-      bottom: 0;
-      left: 29.4vw;
+  .funkyshape {
+    @include responsive-dim(29.722222222, 30.888671875);
+    bottom: 0;
+    left: 0;
+  }
+
+  .map-button {
+
+    @include responsive-landscape {
+      bottom: 3vh;
+      left: 30vh;
     }
+
+    @include responsive-portrait {
+      bottom: 3vh;
+      right: 30vh;
+    }
+  }
+}
+
+.section:nth-of-type(9) {
+  .funkyshape {
+    @include responsive-dim(53.326388889, 25.927734375);
+    bottom: 0;
+    left: 23.3vw;
+  }
+}
+
+.section:nth-of-type(10) {
+  background-position: bottom center;
+
+  .funkyshape {
+    @include responsive-dim(29.381944444, 29.78515625);
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.section:nth-of-type(11) {
+  background-position: top center;
+
+  .funkyshape {
+    @include responsive-dim(37.069444444, 52.12890625);
+    bottom: 0;
+    right: 0;
+  }
+
+  .map-button {
+    @include responsive-landscape {
+      bottom: 5vh;
+      right: 6vh;
+    }
+
+    @include responsive-portrait {
+      bottom: 5vh;
+      right: 6vh;
+    }
+  }
+}
+
+.section:nth-of-type(12) {
+  background-position: bottom left;
+
+  .funkyshape {
+    @include responsive-dim(40.833333333, 16.572265625);
+    bottom: 0;
+    left: 29.4vw;
   }
 }
