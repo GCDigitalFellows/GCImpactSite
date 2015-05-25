@@ -63,15 +63,19 @@ $('.button-collapse').sideNav({
     menuWidth: 300, // Default is 240
     edge: 'left', // Choose the horizontal origin
     closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-    navOpened: function(){
-      $('.hamburger-button').addClass('active');
-      isOpen = true;
-    },
-    navClosed: function(){
-      $('.hamburger-button').removeClass('active');
-      isOpen = false;
-    }
+    // navOpened: function(){
+    //   $('.hamburger-button').addClass('active');
+    //   isOpen = true;
+    // },
+    // navClosed: function(){
+    //   $('.hamburger-button').removeClass('active');
+    //   isOpen = false;
+    // }
   });
+
+$('.hamburger-button').click(function() {
+  $('.hamburger-button').toggleClass('active');
+});
 
 $('.modal-trigger').click( function(event) {
   var options = {
