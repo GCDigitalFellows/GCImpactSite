@@ -1,6 +1,10 @@
 $(document).ready(function() {
   'use strict';
 
+var isModalOpen = false,
+isOpen = false,
+modalTarget;
+
 // fullpage.js initialization
 $('#fullpage').fullpage({
   animateAnchor: true,
@@ -17,15 +21,14 @@ $('#fullpage').fullpage({
   //menu: '.slide-out, .nav-fixed',
   navigation: true,
   navigationPosition: 'right',
-  //navigationTooltips: ['The Graduate Center, CUNY','The Graduate Center, CUNY','The Graduate Center, CUNY', 'Research', 'Research', 'Research', 'Teaching', 'Teaching', 'Teaching', 'People', 'People', 'People'],
-  normalScrollElements: '.map-frame, .vignettes, .modal-content, .modal-footer, .col, .row, .card',
-  normalScrollElementTouchThreshold: 8,
-  paddingTop: '3em',
-  paddingBottom: '10px',
+  //normalScrollElements: '.map-frame, .vignettes, .modal-content, .modal-footer, .col, .row, .card',
+  //normalScrollElementTouchThreshold: 8,
+  paddingTop: '0',
+  paddingBottom: '0',
   recordHistory: false,
   resize : false,
   responsive: 0,
-  scrollBar: true,
+  scrollBar: false,
   scrollOverflow: false,
   scrollingSpeed: 750,
   sectionSelector: '.section',
@@ -35,6 +38,8 @@ $('#fullpage').fullpage({
   verticalCentered: true,
 
   afterLoad: function(anchorLink, index){
+    // display the site by removing the hiding class
+    $('.loading').removeClass('loading');
 
     var section = Math.ceil(index/3),
         selector = '[data-menusection="' + section + '"]',
@@ -46,6 +51,7 @@ $('#fullpage').fullpage({
 
   onLeave: function() {
     if (modalTarget && isModalOpen) {
+      $.fn.fullpage.setAllowScrolling(true);
       $(modalTarget).closeModal();
       isModalOpen = !isModalOpen;
     }
@@ -54,10 +60,6 @@ $('#fullpage').fullpage({
 });
 
 /* menu and map handling */
-
-var isModalOpen = false,
-isOpen = false,
-modalTarget;
 
 $('.button-collapse').sideNav({
     menuWidth: 300, // Default is 240
@@ -79,9 +81,12 @@ $('.hamburger-button').click(function() {
 
 $('.modal-trigger').click( function(event) {
   var options = {
-    dismissible: true
+    dismissible: true,
+    complete: function() {
+      $.fn.fullpage.setAllowScrolling(true);
+    }
   };
-  modalTarget = $(this).attr('href') || '.' + $(this).data('target');
+  modalTarget = $(this).data('modal');
   if ($.hasData(this) && $(this).data('map')){
     var mapSrc = $(this).data('map');
     $('.map-frame').attr('src',mapSrc);
@@ -89,9 +94,9 @@ $('.modal-trigger').click( function(event) {
   } else {
     options.dismissible = false;
   }
+  $.fn.fullpage.setAllowScrolling(false);
   $(modalTarget).openModal(options);
   isModalOpen = !isModalOpen;
-  $.fn.fullpage.setAllowScrolling(false);
   event.preventDefault();
 });
 
@@ -100,9 +105,9 @@ $(document).keydown(function( event ) {
     $('.button-collapse').sideNav('hide');
     isOpen = !isOpen;
   } else if ( isModalOpen ) {
+    $.fn.fullpage.setAllowScrolling(true);
     $(modalTarget).closeModal();
     isModalOpen = !isModalOpen;
-    $.fn.fullpage.setAllowScrolling(true);
   }
 });
 
