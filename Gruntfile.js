@@ -317,13 +317,7 @@ module.exports = function (grunt) {
         }, {
           expand: true,
           dot: true,
-          cwd: 'bower_components/fontawesome',
-          src: 'fonts/{,*/}*.*',
-          dest: '<%= config.out %>'
-        }, {
-          expand: true,
-          dot: true,
-          cwd: 'bower_components/Materialize',
+          cwd: 'bower_components/materialize',
           src: 'font/{,*/}*.*',
           dest: '<%= config.out %>'
         }]
