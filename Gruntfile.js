@@ -132,8 +132,33 @@ module.exports = function (grunt) {
         files: [{
           dot: true,
           src: [
-            '.tmp',
-            '<%= config.out %>/*'
+            '<%= config.test %>/*',
+            '<%= config.tmp %>/*',
+            '<%= config.dist %>/*'
+          ]
+        }]
+      },
+      dist: {
+        files: [{
+          dot: true,
+          src: [
+            '<%= config.dist %>/*'
+          ]
+        }]
+      },
+      server: {
+        files: [{
+          dot: true,
+          src: [
+            '<%= config.tmp %>/*'
+          ]
+        }]
+      },
+      test: {
+        files: [{
+          dot: true,
+          src: [
+            '<%= config.test %>/*'
           ]
         }]
       },
@@ -417,7 +442,7 @@ module.exports = function (grunt) {
     config.out = config.temp;
     grunt.log.warn('out dir: ' + config.out);
     grunt.task.run([
-      //'clean:server',
+      'clean:server',
       'newer:sass',
       'newer:jshint',
       'includes',
@@ -440,7 +465,7 @@ module.exports = function (grunt) {
     if (target !== 'watch') {
       config.out = config.test;
       grunt.task.run([
-        'clean',
+        'clean:test',
         'newer:jshint',
         'sass',
         'includes',
@@ -467,8 +492,8 @@ module.exports = function (grunt) {
       }
       grunt.log.warn('Using config.out=' + config.out);
       return grunt.task.run([
-        //'clean',
-        'newer:sass',
+        'clean:dist',
+        'sass',
         'includes',
         'useminPrepare',
         'copy:all',
@@ -478,9 +503,9 @@ module.exports = function (grunt) {
         'newer:imagemin',
         //'newer:svgmin',
         'autoprefixer',
-        'newer:concat',
-        'newer:cssmin',
-        'newer:uglify',
+        'concat',
+        'cssmin',
+        'uglify',
         'modernizr:dist',
         //'rev',
         'usemin',
