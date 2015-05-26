@@ -13,13 +13,19 @@
 
 @font-face {
   font-family: 'Univers-CondensedBold';
-  src: uri('../fonts/Univers 67 Condensed Bold.woff') format('woff'),
-  uri('../fonts/Univers 67 Condensed Bold.ttf') format('truetype');
+  src: url('../fonts/Univers 67 Condensed Bold.eot');
+  src: url('../fonts/Univers 67 Condensed Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Univers 67 Condensed Bold.woff') format('woff'),
+       url('../fonts/Univers 67 Condensed Bold.ttf') format('truetype'),
+       url('../fonts/Univers 67 Condensed Bold.svg#svgFontName') format('svg');
 }
 @font-face {
   font-family: 'Univers-Condensed';
-  src: uri('../fonts/Univers 57 Condensed.woff') format('woff'),
-  uri('../fonts/Univers 57 Condensed.ttf') format('truetype');
+  src: url('../fonts/Univers 57 Condensed.eot');
+  src: url('../fonts/Univers 57 Condensed.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Univers 57 Condensed.woff') format('woff'),
+       url('../fonts/Univers 57 Condensed.ttf') format('truetype'),
+       url('../fonts/Univers 57 Condensed.svg#svgFontName') format('svg');
 }
 
 .loading {
@@ -127,7 +133,7 @@
     width: 25%;
 
     a {
-      font-family: 'Univers-CondensedBold';
+      font-family: 'Univers-CondensedBold', 'Helvetica Neue', sans-serif;
       text-align: center;
       width: 100%;
     }
@@ -188,7 +194,7 @@
 
   a {
     color: $white;
-    font-family: 'Univers-CondensedBold';
+    font-family: 'Univers-CondensedBold', 'Helvetica Neue', sans-serif;
     height: 50px;
     line-height: 50px;
 
