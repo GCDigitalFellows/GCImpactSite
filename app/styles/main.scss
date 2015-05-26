@@ -93,7 +93,7 @@
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 999;
+  z-index: 996;
 }
 
 .brand-logo {
@@ -102,7 +102,7 @@
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 1000;
+  z-index: 997;
 
   img {
     height: 84px;
@@ -240,6 +240,18 @@
 .map {
   height: 100%;
   width: 100%;
+}
+
+@media #{$medium-and-up} {
+  .button-modal {
+    // recreate the btn-large class from materialize and only apply it on larger screens where it makes sense
+    height: $button-floating-size * 1.5;
+    width: $button-floating-size * 1.5;
+
+    i {
+      line-height: $button-floating-size * 1.5;
+    }
+  }
 }
 
 .modal,
