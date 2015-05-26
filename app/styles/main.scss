@@ -177,6 +177,7 @@
 
 .side-nav {
   background-color: $side-nav-bg;
+  overflow: hidden;
   text-align: center;
 
   .collapsible-body {
@@ -196,6 +197,7 @@
 
   li {
     border-bottom: 2px solid $dark-gray;
+    padding: 0;
 
     &.active {
       background-color: rgba(0, 0, 0, .5);
