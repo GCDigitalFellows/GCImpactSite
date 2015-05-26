@@ -317,9 +317,9 @@ module.exports = function (grunt) {
         }, {
           expand: true,
           dot: true,
-          cwd: 'bower_components/materialize',
-          src: 'font/{,*/}*.*',
-          dest: '<%= config.out %>'
+          cwd: 'bower_components/materialize/font/',
+          src: '{,*/}*.*',
+          dest: '<%= config.out %>/fonts'
         }]
       },
       images: {

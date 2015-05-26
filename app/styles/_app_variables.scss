@@ -16,5 +16,8 @@ $header-height: 48px;
 $ratio: 1440/1024;
 
 // fixes for materialize
-$medium-and-up: "only screen and (min-width : #{$medium-screen-up})";
-$large-and-up: "only screen and (min-width : #{$large-screen-up})";
+$medium-and-up: 'only screen and (min-width : #{$medium-screen-up})';
+$large-and-up: 'only screen and (min-width : #{$large-screen-up})';
+
+$roboto-font-path: '../fonts/roboto/';
+$icons-font-path: '../fonts/material-design-icons/';
