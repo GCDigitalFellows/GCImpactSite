@@ -231,6 +231,14 @@
     margin-top: 0;
     padding: 16px;
   }
+
+  .sidenav-extra {
+    background-image: url('../images/navbg.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: calc(100% - 381px);
+    position: relative;
+  }
 }
 
 
