@@ -32,15 +32,6 @@
   display: none;
 }
 
-.main {
-  height: 100%;
-}
-
-.open-map-button {
-  height: 100%;
-  width: 100%;
-}
-
 // MENUS
 
 // Menu Button
@@ -83,7 +74,7 @@
 .navbar-fixed {
   height: $header-height;
   position: fixed;
-  width: calc(~'100% - 62px');
+  width: calc(100% - 62px);
 
   nav {
     background: transparent;
@@ -126,7 +117,7 @@
   background: rgba(255, 255, 255, .8);
   height: $header-height;
   line-height: $header-height;
-  width: calc(~'100% - 85px');
+  width: calc(100% - 62px);
 
   li {
     display: inline;
