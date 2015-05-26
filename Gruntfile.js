@@ -329,6 +329,13 @@ module.exports = function (grunt) {
         dest: '<%= config.out %>/images/',
         src:  '{,*/}*.{webp,jpg,jpeg,png,gif,svg}'
       },
+      svgs: { // because svgmin breaks stuff
+        expand: true,
+        dot: true,
+        cwd:  '<%= config.app %>/images',
+        dest: '<%= config.out %>/images/',
+        src:  '{,*/}*.svg'
+      },
       js: {
         expand: true,
         dot: true,
@@ -466,6 +473,7 @@ module.exports = function (grunt) {
         'useminPrepare',
         'copy:all',
         'copy:js',
+        'copy:svgs',
         //'copy:styles', // handled by autoprefixer
         'newer:imagemin',
         //'newer:svgmin',
