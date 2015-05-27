@@ -58,7 +58,7 @@ module.exports = function (grunt) {
       },
       sass: {
         files: ['<%= config.app %>/styles/{,*/}*.scss'],
-        tasks: ['sass','newer:copy:styles'],
+        tasks: ['sass'],
         options: {
           livereload: true
         }
@@ -172,7 +172,7 @@ module.exports = function (grunt) {
       },
       all: {
         files: {
-          '<%= config.app %>/styles/main.css': '<%= config.app %>/styles/main.scss'
+          '<%= config.out %>/styles/main.css': '<%= config.app %>/styles/main.scss'
         }
       }
     },
