@@ -133,7 +133,7 @@ module.exports = function (grunt) {
           dot: true,
           src: [
             '<%= config.test %>/*',
-            '<%= config.tmp %>/*',
+            '<%= config.temp %>/*',
             '<%= config.dist %>/*'
           ]
         }]
@@ -150,7 +150,7 @@ module.exports = function (grunt) {
         files: [{
           dot: true,
           src: [
-            '<%= config.tmp %>/*'
+            '<%= config.temp %>/*'
           ]
         }]
       },
@@ -333,7 +333,7 @@ module.exports = function (grunt) {
             '*.{ico,png,txt}',
             //'{,*/}*.html', /* handled by includes */
             '!include/',
-            'fonts/{,*/}*.*'
+            'font/{,*/}*.*'
             //'{,*}*.js'
           ]
         }, {
@@ -342,9 +342,9 @@ module.exports = function (grunt) {
         }, {
           expand: true,
           dot: true,
-          cwd: 'bower_components/materialize/font/',
-          src: '{,*/}*.*',
-          dest: '<%= config.out %>/fonts'
+          cwd: 'bower_components/materialize/',
+          src: 'font/{,*/}*.*',
+          dest: '<%= config.out %>'
         }]
       },
       images: {
