@@ -10602,7 +10602,7 @@ html, body {
   position: fixed;
   top: 0;
   width: 68px;
-  z-index: 9999; }
+  z-index: 1003; }
 
 /* line 12, _navigation.scss */
 .menu-button {
@@ -10649,7 +10649,7 @@ html, body {
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 996; }
+  z-index: 999; }
 
 /* line 62, _navigation.scss */
 .brand-logo {
@@ -10658,100 +10658,104 @@ html, body {
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 998; }
-  /* line 70, _navigation.scss */
+  z-index: 1000; }
+  @media only screen and (max-width: 992px) {
+    /* line 62, _navigation.scss */
+    .brand-logo {
+      z-index: 996; } }
+  /* line 74, _navigation.scss */
   .brand-logo img {
     height: 84px; }
 
-/* line 75, _navigation.scss */
+/* line 79, _navigation.scss */
 .nav-wrapper {
   height: 48px; }
 
-/* line 79, _navigation.scss */
+/* line 83, _navigation.scss */
 .nav-fixed {
   background: rgba(255, 255, 255, 0.8);
   height: 48px;
   line-height: 48px;
   width: calc(100% - 62px); }
-  /* line 85, _navigation.scss */
+  /* line 89, _navigation.scss */
   .nav-fixed li {
     display: inline;
     width: 25%; }
-    /* line 89, _navigation.scss */
+    /* line 93, _navigation.scss */
     .nav-fixed li a {
       font-family: 'Univers-CondensedBold', 'Helvetica Neue', sans-serif;
       text-align: center;
       width: 100%; }
-    /* line 95, _navigation.scss */
+    /* line 99, _navigation.scss */
     .nav-fixed li.active a {
       color: #fff; }
-    /* line 100, _navigation.scss */
+    /* line 104, _navigation.scss */
     .nav-fixed li:nth-child(1):not(.active) a {
       color: #005bbb; }
-    /* line 104, _navigation.scss */
+    /* line 108, _navigation.scss */
     .nav-fixed li:nth-child(1).active {
       background: #005bbb; }
-    /* line 110, _navigation.scss */
+    /* line 114, _navigation.scss */
     .nav-fixed li:nth-child(2):not(.active) a {
       color: #009b3a; }
-    /* line 114, _navigation.scss */
+    /* line 118, _navigation.scss */
     .nav-fixed li:nth-child(2).active {
       background: #009b3a; }
-    /* line 120, _navigation.scss */
+    /* line 124, _navigation.scss */
     .nav-fixed li:nth-child(3):not(.active) a {
       color: #ffa100; }
-    /* line 124, _navigation.scss */
+    /* line 128, _navigation.scss */
     .nav-fixed li:nth-child(3).active {
       background: #ffa100; }
-    /* line 130, _navigation.scss */
+    /* line 134, _navigation.scss */
     .nav-fixed li:nth-child(4):not(.active) a {
       color: #8f23b3; }
-    /* line 134, _navigation.scss */
+    /* line 138, _navigation.scss */
     .nav-fixed li:nth-child(4).active {
       background: #8f23b3; }
 
-/* line 141, _navigation.scss */
+/* line 145, _navigation.scss */
 .side-nav {
   background-color: #25589e;
   overflow: hidden;
   text-align: center; }
-  /* line 146, _navigation.scss */
+  /* line 150, _navigation.scss */
   .side-nav .collapsible-body {
     background-color: transparent; }
-  /* line 150, _navigation.scss */
+  /* line 154, _navigation.scss */
   .side-nav a {
     color: #fff;
     font-family: 'Univers-CondensedBold', 'Helvetica Neue', sans-serif;
     height: 50px;
     line-height: 50px; }
-    /* line 156, _navigation.scss */
+    /* line 160, _navigation.scss */
     .side-nav a span {
       font-weight: bold; }
-  /* line 161, _navigation.scss */
+  /* line 165, _navigation.scss */
   .side-nav li {
     border-bottom: 2px solid #222;
     padding: 0; }
-    /* line 165, _navigation.scss */
+    /* line 169, _navigation.scss */
     .side-nav li.active {
       background-color: rgba(0, 0, 0, 0.5); }
-    /* line 169, _navigation.scss */
+    /* line 173, _navigation.scss */
     .side-nav li:hover {
       background-color: rgba(255, 255, 255, 0.3); }
-  /* line 174, _navigation.scss */
+  /* line 178, _navigation.scss */
   .side-nav .brand-logo {
     height: 140px;
     padding: 0;
     position: relative; }
-    /* line 179, _navigation.scss */
+    /* line 183, _navigation.scss */
     .side-nav .brand-logo img {
       height: 140px; }
-  /* line 184, _navigation.scss */
+  /* line 188, _navigation.scss */
   .side-nav .logo {
     background-color: #fff;
     border-bottom: 1px solid #ddd;
     margin-top: 0;
     padding: 16px; }
-  /* line 191, _navigation.scss */
+  /* line 195, _navigation.scss */
   .side-nav .sidenav-extra {
     background-image: url("../images/navbg.jpg");
     background-position: center center;
@@ -11027,10 +11031,17 @@ html, body {
     /* line 196, _slides.scss */
     .section:nth-of-type(12) .button-link {
       bottom: 10%;
-      right: 30%;
       margin-left: auto;
       margin-right: auto;
+      right: 30%;
       z-index: 11; }
+
+/* line 206, _slides.scss */
+.card-more {
+  opacity: 0;
+  transition: .8s;
+  transition-delay: .5s;
+  transition-property: opacity; }
 
 /* line 2, /Volumes/emu/Developer/GCImpactSite/bower_components/hamburger-menu-button/src/assets/scss/_hamburger_menu_button.scss */
 .hamburger-button {

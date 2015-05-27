@@ -195,10 +195,17 @@
 
     .button-link {
       bottom: 10%;
-      right: 30%;
       margin-left: auto;
       margin-right: auto;
+      right: 30%;
       z-index: 11;
     }
   }
+}
+
+.card-more {
+  opacity: 0;
+  transition: .8s;
+  transition-delay: .5s;
+  transition-property: opacity;
 }
