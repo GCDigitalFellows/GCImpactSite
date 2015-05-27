@@ -1,0 +1,34 @@
+.card {
+  .card-content {
+    position: relative;
+  }
+
+  .card-content .card-button,
+  .card-reveal .card-title.card-button {
+    color: $dark-4;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 24px;
+    padding-right: 0;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+
+  .card-reveal .card-title,
+  .card-content .card-title {
+    line-height: 36px;
+  }
+
+  .card-reveal .card-title {
+    padding-top: 10px;
+  }
+}
+
+@media #{$large-and-up} {
+  .row .col.x3 {
+    margin-left: 0;
+    width: 25%;
+  }
+}

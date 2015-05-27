@@ -12,8 +12,8 @@
 
 @mixin orientation-dim($width, $height) {
   @include responsive-portrait {
-    height: #{$height}vh;
-    width: #{$width * $ratio}vh;
+    height: #{$height}vw;
+    width: #{$width * $ratio}vw;
   }
 
   @include responsive-landscape {
