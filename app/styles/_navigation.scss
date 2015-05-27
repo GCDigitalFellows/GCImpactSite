@@ -6,7 +6,7 @@
   position: fixed;
   top: 0;
   width: 68px;
-  z-index: 9999;
+  z-index: 1003;
 }
 
 .menu-button {
@@ -56,7 +56,7 @@
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 996;
+  z-index: 999;
 }
 
 .brand-logo {
@@ -65,7 +65,11 @@
   position: fixed;
   right: 0;
   top: 0;
-  z-index: 998;
+  z-index: 1000;
+
+  @media #{$medium-and-down} {
+    z-index: 996;
+  }
 
   img {
     height: 84px;
