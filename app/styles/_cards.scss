@@ -26,7 +26,7 @@
   }
 }
 
-@media #{$large-and-up} {
+@media only screen and (min-width : #{$large-screen-up}) {
   .row .col.x3 {
     margin-left: 0;
     width: 25%;

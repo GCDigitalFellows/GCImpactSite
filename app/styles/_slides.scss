@@ -23,7 +23,7 @@
       bottom: 0;
       left: 20.3vw;
 
-      @media #{$medium-and-up} {
+      @media #{$small-and-down} {
         @include responsive-portrait {
           bottom: 0;
           left: 10.7vw;
