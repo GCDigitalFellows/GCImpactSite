@@ -1,5 +1,6 @@
 @import 'materialize/sass/materialize';
 @import 'fullpage.js/jquery.fullPage';
+@import 'hamburger-menu-button/src/assets/scss/hmb';
 
 @import 'app_variables';
 
@@ -11,5 +12,4 @@
 @import 'navigation';
 @import 'slides';
 
-@import 'hamburger-menu-button/src/assets/scss/variables';
-@import 'hamburger-menu-button/src/assets/scss/hamburger_menu_button';
+

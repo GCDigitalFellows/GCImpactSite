@@ -209,7 +209,7 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: '<%= config.app %>/styles/',
+          cwd: '<%= config.out %>/styles/',
           src: '{,*/}*.css',
           dest: '<%= config.out %>/styles/'
         }]
@@ -368,13 +368,13 @@ module.exports = function (grunt) {
         dest: '<%= config.out %>/scripts/',
         src: '{,*/}*.js'
       },
-      styles:  {
-        expand: true,
-        dot: true,
-        cwd: '<%= config.app %>/styles',
-        dest: '<%= config.out %>/styles/',
-        src: '{,*/}*.css'
-      }
+//      styles:  {
+//        expand: true,
+//        dot: true,
+//        cwd: '<%= config.app %>/styles',
+//        dest: '<%= config.out %>/styles/',
+//        src: '{,*/}*.css'
+//      }
     },
 
     // Generates a custom Modernizr build that includes only the tests you
@@ -448,7 +448,7 @@ module.exports = function (grunt) {
       'includes',
       'copy:all',
       'copy:js',
-      'copy:styles',
+      //'copy:styles',
       'copy:images',
       //'autoprefixer',
       'connect:livereload',
@@ -471,7 +471,6 @@ module.exports = function (grunt) {
         'includes',
         'copy:all',
         'copy:js',
-        'copy:styles',
         'copy:images',
         'autoprefixer'
       ]);
@@ -493,9 +492,9 @@ module.exports = function (grunt) {
       grunt.log.warn('Using config.out=' + config.out);
       return grunt.task.run([
         'clean:dist',
-        'sass',
         'includes',
         'useminPrepare',
+        'sass',
         'copy:all',
         'copy:js',
         'copy:svgs',
