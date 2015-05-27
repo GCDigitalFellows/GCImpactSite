@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Univers-CondensedBold';
+  src: url('#{$font-directory}/Univers 67 Condensed Bold.eot');
+  src: url('#{$font-directory}/Univers 67 Condensed Bold.eot?#iefix') format('embedded-opentype'),
+       url('#{$font-directory}/Univers 67 Condensed Bold.woff') format('woff'),
+       url('#{$font-directory}/Univers 67 Condensed Bold.ttf') format('truetype'),
+       url('#{$font-directory}/Univers 67 Condensed Bold.svg#svgFontName') format('svg');
+}
+
+@font-face {
+  font-family: 'Univers-Condensed';
+  src: url('#{$font-directory}/Univers 57 Condensed.eot');
+  src: url('#{$font-directory}/Univers 57 Condensed.eot?#iefix') format('embedded-opentype'),
+       url('#{$font-directory}/Univers 57 Condensed.woff') format('woff'),
+       url('#{$font-directory}/Univers 57 Condensed.ttf') format('truetype'),
+       url('#{$font-directory}/Univers 57 Condensed.svg#svgFontName') format('svg');
+}

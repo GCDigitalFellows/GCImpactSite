@@ -4,29 +4,12 @@
 @import 'app_variables';
 @import 'mixins';
 
+@import 'fonts';
 @import 'slides';
 @import 'slide_content';
 
 @import 'hamburger-menu-button/src/assets/scss/variables';
 @import 'hamburger-menu-button/src/assets/scss/hamburger_menu_button';
-
-
-@font-face {
-  font-family: 'Univers-CondensedBold';
-  src: url('../fonts/Univers 67 Condensed Bold.eot');
-  src: url('../fonts/Univers 67 Condensed Bold.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/Univers 67 Condensed Bold.woff') format('woff'),
-       url('../fonts/Univers 67 Condensed Bold.ttf') format('truetype'),
-       url('../fonts/Univers 67 Condensed Bold.svg#svgFontName') format('svg');
-}
-@font-face {
-  font-family: 'Univers-Condensed';
-  src: url('../fonts/Univers 57 Condensed.eot');
-  src: url('../fonts/Univers 57 Condensed.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/Univers 57 Condensed.woff') format('woff'),
-       url('../fonts/Univers 57 Condensed.ttf') format('truetype'),
-       url('../fonts/Univers 57 Condensed.svg#svgFontName') format('svg');
-}
 
 .loading {
   display: none;

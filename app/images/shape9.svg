@@ -7,11 +7,11 @@
     <![CDATA[
         @font-face {
   font-family: 'Univers-Condensed';
-  src: url('../fonts/Univers 57 Condensed.eot');
-  src: url('../fonts/Univers 57 Condensed.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/Univers 57 Condensed.woff') format('woff'),
-       url('../fonts/Univers 57 Condensed.ttf') format('truetype'),
-       url('../fonts/Univers 57 Condensed.svg#svgFontName') format('svg');
+  src: url('../font/Univers 57 Condensed.eot');
+  src: url('../font/Univers 57 Condensed.eot?#iefix') format('embedded-opentype'),
+       url('../font/Univers 57 Condensed.woff') format('woff'),
+       url('../font/Univers 57 Condensed.ttf') format('truetype'),
+       url('../font/Univers 57 Condensed.svg#svgFontName') format('svg');
 }
     ]]>
     </style>
