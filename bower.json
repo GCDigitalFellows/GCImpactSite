@@ -2,10 +2,15 @@
   "name": "GCImpactSite",
   "private": true,
   "homepage": "http://gcdigitalfellows.github.io/GCImpactSite",
+  "license": "GPL-3.0",
   "authors": [
-    "Keith Miyake http://keithmiyake.info",
-    "Michelle Johnson"
+    {"name": "Keith Miyake", "email": "kmiyake@gc.cuny.edu", "homepage": "http://keithmiyake.info"},
+    {"name": "Michelle Johnson"}
   ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gcdigitalfellows/GCImpactSite"
+  },
   "description": "Static site showcasing key highlights of the impact the Graduate Center, CUNY has on the city, region, and world.",
   "dependencies": {
     "fullpage.js": "git@github.com:alvarotrigo/fullPage.js.git#master",
