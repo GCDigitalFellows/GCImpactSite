@@ -441,23 +441,23 @@ module.exports = function (grunt) {
     if (target === 'dist') {
       config.out = config.dist;
       return grunt.task.run(['build', 'connect:dist:keepalive']);
+    } else {
+      config.out = config.temp;
+      grunt.log.warn('out dir: ' + config.out);
+      return grunt.task.run([
+        'clean:server',
+        'sass',
+        'jshint',
+        'includes',
+        'copy:all',
+        'copy:js',
+        //'copy:styles',
+        'copy:images',
+        //'autoprefixer',
+        'connect:livereload',
+        'watch'
+      ]);
     }
-
-    config.out = config.temp;
-    grunt.log.warn('out dir: ' + config.out);
-    grunt.task.run([
-      'clean:server',
-      'newer:sass',
-      'newer:jshint',
-      'includes',
-      'copy:all',
-      'copy:js',
-      //'copy:styles',
-      'copy:images',
-      //'autoprefixer',
-      'connect:livereload',
-      'watch'
-    ]);
   });
 
   grunt.registerTask('server', function (target) {
@@ -470,7 +470,7 @@ module.exports = function (grunt) {
       config.out = config.test;
       grunt.task.run([
         'clean:test',
-        'newer:jshint',
+        'jshint',
         'sass',
         'includes',
         'copy:all',
@@ -503,7 +503,7 @@ module.exports = function (grunt) {
         'copy:js',
         'copy:svgs',
         //'copy:styles', // handled by autoprefixer
-        'newer:imagemin',
+        'imagemin',
         //'newer:svgmin',
         'autoprefixer',
         'concat',
@@ -512,7 +512,7 @@ module.exports = function (grunt) {
         'modernizr:dist',
         //'rev',
         'usemin',
-        //'htmlmin'
+        'htmlmin'
       ]);
     }
   );
