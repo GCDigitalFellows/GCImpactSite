@@ -58,7 +58,7 @@ module.exports = function (grunt) {
       },
       sass: {
         files: ['<%= config.app %>/styles/{,*/}*.scss'],
-        tasks: ['sass'],
+        tasks: ['sass','autoprefixer'],
         options: {
           livereload: true
         }
@@ -201,12 +201,87 @@ module.exports = function (grunt) {
       }
     },
 
+    // Build the site using grunt-includes
+    includes: {
+      all: {
+        cwd: '<%= config.app %>',
+        dest: '<%= config.out %>',
+        src: [ '*.html', 'pages/*.html' ],
+        options: {
+          //flatten: true,
+          includePath: '<%= config.app %>/include'
+        }
+      }
+    },
+
+    // Copies remaining files to places other tasks can use
+    copy: {
+      all: {
+        files: [{
+          expand: true,
+          dot: true,
+          cwd: '<%= config.app %>',
+          dest: '<%= config.out %>',
+          src: [
+            '*.{ico,png,txt}',
+            //'{,*/}*.html', /* handled by includes */
+            '!include/',
+            'font/{,*/}*.*'
+          ]
+        }, {
+          src: 'node_modules/apache-server-configs/dist/.htaccess',
+          dest: '<%= config.out %>/.htaccess'
+        }, {
+          src: '.gitignore',
+          dest: '<%= config.out %>/.gitignore' // for buildcontrol
+        }, {
+          expand: true,
+          dot: true,
+          cwd: 'bower_components/materialize/',
+          src: 'font/{,*/}*.*',
+          dest: '<%= config.out %>'
+        }]
+      },
+      images: {
+        expand: true,
+        dot: true,
+        cwd:  '<%= config.app %>/images',
+        dest: '<%= config.out %>/images/',
+        src:  '{,*/}*.{webp,jpg,jpeg,png,gif,svg}'
+      },
+      svgs: { // because svgmin breaks stuff
+        expand: true,
+        dot: true,
+        cwd:  '<%= config.app %>/images',
+        dest: '<%= config.out %>/images/',
+        src:  '{,*/}*.svg'
+      },
+      js: {
+        expand: true,
+        dot: true,
+        cwd: '<%= config.app %>/scripts',
+        dest: '<%= config.out %>/scripts/',
+        src: '{,*/}*.js'
+      },
+      vendor: {
+        expand: true,
+        flatten: true,
+        src: [
+          'bower_components/fullpage.js/jquery.fullPage.min.js',
+          'bower_components/jquery/dist/jquery.min.js',
+          'bower_components/lazyloadxt/dist/*.min.js',
+          'bower_components/materialize/bin/materialize.js'
+        ],
+        dest: '<%= config.out %>/scripts/vendor/'
+      }
+    },
+
     // Add vendor prefixed styles
     autoprefixer: {
       options: {
         browsers: ['> 1%', 'last 2 versions', 'Firefox ESR', 'Opera 12.1']
       },
-      dist: {
+      all: {
         files: [{
           expand: true,
           cwd: '<%= config.out %>/styles/',
@@ -245,7 +320,12 @@ module.exports = function (grunt) {
     // additional tasks can operate on them
     useminPrepare: {
       options: {
-        dest: '<%= config.out %>'
+        dest: '<%= config.out %>',
+/*        staging: '<%= config.out %>',
+        steps: {
+          js: ['concat'],
+          css: ['concat', 'cssmin']
+        }, */
       },
       html: '<%= config.app %>/index.html'
     },
@@ -260,10 +340,22 @@ module.exports = function (grunt) {
         ]
       },
       html: ['<%= config.out %>/{,*/}*.html'],
-      css: ['<%= config.out %>/styles/{,*/}*.css']
+      css: ['<%= config.out %>/styles/*.css']
     },
 
     // The following *-min tasks produce minified files in the dist folder
+    cssmin: {
+      all: {
+        files: [{
+          expand: true,
+          cwd: '<%= config.out %>/styles',
+          src: ['*.css', '!*.min.css'],
+          dest: '<%= config.out %>/styles',
+          ext: '.min.css'
+        }]
+      }
+    },
+
     imagemin: {
       dist: {
         files: [{
@@ -308,77 +400,23 @@ module.exports = function (grunt) {
       }
     },
 
-    // Build the site using grunt-includes
-    includes: {
+    uglify: {
       all: {
-        cwd: '<%= config.app %>',
-        dest: '<%= config.out %>',
-        src: [ '*.html', 'pages/*.html' ],
         options: {
-          //flatten: true,
-          includePath: '<%= config.app %>/include'
+          compress: true,
+          mangle: false,
+          quoteStyle: 3,
+          report: 'gzip',
+          sourceMap: true,
+          //sourceMapIn: '<%= config.out %>/scripts/scripts/main.js.map',
+        },
+        files: {
+          '<%= config.out %>/scripts/main.min.js': ['<%= config.out %>/scripts/main.js'],
+          //'<%= config.out %>/scripts/vendor.min.js': ['<%= config.out %>/scripts/vendor.js']
         }
       }
     },
 
-    // Copies remaining files to places other tasks can use
-    copy: {
-      all: {
-        files: [{
-          expand: true,
-          dot: true,
-          cwd: '<%= config.app %>',
-          dest: '<%= config.out %>',
-          src: [
-            '*.{ico,png,txt}',
-            //'{,*/}*.html', /* handled by includes */
-            '!include/',
-            'font/{,*/}*.*'
-            //'{,*}*.js'
-          ]
-        }, {
-          src: 'node_modules/apache-server-configs/dist/.htaccess',
-          dest: '<%= config.out %>/.htaccess'
-        }, {
-          src: '.gitignore',
-          dest: '<%= config.out %>/.gitignore' // for buildcontrol
-        }, {
-          expand: true,
-          dot: true,
-          cwd: 'bower_components/materialize/',
-          src: 'font/{,*/}*.*',
-          dest: '<%= config.out %>'
-        }]
-      },
-      images: {
-        expand: true,
-        dot: true,
-        cwd:  '<%= config.app %>/images',
-        dest: '<%= config.out %>/images/',
-        src:  '{,*/}*.{webp,jpg,jpeg,png,gif,svg}'
-      },
-      svgs: { // because svgmin breaks stuff
-        expand: true,
-        dot: true,
-        cwd:  '<%= config.app %>/images',
-        dest: '<%= config.out %>/images/',
-        src:  '{,*/}*.svg'
-      },
-      js: {
-        expand: true,
-        dot: true,
-        cwd: '<%= config.app %>/scripts',
-        dest: '<%= config.out %>/scripts/',
-        src: '{,*/}*.js'
-      },
-//      styles:  {
-//        expand: true,
-//        dot: true,
-//        cwd: '<%= config.app %>/styles',
-//        dest: '<%= config.out %>/styles/',
-//        src: '{,*/}*.css'
-//      }
-    },
 
     // Generates a custom Modernizr build that includes only the tests you
     // reference in your app
@@ -430,8 +468,7 @@ module.exports = function (grunt) {
           branch: 'build'
         }
       }
-    }
-  });
+    },
 
 
   grunt.registerTask('serve', 'start the server and preview your app, --allow-remote for remote access', function (target) {
@@ -446,14 +483,15 @@ module.exports = function (grunt) {
       grunt.log.warn('out dir: ' + config.out);
       return grunt.task.run([
         'clean:server',
-        'sass',
         'jshint',
         'includes',
+        'sass',
         'copy:all',
         'copy:js',
-        //'copy:styles',
+        'copy:svgs',
         'copy:images',
-        //'autoprefixer',
+        'autoprefixer',
+        'modernizr:temp',
         'connect:livereload',
         'watch'
       ]);
@@ -496,23 +534,19 @@ module.exports = function (grunt) {
       grunt.log.warn('Using config.out=' + config.out);
       return grunt.task.run([
         'clean:dist',
+        'jshint',
         'includes',
-        'useminPrepare',
         'sass',
         'copy:all',
-        'copy:js',
         'copy:svgs',
-        //'copy:styles', // handled by autoprefixer
         'imagemin',
-        //'newer:svgmin',
         'autoprefixer',
-        'concat',
-        'cssmin',
-        'uglify',
-        'modernizr:dist',
-        //'rev',
+        'useminPrepare',
+        'concat:generated',
+        'cssmin:generated',
+        'uglify:generated',
         'usemin',
-        //'htmlmin'
+        'modernizr:dist',
       ]);
     }
   );
