@@ -512,7 +512,7 @@ module.exports = function (grunt) {
         'modernizr:dist',
         //'rev',
         'usemin',
-        'htmlmin'
+        //'htmlmin'
       ]);
     }
   );
