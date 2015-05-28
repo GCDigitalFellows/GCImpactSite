@@ -83,7 +83,7 @@
   include "map_overlay.html"
   include "vignettes.html"
 
-  <!-- build:js(.) scripts/vendor.js -->
+  <!-- build:js(.) scripts/vendor.min.js -->
   <!-- bower:js -->
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/fullpage.js/jquery.fullPage.js"></script>
@@ -92,6 +92,10 @@
   <script src="bower_components/lazyloadxt/dist/jquery.lazyloadxt.autoload.min.js"></script>
   <script src="bower_components/materialize/bin/materialize.js"></script>
   <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js({app,.tmp}) scripts/main.min.js -->
+  <script src="scripts/main.js"></script>
   <!-- endbuild -->
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -111,10 +115,6 @@
   ga('create', 'UA-XXXXX-X');
   ga('send', 'pageview');
   </script>-->
-
-  <!-- build:js({app,.tmp}) scripts/main.js -->
-  <script src="scripts/main.js"></script>
-  <!-- endbuild -->
 </body>
 
 </html>
