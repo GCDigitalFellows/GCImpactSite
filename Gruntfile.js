@@ -468,7 +468,8 @@ module.exports = function (grunt) {
           branch: 'build'
         }
       }
-    },
+    }
+  });
 
 
   grunt.registerTask('serve', 'start the server and preview your app, --allow-remote for remote access', function (target) {
