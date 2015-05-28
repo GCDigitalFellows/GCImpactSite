@@ -340,6 +340,9 @@ module.exports = function (grunt) {
           src: 'node_modules/apache-server-configs/dist/.htaccess',
           dest: '<%= config.out %>/.htaccess'
         }, {
+          src: '.gitignore',
+          dest: '<%= config.out %>/.gitignore' // for buildcontrol
+        }, {
           expand: true,
           dot: true,
           cwd: 'bower_components/materialize/',
@@ -409,10 +412,11 @@ module.exports = function (grunt) {
     // Build control to push dist code to github
     buildcontrol: {
       options: {
-        dir: 'dist',
         commit: true,
+        dir: 'dist',
+        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%',
         push: true,
-        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+        shallowFetch: true
       },
       pages: {
         options: {
