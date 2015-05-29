@@ -17,7 +17,7 @@
     "hamburger-menu-button": "git@github.com:kaymmm/hamburger-menu-button.git#master",
     "jquery": "latest",
     "lazyloadxt": "git@github.com:ressio/lazy-load-xt.git#master",
-    "materialize": "git@github.com:kaymmm/materialize.git#master",
+    "materialize": "git@github.com:kaymmm/materialize.git#working",
     "modernizr": "latest"
   }
 }
