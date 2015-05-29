@@ -174,7 +174,7 @@ module.exports = function (grunt) {
       },
       all: {
         files: {
-          '<%= config.out %>/styles/main.css': '<%= config.app %>/styles/main.scss'
+	        '<%= config.out %>/styles/main.css': '<%= config.app %>/styles/main.scss'
         }
       }
     },
@@ -410,11 +410,11 @@ module.exports = function (grunt) {
           quoteStyle: 3,
           report: 'gzip',
           sourceMap: true,
-          //sourceMapIn: '<%= config.out %>/scripts/scripts/main.js.map',
+          sourceMapIn: '<%= config.out %>/scripts/main.js.map',
         },
         files: {
           '<%= config.out %>/scripts/main.min.js': ['<%= config.out %>/scripts/main.js'],
-          //'<%= config.out %>/scripts/vendor.min.js': ['<%= config.out %>/scripts/vendor.js']
+          '<%= config.out %>/scripts/vendor.min.js': ['<%= config.out %>/scripts/vendor.js']
         }
       }
     },
