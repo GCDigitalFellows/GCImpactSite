@@ -88,6 +88,7 @@ $('.button-collapse').sideNav({
 //   $('.hamburger-button').toggleClass('active');
 // });
 
+// Materialize Modal options
 var options = {
     dismissible: true,
     complete: function() {
@@ -97,6 +98,7 @@ var options = {
     ready: function() {
       $.fn.fullpage.setAllowScrolling(false);
       isModalOpen = true;
+      $('.tooltipped').trigger('mouseleave'); // remove any tooltips that were opened on mobile
     }
   };
 
