@@ -130,19 +130,21 @@ module.exports = function (grunt) {
     clean: {
       all: {
         files: [{
-          dot: true,
+          dot: false,
           src: [
             '<%= config.test %>/*',
             '<%= config.temp %>/*',
-            '<%= config.dist %>/*'
+            '<%= config.dist %>/*',
+            '!<%= config.dist %>/.git/'
           ]
         }]
       },
       dist: {
         files: [{
-          dot: true,
+          dot: false,
           src: [
-            '<%= config.dist %>/*'
+            '<%= config.dist %>/*',
+            '!<%= config.dist %>/.git/'
           ]
         }]
       },
