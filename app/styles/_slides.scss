@@ -4,13 +4,28 @@
   background-size: cover;
 
   .funkyshape,
+  .transparent,
   .button-modal,
   .button-link {
     position: absolute;
   }
 
+  .funkyshape {
+    z-index: 1;
+  }
+
+  .transparent {
+    z-index: 2;
+  }
+
+  .button-modal,
+  .button-link {
+    z-index: 3;
+  }
+
   &:nth-of-type(1) {
-    .funkyshape {
+    .funkyshape,
+    .transparent {
       @include responsive-dim(44.409722222, 26.81640625);
       bottom: 0;
       left: 0;
@@ -18,7 +33,8 @@
   }
 
   &:nth-of-type(2) {
-    .funkyshape {
+    .funkyshape,
+    .transparent {
       @include responsive-dim(45.1875, 21.77734375);
       bottom: 0;
       left: 20.3vw;
@@ -38,7 +54,8 @@
   }
 
   &:nth-of-type(3) {
-    .funkyshape {
+    .funkyshape,
+    .transparent {
       @include responsive-dim(42.347222222, 27.24609375);
       bottom: 0;
       left: 0;
@@ -48,7 +65,8 @@
   &:nth-of-type(4) {
     background-position: top left;
 
-    .funkyshape {
+    .funkyshape,
+    .transparent {
       @include responsive-dim(26.222222222, 33.369140625);
       bottom: 0;
       right: 0;
@@ -56,7 +74,8 @@
   }
 
   &:nth-of-type(5) {
-    .funkyshape {
+    .funkyshape,
+    .transparent {
       @include responsive-dim(27.479166667, 38.4765625);
       bottom: 0;
       left: 0;
@@ -78,7 +97,8 @@
   &:nth-of-type(6) {
     background-position: center right;
 
-    .funkyshape {
+    .funkyshape,
+    .transparent {
       @include responsive-dim(43.381944444, 27.353515625);
       bottom: 0;
       right: 0;
@@ -86,7 +106,8 @@
   }
 
   &:nth-of-type(7) {
-    .funkyshape {
+    .funkyshape,
+    .transparent {
       @include responsive-dim(50, 25.029296875);
       bottom: 0;
       left: 27.2vw;
@@ -102,7 +123,8 @@
   &:nth-of-type(8) {
     background-position: center center;
 
-    .funkyshape {
+    .funkyshape,
+    .transparent {
       @include responsive-dim(29.722222222, 30.888671875);
       bottom: 0;
       left: 0;
@@ -125,7 +147,8 @@
   &:nth-of-type(9) {
     background-position: center right;
 
-    .funkyshape {
+    .funkyshape,
+    .transparent {
       @include responsive-dim(53.326388889, 25.927734375);
       bottom: 0;
       left: 23.3vw;
@@ -141,7 +164,8 @@
   &:nth-of-type(10) {
     background-position: bottom center;
 
-    .funkyshape {
+    .funkyshape,
+    .transparent {
       @include responsive-dim(29.381944444, 29.78515625);
       bottom: 0;
       left: 0;
@@ -151,7 +175,8 @@
   &:nth-of-type(11) {
     background-position: top left;
 
-    .funkyshape {
+    .funkyshape,
+    .transparent {
       @include responsive-dim(37.069444444, 52.12890625);
       bottom: 0;
       right: 0;
