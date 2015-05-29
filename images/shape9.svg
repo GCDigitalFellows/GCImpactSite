@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 767.9 265.5" enable-background="new 0 0 767.9 265.5" xml:space="preserve">
+<defs>
+    <style type="text/css">
+    <![CDATA[
+        @font-face {
+  font-family: 'Univers-Condensed';
+  src: url('../font/univers/Univers 57 Condensed.eot');
+  src: url('../font/univers/Univers 57 Condensed.eot?#iefix') format('embedded-opentype'),
+       url('../font/univers/Univers 57 Condensed.woff') format('woff'),
+       url('../font/univers/Univers 57 Condensed.ttf') format('truetype'),
+       url('../font/univers/Univers 57 Condensed.svg#svgFontName') format('svg');
+}
+    ]]>
+    </style>
+</defs>
+<g>
+	<defs>
+		<polygon id="SVGID_1_" points="126.6,0 613.1,0 767.9,265.5 0,265.5 		"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  overflow="visible"/>
+	</clipPath>
+	<rect x="-5" y="-5" clip-path="url(#SVGID_2_)" fill="#FFFFFF" width="777.9" height="275.5"/>
+</g>
+<text transform="matrix(1 0 0 1 142.9297 71.4219)" fill="#848484" font-family="'Univers-Condensed'" font-size="24">Graduate Center, CUNY students teach 7,744 </text>
+<text transform="matrix(1 0 0 1 142.9297 105.4219)" fill="#848484" font-family="'Univers-Condensed'" font-size="24">classes with over 201,000 students each year. </text>
+<text transform="matrix(1 0 0 1 142.9297 139.4219)" fill="#848484" font-family="'Univers-Condensed'" font-size="24">That’s enough to fill MetLife Stadium, Yankee </text>
+<text transform="matrix(1 0 0 1 142.9297 173.4219)" fill="#848484" font-family="'Univers-Condensed'" font-size="24">Stadium, Citi Field, Madison Square Garden, and </text>
+<text transform="matrix(1 0 0 1 142.9297 207.4219)" fill="#848484" font-family="'Univers-Condensed'" font-size="24">Barclay’s Center, combined!</text>
+</svg>
