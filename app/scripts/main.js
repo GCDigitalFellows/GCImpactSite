@@ -117,11 +117,11 @@ $(document).ready(function() {
         $(preloadSelector).removeClass('active');
         $('#' + modalTarget + ' .modal-content').html('<p>There was an error loading the map</p>');
       }, 5000);
-      $(iframeSelector).attr('src', mapSrc);
+      $(iframeSelector).attr('src', mapSrc + '/embed_map');
       $(iframeSelector).load(function() {
         $(preloadSelector).removeClass('active');
         $(iframeSelector).removeClass('hide');
-        $('.modal-interact').attr('href', mapSrc);
+        $('.modal-interact').attr('href', mapSrc + '/public_map');
         clearTimeout(iframeTimeout);
       });
     }

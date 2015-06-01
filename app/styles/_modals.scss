@@ -31,11 +31,12 @@
 }
 
 .map-frame {
-  border-width: 0px;
+  border: 0;
+  border-width: 0;
 }
 
 .modal-content .preloader-wrapper {
+  left: 50%;
   position: absolute;
   top: 50%;
-  left: 50%;
 }
