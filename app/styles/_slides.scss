@@ -212,13 +212,13 @@
     .button-modal {
       @media #{$medium-and-up}{
        @include responsive-landscape {
-          bottom: 5vh;
-          right: 44vh;
+          bottom: 6vh;
+          right: 9vh;
         }
 
         @include responsive-portrait {
-          bottom: 5vw;
-          right: 44vw;
+          bottom: 6vw;
+          right: 9vw;
         }
       }
 
@@ -253,6 +253,10 @@
       left: 29.4vw;
 
       @media #{$small-and-down} {
+        @include responsive-landscape {
+          left: 5vh;
+        }
+
         @include responsive-portrait {
           left: 5vw;
         }
@@ -266,8 +270,15 @@
     .fixed-action-btn {
       bottom: 10%;
       position: absolute;
-      right: -8%;
       z-index: 11;
+
+      @media #{$large-and-up} {
+        right: 5%;
+      }
+
+      @media #{$medium-and-down} {
+        right: -8%;
+      }
 
       // @media #{$medium-and-down}{
       //   ul {
