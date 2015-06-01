@@ -112,7 +112,7 @@ $(document).ready(function() {
           preloadSelector = '#' + modalTarget + ' .preloader-wrapper',
           iframeTimeout;
       $(preloadSelector).addClass('active');
-      $(iframeSelector).addClass('hide');
+      $(iframeSelector).addClass('hidden');
       iframeTimeout = setTimeout(function() {
         $(preloadSelector).removeClass('active');
         $('#' + modalTarget + ' .modal-content').html('<p>There was an error loading the map</p>');
@@ -120,7 +120,7 @@ $(document).ready(function() {
       $(iframeSelector).attr('src', mapSrc + '/embed_map');
       $(iframeSelector).load(function() {
         $(preloadSelector).removeClass('active');
-        $(iframeSelector).removeClass('hide');
+        $(iframeSelector).removeClass('hidden');
         $('.modal-interact').attr('href', mapSrc + '/public_map');
         clearTimeout(iframeTimeout);
       });
