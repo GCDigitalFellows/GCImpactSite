@@ -16,3 +16,9 @@ $header-height: 48px;
 $ratio: 1440/1024;
 
 $font-directory: '../font';
+
+$small-screen-multiplier: 1.5;
+
+// Materialize overrides
+$small-screen: 668px; //for iphone 6
+$small-screen-up: 669px; //for iphone 6

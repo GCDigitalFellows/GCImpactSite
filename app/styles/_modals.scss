@@ -1,14 +1,14 @@
-@media #{$large-and-up} {
-  .button-modal {
-    // recreate the btn-large class from materialize and only apply it on larger screens where it makes sense
-    height: $button-floating-size * 1.5;
-    width: $button-floating-size * 1.5;
+// @media #{$large-and-up} {
+//   .button-modal {
+//     // recreate the btn-large class from materialize and only apply it on larger screens where it makes sense
+//     height: $button-floating-size * 1.5;
+//     width: $button-floating-size * 1.5;
 
-    i {
-      line-height: $button-floating-size * 1.5;
-    }
-  }
-}
+//     i {
+//       line-height: $button-floating-size * 1.5;
+//     }
+//   }
+// }
 
 .modal,
 .modal.modal-fixed-footer {
@@ -21,6 +21,10 @@
     left: 0;
     right: 0;
     top: 0;
+
+    @media #{$small-and-down} {
+      padding: 12px;
+    }
   }
 }
 

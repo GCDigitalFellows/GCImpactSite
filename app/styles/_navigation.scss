@@ -1,3 +1,9 @@
+@media #{$small-and-down} {
+  #fp-nav {
+    display: none;
+  }
+}
+
 .menu-button-wrap {
   background: transparent;
   height: 74px;
@@ -162,6 +168,11 @@
     height: 50px;
     line-height: 50px;
 
+    @media #{$small-and-down} {
+      height: 40px;
+      line-height: 40px;
+    }
+
     span {
       font-weight: bold;
     }
@@ -181,12 +192,22 @@
   }
 
   .brand-logo {
-    height: 140px;
+    max-height: 140px;
     padding: 0;
     position: relative;
 
+    @media #{$small-and-down} {
+      height: 25vh;
+      min-height: 80px;
+    }
+
     img {
-      height: 140px;
+      max-height: 140px;
+
+      @media #{$small-and-down} {
+        height: 25vh;
+        min-height: 80px;
+      }
     }
   }
 
@@ -203,5 +224,10 @@
     background-size: cover;
     height: calc(100% - 381px);
     position: relative;
+
+    @media #{$small-and-down} {
+      height: calc(100% - 25vh);
+      min-height: calc(100% - 140px)
+    }
   }
 }

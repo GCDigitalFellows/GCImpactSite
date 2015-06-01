@@ -10,18 +10,28 @@
   }
 }
 
-@mixin orientation-dim($width, $height) {
-  @include responsive-portrait {
-    height: #{$height}vw;
-    width: #{$width * $ratio}vw;
+@mixin responsive-dim($width, $height, $multiplier) {
+  @media #{$medium-and-up} {
+    @include responsive-portrait {
+      height: #{$height}vw;
+      width: #{$width * $ratio}vw;
+    }
+
+    @include responsive-landscape {
+      height: #{$height}vh;
+      width: #{$width * $ratio}vh;
+    }
   }
 
-  @include responsive-landscape {
-    height: #{$height}vh;
-    width: #{$width * $ratio}vh;
-  }
-}
+  @media #{$small-and-down} {
+    @include responsive-portrait {
+      height: #{$height * $multiplier}vw;
+      width: #{$width * $multiplier * $ratio}vw;
+    }
 
-@mixin responsive-dim($width, $height) {
-  @include orientation-dim($width, $height);
+    @include responsive-landscape {
+      height: #{$height * $multiplier}vh;
+      width: #{$width * $multiplier * $ratio}vh;
+    }
+  }
 }

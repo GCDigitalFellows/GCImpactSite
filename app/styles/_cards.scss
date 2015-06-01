@@ -24,6 +24,17 @@
   .card-reveal .card-title {
     padding-top: 10px;
   }
+
+  .card-action {
+    @media #{$small-and-down} {
+      padding: 20px 0;
+
+      a {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+  }
 }
 
 @media only screen and (min-width : #{$large-screen-up}) {
