@@ -423,7 +423,7 @@ module.exports = function (grunt) {
     // Generates a custom Modernizr build that includes only the tests you
     // reference in your app
     modernizr: {
-      dist: {
+      all: {
         devFile: 'bower_components/modernizr/modernizr.js',
         outputFile: '<%= config.out %>/scripts/vendor/modernizr.js',
         files: {
@@ -435,18 +435,6 @@ module.exports = function (grunt) {
         },
         uglify: true
       },
-      temp: {
-        devFile: 'bower_components/modernizr/modernizr.js',
-        outputFile: '<%= config.out %>/scripts/vendor/modernizr.js',
-        files: {
-          src: [
-            '<%= config.out %>/scripts/{,*/}*.js',
-            '<%= config.out %>/styles/{,*/}*.css',
-            '!<%= config.out %>/scripts/vendor/*'
-          ]
-        },
-        uglify: true
-      }
     },
 
     // Build control to push dist code to github
@@ -494,7 +482,7 @@ module.exports = function (grunt) {
         'copy:svgs',
         'copy:images',
         'autoprefixer',
-        'modernizr:temp',
+        'modernizr',
         'connect:livereload',
         'watch'
       ]);
@@ -549,7 +537,7 @@ module.exports = function (grunt) {
         'cssmin:generated',
         'uglify:generated',
         'usemin',
-        'modernizr:dist',
+        'modernizr',
       ]);
     }
   );
