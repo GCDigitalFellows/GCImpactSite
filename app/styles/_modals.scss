@@ -26,6 +26,11 @@
       padding: 12px;
     }
   }
+
+  .btn,
+  .btn-flat {
+    padding: 0 1rem;
+  }
 }
 
 .map,
@@ -40,9 +45,9 @@
 }
 
 .modal-content .preloader-wrapper {
-  left: 50%;
+  left: calc(50% - 32px);
   position: absolute;
-  top: 50%;
+  top: calc(50% - 32px);
 }
 
 .hidden {
