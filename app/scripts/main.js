@@ -2,7 +2,6 @@ $(document).ready(function() {
   'use strict';
 
   var isLoaded = false,
-  isModalOpen = false,
   isOpen = false,
   modalTarget;
 
@@ -58,7 +57,7 @@ $(document).ready(function() {
     },
 
     onLeave: function(index) {
-      if (modalTarget && isModalOpen) {
+      if (modalTarget) {
         $('#' + modalTarget).closeModal();
       }
       if (index === 13) {
@@ -93,11 +92,10 @@ $(document).ready(function() {
       dismissible: true,
       complete: function() {
         $.fn.fullpage.setAllowScrolling(true);
-        isModalOpen = false;
+        modalTarget = null;
       },
       ready: function() {
         $.fn.fullpage.setAllowScrolling(false);
-        isModalOpen = true;
         $('.tooltipped').trigger('mouseleave'); // remove any tooltips that were opened on mobile
       }
   };
@@ -105,25 +103,41 @@ $(document).ready(function() {
   $('.modal-trigger').leanModal(options);
 
   $('.modal-trigger').click( function() {
-    modalTarget = $(this).data('target');
-    if (!isModalOpen && $.hasData(this) && $(this).data('map')) {
+    /* only need to do something special for map button clicks */
+    if ($.hasData(this) && $(this).data('target') && $(this).data('map')) {
       var mapSrc = $(this).data('map'),
+          modalTarget = $(this).data('target'),
           iframeSelector = '#' + modalTarget + ' .map-frame',
-          preloadSelector = '#' + modalTarget + ' .preloader-wrapper',
-          iframeTimeout;
+          preloadSelector = '#' + modalTarget + ' .preloader-wrapper';
+          /*iframeTimeout = setTimeout(
+            function() {
+              $(preloadSelector).removeClass('active');
+              $('.modal-load-error').removeClass('hidden');
+            },
+            300
+          );*/
       $(preloadSelector).addClass('active');
-      $(iframeSelector).addClass('hidden');
-      iframeTimeout = setTimeout(function() {
-        $(preloadSelector).removeClass('active');
-        $('#' + modalTarget + ' .modal-content').html('<p>There was an error loading the map</p>');
-      }, 5000);
-      $(iframeSelector).attr('src', mapSrc + '/embed_map');
-      $(iframeSelector).load(function() {
-        $(preloadSelector).removeClass('active');
-        $(iframeSelector).removeClass('hidden');
-        $('.modal-interact').attr('href', mapSrc + '/public_map');
-        clearTimeout(iframeTimeout);
-      });
+      $(iframeSelector)
+        .addClass('hidden')
+        .attr('src','about:blank');
+      $('.modal-interact').attr('href', mapSrc + '/public_map');
+      $('.modal-load-error .modal-trigger')
+        .data('map',mapSrc)
+        .data('target',modalTarget);
+
+      $(iframeSelector)
+        .error(function() {
+          console.log('error loading map from CartoDB');
+          $(preloadSelector).removeClass('active');
+          $('.modal-load-error').removeClass('hidden');
+        })
+        .attr('src', mapSrc + '/embed_map')
+        .load(function() {
+          $(preloadSelector).removeClass('active');
+          $('.modal-load-error').addClass('hidden');
+          $(iframeSelector).removeClass('hidden');
+          //clearTimeout(iframeTimeout);
+        });
     }
   });
 
@@ -131,7 +145,7 @@ $(document).ready(function() {
     if ( isOpen && event.which === 27) {
       $('.button-collapse').sideNav('hide');
       isOpen = !isOpen;
-    } else if ( isModalOpen ) {
+    } else if ( modalTarget ) {
       $('#' + modalTarget).closeModal();
     }
   });
