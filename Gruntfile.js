@@ -16,9 +16,6 @@ module.exports = function (grunt) {
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
 
-  // Grunt build control to deploy to git
-  require('load-grunt-tasks')(grunt);
-
   // Configurable paths
   var config = {
     app: 'app',
@@ -424,7 +421,7 @@ module.exports = function (grunt) {
     // reference in your app
     modernizr: {
       all: {
-        devFile: 'bower_components/modernizr/modernizr.js',
+        devFile: '<%= config.app %>bower_components/modernizr/modernizr.js',
         outputFile: '<%= config.out %>/scripts/vendor/modernizr.js',
         files: {
           src: [
