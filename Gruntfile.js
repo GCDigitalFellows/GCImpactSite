@@ -421,8 +421,11 @@ module.exports = function (grunt) {
     // reference in your app
     modernizr: {
       all: {
-        devFile: '<%= config.app %>/bower_components/modernizr/modernizr.js',
-        outputFile: '<%= config.out %>/scripts/vendor/modernizr.js',
+        cache: true,
+        dest : '<%= config.out %>/scripts/vendor/modernizr-custom.js',
+        devFile: false,
+        //devFile: 'bower_components/modernizr/modernizr.js',
+        //outputFile: '<%= config.out %>/scripts/vendor/modernizr.js',
         files: {
           src: [
             '<%= config.out %>/scripts/{,*/}*.js',
@@ -479,7 +482,7 @@ module.exports = function (grunt) {
         'copy:svgs',
         'copy:images',
         'autoprefixer',
-        'modernizr',
+        //'modernizr',
         'connect:livereload',
         'watch'
       ]);
@@ -534,7 +537,7 @@ module.exports = function (grunt) {
         'cssmin:generated',
         'uglify:generated',
         'usemin',
-        'modernizr',
+        //'modernizr',
       ]);
     }
   );

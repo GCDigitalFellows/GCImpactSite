@@ -108,7 +108,7 @@
     }
   }
 
-  &:nth-of-type(6) {
+  &:nth-of-type(8) {
     background-position: center right;
 
     .funkyshape,
@@ -119,7 +119,7 @@
     }
   }
 
-  &:nth-of-type(7) {
+  &:nth-of-type(9) {
     .funkyshape,
     .transparent {
       @include responsive-dim(50, 25.029296875, $small-screen-multiplier);
@@ -134,7 +134,7 @@
     }
   }
 
-  &:nth-of-type(8) {
+  &:nth-of-type(10) {
     background-position: center center;
 
     .funkyshape,
@@ -171,7 +171,7 @@
     }
   }
 
-  &:nth-of-type(9) {
+  &:nth-of-type(11) {
     background-position: center right;
 
     .funkyshape,
@@ -188,7 +188,7 @@
     }
   }
 
-  &:nth-of-type(10) {
+  &:nth-of-type(12) {
     background-position: bottom center;
 
     .funkyshape,
@@ -199,7 +199,7 @@
     }
   }
 
-  &:nth-of-type(11) {
+  &:nth-of-type(13) {
     background-position: top left;
 
     .funkyshape,
@@ -236,7 +236,7 @@
     }
   }
 
-  &:nth-of-type(12) {
+  &:nth-of-type(14) {
     background-position: bottom left;
 
     .transparent {

@@ -3,6 +3,7 @@ $(document).ready(function() {
 
   var isLoaded = false,
   isOpen = false,
+  lastSlide = 15,
   modalTarget;
 
   // fullpage.js initialization
@@ -50,7 +51,7 @@ $(document).ready(function() {
       $(selectorNot).removeClass('active');
       $(selector).addClass('active');
 
-      if (index === 13) {
+      if (index === lastSlide) {
         $('.card-more').css('opacity', 1);
       }
 
@@ -60,7 +61,7 @@ $(document).ready(function() {
       if (modalTarget) {
         $('#' + modalTarget).closeModal();
       }
-      if (index === 13) {
+      if (index === lastSlide) {
         $('.card-more').css('opacity', 0);
       }
     }
