@@ -20,7 +20,7 @@
     "grunt-filerev": "^2.3.1",
     "grunt-includes": "^0.5.1",
     "grunt-mocha": "^0.4.13",
-    "grunt-modernizr": "^1.0.0",
+    "grunt-modernizr": "^1.0.1",
     "grunt-newer": "^1.1.1",
     "grunt-svgmin": "^2.0.1",
     "grunt-usemin": "^3.1.1",

@@ -4,8 +4,14 @@
   "homepage": "http://gcdigitalfellows.github.io/GCImpactSite",
   "license": "GPL-3.0",
   "authors": [
-    {"name": "Keith Miyake", "email": "kmiyake@gc.cuny.edu", "homepage": "http://keithmiyake.info"},
-    {"name": "Michelle Johnson"}
+    {
+      "name": "Keith Miyake",
+      "email": "kmiyake@gc.cuny.edu",
+      "homepage": "http://keithmiyake.info"
+    },
+    {
+      "name": "Michelle Johnson"
+    }
   ],
   "repository": {
     "type": "git",
@@ -13,11 +19,13 @@
   },
   "description": "Static site showcasing key highlights of the impact the Graduate Center, CUNY has on the city, region, and world.",
   "dependencies": {
-    "fullpage.js": "git@github.com:alvarotrigo/fullPage.js.git#master",
-    "hamburger-menu-button": "git@github.com:kaymmm/hamburger-menu-button.git#master",
+    "fullpage.js": "~2.7.4",
+    "hamburger-menu-button": "latest",
     "jquery": "latest",
     "lazyloadxt": "git@github.com:ressio/lazy-load-xt.git#master",
     "materialize": "git@github.com:kaymmm/materialize.git#working",
     "modernizr": "latest"
+  },
+  "devDependencies": {
   }
 }
