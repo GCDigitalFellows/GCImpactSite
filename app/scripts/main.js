@@ -7,10 +7,16 @@ $(document).ready(function() {
   modalTarget;
 
   // fullpage.js initialization
-  $('#fullpage').fullpage({
+
+  $('#fullpage').fullpage ({
     animateAnchor: true,
     autoScrolling: true,
-    anchors:['section1', 'section2', 'section3', 'section4', 'section5', 'section6', 'section7', 'section8', 'section9', 'section10', 'section11', 'section12', 'section13'],
+    anchors: function() {
+      for (var arr=[]; arr.length<=lastSlide; ) {
+        arr[arr.length] = 'section' + arr.length;
+      }
+      return arr;
+    },
     continuousVertical: false,
     css3: true,
     easing: 'easeInOutQuart',//'cubic-bezier(.4, 0, .2, 1)',//'cubic-bezier(0.190, 1.000, 0.220, 1.000)'
